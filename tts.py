@@ -28,9 +28,7 @@ DEFAULT_RATE = os.getenv("TTS_RATE", "+4%")
 #   en-GB-RyanNeural                British male
 
 
-def clean_for_speech(text: str) -> str:
-    """Strip anything a narrator would awkwardly read out loud."""
-    text = re.sub(r"```.*?```", " ", text, flags=re.DOTALL)
+def _strip_markdown(text: str) -> str:
     text = re.sub(r"^#{1,6}\s*", "", text, flags=re.MULTILINE)  # headings
     text = re.sub(r"\*\*(.+?)\*\*", r"\1", text)                # bold
     text = re.sub(r"(?<!\w)\*(.+?)\*(?!\w)", r"\1", text)       # italics
@@ -40,6 +38,23 @@ def clean_for_speech(text: str) -> str:
     text = re.sub(r"[ \t]+", " ", text)
     text = re.sub(r"\n{3,}", "\n\n", text)
     return text.strip()
+
+
+def clean_for_speech(text: str) -> str:
+    """Strip anything a narrator would awkwardly read out loud.
+
+    Removing fenced code blocks is right for a stray snippet and catastrophic
+    if the whole script happens to be fenced -- that path silently produced an
+    empty string and a failed build. So the fence pass only stands if it left
+    something behind.
+    """
+    defenced = _strip_markdown(re.sub(r"```.*?```", " ", text, flags=re.DOTALL))
+    if defenced:
+        return defenced
+
+    # Everything was inside a fence. Peel the fence off instead of obliterating
+    # the text, and narrate what's inside.
+    return _strip_markdown(re.sub(r"```(?:\w+)?", " ", text))
 
 
 async def _edge_tts(text: str, out_path: Path, voice: str, rate: str) -> None:
@@ -97,6 +112,11 @@ def synthesize(text: str, out_path: Path) -> Path:
     """Turn the episode script into an MP3. Raises only if every engine fails."""
     out_path.parent.mkdir(parents=True, exist_ok=True)
     spoken = clean_for_speech(text)
+    if len(spoken.split()) < 20:
+        raise RuntimeError(
+            f"refusing to synthesize {len(spoken.split())} words of speech "
+            f"(input was {len(text)} chars) -- the script never made it here intact"
+        )
     engine = os.getenv("TTS_ENGINE", "edge").lower()
 
     attempts: list[tuple[str, object]] = []

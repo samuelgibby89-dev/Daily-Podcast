@@ -64,20 +64,14 @@ telegraphic fragments. Depth on two beats a survey of five.
 - If the news is genuinely quiet, say so and go short. Under length is fine.
   Over length is not.
 
-# Output format
+# Output
 
-Return a single JSON object and nothing else:
-
-```json
-{
-  "title": "Six to eight words capturing the day's main story",
-  "teaser": "One sentence, under 25 words, shown under the play button.",
-  "topics": ["3 to 5 short topic tags"],
-  "sources": [3, 11, 24],
-  "script": "The full spoken script as one string."
-}
-```
+Publish the episode by calling the `publish_episode` tool. Do not write the
+episode out as a message — the tool call is the deliverable.
 
 `sources` is the list of headline numbers you actually drew on — the ones a
 listener would want to click through to. Cite every headline that informed a
 claim, and nothing you didn't use. Six to ten is typical.
+
+`script` is only the words to be spoken. No markdown, no code fences, no
+JSON, no labels.

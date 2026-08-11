@@ -64,7 +64,8 @@ def write_script(context: str, date_label: str) -> dict:
 
     user_msg = (
         f"Today is {date_label}.\n\n"
-        "Here is everything gathered this morning. Write today's episode.\n\n"
+        "Here is everything gathered this morning. Write today's episode and "
+        "publish it with the publish_episode tool.\n\n"
         f"{context}"
     )
 
@@ -73,34 +74,70 @@ def write_script(context: str, date_label: str) -> dict:
         max_tokens=4000,
         system=system_prompt,
         messages=[{"role": "user", "content": user_msg}],
+        tools=[EPISODE_TOOL],
+        tool_choice={"type": "tool", "name": "publish_episode"},
     )
+
+    for block in resp.content:
+        if getattr(block, "type", "") == "tool_use" and block.name == "publish_episode":
+            return normalize_episode(block.input)
+
+    # Should not happen with a forced tool_choice, but never lose an episode
+    # over it -- fall back to scraping JSON out of whatever came back.
+    print("  ! model did not call the tool; falling back to text parsing")
     raw = "".join(
         block.text for block in resp.content if getattr(block, "type", "") == "text"
     ).strip()
-
     return parse_episode_json(raw)
 
 
-def parse_episode_json(raw: str) -> dict:
-    """Claude is asked for strict JSON; be forgiving anyway."""
-    fenced = re.search(r"```(?:json)?\s*(\{.*?\})\s*```", raw, re.DOTALL)
-    candidate = fenced.group(1) if fenced else raw
+# The episode comes back as a forced tool call rather than as JSON in a text
+# reply. A 500-word script is full of quotes, apostrophes and newlines, and
+# hand-parsing that out of prose is how you end up shipping an empty episode.
+# The API validates this schema before we ever see it.
+EPISODE_TOOL = {
+    "name": "publish_episode",
+    "description": "Publish today's finished episode.",
+    "input_schema": {
+        "type": "object",
+        "properties": {
+            "title": {
+                "type": "string",
+                "description": "Six to eight words capturing the day's main story.",
+            },
+            "teaser": {
+                "type": "string",
+                "description": "One sentence under 25 words, shown under the play button.",
+            },
+            "topics": {
+                "type": "array",
+                "items": {"type": "string"},
+                "description": "Three to five short topic tags.",
+            },
+            "sources": {
+                "type": "array",
+                "items": {"type": "integer"},
+                "description": (
+                    "Numbers of the headlines you actually drew on, from the "
+                    "numbered list you were given. Six to ten is typical."
+                ),
+            },
+            "script": {
+                "type": "string",
+                "description": (
+                    "The full spoken script, 400-480 words, hard maximum 500. "
+                    "Plain spoken prose only: no markdown, no headers, no "
+                    "bullets, no stage directions."
+                ),
+            },
+        },
+        "required": ["title", "teaser", "topics", "sources", "script"],
+    },
+}
 
-    start, end = candidate.find("{"), candidate.rfind("}")
-    if start != -1 and end != -1:
-        candidate = candidate[start : end + 1]
 
-    try:
-        data = json.loads(candidate)
-    except json.JSONDecodeError:
-        print("  ! could not parse JSON, treating the whole reply as the script")
-        return {
-            "title": "Market Brief",
-            "teaser": "Today's market rundown.",
-            "topics": [],
-            "script": raw,
-        }
-
+def normalize_episode(data: dict) -> dict:
+    """Coerce a validated tool payload into the shape the rest of the build wants."""
     script = (data.get("script") or "").strip()
     if not script:
         raise RuntimeError("model returned an episode with no script")
@@ -119,6 +156,34 @@ def parse_episode_json(raw: str) -> dict:
         "cited": cited,
         "script": script,
     }
+
+
+def parse_episode_json(raw: str) -> dict:
+    """Last-resort parser for a plain-text reply. See EPISODE_TOOL above."""
+    fenced = re.search(r"```(?:json)?\s*(\{.*?\})\s*```", raw, re.DOTALL)
+    candidate = fenced.group(1) if fenced else raw
+
+    start, end = candidate.find("{"), candidate.rfind("}")
+    if start != -1 and end != -1:
+        candidate = candidate[start : end + 1]
+
+    try:
+        data = json.loads(candidate)
+    except json.JSONDecodeError:
+        print("  ! could not parse JSON, treating the whole reply as the script")
+        # Strip fences here rather than leaving them for the speech cleaner,
+        # which removes fenced blocks wholesale and would hand TTS an empty
+        # string if the entire reply was fenced.
+        stripped = re.sub(r"^\s*```(?:json)?\s*|\s*```\s*$", "", raw).strip()
+        return {
+            "title": "Market Brief",
+            "teaser": "Today's market rundown.",
+            "topics": [],
+            "cited": [],
+            "script": stripped or raw,
+        }
+
+    return normalize_episode(data)
 
 
 def resolve_sources(cited: list[int], headlines: list[dict]) -> list[dict]:
@@ -291,6 +356,11 @@ def main() -> int:
 
         words = len(episode["script"].split())
         print(f"  + \"{episode['title']}\" ({words} words, ~{words / 165:.1f} min)")
+        if words < 150:
+            raise RuntimeError(
+                f"script came back at only {words} words; refusing to publish "
+                "a broken episode over yesterday's good one"
+            )
         if words > 560:
             print(f"  ! script ran long ({words} words) — tighten the length "
                   f"rules in brief_prompt.md if this keeps happening")
