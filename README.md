@@ -89,8 +89,12 @@ Your first episode is there.
 On your iPhone, open that URL in **Safari** (it has to be Safari, not Chrome),
 tap the share icon, then **Add to Home Screen**.
 
-It installs as a real app: its own icon, no browser chrome, lock-screen and
-AirPods controls, and the last episode you played stays available offline.
+It installs as a real app: its own icon, no browser chrome, and lock-screen
+and AirPods controls.
+
+(Episodes stream rather than being stored offline. A service worker can't sit
+in front of streamed audio without hanging the player — see the comment at the
+top of `web/sw.js` if you're curious.)
 
 ---
 
@@ -188,6 +192,10 @@ voices are excellent.
 
 **The app won't update on my phone.** Pull down to refresh. The service worker
 caches the shell aggressively but always checks the network for new episodes.
+
+**An episode won't play / the spinner hangs.** Almost always a stale service
+worker. In Safari: Settings → Apps → Safari → Advanced → Website Data, remove
+the github.io entry, then reload.
 
 **Some numbers sound wrong.** The prompt forbids inventing figures, and every
 number handed to Claude comes from Stooq's daily close — which means the

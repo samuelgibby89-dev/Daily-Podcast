@@ -1,13 +1,27 @@
-/* Service worker: makes the app installable and keeps the last brief
-   listenable when the phone has no signal.
+/* Service worker: makes the app installable and keeps the shell instant.
 
    Strategy:
-     - shell (html/css/icons)  -> cache first, refreshed in the background
-     - episodes.json           -> network first, cache as fallback
-     - audio + transcripts     -> cache on first play, served from cache after
+     - audio            -> NOT intercepted at all (see below)
+     - episodes.json    -> network first, cache as fallback
+     - transcripts      -> cache on first read, served from cache after
+     - shell (html/css/icons) -> cache first, revalidated in the background
+
+   Why audio is deliberately left alone:
+   A service worker must not sit in front of streamed media. Media elements
+   fetch with byte ranges and read lazily -- an <audio> tag with
+   preload="metadata" pulls the first chunk and then stops reading. If the
+   worker calls response.clone() to stash a copy in the cache, that second
+   branch is never drained, backpressure stalls both streams, and the element
+   hangs at readyState 0 forever with no error fired. Ordinary fetch() of the
+   same URL still works, which makes it a nasty one to spot.
+
+   The cost is that episodes are not available offline. That is the right
+   trade: a brief that reliably plays beats one that occasionally plays
+   without signal. Doing it properly means serving 206 responses out of the
+   cache by hand, which is a lot of machinery for a seven-minute file.
 */
 
-const VERSION = 'brief-v1';
+const VERSION = 'brief-v2';
 const SHELL = ['./', './index.html', './manifest.webmanifest',
                './icons/icon-192.png', './icons/icon-512.png'];
 
@@ -37,8 +51,11 @@ self.addEventListener('fetch', (event) => {
   const url = new URL(req.url);
   if (url.origin !== self.location.origin) return;
 
-  // Always try the network first for the episode index, so a new morning
-  // brief shows up the moment it is published.
+  // Hands off: media, and anything asking for a byte range.
+  if (url.pathname.includes('/audio/') || req.headers.has('range')) return;
+
+  // Network first for the episode index, so a new brief appears the moment
+  // it is published.
   if (url.pathname.endsWith('episodes.json')) {
     event.respondWith(
       fetch(req)
@@ -52,21 +69,9 @@ self.addEventListener('fetch', (event) => {
     return;
   }
 
-  // Media and transcripts: cheap to keep, expensive to re-download.
-  if (url.pathname.includes('/audio/') || url.pathname.includes('/transcripts/')) {
-    event.respondWith(
-      caches.match(req).then((hit) => hit || fetch(req).then((res) => {
-        if (res.ok && !res.headers.get('content-range')) {
-          const copy = res.clone();
-          caches.open(VERSION).then((c) => c.put(req, copy));
-        }
-        return res;
-      }))
-    );
-    return;
-  }
-
-  // Everything else: cache first, revalidate quietly.
+  // Everything else (shell, icons, transcripts): cache first, revalidate
+  // quietly. These are small text and image files that get read to
+  // completion, so cloning them is safe.
   event.respondWith(
     caches.match(req).then((hit) => {
       const network = fetch(req).then((res) => {
