@@ -119,6 +119,17 @@ top of `web/sw.js` if you're curious.)
 length, what to skip. It is plain English, no code. Edit it, push, and the
 next morning's episode changes. This is the file worth iterating on.
 
+Length lives there too, in its own section. It's currently set to 400–480
+words, which lands near three minutes. If episodes start creeping long, make
+that section blunter rather than adding new rules elsewhere — the build logs
+the word count on every run, so you can see the drift.
+
+### The player
+
+If you change anything in `web/`, bump `VERSION` at the top of `web/sw.js`
+(`brief-v3` → `brief-v4`). The service worker serves the cached shell first,
+so without a bump your phone keeps showing the old UI.
+
 ### Everything else
 
 **Settings → Secrets and variables → Actions → Variables** (not Secrets):

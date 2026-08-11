@@ -21,7 +21,10 @@
    cache by hand, which is a lot of machinery for a seven-minute file.
 */
 
-const VERSION = 'brief-v2';
+// Bump this whenever you change anything in web/. The old cache is dropped on
+// activate, so a version bump is what makes a UI change actually reach the
+// phone instead of sitting behind a cached index.html.
+const VERSION = 'brief-v3';
 const SHELL = ['./', './index.html', './manifest.webmanifest',
                './icons/icon-192.png', './icons/icon-512.png'];
 

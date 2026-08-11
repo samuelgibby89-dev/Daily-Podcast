@@ -105,12 +105,43 @@ def parse_episode_json(raw: str) -> dict:
     if not script:
         raise RuntimeError("model returned an episode with no script")
 
+    cited = []
+    for n in data.get("sources") or []:
+        try:
+            cited.append(int(n))
+        except (TypeError, ValueError):
+            continue
+
     return {
         "title": (data.get("title") or "Market Brief").strip(),
         "teaser": (data.get("teaser") or "").strip(),
         "topics": [str(t) for t in (data.get("topics") or [])][:5],
+        "cited": cited,
         "script": script,
     }
+
+
+def resolve_sources(cited: list[int], headlines: list[dict]) -> list[dict]:
+    """Turn the headline numbers the model cited into linkable sources.
+
+    Falls back to the freshest headlines if the model cited nothing usable,
+    so the Sources panel is never mysteriously empty.
+    """
+    picked, seen = [], set()
+    for i in cited:
+        if 0 <= i < len(headlines) and i not in seen:
+            seen.add(i)
+            picked.append(headlines[i])
+
+    if not picked:
+        print("  ! model cited no usable sources; falling back to top headlines")
+        picked = headlines[:8]
+
+    return [
+        {"title": h["title"], "source": h["source"], "link": h["link"]}
+        for h in picked[:12]
+        if h.get("link")
+    ]
 
 
 # --------------------------------------------------------------------------
@@ -233,6 +264,8 @@ def main() -> int:
             "title": "Dry Run Episode",
             "teaser": "A local smoke test of the full build pipeline.",
             "topics": ["testing"],
+            "sources": [{"title": "Example headline", "source": "Test Feed",
+                         "link": "https://example.com/story"}],
             "script": ("Good morning. This is a dry run of the build pipeline. "
                        "No news was fetched and no model was called. "
                        "If you are hearing this, the audio path works."),
@@ -255,7 +288,15 @@ def main() -> int:
         context = sources.format_context(headlines, quotes)
         print(f"\nWriting the script with {MODEL}...")
         episode = write_script(context, date_label)
-        print(f"  + \"{episode['title']}\" ({len(episode['script'].split())} words)")
+
+        words = len(episode["script"].split())
+        print(f"  + \"{episode['title']}\" ({words} words, ~{words / 165:.1f} min)")
+        if words > 560:
+            print(f"  ! script ran long ({words} words) — tighten the length "
+                  f"rules in brief_prompt.md if this keeps happening")
+
+        episode["sources"] = resolve_sources(episode.pop("cited", []), headlines)
+        print(f"  + {len(episode['sources'])} sources cited")
 
     # --- audio -----------------------------------------------------------
     audio_rel = f"audio/{date_str}.mp3"
@@ -287,6 +328,7 @@ def main() -> int:
         "title": episode["title"],
         "teaser": episode["teaser"],
         "topics": episode["topics"],
+        "sources": episode.get("sources", []),
         "audio": audio_rel,
         "transcript": transcript_rel,
         "duration": duration,

@@ -82,11 +82,28 @@
   .pill:active{background:var(--surface-2);color:var(--text)}
   .pill.on{color:var(--accent);border-color:var(--accent-dim)}
 
+  .pill-group{display:flex;gap:8px}
+
   /* ---------- transcript ---------- */
   #transcript{display:none;margin-top:18px;padding-top:18px;
     border-top:1px solid var(--line);color:#c8d2e0;font-size:15.5px;
     line-height:1.72;white-space:pre-wrap}
   #transcript.open{display:block}
+
+  /* ---------- sources ---------- */
+  #sources{display:none;margin-top:18px;padding-top:6px;
+    border-top:1px solid var(--line)}
+  #sources.open{display:block}
+  .src{display:block;padding:12px 0;border-bottom:1px solid var(--line);
+    text-decoration:none;transition:opacity .15s}
+  .src:active{opacity:.6}
+  .src:last-of-type{border-bottom:0}
+  .src-name{display:block;font-size:10.5px;letter-spacing:.07em;
+    text-transform:uppercase;color:var(--accent);margin-bottom:4px}
+  .src-title{display:block;font-size:14.5px;line-height:1.45;color:#c8d2e0}
+  .src-title::after{content:" ↗";color:#5a6575;font-size:12px}
+  .src-foot{margin-top:16px;padding-top:14px;border-top:1px solid var(--line);
+    font-size:12px;color:#5a6575;line-height:1.65}
 
   /* ---------- archive ---------- */
   h3.section{font-size:12px;font-weight:600;letter-spacing:.09em;
@@ -129,7 +146,7 @@
 
   var audio = document.getElementById('audio');
   var app   = document.getElementById('app');
-  var data  = null, idx = 0, speed = 1, transcriptOpen = false;
+  var data  = null, idx = 0, speed = 1, transcriptOpen = false, sourcesOpen = false;
   var SPEEDS = [1, 1.25, 1.5, 1.75, 2];
 
   // Storage is best-effort: if the browser blocks it, we just lose resume.
@@ -163,8 +180,20 @@
   var ICON_BACK  = '<svg viewBox="0 0 24 24" width="30" height="30" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"/><path d="M3 3v5h5"/></svg><span>15</span>';
   var ICON_FWD   = '<svg viewBox="0 0 24 24" width="30" height="30" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 1 1-9-9 9.75 9.75 0 0 1 6.74 2.74L21 8"/><path d="M21 3v5h-5"/></svg><span>30</span>';
 
+  function sourcesHtml(ep){
+    var list = (ep.sources || []).map(function(s){
+      return '<a class="src" href="' + esc(s.link) + '" target="_blank" rel="noopener noreferrer">' +
+               '<span class="src-name">' + esc(s.source) + '</span>' +
+               '<span class="src-title">' + esc(s.title) + '</span>' +
+             '</a>';
+    }).join('');
+    return list + '<div class="src-foot">Reporting from the feeds above. ' +
+           'Index, yield, commodity and bitcoin levels are daily closes from Stooq.</div>';
+  }
+
   function render(){
     var ep = data.episodes[idx];
+    var hasSources = !!(ep.sources && ep.sources.length);
 
     app.innerHTML =
       '<div class="hero">' +
@@ -184,8 +213,12 @@
         '<div class="times"><span id="cur">0:00</span><span id="dur">' + fmt(ep.duration) + '</span></div>' +
         '<div class="below">' +
           '<button class="pill" id="speed">1&times;</button>' +
-          '<button class="pill" id="tbtn">Transcript</button>' +
+          '<div class="pill-group">' +
+            (hasSources ? '<button class="pill" id="sbtn">Sources</button>' : '') +
+            '<button class="pill" id="tbtn">Transcript</button>' +
+          '</div>' +
         '</div>' +
+        '<div id="sources">' + sourcesHtml(ep) + '</div>' +
         '<div id="transcript"></div>' +
       '</div>' +
       (data.episodes.length > 1
@@ -227,12 +260,27 @@
     document.getElementById('speed').innerHTML = speed + '&times;';
     document.getElementById('speed').classList.toggle('on', speed !== 1);
 
+    var sbtn = document.getElementById('sbtn');
+
     tbtn.onclick = function(){
       transcriptOpen = !transcriptOpen;
+      if (transcriptOpen) closeSources();
       var box = document.getElementById('transcript');
       box.classList.toggle('open', transcriptOpen);
       tbtn.classList.toggle('on', transcriptOpen);
       if (transcriptOpen && !box.textContent) loadTranscript(box);
+    };
+
+    if (sbtn) sbtn.onclick = function(){
+      sourcesOpen = !sourcesOpen;
+      if (sourcesOpen) {
+        transcriptOpen = false;
+        var t = document.getElementById('transcript');
+        if (t) t.classList.remove('open');
+        tbtn.classList.remove('on');
+      }
+      document.getElementById('sources').classList.toggle('open', sourcesOpen);
+      sbtn.classList.toggle('on', sourcesOpen);
     };
 
     scrub.oninput = function(){
@@ -248,9 +296,18 @@
       .catch(function(){ box.textContent = 'Transcript unavailable.'; });
   }
 
+  function closeSources(){
+    sourcesOpen = false;
+    var box = document.getElementById('sources');
+    var btn = document.getElementById('sbtn');
+    if (box) box.classList.remove('open');
+    if (btn) btn.classList.remove('on');
+  }
+
   function select(i, autoplay){
     idx = i;
     transcriptOpen = false;
+    sourcesOpen = false;
     var ep = data.episodes[idx];
     audio.src = ep.audio;
     audio.playbackRate = speed;

@@ -24,7 +24,6 @@ UA = (
 # --------------------------------------------------------------------------
 FEEDS = [
     ("CNBC Markets", "https://www.cnbc.com/id/20910258/device/rss/rss.html"),
-    ("CNBC Economy", "https://www.cnbc.com/id/20910258/device/rss/rss.html"),
     ("CNBC Top News", "https://www.cnbc.com/id/100003114/device/rss/rss.html"),
     ("MarketWatch", "https://feeds.content.dowjones.io/public/rss/mw_topstories"),
     ("MarketWatch Markets", "https://feeds.content.dowjones.io/public/rss/mw_marketpulse"),
@@ -193,11 +192,14 @@ def format_context(headlines: list[dict], quotes: list[dict]) -> str:
     else:
         lines.append("MARKET DATA: unavailable this morning.\n")
 
-    lines.append(f"HEADLINES ({len(headlines)} from the last ~30 hours):")
-    for h in headlines:
+    lines.append(
+        f"HEADLINES ({len(headlines)} from the last ~30 hours). "
+        "Each is numbered -- cite the numbers you actually used:"
+    )
+    for i, h in enumerate(headlines):
         stamp = (h["published"] or "")[:16].replace("T", " ")
-        lines.append(f"- [{h['source']} {stamp}] {h['title']}")
+        lines.append(f"[{i}] ({h['source']} {stamp}) {h['title']}")
         if h["summary"]:
-            lines.append(f"    {h['summary']}")
+            lines.append(f"     {h['summary']}")
 
     return "\n".join(lines)
