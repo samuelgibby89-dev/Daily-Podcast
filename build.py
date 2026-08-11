@@ -136,23 +136,44 @@ EPISODE_TOOL = {
 }
 
 
+def as_list(value) -> list:
+    """Treat a field as a list, even when the model sent something else.
+
+    Tool schemas guide generation, they don't guarantee it. A `topics` field
+    declared as an array of strings can still come back as the single string
+    "AI infrastructure, Oracle, Oil" -- and iterating that yields one-character
+    "topics", which is exactly how "A", "I", " ", "i", "n" ended up rendered as
+    tags on the live site.
+    """
+    if value is None:
+        return []
+    if isinstance(value, str):
+        return [part.strip() for part in re.split(r"[,;|]|\band\b", value) if part.strip()]
+    if isinstance(value, (list, tuple, set)):
+        return list(value)
+    return [value]
+
+
 def normalize_episode(data: dict) -> dict:
-    """Coerce a validated tool payload into the shape the rest of the build wants."""
+    """Coerce a tool payload into the shape the rest of the build wants."""
     script = (data.get("script") or "").strip()
     if not script:
         raise RuntimeError("model returned an episode with no script")
 
     cited = []
-    for n in data.get("sources") or []:
+    for n in as_list(data.get("sources")):
         try:
             cited.append(int(n))
         except (TypeError, ValueError):
             continue
 
+    topics = [str(t).strip() for t in as_list(data.get("topics"))]
+    topics = [t for t in topics if 1 < len(t) <= 40][:5]
+
     return {
         "title": (data.get("title") or "Market Brief").strip(),
         "teaser": (data.get("teaser") or "").strip(),
-        "topics": [str(t) for t in (data.get("topics") or [])][:5],
+        "topics": topics,
         "cited": cited,
         "script": script,
     }
