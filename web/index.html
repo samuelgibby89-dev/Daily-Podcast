@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, maximum-scale=1">
+<title>The Morning Brief</title>
+<meta name="description" content="A private daily market brief.">
+<meta name="theme-color" content="#0b0d10">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Brief">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="apple-touch-icon" href="icons/icon-192.png">
+<link rel="icon" href="icons/icon-192.png">
+<style>
+  :root{
+    --bg:#0b0d10; --surface:#14181e; --surface-2:#1b212a; --line:#252c37;
+    --text:#eef2f7; --muted:#8b97a8; --accent:#4ade80; --accent-dim:#166534;
+    --down:#f87171;
+    --safe-t:env(safe-area-inset-top,0px); --safe-b:env(safe-area-inset-bottom,0px);
+  }
+  *{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+  html,body{margin:0;background:var(--bg);color:var(--text);
+    font:16px/1.55 -apple-system,BlinkMacSystemFont,"SF Pro Text","Segoe UI",Roboto,sans-serif;
+    -webkit-font-smoothing:antialiased;overscroll-behavior-y:none}
+  body{padding:calc(var(--safe-t) + 20px) 20px calc(var(--safe-b) + 40px);
+    max-width:640px;margin:0 auto}
+  button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
+
+  header{display:flex;align-items:center;gap:10px;margin-bottom:26px}
+  .dot{width:9px;height:9px;border-radius:50%;background:var(--accent);
+    box-shadow:0 0 12px var(--accent);flex:none}
+  header h1{font-size:15px;font-weight:600;letter-spacing:.04em;
+    text-transform:uppercase;margin:0;color:var(--muted)}
+
+  /* ---------- now playing ---------- */
+  .hero{background:linear-gradient(160deg,var(--surface-2),var(--surface));
+    border:1px solid var(--line);border-radius:22px;padding:24px 22px 20px;
+    margin-bottom:30px}
+  .eyebrow{font-size:12px;font-weight:600;letter-spacing:.09em;
+    text-transform:uppercase;color:var(--accent);margin-bottom:12px}
+  .hero h2{font-size:26px;line-height:1.22;font-weight:650;margin:0 0 10px;
+    letter-spacing:-.02em}
+  .teaser{color:var(--muted);font-size:15px;margin:0 0 20px}
+  .tags{display:flex;flex-wrap:wrap;gap:6px;margin:0 0 20px}
+  .tag{font-size:11px;letter-spacing:.05em;text-transform:uppercase;
+    color:var(--muted);background:#0d1116;border:1px solid var(--line);
+    border-radius:99px;padding:4px 10px}
+
+  /* ---------- transport ---------- */
+  .transport{display:flex;align-items:center;justify-content:center;gap:22px;
+    margin:4px 0 18px}
+  .skip{position:relative;width:50px;height:50px;display:grid;place-items:center;
+    color:var(--muted);border-radius:50%;transition:color .15s,background .15s}
+  .skip:active{color:var(--text);background:#0d1116}
+  .skip svg{display:block}
+  .skip span{position:absolute;inset:0;display:grid;place-items:center;
+    font-size:9.5px;font-weight:700;letter-spacing:-.02em;padding-top:2px}
+  .play{width:66px;height:66px;border-radius:50%;background:var(--accent);
+    color:#07130c;display:grid;place-items:center;flex:none;
+    box-shadow:0 6px 24px -6px var(--accent);transition:transform .12s}
+  .play:active{transform:scale(.94)}
+  .play svg{width:26px;height:26px}
+
+  .scrub{width:100%;appearance:none;height:26px;background:none;display:block}
+  .scrub::-webkit-slider-runnable-track{height:5px;border-radius:99px;
+    background:linear-gradient(to right,var(--accent) var(--pct,0%),#2b333f var(--pct,0%))}
+  .scrub::-webkit-slider-thumb{appearance:none;width:14px;height:14px;
+    border-radius:50%;background:var(--text);margin-top:-4.5px}
+  .scrub::-moz-range-track{height:5px;border-radius:99px;background:#2b333f}
+  .scrub::-moz-range-progress{height:5px;border-radius:99px;background:var(--accent)}
+  .scrub::-moz-range-thumb{width:14px;height:14px;border:0;border-radius:50%;
+    background:var(--text)}
+
+  .times{display:flex;justify-content:space-between;font-size:12px;
+    font-variant-numeric:tabular-nums;color:var(--muted);margin-top:-2px}
+  .below{display:flex;justify-content:space-between;align-items:center;
+    margin-top:16px;padding-top:16px;border-top:1px solid var(--line)}
+  .pill{font-size:13px;font-weight:600;color:var(--muted);padding:7px 13px;
+    border:1px solid var(--line);border-radius:99px;transition:.15s}
+  .pill:active{background:var(--surface-2);color:var(--text)}
+  .pill.on{color:var(--accent);border-color:var(--accent-dim)}
+
+  /* ---------- transcript ---------- */
+  #transcript{display:none;margin-top:18px;padding-top:18px;
+    border-top:1px solid var(--line);color:#c8d2e0;font-size:15.5px;
+    line-height:1.72;white-space:pre-wrap}
+  #transcript.open{display:block}
+
+  /* ---------- archive ---------- */
+  h3.section{font-size:12px;font-weight:600;letter-spacing:.09em;
+    text-transform:uppercase;color:var(--muted);margin:0 0 12px}
+  .ep{display:flex;gap:14px;align-items:baseline;width:100%;text-align:left;
+    padding:14px 4px;border-bottom:1px solid var(--line);transition:.15s}
+  .ep:active{background:var(--surface)}
+  .ep.current{color:var(--accent)}
+  .ep-date{font-size:12px;font-variant-numeric:tabular-nums;color:var(--muted);
+    flex:none;width:52px;padding-top:2px}
+  .ep.current .ep-date{color:var(--accent)}
+  .ep-title{flex:1;font-size:15px;font-weight:520;line-height:1.4}
+  .ep-len{font-size:12px;color:var(--muted);flex:none;font-variant-numeric:tabular-nums}
+
+  footer{margin-top:34px;text-align:center;color:#5a6575;font-size:12.5px;
+    line-height:1.9}
+  footer a{color:#5a6575}
+  .state{text-align:center;color:var(--muted);padding:56px 20px;font-size:15px}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="dot"></div>
+  <h1 id="showTitle">The Morning Brief</h1>
+</header>
+
+<div id="app"><div class="state">Loading today's brief…</div></div>
+
+<footer>
+  <span id="stamp"></span><br>
+  <a id="feedLink" href="feed.xml">Subscribe in a podcast app →</a>
+</footer>
+
+<audio id="audio" preload="metadata"></audio>
+
+<script>
+(function(){
+  "use strict";
+
+  var audio = document.getElementById('audio');
+  var app   = document.getElementById('app');
+  var data  = null, idx = 0, speed = 1, transcriptOpen = false;
+  var SPEEDS = [1, 1.25, 1.5, 1.75, 2];
+
+  // Storage is best-effort: if the browser blocks it, we just lose resume.
+  var store = {
+    get: function(k){ try { return localStorage.getItem(k); } catch(e){ return null; } },
+    set: function(k,v){ try { localStorage.setItem(k,v); } catch(e){} }
+  };
+
+  function fmt(s){
+    s = Math.max(0, Math.floor(s || 0));
+    var m = Math.floor(s / 60), r = s % 60;
+    return m + ':' + (r < 10 ? '0' : '') + r;
+  }
+  function shortDate(iso){
+    var p = iso.split('-');
+    return p[1].replace(/^0/,'') + '/' + p[2];
+  }
+  function longDate(iso){
+    var p = iso.split('-').map(Number);
+    return new Date(p[0], p[1]-1, p[2]).toLocaleDateString(undefined,
+      { weekday:'long', month:'long', day:'numeric' });
+  }
+  function esc(s){
+    return String(s == null ? '' : s).replace(/[&<>"]/g, function(c){
+      return { '&':'&amp;', '<':'&lt;', '>':'&gt;', '"':'&quot;' }[c];
+    });
+  }
+
+  var ICON_PLAY  = '<svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5.5v13a1 1 0 0 0 1.53.85l10-6.5a1 1 0 0 0 0-1.7l-10-6.5A1 1 0 0 0 8 5.5z"/></svg>';
+  var ICON_PAUSE = '<svg viewBox="0 0 24 24" fill="currentColor"><path d="M7 4h3.5v16H7zM13.5 4H17v16h-3.5z"/></svg>';
+  var ICON_BACK  = '<svg viewBox="0 0 24 24" width="30" height="30" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"/><path d="M3 3v5h5"/></svg><span>15</span>';
+  var ICON_FWD   = '<svg viewBox="0 0 24 24" width="30" height="30" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 1 1-9-9 9.75 9.75 0 0 1 6.74 2.74L21 8"/><path d="M21 3v5h-5"/></svg><span>30</span>';
+
+  function render(){
+    var ep = data.episodes[idx];
+
+    app.innerHTML =
+      '<div class="hero">' +
+        '<div class="eyebrow">' + esc(longDate(ep.date)) + '</div>' +
+        '<h2>' + esc(ep.title) + '</h2>' +
+        (ep.teaser ? '<p class="teaser">' + esc(ep.teaser) + '</p>' : '') +
+        (ep.topics && ep.topics.length
+          ? '<div class="tags">' + ep.topics.map(function(t){
+              return '<span class="tag">' + esc(t) + '</span>'; }).join('') + '</div>'
+          : '') +
+        '<div class="transport">' +
+          '<button class="skip" id="back" aria-label="Back 15 seconds">' + ICON_BACK + '</button>' +
+          '<button class="play" id="play" aria-label="Play">' + ICON_PLAY + '</button>' +
+          '<button class="skip" id="fwd" aria-label="Forward 30 seconds">' + ICON_FWD + '</button>' +
+        '</div>' +
+        '<input class="scrub" id="scrub" type="range" min="0" max="1000" value="0" aria-label="Seek">' +
+        '<div class="times"><span id="cur">0:00</span><span id="dur">' + fmt(ep.duration) + '</span></div>' +
+        '<div class="below">' +
+          '<button class="pill" id="speed">1&times;</button>' +
+          '<button class="pill" id="tbtn">Transcript</button>' +
+        '</div>' +
+        '<div id="transcript"></div>' +
+      '</div>' +
+      (data.episodes.length > 1
+        ? '<h3 class="section">Archive</h3><div id="archive"></div>' : '');
+
+    if (data.episodes.length > 1) {
+      document.getElementById('archive').innerHTML = data.episodes.map(function(e, i){
+        return '<button class="ep' + (i === idx ? ' current' : '') + '" data-i="' + i + '">' +
+                 '<span class="ep-date">' + shortDate(e.date) + '</span>' +
+                 '<span class="ep-title">' + esc(e.title) + '</span>' +
+                 '<span class="ep-len">' + fmt(e.duration) + '</span>' +
+               '</button>';
+      }).join('');
+      document.getElementById('archive').addEventListener('click', function(ev){
+        var btn = ev.target.closest('.ep');
+        if (btn) select(Number(btn.dataset.i), true);
+      });
+    }
+
+    wire();
+  }
+
+  function wire(){
+    var play  = document.getElementById('play');
+    var scrub = document.getElementById('scrub');
+    var tbtn  = document.getElementById('tbtn');
+
+    play.onclick = function(){ audio.paused ? audio.play() : audio.pause(); };
+    document.getElementById('back').onclick = function(){ audio.currentTime -= 15; };
+    document.getElementById('fwd').onclick  = function(){ audio.currentTime += 30; };
+
+    document.getElementById('speed').onclick = function(){
+      speed = SPEEDS[(SPEEDS.indexOf(speed) + 1) % SPEEDS.length];
+      audio.playbackRate = speed;
+      store.set('speed', speed);
+      this.innerHTML = speed + '&times;';
+      this.classList.toggle('on', speed !== 1);
+    };
+    document.getElementById('speed').innerHTML = speed + '&times;';
+    document.getElementById('speed').classList.toggle('on', speed !== 1);
+
+    tbtn.onclick = function(){
+      transcriptOpen = !transcriptOpen;
+      var box = document.getElementById('transcript');
+      box.classList.toggle('open', transcriptOpen);
+      tbtn.classList.toggle('on', transcriptOpen);
+      if (transcriptOpen && !box.textContent) loadTranscript(box);
+    };
+
+    scrub.oninput = function(){
+      if (audio.duration) audio.currentTime = audio.duration * (this.value / 1000);
+    };
+  }
+
+  function loadTranscript(box){
+    box.textContent = 'Loading…';
+    fetch(data.episodes[idx].transcript)
+      .then(function(r){ return r.text(); })
+      .then(function(t){ box.textContent = t; })
+      .catch(function(){ box.textContent = 'Transcript unavailable.'; });
+  }
+
+  function select(i, autoplay){
+    idx = i;
+    transcriptOpen = false;
+    var ep = data.episodes[idx];
+    audio.src = ep.audio;
+    audio.playbackRate = speed;
+    store.set('last', ep.date);
+
+    var saved = Number(store.get('pos:' + ep.date) || 0);
+    if (saved > 5 && (!ep.duration || saved < ep.duration - 10)) {
+      audio.currentTime = saved;
+    }
+    render();
+    setMediaSession(ep);
+    if (autoplay) audio.play().catch(function(){});
+  }
+
+  function setMediaSession(ep){
+    if (!('mediaSession' in navigator)) return;
+    navigator.mediaSession.metadata = new MediaMetadata({
+      title: ep.title,
+      artist: data.show || 'The Morning Brief',
+      album: longDate(ep.date),
+      artwork: [
+        { src: 'icons/icon-192.png', sizes: '192x192', type: 'image/png' },
+        { src: 'icons/icon-512.png', sizes: '512x512', type: 'image/png' }
+      ]
+    });
+    var acts = {
+      play:  function(){ audio.play(); },
+      pause: function(){ audio.pause(); },
+      seekbackward:    function(){ audio.currentTime -= 15; },
+      seekforward:     function(){ audio.currentTime += 30; },
+      previoustrack:   function(){ if (idx < data.episodes.length - 1) select(idx + 1, true); },
+      nexttrack:       function(){ if (idx > 0) select(idx - 1, true); }
+    };
+    Object.keys(acts).forEach(function(k){
+      try { navigator.mediaSession.setActionHandler(k, acts[k]); } catch(e){}
+    });
+  }
+
+  // ---- audio events ----
+  audio.addEventListener('timeupdate', function(){
+    var cur = document.getElementById('cur'), scrub = document.getElementById('scrub');
+    if (!cur || !scrub) return;
+    cur.textContent = fmt(audio.currentTime);
+    if (audio.duration) {
+      var pct = audio.currentTime / audio.duration * 1000;
+      scrub.value = pct;
+      scrub.style.setProperty('--pct', (pct / 10) + '%');
+    }
+    if (Math.floor(audio.currentTime) % 5 === 0) {
+      store.set('pos:' + data.episodes[idx].date, Math.floor(audio.currentTime));
+    }
+  });
+  audio.addEventListener('loadedmetadata', function(){
+    var dur = document.getElementById('dur');
+    if (dur && isFinite(audio.duration)) dur.textContent = fmt(audio.duration);
+  });
+  function syncPlayIcon(){
+    var play = document.getElementById('play');
+    if (!play) return;
+    play.innerHTML = audio.paused ? ICON_PLAY : ICON_PAUSE;
+    play.setAttribute('aria-label', audio.paused ? 'Play' : 'Pause');
+  }
+  audio.addEventListener('play', syncPlayIcon);
+  audio.addEventListener('pause', syncPlayIcon);
+  audio.addEventListener('ended', function(){
+    store.set('pos:' + data.episodes[idx].date, 0);
+    syncPlayIcon();
+  });
+
+  // ---- boot ----
+  var savedSpeed = Number(store.get('speed') || 1);
+  if (SPEEDS.indexOf(savedSpeed) !== -1) speed = savedSpeed;
+
+  fetch('episodes.json?t=' + Date.now())
+    .then(function(r){ return r.json(); })
+    .then(function(d){
+      data = d;
+      if (!data.episodes || !data.episodes.length) throw new Error('empty');
+      document.getElementById('showTitle').textContent = data.show || 'The Morning Brief';
+      document.title = data.show || 'The Morning Brief';
+      document.getElementById('stamp').textContent =
+        'Updated ' + new Date(data.updated).toLocaleString(undefined,
+          { month:'short', day:'numeric', hour:'numeric', minute:'2-digit' });
+      select(0, false);
+    })
+    .catch(function(){
+      app.innerHTML = '<div class="state">No episodes yet.<br>' +
+        'The first one lands after the workflow runs.</div>';
+    });
+
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', function(){
+      navigator.serviceWorker.register('sw.js').catch(function(){});
+    });
+  }
+})();
+</script>
+</body>
+</html>

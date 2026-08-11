@@ -1,0 +1,86 @@
+name: Daily Brief
+
+on:
+  schedule:
+    # 12:07 UTC = 6:07am Denver in summer (MDT), 5:07am in winter (MST).
+    # GitHub cron has no timezone and no DST, so the winter time shifts by an
+    # hour. If that bugs you, change to "7 13 * * 1-5" in November.
+    # Weekdays only -- markets are closed on weekends.
+    - cron: "7 12 * * 1-5"
+  workflow_dispatch:      # lets you run it by hand from the Actions tab
+
+permissions:
+  contents: write         # needed to push the built site to gh-pages
+
+concurrency:
+  group: daily-brief
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+
+    steps:
+      - name: Check out the code
+        uses: actions/checkout@v4
+
+      - name: Pull down the already-published site
+        # Brings the existing episodes into ./public so today's brief is added
+        # to the archive instead of replacing it. Fails harmlessly on day one,
+        # when the gh-pages branch does not exist yet.
+        uses: actions/checkout@v4
+        continue-on-error: true
+        with:
+          ref: gh-pages
+          path: public
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Build today's episode
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          CLAUDE_MODEL:      ${{ vars.CLAUDE_MODEL      || 'claude-sonnet-5' }}
+          TTS_VOICE:         ${{ vars.TTS_VOICE         || 'en-US-AndrewMultilingualNeural' }}
+          SHOW_TITLE:        ${{ vars.SHOW_TITLE        || 'The Morning Brief' }}
+          SHOW_AUTHOR:       ${{ vars.SHOW_AUTHOR       || 'Samuel Gibby' }}
+          RETAIN_EPISODES:   ${{ vars.RETAIN_EPISODES   || '30' }}
+        run: python build.py
+
+      - name: Publish to GitHub Pages
+        run: |
+          set -euo pipefail
+          cd public
+          rm -rf .git
+          git init -q -b gh-pages
+          git config user.name  "morning-brief-bot"
+          git config user.email "actions@github.com"
+          git add -A
+          git commit -q -m "Brief for $(date -u +%Y-%m-%d)"
+          # Force-push a single fresh commit. The site keeps the last N
+          # episodes; the repo never accumulates years of MP3 history.
+          git push -q --force \
+            "https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" \
+            gh-pages
+          echo "Published to https://${GITHUB_REPOSITORY%%/*}.github.io/${GITHUB_REPOSITORY#*/}/"
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Summary
+        if: always()
+        run: |
+          OWNER="${GITHUB_REPOSITORY%%/*}"
+          NAME="${GITHUB_REPOSITORY#*/}"
+          {
+            echo "### Morning Brief"
+            echo ""
+            echo "- Site: https://${OWNER,,}.github.io/${NAME}/"
+            echo "- Feed: https://${OWNER,,}.github.io/${NAME}/feed.xml"
+          } >> "$GITHUB_STEP_SUMMARY"

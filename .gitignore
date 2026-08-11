@@ -1,0 +1,10 @@
+# The built site is published to the gh-pages branch by CI, never committed
+# to main. Delete this line if you'd rather keep builds in the repo.
+public/
+
+.env
+__pycache__/
+*.pyc
+.venv/
+venv/
+.DS_Store
