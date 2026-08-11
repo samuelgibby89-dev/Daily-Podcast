@@ -363,15 +363,15 @@ def main() -> int:
 
         print("Fetching headlines...")
         headlines = sources.fetch_headlines()
-        print("\nFetching market data...")
-        quotes = sources.fetch_market_snapshot()
+        print("\nFetching market data (29 instruments, in parallel)...")
+        snapshot = sources.fetch_market_snapshot()
 
-        if not headlines and not quotes:
+        if not headlines and not sources.has_quotes(snapshot):
             print("\nERROR: every source failed; refusing to build an empty episode.",
                   file=sys.stderr)
             return 1
 
-        context = sources.format_context(headlines, quotes)
+        context = sources.format_context(headlines, snapshot)
         print(f"\nWriting the script with {MODEL}...")
         episode = write_script(context, date_label)
 

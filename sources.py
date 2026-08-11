@@ -13,6 +13,7 @@ from datetime import datetime, timedelta, timezone
 
 import feedparser
 import requests
+from concurrent.futures import ThreadPoolExecutor, as_completed
 
 UA = (
     "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 "
@@ -101,19 +102,61 @@ def fetch_headlines(per_feed: int = 8, max_age_hours: int = 30) -> list[dict]:
 
 
 # --------------------------------------------------------------------------
-# Market data via Stooq daily CSV (free, no key, no rate limit worth worrying
-# about). We grab the last ~14 calendar days and diff the final two closes.
+# Market data via Stooq daily CSV (free, no key). Grouped to match the running
+# order of the show: what the US did, what the rest of the world did, which
+# sectors led and lagged, then rates.
+#
+# Sectors are the SPDR sector ETFs -- the standard free proxy for sector
+# performance. A symbol Stooq doesn't recognise is skipped with a warning
+# rather than failing the build, so adding speculative tickers here is cheap.
 # --------------------------------------------------------------------------
-SYMBOLS = [
-    ("^spx", "S&P 500", "index"),
-    ("^ndq", "Nasdaq Composite", "index"),
-    ("^dji", "Dow Jones Industrial Average", "index"),
-    ("^vix", "VIX volatility index", "index"),
-    ("10usy.b", "US 10-year Treasury yield", "yield"),
-    ("cl.f", "WTI crude oil", "commodity"),
-    ("gc.f", "Gold", "commodity"),
-    ("btcusd", "Bitcoin", "crypto"),
+
+US_INDICES = [
+    ("^spx", "S&P 500"),
+    ("^ndq", "Nasdaq Composite"),
+    ("^dji", "Dow Jones Industrial Average"),
+    ("^rut", "Russell 2000"),
 ]
+
+FOREIGN_INDICES = [
+    ("^ukx", "FTSE 100 (UK)"),
+    ("^dax", "DAX (Germany)"),
+    ("^cac", "CAC 40 (France)"),
+    ("^nkx", "Nikkei 225 (Japan)"),
+    ("^hsi", "Hang Seng (Hong Kong)"),
+    ("^shc", "Shanghai Composite (China)"),
+    ("^kospi", "KOSPI (South Korea)"),
+]
+
+SECTORS = [
+    ("xlk.us", "Technology"),
+    ("xlf.us", "Financials"),
+    ("xle.us", "Energy"),
+    ("xlv.us", "Health Care"),
+    ("xli.us", "Industrials"),
+    ("xly.us", "Consumer Discretionary"),
+    ("xlp.us", "Consumer Staples"),
+    ("xlu.us", "Utilities"),
+    ("xlb.us", "Materials"),
+    ("xlre.us", "Real Estate"),
+    ("xlc.us", "Communication Services"),
+]
+
+RATES = [
+    ("2usy.b", "US 2-year Treasury yield"),
+    ("10usy.b", "US 10-year Treasury yield"),
+    ("30usy.b", "US 30-year Treasury yield"),
+]
+
+OTHER = [
+    ("^vix", "VIX volatility index"),
+    ("cl.f", "WTI crude oil"),
+    ("gc.f", "Gold"),
+    ("btcusd", "Bitcoin"),
+]
+
+# A foreign index moving this much is worth calling out by name.
+FOREIGN_ALERT_PCT = 3.0
 
 
 def _stooq_last_two_closes(symbol: str) -> tuple[float, float, str] | None:
@@ -145,51 +188,133 @@ def _stooq_last_two_closes(symbol: str) -> tuple[float, float, str] | None:
     return last_close, prev_close, last_date
 
 
-def fetch_market_snapshot() -> list[dict]:
-    """Latest close and change vs. the prior close for each tracked symbol."""
-    out: list[dict] = []
-    for symbol, label, kind in SYMBOLS:
-        result = _stooq_last_two_closes(symbol)
-        if not result:
-            continue
-        last, prev, as_of = result
-        change = last - prev
-        pct = (change / prev * 100) if prev else 0.0
-        out.append(
-            {
-                "symbol": symbol,
-                "label": label,
-                "kind": kind,
-                "last": round(last, 2),
-                "change": round(change, 2),
-                "pct_change": round(pct, 2),
-                "as_of": as_of,
-            }
-        )
-        print(f"  + {label}: {last:,.2f} ({pct:+.2f}%)")
+def _quote(symbol: str, label: str, kind: str) -> dict | None:
+    result = _stooq_last_two_closes(symbol)
+    if not result:
+        return None
+    last, prev, as_of = result
+    change = last - prev
+    return {
+        "symbol": symbol,
+        "label": label,
+        "kind": kind,
+        "last": round(last, 2),
+        "change": round(change, 3),
+        "pct_change": round((change / prev * 100) if prev else 0.0, 2),
+        "bps_change": round(change * 100),      # only meaningful for yields
+        "as_of": as_of,
+    }
+
+
+def fetch_market_snapshot() -> dict:
+    """Every tracked market, grouped, fetched concurrently.
+
+    Roughly thirty small CSV requests. Serially that's a slow minute of the
+    build spent waiting on the network, so they go out in parallel.
+    """
+    groups = {
+        "us_indices": (US_INDICES, "index"),
+        "foreign_indices": (FOREIGN_INDICES, "index"),
+        "sectors": (SECTORS, "sector"),
+        "rates": (RATES, "yield"),
+        "other": (OTHER, "other"),
+    }
+
+    jobs = []
+    for group, (symbols, kind) in groups.items():
+        for symbol, label in symbols:
+            jobs.append((group, symbol, label, kind))
+
+    out: dict[str, list[dict]] = {g: [] for g in groups}
+    with ThreadPoolExecutor(max_workers=8) as pool:
+        futures = {
+            pool.submit(_quote, sym, lab, kind): (group, lab)
+            for group, sym, lab, kind in jobs
+        }
+        for fut in as_completed(futures):
+            group, label = futures[fut]
+            try:
+                quote = fut.result()
+            except Exception as exc:  # noqa: BLE001
+                print(f"  ! quote errored: {label} ({exc})")
+                continue
+            if quote:
+                out[group].append(quote)
+
+    # Stable, meaningful ordering: declared order for indices and rates,
+    # best-to-worst for sectors since that is how they get read out.
+    for group, (symbols, _) in groups.items():
+        order = {s: i for i, (s, _) in enumerate(symbols)}
+        out[group].sort(key=lambda q: order.get(q["symbol"], 99))
+    out["sectors"].sort(key=lambda q: q["pct_change"], reverse=True)
+
+    total = sum(len(v) for v in out.values())
+    print(f"  + {total} of {len(jobs)} instruments returned data")
+    for group in out:
+        missing = len(groups[group][0]) - len(out[group])
+        if missing:
+            print(f"    ({missing} unavailable in {group})")
     return out
 
 
-def format_context(headlines: list[dict], quotes: list[dict]) -> str:
-    """Flatten everything into the plain-text block handed to Claude."""
-    lines: list[str] = []
+def has_quotes(snapshot: dict) -> bool:
+    return any(snapshot.get(g) for g in snapshot)
 
-    if quotes:
-        lines.append("MARKET DATA (most recent close vs. prior close):")
+
+def _fmt_level(q: dict) -> str:
+    return f"{q['label']}: {q['last']:,.2f} ({q['pct_change']:+.2f}%)"
+
+
+def format_context(headlines: list[dict], snapshot: dict) -> str:
+    """Flatten everything into the plain-text block handed to Claude.
+
+    Laid out in the show's running order so the model doesn't have to hunt
+    for the numbers belonging to each segment.
+    """
+    lines: list[str] = []
+    snapshot = snapshot or {}
+
+    def section(title: str, quotes: list[dict], formatter=_fmt_level):
+        lines.append(title)
+        if not quotes:
+            lines.append("  (unavailable this morning)")
         for q in quotes:
-            if q["kind"] == "yield":
-                lines.append(
-                    f"- {q['label']}: {q['last']}% "
-                    f"({q['change']:+.2f} pts) as of {q['as_of']}"
-                )
-            else:
-                lines.append(
-                    f"- {q['label']}: {q['last']:,.2f} "
-                    f"({q['pct_change']:+.2f}%) as of {q['as_of']}"
-                )
+            lines.append("  " + formatter(q))
         lines.append("")
-    else:
-        lines.append("MARKET DATA: unavailable this morning.\n")
+
+    section("US INDICES (last close vs. prior close):", snapshot.get("us_indices", []))
+
+    foreign = snapshot.get("foreign_indices", [])
+    lines.append("FOREIGN INDICES (last close vs. prior close):")
+    if not foreign:
+        lines.append("  (unavailable this morning)")
+    for q in foreign:
+        flag = ""
+        if abs(q["pct_change"]) >= FOREIGN_ALERT_PCT:
+            flag = "   <-- BIG MOVE, worth naming in the brief"
+        lines.append("  " + _fmt_level(q) + flag)
+    lines.append("")
+
+    section(
+        "EQUITY SECTORS, best to worst (SPDR sector ETFs):",
+        snapshot.get("sectors", []),
+        lambda q: f"{q['label']}: {q['pct_change']:+.2f}%",
+    )
+
+    rates = snapshot.get("rates", [])
+    lines.append("FIXED INCOME:")
+    if not rates:
+        lines.append("  (unavailable this morning)")
+    for q in rates:
+        lines.append(f"  {q['label']}: {q['last']:.2f}% ({q['bps_change']:+d} bps)")
+    by_symbol = {q["symbol"]: q for q in rates}
+    if "2usy.b" in by_symbol and "10usy.b" in by_symbol:
+        spread = by_symbol["10usy.b"]["last"] - by_symbol["2usy.b"]["last"]
+        lines.append(f"  2s10s curve: {spread * 100:+.0f} bps "
+                     f"({'steepening' if spread > 0 else 'inverted'})")
+    lines.append("")
+
+    section("COMMODITIES, VOLATILITY, CRYPTO:", snapshot.get("other", []))
 
     lines.append(
         f"HEADLINES ({len(headlines)} from the last ~30 hours). "
