@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+     xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"
+     xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>The Morning Brief</title>
+    <link>https://samuelgibby89-dev.github.io/Daily-Podcast/</link>
+    <description>A private daily market brief: what moved overnight, why, and what to watch.</description>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 21 Aug 2026 12:59:52 +0000</lastBuildDate>
+    <atom:link href="https://samuelgibby89-dev.github.io/Daily-Podcast/feed.xml" rel="self" type="application/rss+xml"/>
+    <itunes:author>Samuel Gibby</itunes:author>
+    <itunes:summary>A private daily market brief: what moved overnight, why, and what to watch.</itunes:summary>
+    <itunes:explicit>false</itunes:explicit>
+    <itunes:category text="Business"><itunes:category text="Investing"/></itunes:category>
+    <itunes:image href="https://samuelgibby89-dev.github.io/Daily-Podcast/icons/icon-512.png"/>
+    <item>
+      <title>Bond Market Jitters Overshadow Nvidia Anticipation</title>
+      <description>Treasury's buyback push, a weak jobs report, and Nvidia earnings on deck — the debt story is running the show.</description>
+      <pubDate>Fri, 21 Aug 2026 12:58:46 +0000</pubDate>
+      <guid isPermaLink="false">2026-08-21</guid>
+      <enclosure url="https://samuelgibby89-dev.github.io/Daily-Podcast/audio/2026-08-21.mp3" length="864144" type="audio/mpeg"/>
+      <itunes:duration>144</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+    <item>
+      <title>Iran Pressure, Walmart Slips, Yields Rebound</title>
+      <description>Trump escalates on Iran and sends oil higher, Walmart's beat comes with a soft US sales number, and yields erase Bessent's bounce.</description>
+      <pubDate>Thu, 20 Aug 2026 12:59:50 +0000</pubDate>
+      <guid isPermaLink="false">2026-08-20</guid>
+      <enclosure url="https://samuelgibby89-dev.github.io/Daily-Podcast/audio/2026-08-20.mp3" length="978768" type="audio/mpeg"/>
+      <itunes:duration>163</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+    <item>
+      <title>Yields Ease, Moderna Soars, Fed Minutes Loom</title>
+      <description>Treasury buybacks calm the bond market while a Moderna-Merck cancer vaccine and Marvell's Google deal light up equities.</description>
+      <pubDate>Wed, 19 Aug 2026 12:57:09 +0000</pubDate>
+      <guid isPermaLink="false">2026-08-19</guid>
+      <enclosure url="https://samuelgibby89-dev.github.io/Daily-Podcast/audio/2026-08-19.mp3" length="884016" type="audio/mpeg"/>
+      <itunes:duration>147</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+    <item>
+      <title>Long Bond Yields Hit Multi-Decade Highs</title>
+      <description>The thirty-year Treasury is at levels not seen since 2007, and stocks still haven't blinked.</description>
+      <pubDate>Tue, 18 Aug 2026 12:56:18 +0000</pubDate>
+      <guid isPermaLink="false">2026-08-18</guid>
+      <enclosure url="https://samuelgibby89-dev.github.io/Daily-Podcast/audio/2026-08-18.mp3" length="851904" type="audio/mpeg"/>
+      <itunes:duration>141</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+    <item>
+      <title>Ceasefire Deadline Looms, Memory Chips Keep Ripping</title>
+      <description>Trump threatens Oman as the Iran ceasefire lapses, Micron crosses a thousand bucks, and the VIX hits a low nobody trusts.</description>
+      <pubDate>Mon, 17 Aug 2026 12:54:56 +0000</pubDate>
+      <guid isPermaLink="false">2026-08-17</guid>
+      <enclosure url="https://samuelgibby89-dev.github.io/Daily-Podcast/audio/2026-08-17.mp3" length="901728" type="audio/mpeg"/>
+      <itunes:duration>150</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+    <item>
+      <title>Retail Sales Slump, Yet Records Keep Falling</title>
+      <description>Soft retail sales and flat wholesale prices meet Baltic drone tensions, as gold, silver, and stocks all sit near highs at once.</description>
+      <pubDate>Fri, 14 Aug 2026 13:18:34 +0000</pubDate>
+      <guid isPermaLink="false">2026-08-14</guid>
+      <enclosure url="https://samuelgibby89-dev.github.io/Daily-Podcast/audio/2026-08-14.mp3" length="959040" type="audio/mpeg"/>
+      <itunes:duration>159</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+    <item>
+      <title>Soft Inflation Data, Loud AI Concentration Worries</title>
+      <description>Wholesale prices came in flat, rate-hike odds faded, and Steve Eisman flagged just how much of the AI trade rides on two companies.</description>
+      <pubDate>Thu, 13 Aug 2026 13:24:21 +0000</pubDate>
+      <guid isPermaLink="false">2026-08-13</guid>
+      <enclosure url="https://samuelgibby89-dev.github.io/Daily-Podcast/audio/2026-08-13.mp3" length="936144" type="audio/mpeg"/>
+      <itunes:duration>156</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+    <item>
+      <title>Cool CPI, Hot Neoclouds, Grim Red Sea News</title>
+      <description>July inflation came in exactly as expected, CoreWeave and Nebius ripped on AI demand, and the Red Sea turned deadly again.</description>
+      <pubDate>Wed, 12 Aug 2026 13:22:13 +0000</pubDate>
+      <guid isPermaLink="false">2026-08-12</guid>
+      <enclosure url="https://samuelgibby89-dev.github.io/Daily-Podcast/audio/2026-08-12.mp3" length="874368" type="audio/mpeg"/>
+      <itunes:duration>145</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+    <item>
+      <title>CoreWeave and Super Micro Lift AI Trade Again</title>
+      <description>Blowout AI earnings from CoreWeave and Super Micro headline a night dominated by oil, Iran, and tomorrow's inflation print.</description>
+      <pubDate>Tue, 11 Aug 2026 22:39:05 +0000</pubDate>
+      <guid isPermaLink="false">2026-08-11</guid>
+      <enclosure url="https://samuelgibby89-dev.github.io/Daily-Podcast/audio/2026-08-11.mp3" length="879840" type="audio/mpeg"/>
+      <itunes:duration>146</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+  </channel>
+</rss>
