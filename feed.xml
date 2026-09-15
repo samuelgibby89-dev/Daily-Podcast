@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+     xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"
+     xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>The Morning Brief</title>
+    <link>https://samuelgibby89-dev.github.io/Daily-Podcast/</link>
+    <description>A private daily market brief: what moved overnight, why, and what to watch.</description>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 15 Sep 2026 16:43:21 +0000</lastBuildDate>
+    <atom:link href="https://samuelgibby89-dev.github.io/Daily-Podcast/feed.xml" rel="self" type="application/rss+xml"/>
+    <itunes:author>Samuel Gibby</itunes:author>
+    <itunes:summary>A private daily market brief: what moved overnight, why, and what to watch.</itunes:summary>
+    <itunes:explicit>false</itunes:explicit>
+    <itunes:category text="Business"><itunes:category text="Investing"/></itunes:category>
+    <itunes:image href="https://samuelgibby89-dev.github.io/Daily-Podcast/icons/icon-512.png"/>
+    <item>
+      <title>Fed Rate Hike Odds Spike, Stocks Slide</title>
+      <description>Yields hit levels not seen since 2007 as markets brace for a Fed hike this week, and oil climbs on a widening Middle East conflict.</description>
+      <pubDate>Tue, 15 Sep 2026 16:42:18 +0000</pubDate>
+      <guid isPermaLink="false">2026-09-15</guid>
+      <enclosure url="https://samuelgibby89-dev.github.io/Daily-Podcast/audio/2026-09-15.mp3" length="951408" type="audio/mpeg"/>
+      <itunes:duration>158</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+    <item>
+      <title>Ten-Year Yield Hits Five Percent, AI Wobbles</title>
+      <description>Bond yields spiked to a 2007 high, oil is climbing, and AI's own leaders are calling for a slowdown right before Anthropic's IPO.</description>
+      <pubDate>Mon, 14 Sep 2026 17:58:41 +0000</pubDate>
+      <guid isPermaLink="false">2026-09-14</guid>
+      <enclosure url="https://samuelgibby89-dev.github.io/Daily-Podcast/audio/2026-09-14.mp3" length="848016" type="audio/mpeg"/>
+      <itunes:duration>141</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+    <item>
+      <title>Hot CPI Sets Up a Fed Rate Hike</title>
+      <description>August inflation came in sticky, diesel topped six dollars, and traders are now betting the Fed hikes next week instead of cutting.</description>
+      <pubDate>Fri, 11 Sep 2026 16:14:48 +0000</pubDate>
+      <guid isPermaLink="false">2026-09-11</guid>
+      <enclosure url="https://samuelgibby89-dev.github.io/Daily-Podcast/audio/2026-09-11.mp3" length="899856" type="audio/mpeg"/>
+      <itunes:duration>149</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+    <item>
+      <title>Oil Tops $100, Yields Surge, Fed Hike Odds Jump</title>
+      <description>Crude above $100, wholesale inflation hot, and traders now see a rate hike next week as more likely than not.</description>
+      <pubDate>Thu, 10 Sep 2026 16:11:10 +0000</pubDate>
+      <guid isPermaLink="false">2026-09-10</guid>
+      <enclosure url="https://samuelgibby89-dev.github.io/Daily-Podcast/audio/2026-09-10.mp3" length="907056" type="audio/mpeg"/>
+      <itunes:duration>151</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+    <item>
+      <title>Oil Above $100 as US-Iran Conflict Escalates</title>
+      <description>Brent tops $101 on Gulf fighting, Treasury triples bond buybacks, and inflation reports loom over next week's Fed decision.</description>
+      <pubDate>Wed, 09 Sep 2026 16:21:10 +0000</pubDate>
+      <guid isPermaLink="false">2026-09-09</guid>
+      <enclosure url="https://samuelgibby89-dev.github.io/Daily-Podcast/audio/2026-09-09.mp3" length="1011312" type="audio/mpeg"/>
+      <itunes:duration>168</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+    <item>
+      <title>Oil Spikes, Trade War Deepens, Stocks Slide</title>
+      <description>Middle East escalation and a U.S.-Canada trade war send stocks lower and crude toward a hundred dollars.</description>
+      <pubDate>Tue, 08 Sep 2026 16:25:12 +0000</pubDate>
+      <guid isPermaLink="false">2026-09-08</guid>
+      <enclosure url="https://samuelgibby89-dev.github.io/Daily-Podcast/audio/2026-09-08.mp3" length="863568" type="audio/mpeg"/>
+      <itunes:duration>143</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+    <item>
+      <title>Oil Spikes on Iran Strikes, Germany Rattled</title>
+      <description>Crude jumps to six-week highs as Iran and the US trade blows, while a far-right landslide in Germany shakes European politics.</description>
+      <pubDate>Mon, 07 Sep 2026 17:37:44 +0000</pubDate>
+      <guid isPermaLink="false">2026-09-07</guid>
+      <enclosure url="https://samuelgibby89-dev.github.io/Daily-Podcast/audio/2026-09-07.mp3" length="965088" type="audio/mpeg"/>
+      <itunes:duration>160</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+    <item>
+      <title>Jobs Blow Past Expectations, Rate Cut Bets Shrink</title>
+      <description>A surprisingly strong jobs report scrambles rate cut timing, Trump threatens trade over Fed policy, and Tesla and Lululemon have rough days.</description>
+      <pubDate>Fri, 04 Sep 2026 16:07:18 +0000</pubDate>
+      <guid isPermaLink="false">2026-09-04</guid>
+      <enclosure url="https://samuelgibby89-dev.github.io/Daily-Podcast/audio/2026-09-04.mp3" length="927792" type="audio/mpeg"/>
+      <itunes:duration>154</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+    <item>
+      <title>Rate-Hike Fears Fade, Broadcom and Snowflake Diverge</title>
+      <description>Waller talks down rate-hike bets, stocks surge, and Broadcom's AI forecast splits Wall Street from Snowflake's rally.</description>
+      <pubDate>Thu, 03 Sep 2026 16:12:32 +0000</pubDate>
+      <guid isPermaLink="false">2026-09-03</guid>
+      <enclosure url="https://samuelgibby89-dev.github.io/Daily-Podcast/audio/2026-09-03.mp3" length="808992" type="audio/mpeg"/>
+      <itunes:duration>134</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+    <item>
+      <title>Yields Surge, Fed Hike Talk, Venezuela Oil Rush</title>
+      <description>Williams opens the door to a hike, Chevron and GE Vernova chase Venezuela, and Dell blows past every estimate.</description>
+      <pubDate>Wed, 02 Sep 2026 16:21:53 +0000</pubDate>
+      <guid isPermaLink="false">2026-09-02</guid>
+      <enclosure url="https://samuelgibby89-dev.github.io/Daily-Podcast/audio/2026-09-02.mp3" length="981360" type="audio/mpeg"/>
+      <itunes:duration>163</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+    <item>
+      <title>Oil Spikes, Yields Jump, Stocks Slide</title>
+      <description>Strikes near the Strait of Hormuz send oil and bond yields higher together, and equities don't like either move.</description>
+      <pubDate>Tue, 01 Sep 2026 16:24:17 +0000</pubDate>
+      <guid isPermaLink="false">2026-09-01</guid>
+      <enclosure url="https://samuelgibby89-dev.github.io/Daily-Podcast/audio/2026-09-01.mp3" length="1001808" type="audio/mpeg"/>
+      <itunes:duration>166</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+    <item>
+      <title>Oil, Rates, and Iran Strikes Rattle Markets</title>
+      <description>US strikes on Iran push oil and mortgage rates higher, gold and crypto slide, and the ten-year flirts with a breakout toward five percent.</description>
+      <pubDate>Mon, 31 Aug 2026 19:00:32 +0000</pubDate>
+      <guid isPermaLink="false">2026-08-31</guid>
+      <enclosure url="https://samuelgibby89-dev.github.io/Daily-Podcast/audio/2026-08-31.mp3" length="975168" type="audio/mpeg"/>
+      <itunes:duration>162</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+    <item>
+      <title>Warsh Talks Inflation, Markets Barely Blink</title>
+      <description>A hawkish Jackson Hole speech rattled gold and rates but left stocks basically flat on the week's last day.</description>
+      <pubDate>Fri, 28 Aug 2026 22:04:18 +0000</pubDate>
+      <guid isPermaLink="false">2026-08-28</guid>
+      <enclosure url="https://samuelgibby89-dev.github.io/Daily-Podcast/audio/2026-08-28.mp3" length="897408" type="audio/mpeg"/>
+      <itunes:duration>149</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+    <item>
+      <title>Nvidia and Salesforce Power a Software-Chip Rally</title>
+      <description>Nvidia's blockbuster quarter and Salesforce's biggest day in years overshadow a hawkish Fed voice ahead of tomorrow's Jackson Hole speech.</description>
+      <pubDate>Thu, 27 Aug 2026 22:06:01 +0000</pubDate>
+      <guid isPermaLink="false">2026-08-27</guid>
+      <enclosure url="https://samuelgibby89-dev.github.io/Daily-Podcast/audio/2026-08-27.mp3" length="881856" type="audio/mpeg"/>
+      <itunes:duration>146</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+    <item>
+      <title>Sticky Inflation, Nervous Markets, Nvidia Looms</title>
+      <description>Core PCE runs hot into Jackson Hole, futures dip, and Nvidia earnings land after the bell.</description>
+      <pubDate>Wed, 26 Aug 2026 13:03:19 +0000</pubDate>
+      <guid isPermaLink="false">2026-08-26</guid>
+      <enclosure url="https://samuelgibby89-dev.github.io/Daily-Podcast/audio/2026-08-26.mp3" length="928800" type="audio/mpeg"/>
+      <itunes:duration>154</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+    <item>
+      <title>Canada Trade Talks Collapse, Nvidia Looms Large</title>
+      <description>Trade talks with Canada broke down, oil keeps sliding, and Wall Street holds its breath for Nvidia earnings.</description>
+      <pubDate>Tue, 25 Aug 2026 12:57:20 +0000</pubDate>
+      <guid isPermaLink="false">2026-08-25</guid>
+      <enclosure url="https://samuelgibby89-dev.github.io/Daily-Podcast/audio/2026-08-25.mp3" length="864000" type="audio/mpeg"/>
+      <itunes:duration>144</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+    <item>
+      <title>Canada Trade War Escalates, Nvidia Looms</title>
+      <description>Tariffs on Canada collapse, Iran sanctions ramp up, and Wall Street braces for Nvidia earnings and Jackson Hole.</description>
+      <pubDate>Mon, 24 Aug 2026 13:01:16 +0000</pubDate>
+      <guid isPermaLink="false">2026-08-24</guid>
+      <enclosure url="https://samuelgibby89-dev.github.io/Daily-Podcast/audio/2026-08-24.mp3" length="871920" type="audio/mpeg"/>
+      <itunes:duration>145</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+    <item>
+      <title>Bond Market Jitters Overshadow Nvidia Anticipation</title>
+      <description>Treasury's buyback push, a weak jobs report, and Nvidia earnings on deck — the debt story is running the show.</description>
+      <pubDate>Fri, 21 Aug 2026 12:58:46 +0000</pubDate>
+      <guid isPermaLink="false">2026-08-21</guid>
+      <enclosure url="https://samuelgibby89-dev.github.io/Daily-Podcast/audio/2026-08-21.mp3" length="864144" type="audio/mpeg"/>
+      <itunes:duration>144</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+    <item>
+      <title>Iran Pressure, Walmart Slips, Yields Rebound</title>
+      <description>Trump escalates on Iran and sends oil higher, Walmart's beat comes with a soft US sales number, and yields erase Bessent's bounce.</description>
+      <pubDate>Thu, 20 Aug 2026 12:59:50 +0000</pubDate>
+      <guid isPermaLink="false">2026-08-20</guid>
+      <enclosure url="https://samuelgibby89-dev.github.io/Daily-Podcast/audio/2026-08-20.mp3" length="978768" type="audio/mpeg"/>
+      <itunes:duration>163</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+    <item>
+      <title>Yields Ease, Moderna Soars, Fed Minutes Loom</title>
+      <description>Treasury buybacks calm the bond market while a Moderna-Merck cancer vaccine and Marvell's Google deal light up equities.</description>
+      <pubDate>Wed, 19 Aug 2026 12:57:09 +0000</pubDate>
+      <guid isPermaLink="false">2026-08-19</guid>
+      <enclosure url="https://samuelgibby89-dev.github.io/Daily-Podcast/audio/2026-08-19.mp3" length="884016" type="audio/mpeg"/>
+      <itunes:duration>147</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+    <item>
+      <title>Long Bond Yields Hit Multi-Decade Highs</title>
+      <description>The thirty-year Treasury is at levels not seen since 2007, and stocks still haven't blinked.</description>
+      <pubDate>Tue, 18 Aug 2026 12:56:18 +0000</pubDate>
+      <guid isPermaLink="false">2026-08-18</guid>
+      <enclosure url="https://samuelgibby89-dev.github.io/Daily-Podcast/audio/2026-08-18.mp3" length="851904" type="audio/mpeg"/>
+      <itunes:duration>141</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+    <item>
+      <title>Ceasefire Deadline Looms, Memory Chips Keep Ripping</title>
+      <description>Trump threatens Oman as the Iran ceasefire lapses, Micron crosses a thousand bucks, and the VIX hits a low nobody trusts.</description>
+      <pubDate>Mon, 17 Aug 2026 12:54:56 +0000</pubDate>
+      <guid isPermaLink="false">2026-08-17</guid>
+      <enclosure url="https://samuelgibby89-dev.github.io/Daily-Podcast/audio/2026-08-17.mp3" length="901728" type="audio/mpeg"/>
+      <itunes:duration>150</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+    <item>
+      <title>Retail Sales Slump, Yet Records Keep Falling</title>
+      <description>Soft retail sales and flat wholesale prices meet Baltic drone tensions, as gold, silver, and stocks all sit near highs at once.</description>
+      <pubDate>Fri, 14 Aug 2026 13:18:34 +0000</pubDate>
+      <guid isPermaLink="false">2026-08-14</guid>
+      <enclosure url="https://samuelgibby89-dev.github.io/Daily-Podcast/audio/2026-08-14.mp3" length="959040" type="audio/mpeg"/>
+      <itunes:duration>159</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+    <item>
+      <title>Soft Inflation Data, Loud AI Concentration Worries</title>
+      <description>Wholesale prices came in flat, rate-hike odds faded, and Steve Eisman flagged just how much of the AI trade rides on two companies.</description>
+      <pubDate>Thu, 13 Aug 2026 13:24:21 +0000</pubDate>
+      <guid isPermaLink="false">2026-08-13</guid>
+      <enclosure url="https://samuelgibby89-dev.github.io/Daily-Podcast/audio/2026-08-13.mp3" length="936144" type="audio/mpeg"/>
+      <itunes:duration>156</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+    <item>
+      <title>Cool CPI, Hot Neoclouds, Grim Red Sea News</title>
+      <description>July inflation came in exactly as expected, CoreWeave and Nebius ripped on AI demand, and the Red Sea turned deadly again.</description>
+      <pubDate>Wed, 12 Aug 2026 13:22:13 +0000</pubDate>
+      <guid isPermaLink="false">2026-08-12</guid>
+      <enclosure url="https://samuelgibby89-dev.github.io/Daily-Podcast/audio/2026-08-12.mp3" length="874368" type="audio/mpeg"/>
+      <itunes:duration>145</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+    <item>
+      <title>CoreWeave and Super Micro Lift AI Trade Again</title>
+      <description>Blowout AI earnings from CoreWeave and Super Micro headline a night dominated by oil, Iran, and tomorrow's inflation print.</description>
+      <pubDate>Tue, 11 Aug 2026 22:39:05 +0000</pubDate>
+      <guid isPermaLink="false">2026-08-11</guid>
+      <enclosure url="https://samuelgibby89-dev.github.io/Daily-Podcast/audio/2026-08-11.mp3" length="879840" type="audio/mpeg"/>
+      <itunes:duration>146</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+  </channel>
+</rss>
