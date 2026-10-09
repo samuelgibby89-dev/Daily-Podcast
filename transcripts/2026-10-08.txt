@@ -1,0 +1,13 @@
+Good morning. Oil is the story driving everything else right now. Iran has stepped up tanker attacks in the Gulf, a hurricane is threatening US Gulf production, and Treasury just sanctioned seventeen tankers tied to Iran's shadow fleet. That's three separate supply shocks landing at once, and crude jumped on it, dragging stocks lower with it. Trump did say the US won't attack Iran before the midterms, calling talks with Tehran productive, which caps the escalation risk somewhat, but the oil market isn't fully buying the calm yet.
+
+Meanwhile AI stocks took their own hit. Nvidia, Oracle and CoreWeave all sank after OpenAI told investors it hit roughly fifty billion dollars in annualized revenue at the end of September. That number is actually big, but it apparently wasn't big enough relative to what the market had priced into the whole AI supply chain, and it's forcing a rethink of just how much of that infrastructure spending is justified by near-term revenue.
+
+On rates, bond yields pulled back after touching multiyear highs, with traders reading through comments from a top Fed official and a fresh long-dated auction. MarketWatch is calling it a test the Treasury market passed — demand showed up when it needed to. That matters because the alternative, a weak auction on top of inflation anxiety, would have been a much worse headline. And there's plenty of inflation anxiety: the Fed's own survey showed one-year inflation expectations jumping to three point nine percent, the highest since May of twenty twenty-three, and separately the New York Fed found tariffs alone added two point nine percentage points to inflation across sixty-seven categories of goods. Wednesday's FOMC minutes are out too, worth a skim if you want the committee's own words on how it's weighing that tradeoff.
+
+No index or sector numbers came through this morning, so I won't pretend to have a scoreboard for you — check those on your screen before the open.
+
+One more worth noting: the US has frozen green-card applications for Microsoft, Adobe and Infosys over alleged fraud in the labor program, with the Labor Secretary citing active federal investigations into both companies. That's a real regulatory risk story for two mega-cap names, not just a headline.
+
+Worth reading in full today: the CNBC piece on OpenAI's revenue disclosure. It's the clearest explanation yet of why the market suddenly started asking harder questions about AI spending.
+
+I'll leave you with this. "The stock market is a device for transferring money from the impatient to the patient." Warren Buffett.
