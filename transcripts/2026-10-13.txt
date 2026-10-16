@@ -1,0 +1,15 @@
+Good morning. The S&P 500 sat flat yesterday as chipmakers slipped and the first wave of bank earnings came through — a market waiting on bigger news rather than reacting to anything in hand. That bigger news is tomorrow's inflation print: economists expect the September CPI to show prices accelerating, up zero point six percent on the month and three point six percent year over year. If that holds, it complicates the Fed's path and could be the thing that actually moves this market out of its holding pattern.
+
+In legal news, a Delaware jury found that Arm breached its license agreement with Qualcomm, though it awarded just two dollars in damages — a symbolic win more than a financial one, but it clarifies the chip-licensing landscape both companies operate under. Separately, the Riyadh airport attacks are rattling aviation more broadly, closing airspace and raising security questions that go beyond one carrier or one region. And more Senate Republicans are now breaking with the White House over the diesel deal with Putin, calling it a bad bargain for Americans — worth watching if it starts affecting energy policy.
+
+On the data front this morning: no index or sector numbers came through, so I won't guess at levels. What I can tell you is the macro backdrop the IMF is painting. It raised its global growth forecast for the year to three point one percent, crediting the AI boom for offsetting war-related drag — but it's explicit that resilience is "nearing its limits," pointing to energy constraints and fiscal strain. In the same breath, the Fund warned that bond yields could see a disorderly spike if debt and inflation risks keep worsening. That's not a forecast to ignore; it's the kind of warning that tends to get quoted back later.
+
+Paul Tudor Jones added his own note of caution, saying 2027 could be a genuinely hard year for stocks as the buyback and M&A tailwinds that have powered this bull run start to fade. Worth sitting with, even if it's a year out.
+
+On the calendar: tomorrow's CPI is the main event, and Fed speakers will likely be parsing it in real time. If you only read one thing today, make it the IMF's piece on disorderly bond yields — it's a sober look at a risk that's been easy to ignore while equities have been calm.
+
+One more small story worth knowing: Anthropic is set to disclose new revenue numbers to investors this week, which should sharpen the debate over AI lab valuations heading into year-end.
+
+I'll leave you with this, from Marcus Aurelius: "You have power over your mind, not outside events. Realize this, and you will find strength."
+</script>
+</invoke>

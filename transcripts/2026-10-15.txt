@@ -1,0 +1,16 @@
+Good morning. The number that matters today is producer prices: wholesale inflation jumped six point three percent annually in September, the biggest gain since 2022, and it blew past the half-point-six consensus estimate. That comes a day after consumer prices came in hot too, up three point seven percent, with gas prices doing a lot of the damage. Economists are now openly talking about another rate hike in two weeks rather than a cut. That's a real shift, and it's landing on a market that was already nervous.
+
+Because the other big story is the tech rout, and it's not slowing down. Nvidia, AMD, and Dell led a fresh leg lower in AI-adjacent hardware names, with chip stocks under renewed pressure after details about Anthropic's financial progress raised questions about just how solid the AI spending boom really is. CoreWeave is the sharpest example — its stock and its bonds are both getting hit, and the cost of insuring against a CoreWeave default is rising, which tells you this isn't just an equity story anymore, it's a credit story too.
+
+Without index levels this morning, the read-through is simple: money is leaving high-flying AI names and rotating into perceived safety, including government bonds — though hot inflation data makes that trade more complicated than it looks, since bonds aren't supposed to be the safe haven when inflation is accelerating.
+
+On sectors, the pattern in the headlines is clear even without the numbers in front of me: technology and chip-adjacent names are the drag, while anything defensive is getting a bid as investors de-risk out of the AI trade. TSMC's record quarter is a reminder the underlying demand is real — the problem is capacity and financing assumptions, not revenue.
+
+On rates, the backdrop is ten-year Treasury yields sitting above five percent, with total U.S. debt now past forty trillion. The Treasury itself is publicly dismissing an IMF warning about the fiscal trajectory, which tells you this fight over the deficit and borrowing costs is intensifying, not resolving.
+
+Worth your actual time today: the CNBC piece on why a two trillion dollar deficit and five percent yields are becoming the country's biggest economic challenge. It connects today's data points into the bigger picture better than any single headline can.
+
+Keep an eye on more earnings reports landing today, continued Fed commentary following the PPI print, and whether the AI-stock slide stabilizes or starts pulling other sectors down with it.
+
+I'll leave you with this, from Warren Buffett: "The stock market is a device for transferring money from the impatient to the patient."
+</script>
