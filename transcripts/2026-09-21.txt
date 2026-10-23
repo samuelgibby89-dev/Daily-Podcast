@@ -1,0 +1,15 @@
+Good morning. The story of the moment is chips and AI, and it's got a real milestone attached: AMD crossed a one trillion dollar market cap for the first time, the fourteenth U.S. company to get there, riding a five-day rally that's now up more than 180 percent on the year. That's not a small move — it says the market thinks AMD is a legitimate second seat at the AI hardware table, not just riding Nvidia's coattails.
+
+Meta's having its own moment, quietly having its best month in thirteen years, helped by Muse, its AI assistant, actually gaining real user traction. That's a shift from "Meta says it's investing in AI" to "Meta's AI product is working," and investors are rewarding the difference.
+
+On the corporate front, Paramount settled its antitrust fight with state attorneys general, clearing the last real obstacle to closing the Warner Bros. merger — that lawsuit had threatened to drag things into 2027 and cost hundreds of millions in fees, so this is a genuine unlock.
+
+Indexes were broadly higher into the close, with the Nasdaq leading on chip strength and bitcoin catching a bid too, while oil prices actually fell — worth noting given how often "stocks up, oil down" gets read as a soft-landing signal. Overseas, Japan's Nikkei gained one point five percent even as the yen weakened past 157 and JGB yields slipped after a rate hike — an odd combination that says currency traders and equity traders are reading the Bank of Japan very differently right now.
+
+Sector-level detail wasn't available this morning, so I won't guess at the spread — but semiconductors and anything AI-adjacent were clearly the pull, given AMD and the broader chip rally underpinning the Nasdaq's move. Fixed income data didn't come through either, so no read on the curve today.
+
+Policy-watchers should note two AI-related headlines worth sitting with: Treasury Secretary Bessent said the administration won't give AI companies a liability shield, and separately Trump said the Justice Department will "rein in AI if we have to." Together those suggest Washington is getting more comfortable talking tough on AI even while touting it as a competitive edge over China — a tension worth watching as it could shape regulation next year.
+
+One story worth reading in full: the Microsoft piece on MarketWatch about its "most underappreciated" business driver — the argument is that everyone's priced in the cloud story but not necessarily the software upside, and it's a fair challenge to consensus thinking.
+
+I'll leave you with this, from Marcus Aurelius: "You have power over your mind, not outside events. Realize this, and you will find strength."
