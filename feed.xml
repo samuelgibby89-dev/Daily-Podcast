@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+     xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"
+     xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>The Morning Brief</title>
+    <link>https://samuelgibby89-dev.github.io/Daily-Podcast/</link>
+    <description>A private daily market brief: what moved overnight, why, and what to watch.</description>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 30 Oct 2026 17:56:08 +0000</lastBuildDate>
+    <atom:link href="https://samuelgibby89-dev.github.io/Daily-Podcast/feed.xml" rel="self" type="application/rss+xml"/>
+    <itunes:author>Samuel Gibby</itunes:author>
+    <itunes:summary>A private daily market brief: what moved overnight, why, and what to watch.</itunes:summary>
+    <itunes:explicit>false</itunes:explicit>
+    <itunes:category text="Business"><itunes:category text="Investing"/></itunes:category>
+    <itunes:image href="https://samuelgibby89-dev.github.io/Daily-Podcast/icons/icon-512.png"/>
+    <item>
+      <title>Chip Rout, Fed Hawks, and Refiner Records</title>
+      <description>Intel's historic crash drags chips lower while Fed officials float hiking again and Exxon, Chevron post record profits.</description>
+      <pubDate>Fri, 30 Oct 2026 17:54:14 +0000</pubDate>
+      <guid isPermaLink="false">2026-10-30</guid>
+      <enclosure url="https://samuelgibby89-dev.github.io/Daily-Podcast/audio/2026-10-30.mp3" length="938448" type="audio/mpeg"/>
+      <itunes:duration>156</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+    <item>
+      <title>Hot GDP, Hawkish Fed, Alphabet Stumbles</title>
+      <description>Growth ran hot, inflation didn't cool, and a new Fed chairman is keeping everyone guessing on rates.</description>
+      <pubDate>Thu, 29 Oct 2026 18:18:34 +0000</pubDate>
+      <guid isPermaLink="false">2026-10-29</guid>
+      <enclosure url="https://samuelgibby89-dev.github.io/Daily-Podcast/audio/2026-10-29.mp3" length="1017936" type="audio/mpeg"/>
+      <itunes:duration>169</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+    <item>
+      <title>Fed Holds, Dissents Grow, Big Tech Looms</title>
+      <description>The Fed paused but two voters wanted a hike, and Microsoft earnings plus Wendy's buyout news set up a busy stretch.</description>
+      <pubDate>Wed, 28 Oct 2026 18:12:59 +0000</pubDate>
+      <guid isPermaLink="false">2026-10-28</guid>
+      <enclosure url="https://samuelgibby89-dev.github.io/Daily-Podcast/audio/2026-10-28.mp3" length="880848" type="audio/mpeg"/>
+      <itunes:duration>146</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+    <item>
+      <title>Fed Week Begins, Boeing and AI Financing Wobble</title>
+      <description>The Fed meets with a hold all but assured, Boeing craters on a production delay, and bond investors start souring on AI debt.</description>
+      <pubDate>Tue, 27 Oct 2026 17:48:51 +0000</pubDate>
+      <guid isPermaLink="false">2026-10-27</guid>
+      <enclosure url="https://samuelgibby89-dev.github.io/Daily-Podcast/audio/2026-10-27.mp3" length="1004256" type="audio/mpeg"/>
+      <itunes:duration>167</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+    <item>
+      <title>Fed Week Begins, AI Capital Shuffle Accelerates</title>
+      <description>No market data this morning, but the Fed meeting, Meta's $95 billion raise, and Microsoft's buyout offer tell the real story.</description>
+      <pubDate>Mon, 26 Oct 2026 18:33:46 +0000</pubDate>
+      <guid isPermaLink="false">2026-10-26</guid>
+      <enclosure url="https://samuelgibby89-dev.github.io/Daily-Podcast/audio/2026-10-26.mp3" length="874224" type="audio/mpeg"/>
+      <itunes:duration>145</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+    <item>
+      <title>No Market Data, Plenty of Moving Parts</title>
+      <description>Market feeds went dark this morning, but earnings, Fed chatter, and a brewing security scramble still shaped the day.</description>
+      <pubDate>Fri, 23 Oct 2026 16:50:02 +0000</pubDate>
+      <guid isPermaLink="false">2026-10-23</guid>
+      <enclosure url="https://samuelgibby89-dev.github.io/Daily-Podcast/audio/2026-10-23.mp3" length="961200" type="audio/mpeg"/>
+      <itunes:duration>160</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+    <item>
+      <title>AI Doubts Hit Meta, Chips as Yields Sink</title>
+      <description>Meta's cash burn and weak chip forecasts spook markets while bond yields sink on AI jitters and Iran risk lifts oil.</description>
+      <pubDate>Thu, 22 Oct 2026 16:57:42 +0000</pubDate>
+      <guid isPermaLink="false">2026-10-22</guid>
+      <enclosure url="https://samuelgibby89-dev.github.io/Daily-Podcast/audio/2026-10-22.mp3" length="931824" type="audio/mpeg"/>
+      <itunes:duration>155</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+    <item>
+      <title>SpaceX Pops, Tesla's Up Next, Housing Wobbles</title>
+      <description>SpaceX jumps on earnings and merger chatter, UK inflation runs hot, and US housing keeps flashing warning signs.</description>
+      <pubDate>Wed, 21 Oct 2026 16:58:42 +0000</pubDate>
+      <guid isPermaLink="false">2026-10-21</guid>
+      <enclosure url="https://samuelgibby89-dev.github.io/Daily-Podcast/audio/2026-10-21.mp3" length="962208" type="audio/mpeg"/>
+      <itunes:duration>160</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+    <item>
+      <title>Housing Freezes, Salesforce Pays Up for AI</title>
+      <description>No market data this morning, but housing just hit a 25-year low and Salesforce's AI shopping spree has investors nervous.</description>
+      <pubDate>Tue, 20 Oct 2026 16:40:20 +0000</pubDate>
+      <guid isPermaLink="false">2026-10-20</guid>
+      <enclosure url="https://samuelgibby89-dev.github.io/Daily-Podcast/audio/2026-10-20.mp3" length="876528" type="audio/mpeg"/>
+      <itunes:duration>146</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+    <item>
+      <title>France's Unrest Hits Markets; Chips Rebound</title>
+      <description>Paris riots spill into bonds and the euro, chip stocks bounce back, and Saudi Arabia postpones its big investor show.</description>
+      <pubDate>Mon, 19 Oct 2026 18:36:02 +0000</pubDate>
+      <guid isPermaLink="false">2026-10-19</guid>
+      <enclosure url="https://samuelgibby89-dev.github.io/Daily-Podcast/audio/2026-10-19.mp3" length="896112" type="audio/mpeg"/>
+      <itunes:duration>149</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+    <item>
+      <title>Hot PPI, AI Selloff, Fed In Question</title>
+      <description>Wholesale inflation surprised to the upside, the AI trade keeps unwinding, and suddenly the Fed's "obvious" pause isn't so obvious.</description>
+      <pubDate>Fri, 16 Oct 2026 16:25:18 +0000</pubDate>
+      <guid isPermaLink="false">2026-10-16</guid>
+      <enclosure url="https://samuelgibby89-dev.github.io/Daily-Podcast/audio/2026-10-16.mp3" length="941760" type="audio/mpeg"/>
+      <itunes:duration>156</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+    <item>
+      <title>Hot PPI Deepens Tech Rout, Lifts Yields</title>
+      <description>Wholesale prices spike, AI stocks keep sliding, and ten-year yields above five percent are becoming the story everyone's watching.</description>
+      <pubDate>Thu, 15 Oct 2026 16:42:52 +0000</pubDate>
+      <guid isPermaLink="false">2026-10-15</guid>
+      <enclosure url="https://samuelgibby89-dev.github.io/Daily-Podcast/audio/2026-10-15.mp3" length="964368" type="audio/mpeg"/>
+      <itunes:duration>160</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+    <item>
+      <title>Hot CPI Print Rattles Rates and AI Names</title>
+      <description>September inflation came in hotter than expected, bond yields jumped, and CoreWeave got caught in the crossfire.</description>
+      <pubDate>Wed, 14 Oct 2026 16:56:14 +0000</pubDate>
+      <guid isPermaLink="false">2026-10-14</guid>
+      <enclosure url="https://samuelgibby89-dev.github.io/Daily-Podcast/audio/2026-10-14.mp3" length="961632" type="audio/mpeg"/>
+      <itunes:duration>160</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+    <item>
+      <title>Flat Market, Big Legal and Policy Tremors</title>
+      <description>Bank earnings roll in, a jury hands Qualcomm a win over Arm, and the IMF flags disorderly bond risk ahead of tomorrow's inflation print.</description>
+      <pubDate>Tue, 13 Oct 2026 19:07:46 +0000</pubDate>
+      <guid isPermaLink="false">2026-10-13</guid>
+      <enclosure url="https://samuelgibby89-dev.github.io/Daily-Podcast/audio/2026-10-13.mp3" length="948384" type="audio/mpeg"/>
+      <itunes:duration>158</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+    <item>
+      <title>Nasdaq Slips as Optical Stocks Get Hit</title>
+      <description>AI spending jitters hammer optical and semiconductor names even as Microsoft hits a four trillion dollar milestone.</description>
+      <pubDate>Mon, 12 Oct 2026 21:08:59 +0000</pubDate>
+      <guid isPermaLink="false">2026-10-12</guid>
+      <enclosure url="https://samuelgibby89-dev.github.io/Daily-Podcast/audio/2026-10-12.mp3" length="1523712" type="audio/mpeg"/>
+      <itunes:duration>190</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+    <item>
+      <title>Telecoms Slide as SpaceX Enters the Fray</title>
+      <description>SpaceX rattles telecom stocks, Delta warns on fuel costs, and the fight over Fed governor Lisa Cook escalates.</description>
+      <pubDate>Fri, 09 Oct 2026 18:13:37 +0000</pubDate>
+      <guid isPermaLink="false">2026-10-09</guid>
+      <enclosure url="https://samuelgibby89-dev.github.io/Daily-Podcast/audio/2026-10-09.mp3" length="947952" type="audio/mpeg"/>
+      <itunes:duration>157</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+    <item>
+      <title>Oil Jumps, AI Stocks Sink, Yields Ease</title>
+      <description>Iran tensions and a hurricane push oil higher while OpenAI's revenue numbers rattle the AI trade.</description>
+      <pubDate>Thu, 08 Oct 2026 18:42:59 +0000</pubDate>
+      <guid isPermaLink="false">2026-10-08</guid>
+      <enclosure url="https://samuelgibby89-dev.github.io/Daily-Podcast/audio/2026-10-08.mp3" length="925344" type="audio/mpeg"/>
+      <itunes:duration>154</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+    <item>
+      <title>Fed Minutes Point to More Hikes Ahead</title>
+      <description>Fed minutes show officials eyeing another hike as inflation fears creep higher, while oil tankers and diesel prices expose fresh strain.</description>
+      <pubDate>Wed, 07 Oct 2026 18:44:43 +0000</pubDate>
+      <guid isPermaLink="false">2026-10-07</guid>
+      <enclosure url="https://samuelgibby89-dev.github.io/Daily-Podcast/audio/2026-10-07.mp3" length="776160" type="audio/mpeg"/>
+      <itunes:duration>129</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+    <item>
+      <title>No Market Data, Plenty of Fed and Trade Noise</title>
+      <description>Market data's dark this morning, but the trade deficit, Fed bank oversight overhaul, and Hormuz tanker risk are all worth your attention.</description>
+      <pubDate>Tue, 06 Oct 2026 18:11:14 +0000</pubDate>
+      <guid isPermaLink="false">2026-10-06</guid>
+      <enclosure url="https://samuelgibby89-dev.github.io/Daily-Podcast/audio/2026-10-06.mp3" length="893952" type="audio/mpeg"/>
+      <itunes:duration>148</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+    <item>
+      <title>Stocks Shrug Off Bond Rout Near Records</title>
+      <description>Wall Street brushes off a brutal bond market while M&amp;A chatter and AI bets drive the real action underneath.</description>
+      <pubDate>Mon, 05 Oct 2026 20:27:44 +0000</pubDate>
+      <guid isPermaLink="false">2026-10-05</guid>
+      <enclosure url="https://samuelgibby89-dev.github.io/Daily-Podcast/audio/2026-10-05.mp3" length="987408" type="audio/mpeg"/>
+      <itunes:duration>164</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+    <item>
+      <title>Weak Jobs Report, Yields Rise Anyway</title>
+      <description>September payrolls badly missed, but bond yields climbed instead of falling — and Europe scrambled to release diesel stockpiles.</description>
+      <pubDate>Fri, 02 Oct 2026 17:43:36 +0000</pubDate>
+      <guid isPermaLink="false">2026-10-02</guid>
+      <enclosure url="https://samuelgibby89-dev.github.io/Daily-Podcast/audio/2026-10-02.mp3" length="885456" type="audio/mpeg"/>
+      <itunes:duration>147</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+    <item>
+      <title>Yields Spike, Mortgages Jump, Earnings Loom</title>
+      <description>Treasury yields hit a 24-year high before pulling back, mortgage rates spiked, and Nike and Tesla reports are on deck.</description>
+      <pubDate>Thu, 01 Oct 2026 18:18:01 +0000</pubDate>
+      <guid isPermaLink="false">2026-10-01</guid>
+      <enclosure url="https://samuelgibby89-dev.github.io/Daily-Podcast/audio/2026-10-01.mp3" length="877536" type="audio/mpeg"/>
+      <itunes:duration>146</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+    <item>
+      <title>Data Deluge Cools Rate Hike Bets</title>
+      <description>A wave of strong economic data pushed the S&amp;P and Nasdaq higher as traders dialed back rate expectations.</description>
+      <pubDate>Wed, 30 Sep 2026 17:52:36 +0000</pubDate>
+      <guid isPermaLink="false">2026-09-30</guid>
+      <enclosure url="https://samuelgibby89-dev.github.io/Daily-Podcast/audio/2026-09-30.mp3" length="909216" type="audio/mpeg"/>
+      <itunes:duration>151</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+    <item>
+      <title>Bond Rout Resumes, Consumer Confidence Tumbles</title>
+      <description>Yields hit a two-decade high, stocks slide, and consumer confidence just posted its worst reading since 2014.</description>
+      <pubDate>Tue, 29 Sep 2026 17:57:08 +0000</pubDate>
+      <guid isPermaLink="false">2026-09-29</guid>
+      <enclosure url="https://samuelgibby89-dev.github.io/Daily-Podcast/audio/2026-09-29.mp3" length="912096" type="audio/mpeg"/>
+      <itunes:duration>152</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+    <item>
+      <title>AI Trade Wobbles as Boeing, MongoDB Slide</title>
+      <description>OpenAI's training halt spooks the AI trade, Boeing gets grounded again, and bonds keep selling off.</description>
+      <pubDate>Mon, 28 Sep 2026 19:30:20 +0000</pubDate>
+      <guid isPermaLink="false">2026-09-28</guid>
+      <enclosure url="https://samuelgibby89-dev.github.io/Daily-Podcast/audio/2026-09-28.mp3" length="868320" type="audio/mpeg"/>
+      <itunes:duration>144</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+    <item>
+      <title>Yields Spike, Oil Falls, Trump-Xi Summit Ends</title>
+      <description>Treasury yields are surging under a hawkish Fed, but stocks are climbing anyway as oil slides and the Trump-Xi summit ends on a friendly note.</description>
+      <pubDate>Fri, 25 Sep 2026 16:57:55 +0000</pubDate>
+      <guid isPermaLink="false">2026-09-25</guid>
+      <enclosure url="https://samuelgibby89-dev.github.io/Daily-Podcast/audio/2026-09-25.mp3" length="924912" type="audio/mpeg"/>
+      <itunes:duration>154</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+    <item>
+      <title>Bond Yields Surge as Trump-Xi Summit Opens</title>
+      <description>Thirty-year yields hit levels not seen since 2004 while Oracle stumbles and Trump sits down with Xi in Washington.</description>
+      <pubDate>Thu, 24 Sep 2026 16:55:02 +0000</pubDate>
+      <guid isPermaLink="false">2026-09-24</guid>
+      <enclosure url="https://samuelgibby89-dev.github.io/Daily-Podcast/audio/2026-09-24.mp3" length="918000" type="audio/mpeg"/>
+      <itunes:duration>153</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+    <item>
+      <title>Yields Spike as Rate-Hike Fears Return</title>
+      <description>Hot economic data sends the ten-year to a 19-year high and knocks stocks off record territory, while Iran tensions push oil higher.</description>
+      <pubDate>Wed, 23 Sep 2026 16:35:40 +0000</pubDate>
+      <guid isPermaLink="false">2026-09-23</guid>
+      <enclosure url="https://samuelgibby89-dev.github.io/Daily-Podcast/audio/2026-09-23.mp3" length="989856" type="audio/mpeg"/>
+      <itunes:duration>164</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+    <item>
+      <title>Iran Tensions Rattle Oil, Dow Slips</title>
+      <description>Trump's UN warnings on Iran hit oil and the Dow, while Meta's new AI app and a wave of AI-chip optimism kept tech afloat.</description>
+      <pubDate>Tue, 22 Sep 2026 16:41:27 +0000</pubDate>
+      <guid isPermaLink="false">2026-09-22</guid>
+      <enclosure url="https://samuelgibby89-dev.github.io/Daily-Podcast/audio/2026-09-22.mp3" length="868320" type="audio/mpeg"/>
+      <itunes:duration>144</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+    <item>
+      <title>AMD Hits a Trillion, Meta Rides AI Wave</title>
+      <description>Chipmakers and Meta lead a rally, Paramount clears a merger hurdle, and Japan's markets flip the script.</description>
+      <pubDate>Mon, 21 Sep 2026 18:06:24 +0000</pubDate>
+      <guid isPermaLink="false">2026-09-21</guid>
+      <enclosure url="https://samuelgibby89-dev.github.io/Daily-Podcast/audio/2026-09-21.mp3" length="973440" type="audio/mpeg"/>
+      <itunes:duration>162</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+  </channel>
+</rss>

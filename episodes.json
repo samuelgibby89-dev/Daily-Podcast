@@ -1,0 +1,2061 @@
+{
+  "show": "The Morning Brief",
+  "description": "A private daily market brief: what moved overnight, why, and what to watch.",
+  "updated": "2026-10-30T17:54:14.157253+00:00",
+  "episodes": [
+    {
+      "date": "2026-10-30",
+      "title": "Chip Rout, Fed Hawks, and Refiner Records",
+      "teaser": "Intel's historic crash drags chips lower while Fed officials float hiking again and Exxon, Chevron post record profits.",
+      "topics": [
+        "Federal Reserve",
+        "semiconductors",
+        "energy",
+        "earnings",
+        "inflation"
+      ],
+      "sources": [
+        {
+          "title": "Fed officials are already saying they\u2019ll need to get back to hiking rates",
+          "source": "CNBC Top News",
+          "link": "https://www.cnbc.com/2026/10/30/musalem-fed-monetary-policy-tightening.html"
+        },
+        {
+          "title": "Skipping a rate hike doesn't change monetary policy destination: FOMC's Logan",
+          "source": "Seeking Alpha",
+          "link": "https://seekingalpha.com/news/4661590-skipping-a-rate-hike-doesnt-change-monetary-policy-destination-fomcs-logan?utm_source=feed_news_all&utm_medium=referral&feed_item_type=news"
+        },
+        {
+          "title": "Intel on course for worst day ever, triggers global chip rout",
+          "source": "Investing.com",
+          "link": "https://www.investing.com/news/stock-market-news/intel-warning-sparks-chip-rout-as-pc-weakness-clouds-turnaround-4987123"
+        },
+        {
+          "title": "After Intel\u2019s historic stock drop, analysts say there\u2019s no reason to buy the dip",
+          "source": "MarketWatch",
+          "link": "https://www.marketwatch.com/story/after-intels-historic-stock-drop-analysts-say-theres-no-reason-to-buy-the-dip-068446af?mod=mw_rss_topstories"
+        },
+        {
+          "title": "Why is Arm stock tumbling today?",
+          "source": "Investing.com",
+          "link": "https://www.investing.com/news/stock-market-news/why-is-arm-stock-tumbling-today-93CH-4988444"
+        },
+        {
+          "title": "Why is Qualcomm stock tumbling today?",
+          "source": "Investing.com",
+          "link": "https://www.investing.com/news/stock-market-news/why-is-qualcomm-stock-tumbling-today-93CH-4988443"
+        },
+        {
+          "title": "Exxon, Chevron profits beat forecasts, refining margins surge during wars",
+          "source": "Investing.com",
+          "link": "https://www.investing.com/news/stock-market-news/exxon-chevron-earnings-propelled-by-wardriven-refining-surge-4986750"
+        },
+        {
+          "title": "Chevron and Exxon hit all-time highs as refining profits soar in reaction to Iran and Ukraine wars",
+          "source": "CNBC Top News",
+          "link": "https://www.cnbc.com/2026/10/30/chevron-exxon-cvx-xom-earnings-q3-2026.html"
+        },
+        {
+          "title": "Tankers defy sharp escalation of Iranian attacks to keep crude oil flowing through Strait of Hormuz",
+          "source": "CNBC Top News",
+          "link": "https://www.cnbc.com/2026/10/30/tanker-attack-strait-hormuz-iran-war-oil.html"
+        },
+        {
+          "title": "Third-quarter U.S. GDP increases a better-than-expected 3.4% as September inflation accelerates",
+          "source": "CNBC Markets",
+          "link": "https://www.cnbc.com/2026/10/29/pce-inflation-report-september-2026-.html"
+        },
+        {
+          "title": "Analysis: Kevin Warsh is keeping Wall Street guessing. It may be his most powerful tool",
+          "source": "CNBC Markets",
+          "link": "https://www.cnbc.com/2026/10/29/kevin-warsh-fed-october-rate-decision-december-hike.html"
+        }
+      ],
+      "audio": "audio/2026-10-30.mp3",
+      "transcript": "transcripts/2026-10-30.txt",
+      "duration": 156,
+      "bytes": 938448,
+      "published": "2026-10-30T17:54:14.157253+00:00"
+    },
+    {
+      "date": "2026-10-29",
+      "title": "Hot GDP, Hawkish Fed, Alphabet Stumbles",
+      "teaser": "Growth ran hot, inflation didn't cool, and a new Fed chairman is keeping everyone guessing on rates.",
+      "topics": [
+        "Federal Reserve",
+        "GDP and inflation",
+        "Alphabet earnings",
+        "ECB",
+        "Treasury yields"
+      ],
+      "sources": [
+        {
+          "title": "Third-quarter U.S. GDP increases a better-than-expected 3.4% as September inflation accelerates",
+          "source": "CNBC Markets",
+          "link": "https://www.cnbc.com/2026/10/29/pce-inflation-report-september-2026-.html"
+        },
+        {
+          "title": "Analysis: Kevin Warsh is keeping Wall Street guessing. It may be his most powerful tool",
+          "source": "CNBC Markets",
+          "link": "https://www.cnbc.com/2026/10/29/kevin-warsh-fed-october-rate-decision-december-hike.html"
+        },
+        {
+          "title": "Here are five key takeaways from the Fed rate decision and Warsh news conference",
+          "source": "CNBC Markets",
+          "link": "https://www.cnbc.com/2026/10/28/fed-rate-decision-warsh-takeaways.html"
+        },
+        {
+          "title": "Bessent says 'not necessarily' a mistake if the Fed hikes again",
+          "source": "CNBC Markets",
+          "link": "https://www.cnbc.com/2026/10/28/scott-bessent-interview.html"
+        },
+        {
+          "title": "Alphabet earnings miss reflects first real sign that AI is taking a bite out of search",
+          "source": "CNBC Top News",
+          "link": "https://www.cnbc.com/2026/10/29/alphabet-google-search-ai-earnings.html"
+        },
+        {
+          "title": "Steve Eisman gets more conservative with portfolio as AI trade nears 'tipping point'",
+          "source": "CNBC Top News",
+          "link": "https://www.cnbc.com/2026/10/29/steve-eisman-gets-more-conservative-with-portfolio-as-ai-trade-nears-tipping-point.html"
+        },
+        {
+          "title": "All the reasons Marvell investors are \u2018freaking out\u2019 as Lumentum deal rumors swirl",
+          "source": "MarketWatch",
+          "link": "https://www.marketwatch.com/story/marvell-is-reportedly-close-to-buying-lumentum-analysts-say-they-see-logic-in-a-potential-deal-d7539c59?mod=mw_rss_topstories"
+        },
+        {
+          "title": "European Central Bank keeps key interest rate on hold at 2.5%",
+          "source": "CNBC Markets",
+          "link": "https://www.cnbc.com/2026/10/29/european-central-bank-interest-rates.html"
+        },
+        {
+          "title": "The politics of President Lagarde's European Central Bank early exit  \u2014 and who could replace her",
+          "source": "CNBC Markets",
+          "link": "https://www.cnbc.com/2026/10/29/lagarde-ecb-stand-down.html"
+        },
+        {
+          "title": "Cheniere boosts forecast as Middle East gas disruptions buoy demand for US LNG",
+          "source": "Investing.com",
+          "link": "https://www.investing.com/news/stock-market-news/cheniere-reports-rise-in-thirdquarter-net-income-4982412"
+        }
+      ],
+      "audio": "audio/2026-10-29.mp3",
+      "transcript": "transcripts/2026-10-29.txt",
+      "duration": 169,
+      "bytes": 1017936,
+      "published": "2026-10-29T18:18:34.468918+00:00"
+    },
+    {
+      "date": "2026-10-28",
+      "title": "Fed Holds, Dissents Grow, Big Tech Looms",
+      "teaser": "The Fed paused but two voters wanted a hike, and Microsoft earnings plus Wendy's buyout news set up a busy stretch.",
+      "topics": [
+        "Federal Reserve",
+        "Big Tech earnings",
+        "M&A",
+        "Treasuries"
+      ],
+      "sources": [
+        {
+          "title": "Fed holds rates steady despite concerns over inflation",
+          "source": "CNBC Top News",
+          "link": "https://www.cnbc.com/2026/10/28/fed-interest-rate-decision-october-2026.html"
+        },
+        {
+          "title": "Federal Reserve issues FOMC statement",
+          "source": "Federal Reserve",
+          "link": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261028a.htm"
+        },
+        {
+          "title": "Vertiv earnings just sent an upbeat signal about AI ahead of Big Tech results",
+          "source": "MarketWatch",
+          "link": "https://www.marketwatch.com/story/vertiv-earnings-just-sent-an-upbeat-signal-about-ai-ahead-of-big-tech-results-5714a105?mod=mw_rss_topstories"
+        },
+        {
+          "title": "Microsoft earnings will land after the close",
+          "source": "CNBC Top News",
+          "link": "https://www.cnbc.com/2026/10/28/microsoft-msft-q1-earnings-report-2027.html"
+        },
+        {
+          "title": "Wendy's shares jump 15% as Nelson Peltz's Trian offers $1.4 billion to buy burger chain",
+          "source": "CNBC Top News",
+          "link": "https://www.cnbc.com/2026/10/28/nelson-peltz-trian-wendys-1point4-billion.html"
+        },
+        {
+          "title": "Wendy\u2019s buyout offer suggests the burger chain\u2019s overhaul could be very expensive",
+          "source": "MarketWatch",
+          "link": "https://www.marketwatch.com/story/wendys-buyout-offer-suggests-the-burger-chains-overhaul-could-be-very-expensive-ff2c92bb?mod=mw_rss_topstories"
+        },
+        {
+          "title": "The UK cuts energy bills, taxes banks and boosts defense in high-stakes budget",
+          "source": "CNBC Markets",
+          "link": "https://www.cnbc.com/2026/10/28/uk-autumn-budget-cost-living-defense-ai.html"
+        },
+        {
+          "title": "GDP, core PCE, and jobless claims among economic data due Thursday",
+          "source": "Investing.com",
+          "link": "https://www.investing.com/news/stock-market-news/gdp-core-pce-and-jobless-claims-among-economic-data-due-thursday-93CH-4980405"
+        },
+        {
+          "title": "The 'Magnificent Seven' is no more. Time to pick winners and losers as group's correlation breaks down",
+          "source": "CNBC Top News",
+          "link": "https://www.cnbc.com/2026/10/28/magnificent-seven-stocks-correlation-breakdown.html"
+        }
+      ],
+      "audio": "audio/2026-10-28.mp3",
+      "transcript": "transcripts/2026-10-28.txt",
+      "duration": 146,
+      "bytes": 880848,
+      "published": "2026-10-28T18:12:59.097034+00:00"
+    },
+    {
+      "date": "2026-10-27",
+      "title": "Fed Week Begins, Boeing and AI Financing Wobble",
+      "teaser": "The Fed meets with a hold all but assured, Boeing craters on a production delay, and bond investors start souring on AI debt.",
+      "topics": [
+        "Federal Reserve",
+        "Boeing",
+        "AI financing",
+        "Anthropic IPO",
+        "Treasury yields"
+      ],
+      "sources": [
+        {
+          "title": "Fed expected to hold rates steady, but Warsh may point way to more hikes",
+          "source": "CNBC Top News",
+          "link": "https://www.cnbc.com/2026/10/27/federal-reserve-rates-kevin-warsh.html"
+        },
+        {
+          "title": "Fed rate hikes are coming, but not this week: CNBC survey",
+          "source": "CNBC Markets",
+          "link": "https://www.cnbc.com/2026/10/27/federal-reserve-rate-hike-timing-expectations.html"
+        },
+        {
+          "title": "Boeing stock sinks 9% as company says it won't significantly ramp up 737 Max production until late 2027",
+          "source": "CNBC Top News",
+          "link": "https://www.cnbc.com/2026/10/27/-boeing-ba-q3-2026-earnings.html"
+        },
+        {
+          "title": "Boeing targets $10B free cash flow in 2029 as 737 rate 52 shifts to 2H 2027",
+          "source": "Seeking Alpha",
+          "link": "https://seekingalpha.com/news/4658173-boeing-targets-10b-free-cash-flow-in-2029-as-737-rate-52-shifts-to-2h-2027?utm_source=feed_news_all&utm_medium=referral&feed_item_type=news"
+        },
+        {
+          "title": "JetBlue has been losing money for years. It just charted a path to profitability.",
+          "source": "MarketWatch",
+          "link": "https://www.marketwatch.com/story/jetblue-has-been-losing-money-for-years-it-just-charted-a-path-to-profitability-03be75c8?mod=mw_rss_topstories"
+        },
+        {
+          "title": "Anthropic's IPO could be 'speculative fiction' or a 'generational moment' \u2014 investors are split",
+          "source": "CNBC Top News",
+          "link": "https://www.cnbc.com/2026/10/27/-anthropic-ipo-investors-growth-losses-s-1.html"
+        },
+        {
+          "title": "When will Anthropic go public? Here\u2019s what to know about the IPO timeline.",
+          "source": "MarketWatch",
+          "link": "https://www.marketwatch.com/story/when-will-anthropic-go-public-heres-what-to-know-about-the-ipo-timeline-431eca78?mod=mw_rss_topstories"
+        },
+        {
+          "title": "Bond investors are starting to say \u2018anything but tech.\u2019 What that means for the AI boom.",
+          "source": "MarketWatch",
+          "link": "https://www.marketwatch.com/story/ai-debt-trouble-could-help-feds-warsh-get-his-way-with-fewer-rate-hikes-b3dc4525?mod=mw_rss_topstories"
+        },
+        {
+          "title": "Analysis: Why a $2 trillion deficit and 5% Treasury yields are becoming America's biggest economic challenge",
+          "source": "CNBC Markets",
+          "link": "https://www.cnbc.com/2026/10/15/treasury-yields-deficit-national-debt-ai.html"
+        },
+        {
+          "title": "Nvidia, AMD to invest $4 billion in Meta as tech giants deepen AI partnership",
+          "source": "CNBC Top News",
+          "link": "https://www.cnbc.com/2026/10/27/nvidia-invest-meta.html"
+        }
+      ],
+      "audio": "audio/2026-10-27.mp3",
+      "transcript": "transcripts/2026-10-27.txt",
+      "duration": 167,
+      "bytes": 1004256,
+      "published": "2026-10-27T17:48:51.343281+00:00"
+    },
+    {
+      "date": "2026-10-26",
+      "title": "Fed Week Begins, AI Capital Shuffle Accelerates",
+      "teaser": "No market data this morning, but the Fed meeting, Meta's $95 billion raise, and Microsoft's buyout offer tell the real story.",
+      "topics": [
+        "Federal Reserve",
+        "AI capex",
+        "Meta",
+        "Microsoft",
+        "earnings week"
+      ],
+      "sources": [
+        {
+          "title": "Nvidia, AMD and Broadcom could buy Meta shares as part of $35 billion stock offering",
+          "source": "MarketWatch",
+          "link": "https://www.marketwatch.com/story/nvidia-amd-and-broadcom-could-buy-meta-shares-as-part-of-35-billion-stock-offering-d816fec2?mod=mw_rss_topstories"
+        },
+        {
+          "title": "Microsoft offers voluntary buyouts to 60,000 employees as AI leads to efficiency push",
+          "source": "CNBC Top News",
+          "link": "https://www.cnbc.com/2026/10/26/microsoft-msft-voluntary-buyouts.html"
+        },
+        {
+          "title": "Federal Reserve is likely to hold interest rates steady in October. Here's what that means for consumers",
+          "source": "CNBC Top News",
+          "link": "https://www.cnbc.com/2026/10/26/fed-decision-expectations-october-meeting.html"
+        },
+        {
+          "title": "Investors are doing just as well this year by shunning AI. How to invest if the tech trade keeps fizzling",
+          "source": "CNBC Top News",
+          "link": "https://www.cnbc.com/2026/10/26/sp-500-ex-ai-index-tech-selloff.html"
+        },
+        {
+          "title": "These energy stocks are poised to profit from an imminent AI power crunch",
+          "source": "MarketWatch",
+          "link": "https://www.marketwatch.com/story/these-energy-stocks-are-poised-to-profit-from-an-imminent-ai-power-crunch-00c1a50d?mod=mw_rss_topstories"
+        },
+        {
+          "title": "Why is Bloom Energy stock surging today?",
+          "source": "Investing.com",
+          "link": "https://www.investing.com/news/stock-market-news/why-is-bloom-energy-stock-surging-today-93CH-4973404"
+        },
+        {
+          "title": "Why is Intel stock rallying today?",
+          "source": "Investing.com",
+          "link": "https://www.investing.com/news/stock-market-news/why-is-intel-stock-rallying-today-93CH-4973403"
+        },
+        {
+          "title": "Tesla surges to its highest level in more than three months",
+          "source": "Seeking Alpha",
+          "link": "https://seekingalpha.com/news/4657452-tesla-surges-to-its-highest-level-in-more-than-three-months?utm_source=feed_news_all&utm_medium=referral&feed_item_type=news"
+        },
+        {
+          "title": "Boeing forecast to post small quarterly loss\u00a0despite recent wins, analysts say",
+          "source": "Investing.com",
+          "link": "https://www.investing.com/news/stock-market-news/boeing-forecast-to-post-small-quarterly-lossdespite-recent-wins-analysts-say-4973392"
+        },
+        {
+          "title": "Building permits, durable goods orders, new home sales and consumer confidence due Tuesday",
+          "source": "Investing.com",
+          "link": "https://www.investing.com/news/stock-market-news/building-permits-durable-goods-orders-new-home-sales-and-consumer-confidence-due-tuesday-93CH-4973395"
+        }
+      ],
+      "audio": "audio/2026-10-26.mp3",
+      "transcript": "transcripts/2026-10-26.txt",
+      "duration": 145,
+      "bytes": 874224,
+      "published": "2026-10-26T18:33:46.053665+00:00"
+    },
+    {
+      "date": "2026-10-23",
+      "title": "No Market Data, Plenty of Moving Parts",
+      "teaser": "Market feeds went dark this morning, but earnings, Fed chatter, and a brewing security scramble still shaped the day.",
+      "topics": [
+        "Fed policy",
+        "earnings",
+        "cybersecurity",
+        "labor market",
+        "AI infrastructure"
+      ],
+      "sources": [
+        {
+          "title": "AI's 'Black October':\u00a0Critical PHP flaws set off global security scramble",
+          "source": "CNBC Top News",
+          "link": "https://www.cnbc.com/2026/10/23/php-vulnerabilities-ai-cybersecurity.html"
+        },
+        {
+          "title": "Fed seen holding rates next week before likely December hike, Pantheon says",
+          "source": "Seeking Alpha",
+          "link": "https://seekingalpha.com/news/4656676-fed-seen-holding-rates-next-week-before-likely-december-hike-pantheon-says?utm_source=feed_news_all&utm_medium=referral&feed_item_type=news"
+        },
+        {
+          "title": "Why is Palo Alto Networks stock surging today?",
+          "source": "Investing.com",
+          "link": "https://www.investing.com/news/stock-market-news/why-is-palo-alto-networks-stock-surging-today-93CH-4970133"
+        },
+        {
+          "title": "Why is Check Point Software stock rallying today?",
+          "source": "Investing.com",
+          "link": "https://www.investing.com/news/stock-market-news/why-is-check-point-software-stock-rallying-today-93CH-4970130"
+        },
+        {
+          "title": "TikTok U.S. hunts for multiple gigawatts of computing capacity, sources tell CNBC",
+          "source": "CNBC Top News",
+          "link": "https://www.cnbc.com/2026/10/23/tiktok-us-compute-capacity.html"
+        },
+        {
+          "title": "American Express is cutting 5% of its workforce to 'prepare for AI'",
+          "source": "CNBC Top News",
+          "link": "https://www.cnbc.com/2026/10/23/american-express-job-cuts.html"
+        },
+        {
+          "title": "This hot AI-fueled stock has been in a rut. It just beat earnings expectations by 36%.",
+          "source": "MarketWatch",
+          "link": "https://www.marketwatch.com/story/this-hot-ai-fueled-stock-has-been-in-a-rut-it-just-beat-earnings-expectations-by-36-4a4188cb?mod=mw_rss_topstories"
+        },
+        {
+          "title": "Surging economy gets off to a good start in the fourth quarter \u2014 but there\u2019s one big problem",
+          "source": "MarketWatch",
+          "link": "https://www.marketwatch.com/story/surging-economy-gets-off-to-a-good-start-in-the-fourth-quarter-but-theres-one-big-problem-5657f399?mod=mw_rss_topstories"
+        },
+        {
+          "title": "Jobless claims near the lowest since the 1960s as low-fire trend continues",
+          "source": "CNBC Markets",
+          "link": "https://www.cnbc.com/2026/10/22/jobless-claims-record-low-weekly.html"
+        },
+        {
+          "title": "Trump's approval rating on economy hits all-time low as midterm looms: CNBC survey",
+          "source": "CNBC Markets",
+          "link": "https://www.cnbc.com/2026/10/22/trump-economic-approval-rating-midterms-poll.html"
+        }
+      ],
+      "audio": "audio/2026-10-23.mp3",
+      "transcript": "transcripts/2026-10-23.txt",
+      "duration": 160,
+      "bytes": 961200,
+      "published": "2026-10-23T16:50:02.757338+00:00"
+    },
+    {
+      "date": "2026-10-22",
+      "title": "AI Doubts Hit Meta, Chips as Yields Sink",
+      "teaser": "Meta's cash burn and weak chip forecasts spook markets while bond yields sink on AI jitters and Iran risk lifts oil.",
+      "topics": [
+        "AI spending",
+        "Meta",
+        "chip stocks",
+        "Treasury yields",
+        "oil/Iran"
+      ],
+      "sources": [
+        {
+          "title": "Jobless claims near the lowest since the 1960s as low-fire trend continues",
+          "source": "CNBC Markets",
+          "link": "https://www.cnbc.com/2026/10/22/jobless-claims-record-low-weekly.html"
+        },
+        {
+          "title": "\u2018AI is on trial\u2019: Bond yields sink below 5% as investors look for safety",
+          "source": "MarketWatch",
+          "link": "https://www.marketwatch.com/story/ai-is-on-trial-bond-yields-sink-below-5-as-investors-look-for-safety-dbc86ee9?mod=mw_rss_topstories"
+        },
+        {
+          "title": "Meta stock sinks 6% as AI spend pushes free cash flow negative",
+          "source": "CNBC Top News",
+          "link": "https://www.cnbc.com/2026/10/22/meta-stock-q3-earnings-free-cash-flow.html"
+        },
+        {
+          "title": "Two big reasons Micron and other chip stocks are falling on Thursday",
+          "source": "MarketWatch",
+          "link": "https://www.marketwatch.com/story/two-big-reasons-micron-and-other-chip-stocks-are-falling-on-thursday-312f1fb2?mod=mw_rss_topstories"
+        },
+        {
+          "title": "Mortgage rates decline for first time in about two months as Treasury yields fall",
+          "source": "Seeking Alpha",
+          "link": "https://seekingalpha.com/news/4656053-mortgage-rates-decline-for-first-time-in-about-two-months-as-treasury-yields-fall?utm_source=feed_news_all&utm_medium=referral&feed_item_type=news"
+        },
+        {
+          "title": "Under-the-radar stocks to play the next leg of the energy trade with oil prices jumping again",
+          "source": "CNBC Top News",
+          "link": "https://www.cnbc.com/2026/10/22/under-the-radar-stocks-to-play-the-next-leg-of-the-energy-trade-with-oil-prices-jumping-again.html"
+        },
+        {
+          "title": "FTSE 100 today: Stocks fall as miners drag, Iran threat lifts oil",
+          "source": "Investing.com",
+          "link": "https://www.investing.com/news/stock-market-news/ftse-100-today-stocks-fall-as-gulf-war-lifts-oil-miners-slide-on-weaker-metals-4964847"
+        },
+        {
+          "title": "European stocks drop as French yields, mixed tech earnings weigh",
+          "source": "Investing.com",
+          "link": "https://www.investing.com/news/stock-market-news/european-stocks-buckle-as-french-yields-cross-5-barrier-4964797"
+        },
+        {
+          "title": "Trump's approval rating on economy hits all-time low as midterm looms: CNBC survey",
+          "source": "CNBC Markets",
+          "link": "https://www.cnbc.com/2026/10/22/trump-economic-approval-rating-midterms-poll.html"
+        }
+      ],
+      "audio": "audio/2026-10-22.mp3",
+      "transcript": "transcripts/2026-10-22.txt",
+      "duration": 155,
+      "bytes": 931824,
+      "published": "2026-10-22T16:57:42.662704+00:00"
+    },
+    {
+      "date": "2026-10-21",
+      "title": "SpaceX Pops, Tesla's Up Next, Housing Wobbles",
+      "teaser": "SpaceX jumps on earnings and merger chatter, UK inflation runs hot, and US housing keeps flashing warning signs.",
+      "topics": [
+        "SpaceX",
+        "Tesla",
+        "UK inflation",
+        "housing",
+        "AI bubble debate"
+      ],
+      "sources": [
+        {
+          "title": "SpaceX earnings analysis: questions answered and next catalysts",
+          "source": "Investing.com",
+          "link": "https://www.investing.com/news/stock-market-news/spacex-earnings-analysis-questions-answered-and-next-catalysts-93CH-4963699"
+        },
+        {
+          "title": "SpaceX stock jumps 10% after earnings beat and Musk hints at Tesla tie-up",
+          "source": "CNBC Top News",
+          "link": "https://www.cnbc.com/2026/10/21/spacex-spcx-stock-musk-merger-tesla.html"
+        },
+        {
+          "title": "Tesla earnings loom after Musk calls SpaceX merger a 'good idea'",
+          "source": "CNBC Top News",
+          "link": "https://www.cnbc.com/2026/10/21/tesla-tsla-q3-2026-earnings-report.html"
+        },
+        {
+          "title": "Elon Musk promised a SpaceX share to every kid in America \u2014 don\u2019t hold your breath",
+          "source": "MarketWatch",
+          "link": "https://www.marketwatch.com/story/elon-musk-promised-a-spacex-share-to-every-kid-in-america-dont-hold-your-breath-d6572cdf?mod=mw_rss_topstories"
+        },
+        {
+          "title": "UK\u2019s FTSE 100 ticks higher on energy boost; hot inflation report limits gains",
+          "source": "Investing.com",
+          "link": "https://www.investing.com/news/stock-market-news/uks-ftse-100-pauses-as-hot-inflation-report-outweighs-energy-boost-4962387"
+        },
+        {
+          "title": "UK inflation jumps to 3.5% \u2014 cementing rate hike expectations",
+          "source": "CNBC Markets",
+          "link": "https://www.cnbc.com/2026/10/21/inflation-uk-cpi-interest-rates.html"
+        },
+        {
+          "title": "Housing is flashing warning signs just as the Fed weighs more interest rate hikes",
+          "source": "CNBC Markets",
+          "link": "https://www.cnbc.com/2026/10/20/housing-mortgage-rates-real-estate-federal-reserve.html"
+        },
+        {
+          "title": "Mortgage rates drop for the first time in 2 months, but demand still falls further",
+          "source": "CNBC Top News",
+          "link": "https://www.cnbc.com/2026/10/21/mortgage-rates-drop-for-the-first-time-in-2-months-but-demand-falls.html"
+        },
+        {
+          "title": "EBay to lay off 9% of workforce in its second round of job cuts this year",
+          "source": "CNBC Top News",
+          "link": "https://www.cnbc.com/2026/10/21/ebay-layoffs-workforce-cuts.html"
+        },
+        {
+          "title": "Polymarket traders see a 10% chance the AI bubble bursts before New Year\u2019s Day",
+          "source": "MarketWatch",
+          "link": "https://www.marketwatch.com/story/polymarket-traders-see-a-10-chance-the-ai-bubble-bursts-before-new-years-day-ad33258b?mod=mw_rss_topstories"
+        },
+        {
+          "title": "AI stocks are probably in a bubble \u2014 but might be worth holding on to, says Citadel\u2019s Ken Griffin",
+          "source": "MarketWatch",
+          "link": "https://www.marketwatch.com/story/ai-stocks-are-probably-in-a-bubble-but-might-be-worth-holding-onto-says-citadels-ken-griffin-87f535ce?mod=mw_rss_topstories"
+        }
+      ],
+      "audio": "audio/2026-10-21.mp3",
+      "transcript": "transcripts/2026-10-21.txt",
+      "duration": 160,
+      "bytes": 962208,
+      "published": "2026-10-21T16:58:42.950802+00:00"
+    },
+    {
+      "date": "2026-10-20",
+      "title": "Housing Freezes, Salesforce Pays Up for AI",
+      "teaser": "No market data this morning, but housing just hit a 25-year low and Salesforce's AI shopping spree has investors nervous.",
+      "topics": [
+        "housing market",
+        "M&A",
+        "AI spending",
+        "earnings",
+        "Europe unrest"
+      ],
+      "sources": [
+        {
+          "title": "Builders slash prices on new homes as buyer traffic drops to 14-year low",
+          "source": "MarketWatch",
+          "link": "https://www.marketwatch.com/story/builders-slash-prices-on-new-homes-as-buyer-traffic-drops-to-14-year-low-3dd8caea?mod=mw_rss_topstories"
+        },
+        {
+          "title": "Salesforce\u2019s stock falls as investors chafe at the cost of latest AI purchase",
+          "source": "MarketWatch",
+          "link": "https://www.marketwatch.com/story/salesforce-gets-a-chilly-investor-response-to-a-6-billion-deal-at-a-58-premium-57bd260b?mod=mw_rss_topstories"
+        },
+        {
+          "title": "Pending home sales sink to 25-year low as buyers flee high mortgage rates",
+          "source": "MarketWatch",
+          "link": "https://www.marketwatch.com/story/pending-home-sales-sink-to-25-year-low-as-buyers-flee-high-mortgage-rates-d02c6b30?mod=mw_rss_topstories"
+        },
+        {
+          "title": "September data shows housing market in a deep freeze",
+          "source": "CNBC Top News",
+          "link": "https://www.cnbc.com/2026/10/20/september-data-shows-housing-market-in-a-deep-freeze.html"
+        },
+        {
+          "title": "Salesforce announces $5.66 billion deal for Braze, sending BRZE stock soaring 50%",
+          "source": "CNBC Top News",
+          "link": "https://www.cnbc.com/2026/10/20/salesforce-braze-acquisition-deal.html"
+        },
+        {
+          "title": "Here's what to expect when Netflix reports earnings after the bell",
+          "source": "CNBC Top News",
+          "link": "https://www.cnbc.com/2026/10/20/netflix-nflx-earnings-q3-2026.html"
+        },
+        {
+          "title": "France to deploy military as it braces for fresh unrest this weekend",
+          "source": "CNBC Top News",
+          "link": "https://www.cnbc.com/2026/10/20/france-protests-curfews-macron-gulf-trip.html"
+        },
+        {
+          "title": "Investors look to earnings to reset the bull market. The key level to watch on the S&P 500",
+          "source": "CNBC Top News",
+          "link": "https://www.cnbc.com/2026/10/20/santoli-key-sp-500-level-to-watch.html"
+        },
+        {
+          "title": "Microsoft pulls out of UK Nscale data centre deal over power delay",
+          "source": "Investing.com",
+          "link": "https://www.investing.com/news/stock-market-news/microsoft-pulls-out-of-uk-nscale-data-centre-deal-over-power-delay-4960690"
+        }
+      ],
+      "audio": "audio/2026-10-20.mp3",
+      "transcript": "transcripts/2026-10-20.txt",
+      "duration": 146,
+      "bytes": 876528,
+      "published": "2026-10-20T16:40:20.845680+00:00"
+    },
+    {
+      "date": "2026-10-19",
+      "title": "France's Unrest Hits Markets; Chips Rebound",
+      "teaser": "Paris riots spill into bonds and the euro, chip stocks bounce back, and Saudi Arabia postpones its big investor show.",
+      "topics": [
+        "France unrest",
+        "chip stocks",
+        "Saudi Arabia",
+        "Fed watch",
+        "AI trade"
+      ],
+      "sources": [
+        {
+          "title": "France imposes curfews in parts of Paris, other cities after weekend of riots",
+          "source": "Investing.com",
+          "link": "https://www.investing.com/news/stock-market-news/as-france-reels-from-violence-macron-points-to-security-failings-4956666"
+        },
+        {
+          "title": "French unrest compounds debt crisis fears. Paris-listed stocks, bonds and the euro fall",
+          "source": "CNBC Top News",
+          "link": "https://www.cnbc.com/2026/10/19/france-protests-bond-yields-markets.html"
+        },
+        {
+          "title": "Saudi Arabia postpones big investor conference to 2027 as Iran-backed Houthis escalate attacks on kingdom",
+          "source": "CNBC Top News",
+          "link": "https://www.cnbc.com/2026/10/19/saudi-arabia-postpones-fii-investor-conference-to-2027.html"
+        },
+        {
+          "title": "Micron and other chip stocks spring back to life after bruising selloff",
+          "source": "MarketWatch",
+          "link": "https://www.marketwatch.com/story/micron-and-other-chip-stocks-spring-back-to-life-after-bruising-selloff-16486541?mod=mw_rss_topstories"
+        },
+        {
+          "title": "Why a former Intel skeptic is giving up his negative call on the stock after four years",
+          "source": "MarketWatch",
+          "link": "https://www.marketwatch.com/story/why-a-former-intel-skeptic-is-giving-up-his-negative-call-on-the-stock-after-four-years-47c2fab6?mod=mw_rss_topstories"
+        },
+        {
+          "title": "DeepSeek teams up with Huawei to challenge Nvidia",
+          "source": "Investing.com",
+          "link": "https://www.investing.com/news/stock-market-news/deepseek-teams-up-with-huawei-to-challenge-nvidia-4958123"
+        },
+        {
+          "title": "One of this year\u2019s most important relationships in global financial markets is falling apart",
+          "source": "MarketWatch",
+          "link": "https://www.marketwatch.com/story/one-of-this-years-most-important-relationships-in-global-financial-markets-is-falling-apart-2cf58121?mod=mw_rss_topstories"
+        },
+        {
+          "title": "Anthropic is AI trade's last big hope for a major IPO this year",
+          "source": "CNBC Top News",
+          "link": "https://www.cnbc.com/2026/10/19/anthropic-ipo-ai-trade.html"
+        },
+        {
+          "title": "Building permits, pending home sales among economic data due Tuesday",
+          "source": "Investing.com",
+          "link": "https://www.investing.com/news/stock-market-news/building-permits-pending-home-sales-among-economic-data-due-tuesday-93CH-4958118"
+        }
+      ],
+      "audio": "audio/2026-10-19.mp3",
+      "transcript": "transcripts/2026-10-19.txt",
+      "duration": 149,
+      "bytes": 896112,
+      "published": "2026-10-19T18:36:02.027863+00:00"
+    },
+    {
+      "date": "2026-10-16",
+      "title": "Hot PPI, AI Selloff, Fed In Question",
+      "teaser": "Wholesale inflation surprised to the upside, the AI trade keeps unwinding, and suddenly the Fed's \"obvious\" pause isn't so obvious.",
+      "topics": [
+        "Fed policy",
+        "inflation",
+        "AI stocks selloff",
+        "Treasury yields",
+        "midterms"
+      ],
+      "sources": [
+        {
+          "title": "Nasdaq falls over 1% as AI trade extends decline, set for worst week since June",
+          "source": "Investing.com",
+          "link": "https://www.investing.com/news/stock-market-news/nasdaq-futures-edge-lower-as-ai-spending-fed-rate-concerns-weigh-4952930"
+        },
+        {
+          "title": "Here's how the CoreWeave sell-off is affecting OpenAI vs. Anthropic valuations",
+          "source": "CNBC Top News",
+          "link": "https://www.cnbc.com/2026/10/16/coreweave-openai-anthropic-perps.html"
+        },
+        {
+          "title": "Wholesale prices jumped 6.3% annually in September, biggest gain since 2022",
+          "source": "CNBC Markets",
+          "link": "https://www.cnbc.com/2026/10/15/september-producer-price-index-retail-sales-data.html"
+        },
+        {
+          "title": "Economists: Hot PPI shows Fed's work is not done",
+          "source": "CNBC Markets",
+          "link": "https://www.cnbc.com/2026/10/15/pce-ppi-september-fed-reserve-rate-hike.html"
+        },
+        {
+          "title": "U.S. Treasury dismisses IMF debt warning and 'messy' forecasting",
+          "source": "CNBC Markets",
+          "link": "https://www.cnbc.com/2026/10/15/zervos-imf-us-debt-warning.html"
+        },
+        {
+          "title": "Analysis: Why a $2 trillion deficit and 5% Treasury yields are becoming America's biggest economic challenge",
+          "source": "CNBC Markets",
+          "link": "https://www.cnbc.com/2026/10/15/treasury-yields-deficit-national-debt-ai.html"
+        },
+        {
+          "title": "Analysis: Everyone expects the Fed to hold rates in October. Kevin Warsh could surprise us all",
+          "source": "CNBC Markets",
+          "link": "https://www.cnbc.com/2026/10/16/kevin-warsh-fed-october-rate-hike-interest-rates-markets.html"
+        },
+        {
+          "title": "A stock-market \u2018sell\u2019 signal has been silenced \u2014 but these Bank of America strategists say it\u2019s too early to buy",
+          "source": "MarketWatch",
+          "link": "https://www.marketwatch.com/story/a-stock-market-sell-signal-has-been-silenced-but-these-bank-of-america-strategists-say-its-too-early-to-buy-8cdf98c8?mod=mw_rss_topstories"
+        },
+        {
+          "title": "Many of 2026\u2019s hottest stocks have seen dramatic comedowns this week",
+          "source": "MarketWatch",
+          "link": "https://www.marketwatch.com/story/many-of-2026s-hottest-stocks-have-seen-dramatic-comedowns-this-week-e5ae5d06?mod=mw_rss_topstories"
+        },
+        {
+          "title": "Elon Musk cash infusion helps GOP Senate super PAC raise record $273 million",
+          "source": "CNBC Top News",
+          "link": "https://www.cnbc.com/2026/10/15/elon-musk-senate-leadership-fund-fundraising.html"
+        }
+      ],
+      "audio": "audio/2026-10-16.mp3",
+      "transcript": "transcripts/2026-10-16.txt",
+      "duration": 156,
+      "bytes": 941760,
+      "published": "2026-10-16T16:25:18.139280+00:00"
+    },
+    {
+      "date": "2026-10-15",
+      "title": "Hot PPI Deepens Tech Rout, Lifts Yields",
+      "teaser": "Wholesale prices spike, AI stocks keep sliding, and ten-year yields above five percent are becoming the story everyone's watching.",
+      "topics": [
+        "inflation",
+        "AI selloff",
+        "Treasury yields",
+        "Fed policy",
+        "tech sector"
+      ],
+      "sources": [
+        {
+          "title": "Nvidia, AMD, Dell sell-off in global tech rout on AI funding worries",
+          "source": "CNBC Top News",
+          "link": "https://www.cnbc.com/2026/10/15/sk-hynix-samsung-softbank-stocks-asia-tech-rout-ai-funding-worries.html"
+        },
+        {
+          "title": "Wholesale prices jumped 6.3% annually in September, biggest gain since 2022",
+          "source": "CNBC Markets",
+          "link": "https://www.cnbc.com/2026/10/15/september-producer-price-index-retail-sales-data.html"
+        },
+        {
+          "title": "Economists: Hot PPI shows Fed's work is not done",
+          "source": "CNBC Markets",
+          "link": "https://www.cnbc.com/2026/10/15/pce-ppi-september-fed-reserve-rate-hike.html"
+        },
+        {
+          "title": "Investors are dumping AI stocks as \u2018tech wreck\u2019 worsens. Here\u2019s where they\u2019re turning now.",
+          "source": "MarketWatch",
+          "link": "https://www.marketwatch.com/story/traders-pile-into-bonds-and-defensive-stocks-as-the-tech-wreck-picks-up-steam-48c04374?mod=mw_rss_topstories"
+        },
+        {
+          "title": "Micron, Nvidia and other chip stocks face renewed pressure as AI fears swell",
+          "source": "MarketWatch",
+          "link": "https://www.marketwatch.com/story/micron-nvidia-and-other-chip-stocks-face-renewed-pressure-as-ai-fears-swell-4e0dc989?mod=mw_rss_topstories"
+        },
+        {
+          "title": "U.S. Treasury dismisses IMF debt warning and 'messy' forecasting",
+          "source": "CNBC Markets",
+          "link": "https://www.cnbc.com/2026/10/15/zervos-imf-us-debt-warning.html"
+        },
+        {
+          "title": "Analysis: Why a $2 trillion deficit and 5% Treasury yields are becoming America's biggest economic challenge",
+          "source": "CNBC Markets",
+          "link": "https://www.cnbc.com/2026/10/15/treasury-yields-deficit-national-debt-ai.html"
+        },
+        {
+          "title": "CoreWeave investors are feeling spooked, as the company\u2019s stock and bonds see fresh pressure",
+          "source": "MarketWatch",
+          "link": "https://www.marketwatch.com/story/coreweave-investors-are-feeling-spooked-as-the-companys-stock-and-bonds-see-fresh-pressure-ba39a931?mod=mw_rss_topstories"
+        },
+        {
+          "title": "TSMC chip capacity is \u2018fierce\u2019 battleground for AI customers, amid record quarter",
+          "source": "CNBC Top News",
+          "link": "https://www.cnbc.com/2026/10/15/nvidia-apple-broadcom-in-fierce-battle-to-make-chips-at-tsmc.html"
+        },
+        {
+          "title": "Consumer prices rose 3.7% annually in September as gas prices skyrocket",
+          "source": "CNBC Markets",
+          "link": "https://www.cnbc.com/2026/10/14/cpi-inflation-report-september-2026.html"
+        }
+      ],
+      "audio": "audio/2026-10-15.mp3",
+      "transcript": "transcripts/2026-10-15.txt",
+      "duration": 160,
+      "bytes": 964368,
+      "published": "2026-10-15T16:42:52.643536+00:00"
+    },
+    {
+      "date": "2026-10-14",
+      "title": "Hot CPI Print Rattles Rates and AI Names",
+      "teaser": "September inflation came in hotter than expected, bond yields jumped, and CoreWeave got caught in the crossfire.",
+      "topics": [
+        "inflation",
+        "Federal Reserve",
+        "bond yields",
+        "AI financing",
+        "earnings"
+      ],
+      "sources": [
+        {
+          "title": "Consumer prices rose 3.7% annually in September as gas prices skyrocket",
+          "source": "CNBC Markets",
+          "link": "https://www.cnbc.com/2026/10/14/cpi-inflation-report-september-2026.html"
+        },
+        {
+          "title": "Here's the inflation breakdown for September 2026 \u2014 in one chart",
+          "source": "CNBC Top News",
+          "link": "https://www.cnbc.com/2026/10/14/cpi-inflation-breakdown-september-2026.html"
+        },
+        {
+          "title": "3 things that are driving inflation higher",
+          "source": "MarketWatch",
+          "link": "https://www.marketwatch.com/story/3-things-that-are-driving-inflation-higher-26bda9a9?mod=mw_rss_topstories"
+        },
+        {
+          "title": "Rising bond yields and higher inflation leave the Fed trapped in a rate-hike dilemma",
+          "source": "MarketWatch",
+          "link": "https://www.marketwatch.com/story/rising-bond-yields-and-higher-inflation-leave-the-fed-trapped-in-a-rate-hike-dilemma-d34ba326?mod=mw_rss_topstories"
+        },
+        {
+          "title": "CoreWeave shares tumble as bond yields near 15% on concern about AI borrowing binge",
+          "source": "CNBC Top News",
+          "link": "https://www.cnbc.com/2026/10/14/coreweave-stock-bond-yields-ai-debt.html"
+        },
+        {
+          "title": "September CPI data creates dilemma for Warsh weeks before October decision",
+          "source": "Seeking Alpha",
+          "link": "https://seekingalpha.com/news/4653049-september-cpi-data-creates-dilemma-for-warsh-weeks-before-october-decision?utm_source=feed_news_all&utm_medium=referral&feed_item_type=news"
+        },
+        {
+          "title": "Morgan Stanley beats quarterly profit estimates on equity trading strength",
+          "source": "Investing.com",
+          "link": "https://www.investing.com/news/stock-market-news/morgan-stanley-profit-rises-on-equity-trading-strength-4948872"
+        },
+        {
+          "title": "Netflix to lay off roughly 1,000 employees, or 6% of workforce",
+          "source": "CNBC Top News",
+          "link": "https://www.cnbc.com/2026/10/14/netflix-layoffs.html"
+        },
+        {
+          "title": "Social Security Administration announces 3.6% cost-of-living adjustment for 2027",
+          "source": "CNBC Top News",
+          "link": "https://www.cnbc.com/2026/10/14/social-security-cola-2027.html"
+        },
+        {
+          "title": "Container ship sinks in Strait of Hormuz as Iran steps up attacks",
+          "source": "CNBC Top News",
+          "link": "https://www.cnbc.com/2026/10/14/container-ship-sinks-strait-hormuz-as-iran-war-attacks.html"
+        }
+      ],
+      "audio": "audio/2026-10-14.mp3",
+      "transcript": "transcripts/2026-10-14.txt",
+      "duration": 160,
+      "bytes": 961632,
+      "published": "2026-10-14T16:56:14.306433+00:00"
+    },
+    {
+      "date": "2026-10-13",
+      "title": "Flat Market, Big Legal and Policy Tremors",
+      "teaser": "Bank earnings roll in, a jury hands Qualcomm a win over Arm, and the IMF flags disorderly bond risk ahead of tomorrow's inflation print.",
+      "topics": [
+        "bank earnings",
+        "Qualcomm-Arm ruling",
+        "inflation data",
+        "IMF warnings",
+        "geopolitics"
+      ],
+      "sources": [
+        {
+          "title": "S&P 500 flat as chipmakers fall and bank earnings roll in",
+          "source": "Investing.com",
+          "link": "https://www.investing.com/news/stock-market-news/sp-500-futures-muted-as-investors-await-big-bank-earnings-chip-weakness-weighs-4946052"
+        },
+        {
+          "title": "Delaware jury awards Qualcomm $2 in damages, finds Arm breached license agreement",
+          "source": "Investing.com",
+          "link": "https://www.investing.com/news/stock-market-news/qualcomm-says-jury-found-arm-breached-license-agreement-4947346"
+        },
+        {
+          "title": "Qualcomm, Arm weigh in after jury finds Arm breached license agreement",
+          "source": "Seeking Alpha",
+          "link": "https://seekingalpha.com/news/4652607-qualcomm-gratified-after-jury-finds-arm-breached-license-agreement?utm_source=feed_news_all&utm_medium=referral&feed_item_type=news"
+        },
+        {
+          "title": "Airport attacks put aviation in crosshairs of geopolitical conflicts",
+          "source": "CNBC Top News",
+          "link": "https://www.cnbc.com/2026/10/13/riyadh-airport-attacks-aviation.html"
+        },
+        {
+          "title": "The latest inflation data is expected to show price increases are accelerating",
+          "source": "CNBC Markets",
+          "link": "https://www.cnbc.com/2026/10/13/september-consumer-price-index-inflation.html"
+        },
+        {
+          "title": "Paul Tudor Jones says 2027 could be a really challenging year for the stock market",
+          "source": "CNBC Top News",
+          "link": "https://www.cnbc.com/2026/10/13/paul-tudor-jones-2027-really-challenging-year.html"
+        },
+        {
+          "title": "IMF warns bond yields could see a 'disorderly' spike as debt, inflation risks worsen",
+          "source": "CNBC Markets",
+          "link": "https://www.cnbc.com/2026/10/13/treasury-yields-imf-debt-inflation-.html"
+        },
+        {
+          "title": "IMF sees milder global slowdown as AI boom offsets war hit \u2014 warns resilience is nearing limits",
+          "source": "CNBC Markets",
+          "link": "https://www.cnbc.com/2026/10/12/imf-world-bank-annual-meetings-october-bangkok-asia-.html"
+        },
+        {
+          "title": "More Republicans come out against Trump's diesel deal with Putin",
+          "source": "CNBC Top News",
+          "link": "https://www.cnbc.com/2026/10/13/trump-russia-diesel-republicans.html"
+        }
+      ],
+      "audio": "audio/2026-10-13.mp3",
+      "transcript": "transcripts/2026-10-13.txt",
+      "duration": 158,
+      "bytes": 948384,
+      "published": "2026-10-13T19:07:46.284440+00:00"
+    },
+    {
+      "date": "2026-10-12",
+      "title": "Nasdaq Slips as Optical Stocks Get Hit",
+      "teaser": "AI spending jitters hammer optical and semiconductor names even as Microsoft hits a four trillion dollar milestone.",
+      "topics": [
+        "AI spending",
+        "tech selloff",
+        "oil markets",
+        "Fed policy",
+        "earnings season"
+      ],
+      "sources": [
+        {
+          "title": "Why Ciena, Lumentum and other optical stocks were among the market\u2019s biggest losers on Monday",
+          "source": "MarketWatch",
+          "link": "https://www.marketwatch.com/story/why-ciena-lumentum-and-other-optical-stocks-were-among-the-markets-biggest-losers-on-monday-b3e53f6a?mod=mw_rss_topstories"
+        },
+        {
+          "title": "Nasdaq falls ahead of earnings, economic data while oil rallies",
+          "source": "Investing.com",
+          "link": "https://www.investing.com/news/stock-market-news/us-stock-futures-muted-as-oil-stays-above-100-ahead-of-earnings-4943768"
+        },
+        {
+          "title": "Microsoft hits a big milestone that solidifies its revival",
+          "source": "MarketWatch",
+          "link": "https://www.marketwatch.com/story/microsoft-is-nearing-a-big-milestone-that-solidifies-its-revival-580d1ba8?mod=mw_rss_topstories"
+        },
+        {
+          "title": "Meta is back on the AI leaderboard with its new family of Wonder models",
+          "source": "MarketWatch",
+          "link": "https://www.marketwatch.com/story/meta-is-back-on-the-ai-leaderboard-with-its-new-family-of-wonder-models-a704b6cc?mod=mw_rss_topstories"
+        },
+        {
+          "title": "Trump\u2019s \u2018energy ceasefire\u2019 collides with real-world problems of dwindling fuel supplies",
+          "source": "MarketWatch",
+          "link": "https://www.marketwatch.com/story/trumps-energy-ceasefire-collides-with-real-world-problems-of-dwindling-fuel-supplies-8ba3993b?mod=mw_rss_topstories"
+        },
+        {
+          "title": "Trump defends Russia diesel deal after bipartisan pushback: 'I made the right choice'",
+          "source": "CNBC Top News",
+          "link": "https://www.cnbc.com/2026/10/12/trump-russia-diesel-putin.html"
+        },
+        {
+          "title": "Higher rates could be needed to avoid 'inflationary mindset' taking hold, says Fed's Hammack",
+          "source": "CNBC Top News",
+          "link": "https://www.cnbc.com/2026/10/12/beth-hammack-fed-inflation-policy.html"
+        },
+        {
+          "title": "Earnings beats are now the norm. What the stock market needs to keep rallying",
+          "source": "CNBC Top News",
+          "link": "https://www.cnbc.com/2026/10/07/here-comes-third-quarter-earnings-season-booming-profits-could-propel-the-sp-500-to-new-heights.html"
+        },
+        {
+          "title": "Nobel prize in economics awarded to Robert E. Hall and Michael Woodford",
+          "source": "CNBC Markets",
+          "link": "https://www.cnbc.com/2026/10/12/nobel-economics-prize-winner-woodford-hall.html"
+        }
+      ],
+      "audio": "audio/2026-10-12.mp3",
+      "transcript": "transcripts/2026-10-12.txt",
+      "duration": 190,
+      "bytes": 1523712,
+      "published": "2026-10-12T21:08:59.700233+00:00"
+    },
+    {
+      "date": "2026-10-09",
+      "title": "Telecoms Slide as SpaceX Enters the Fray",
+      "teaser": "SpaceX rattles telecom stocks, Delta warns on fuel costs, and the fight over Fed governor Lisa Cook escalates.",
+      "topics": [
+        "telecoms",
+        "Fed independence",
+        "airlines",
+        "fuel prices",
+        "AI chips"
+      ],
+      "sources": [
+        {
+          "title": "US, European telecom stocks slide as SpaceX spectrum deal rattles sector",
+          "source": "Investing.com",
+          "link": "https://www.investing.com/news/stock-market-news/us-european-telecom-stocks-slide-as-spacex-spectrum-deal-rattles-sector-4940422"
+        },
+        {
+          "title": "Verizon stock heads for worst day since 2002 as SpaceX U.S. network plans whack telcos",
+          "source": "CNBC Top News",
+          "link": "https://www.cnbc.com/2026/10/09/verizon-att-tmobile-stocks-spacex-network.html"
+        },
+        {
+          "title": "Delta warns of more airline capacity restraint as fuel shock hits profits",
+          "source": "Investing.com",
+          "link": "https://www.investing.com/news/stock-market-news/delta-air-lines-cuts-profit-outlook-as-fuel-costs-outpace-fare-gains-4940704"
+        },
+        {
+          "title": "Delta Air Lines cuts 2026 forecast on fuel surge, but CEO says demand is still strong",
+          "source": "CNBC Top News",
+          "link": "https://www.cnbc.com/2026/10/09/delta-air-lines-dal-q3-2026-earnings.html"
+        },
+        {
+          "title": "Trump appoints committee to investigate statements by the Fed's Lisa Cook",
+          "source": "CNBC Top News",
+          "link": "https://www.cnbc.com/2026/10/09/fed-lisa-cook-trump.html"
+        },
+        {
+          "title": "Trump ramps up battle to fire Fed\u2019s Lisa Cook. Her lawyers say there\u2019s no basis to remove her.",
+          "source": "MarketWatch",
+          "link": "https://www.marketwatch.com/story/trump-ramps-up-battle-to-fire-feds-lisa-cook-her-lawyers-say-theres-no-basis-to-remove-her-3a62c5cd?mod=mw_rss_topstories"
+        },
+        {
+          "title": "AI chip stocks wobble even as investors get clarity on a key OpenAI issue",
+          "source": "MarketWatch",
+          "link": "https://www.marketwatch.com/story/nvidia-and-micron-shares-bounce-as-investors-get-clarity-on-a-key-openai-matter-ba76ed20?mod=mw_rss_topstories"
+        },
+        {
+          "title": "Hurricane Isaias disrupts U.S. oil production in Gulf of Mexico, threatens refineries",
+          "source": "CNBC Top News",
+          "link": "https://www.cnbc.com/2026/10/09/hurricane-isaias-gulf-mexico-oil-refinery.html"
+        },
+        {
+          "title": "Inflation on many everyday items was entirely due to tariffs, NY Fed says",
+          "source": "CNBC Markets",
+          "link": "https://www.cnbc.com/2026/10/08/inflation-tariffs-trump-fed-consumer-goods.html"
+        },
+        {
+          "title": "Americans' debt problems are flashing a warning not seen since the Great Recession",
+          "source": "CNBC Markets",
+          "link": "https://www.cnbc.com/2026/10/09/american-debt-delinquency.html"
+        }
+      ],
+      "audio": "audio/2026-10-09.mp3",
+      "transcript": "transcripts/2026-10-09.txt",
+      "duration": 157,
+      "bytes": 947952,
+      "published": "2026-10-09T18:13:37.858910+00:00"
+    },
+    {
+      "date": "2026-10-08",
+      "title": "Oil Jumps, AI Stocks Sink, Yields Ease",
+      "teaser": "Iran tensions and a hurricane push oil higher while OpenAI's revenue numbers rattle the AI trade.",
+      "topics": [
+        "Iran tensions",
+        "oil prices",
+        "AI stocks",
+        "Treasury yields",
+        "Fed minutes"
+      ],
+      "sources": [
+        {
+          "title": "Wall Street slips as geopolitical tensions push oil prices higher",
+          "source": "Seeking Alpha",
+          "link": "https://seekingalpha.com/news/4651383-wall-street-slips-as-geopolitical-tensions-push-oil-prices-higher?utm_source=feed_news_all&utm_medium=referral&feed_item_type=news"
+        },
+        {
+          "title": "Nvidia, Oracle, CoreWeave and other AI stocks sink on OpenAI revenue report",
+          "source": "CNBC Top News",
+          "link": "https://www.cnbc.com/2026/10/08/open-ai-revenue-nvidia-oracle-coreweave.html"
+        },
+        {
+          "title": "Trump says U.S. will not attack Iran before midterm election",
+          "source": "CNBC Top News",
+          "link": "https://www.cnbc.com/2026/10/08/iran-war-trump-midterm-election.html"
+        },
+        {
+          "title": "Treasury sanctions 17 tankers linked to Iran's 'shadow fleet' in economic pressure campaign",
+          "source": "CNBC Top News",
+          "link": "https://www.cnbc.com/2026/10/08/iran-treasury-sanctions-shadow-fleet.html"
+        },
+        {
+          "title": "Oil prices jump as Iran steps up tanker attacks, hurricane threatens U.S. Gulf production",
+          "source": "CNBC Top News",
+          "link": "https://www.cnbc.com/2026/10/08/oil-prices-today-brent-wti-hormuz.html"
+        },
+        {
+          "title": "Bond yields fell, as the Treasury market passed a crucial test of investor confidence",
+          "source": "MarketWatch",
+          "link": "https://www.marketwatch.com/story/the-treasury-market-is-facing-a-crucial-vote-of-investor-confidence-31fa8d41?mod=mw_rss_topstories"
+        },
+        {
+          "title": "Treasury yields are lower after reaching multiyear highs, traders weigh latest bond auction",
+          "source": "CNBC Top News",
+          "link": "https://www.cnbc.com/2026/10/08/us-treasury-yields-30-year-bond-auction.html"
+        },
+        {
+          "title": "Minutes of the Federal Open Market Committee, September 15-16, 2026",
+          "source": "Federal Reserve",
+          "link": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261007a.htm"
+        },
+        {
+          "title": "Inflation fears on the rise as one-year outlook in Fed survey hits highest level since May 2023",
+          "source": "CNBC Markets",
+          "link": "https://www.cnbc.com/2026/10/07/inflation-fears-on-the-rise-as-one-year-outlook-in-fed-survey-hits-highest-since-may-2023.html"
+        },
+        {
+          "title": "Inflation on many everyday items was entirely due to tariffs, NY Fed says",
+          "source": "CNBC Markets",
+          "link": "https://www.cnbc.com/2026/10/08/inflation-tariffs-trump-fed-consumer-goods.html"
+        },
+        {
+          "title": "US freezes Microsoft, Adobe, Infosys green-card applications over alleged fraud",
+          "source": "Investing.com",
+          "link": "https://www.investing.com/news/stock-market-news/us-suspending-permanent-residency-program-formicrosoft-vance-says-4939365"
+        },
+        {
+          "title": "U.S. suspends Microsoft, Adobe from green card labor program in foreign worker crackdown",
+          "source": "CNBC Top News",
+          "link": "https://www.cnbc.com/2026/10/08/microsoft-adobe-green-card-labor-suspension.html"
+        }
+      ],
+      "audio": "audio/2026-10-08.mp3",
+      "transcript": "transcripts/2026-10-08.txt",
+      "duration": 154,
+      "bytes": 925344,
+      "published": "2026-10-08T18:42:59.956514+00:00"
+    },
+    {
+      "date": "2026-10-07",
+      "title": "Fed Minutes Point to More Hikes Ahead",
+      "teaser": "Fed minutes show officials eyeing another hike as inflation fears creep higher, while oil tankers and diesel prices expose fresh strain.",
+      "topics": [
+        "Fed policy",
+        "Treasury yields",
+        "oil and energy",
+        "earnings season",
+        "inflation expectations"
+      ],
+      "sources": [
+        {
+          "title": "Fed officials see another hike coming, but no sign as to when, minutes show",
+          "source": "CNBC Top News",
+          "link": "https://www.cnbc.com/2026/10/07/fed-officials-see-another-hike-coming-but-no-sign-as-to-when-minutes-show.html"
+        },
+        {
+          "title": "Fed\u2019s minutes show no appetite for a series of interest-rate hikes",
+          "source": "MarketWatch",
+          "link": "https://www.marketwatch.com/story/fed-minutes-show-no-appetite-for-a-series-of-interest-rate-hikes-8b1c6436?mod=mw_rss_topstories"
+        },
+        {
+          "title": "Inflation fears on the rise as one-year outlook in Fed survey hits highest level since May 2023",
+          "source": "CNBC Markets",
+          "link": "https://www.cnbc.com/2026/10/07/inflation-fears-on-the-rise-as-one-year-outlook-in-fed-survey-hits-highest-since-may-2023.html"
+        },
+        {
+          "title": "10-year Treasury yield ease from 24-year high after solid bond auction eases demand fears",
+          "source": "CNBC Top News",
+          "link": "https://www.cnbc.com/2026/10/07/treasury-yields-auction-fomc-minutes.html"
+        },
+        {
+          "title": "Supertanker chartered from Gulf Coast to China for $76 million, 10 times higher than pre-war level",
+          "source": "CNBC Top News",
+          "link": "https://www.cnbc.com/2026/10/07/supertanker-from-us-to-china-chartered-for-76-million-source.html"
+        },
+        {
+          "title": "Trump\u2019s diesel order exposes White House limits to counter surging fuel prices",
+          "source": "CNBC Top News",
+          "link": "https://www.cnbc.com/2026/10/07/trump-red-dye-offroad-diesel-price-iran-ukraine-war-midterm.html"
+        },
+        {
+          "title": "Here comes third-quarter earnings season. Booming profits could propel the S&P 500 to new heights",
+          "source": "CNBC Top News",
+          "link": "https://www.cnbc.com/2026/10/07/here-comes-third-quarter-earnings-season-booming-profits-could-propel-the-sp-500-to-new-heights.html"
+        },
+        {
+          "title": "Trade deficit hits $105.6 billion, widest since just before Trump tariffs enacted last year",
+          "source": "CNBC Markets",
+          "link": "https://www.cnbc.com/2026/10/06/trade-deficit-hits-105point6-billion-widest-since-just-before-trump-tariffs-enacted-last-year.html"
+        },
+        {
+          "title": "India\u2019s central bank hikes rates for the first time since 2023 as inflation risks build",
+          "source": "CNBC Markets",
+          "link": "https://www.cnbc.com/2026/10/07/india-rbi-interest-rates-inflation.html"
+        }
+      ],
+      "audio": "audio/2026-10-07.mp3",
+      "transcript": "transcripts/2026-10-07.txt",
+      "duration": 129,
+      "bytes": 776160,
+      "published": "2026-10-07T18:44:43.583734+00:00"
+    },
+    {
+      "date": "2026-10-06",
+      "title": "No Market Data, Plenty of Fed and Trade Noise",
+      "teaser": "Market data's dark this morning, but the trade deficit, Fed bank oversight overhaul, and Hormuz tanker risk are all worth your attention.",
+      "topics": [
+        "Trade deficit",
+        "Federal Reserve",
+        "Oil and Hormuz risk",
+        "AI stocks",
+        "France unrest"
+      ],
+      "sources": [
+        {
+          "title": "Trade deficit hits $105.6 billion, widest since just before Trump tariffs enacted last year",
+          "source": "CNBC Markets",
+          "link": "https://www.cnbc.com/2026/10/06/trade-deficit-hits-105point6-billion-widest-since-just-before-trump-tariffs-enacted-last-year.html"
+        },
+        {
+          "title": "Federal Reserve to restructure US bank supervision model",
+          "source": "Investing.com",
+          "link": "https://www.investing.com/news/stock-market-news/federal-reserve-to-restructure-us-bank-supervision-model-4935044"
+        },
+        {
+          "title": "Rebounding oil exports through Strait of Hormuz are vulnerable to stepped-up Iranian tanker attacks",
+          "source": "CNBC Top News",
+          "link": "https://www.cnbc.com/2026/10/06/crude-oil-tanker-strait-hormuz-iran-attack.html"
+        },
+        {
+          "title": "Northeast Democrats urge Trump administration action as heating oil costs surge",
+          "source": "Investing.com",
+          "link": "https://www.investing.com/news/stock-market-news/northeast-democrats-urge-trump-administration-action-as-heating-oil-costs-surge-4935029"
+        },
+        {
+          "title": "FOMC minutes, crude oil inventories among economic data due Wednesday",
+          "source": "Investing.com",
+          "link": "https://www.investing.com/news/stock-market-news/fomc-minutes-crude-oil-inventories-among-economic-data-due-wednesday-93CH-4935056"
+        },
+        {
+          "title": "Salesforce shares sit at the epicenter of AI confusion. Here's how to trade it",
+          "source": "CNBC Top News",
+          "link": "https://www.cnbc.com/2026/10/06/salesforce-shares-sit-at-the-epicenter-of-ai-confusion-heres-how-to-trade-it.html"
+        },
+        {
+          "title": "These 5 chip stocks are cheaper than the S&P 500 \u2014\u00a0and offer faster growth",
+          "source": "MarketWatch",
+          "link": "https://www.marketwatch.com/story/these-5-chip-stocks-are-cheaper-than-the-s-p-500-and-offer-faster-growth-f8ab4386?mod=mw_rss_topstories"
+        },
+        {
+          "title": "Student riots engulf France as far-right presidential frontrunner Le Pen vows fiscal turnaround",
+          "source": "CNBC Top News",
+          "link": "https://www.cnbc.com/2026/10/06/france-student-protests-budget.html"
+        },
+        {
+          "title": "World Bank warns of AI concentration risks as it lifts East Asia and Pacific growth outlook to 4.5%",
+          "source": "CNBC Markets",
+          "link": "https://www.cnbc.com/2026/10/06/world-bank-east-asia-growth-inflation-ai-exports-.html"
+        }
+      ],
+      "audio": "audio/2026-10-06.mp3",
+      "transcript": "transcripts/2026-10-06.txt",
+      "duration": 148,
+      "bytes": 893952,
+      "published": "2026-10-06T18:11:14.111978+00:00"
+    },
+    {
+      "date": "2026-10-05",
+      "title": "Stocks Shrug Off Bond Rout Near Records",
+      "teaser": "Wall Street brushes off a brutal bond market while M&A chatter and AI bets drive the real action underneath.",
+      "topics": [
+        "bond market",
+        "M&A",
+        "AI stocks",
+        "earnings",
+        "Fed watch"
+      ],
+      "sources": [
+        {
+          "title": "Option Care Health surges 22% on report of $5 billion takeover by McKesson, CD&R",
+          "source": "Investing.com",
+          "link": "https://www.investing.com/news/stock-market-news/option-care-health-surges-22-on-report-of-5-billion-takeover-by-mckesson-cdr-4932841"
+        },
+        {
+          "title": "TSX ekes out gain as weak services data tempers investor sentiment",
+          "source": "Investing.com",
+          "link": "https://www.investing.com/news/stock-market-news/tsx-futures-point-higher-as-bets-on-october-fed-rate-hike-fade-4932035"
+        },
+        {
+          "title": "Investors see big opportunity in ferocious 2026 bond-market rout",
+          "source": "MarketWatch",
+          "link": "https://www.marketwatch.com/story/investors-see-big-opportunity-in-ferocious-2026-bond-market-rout-e5cc94f3?mod=mw_rss_topstories"
+        },
+        {
+          "title": "SpaceX stock climbs to highest since June, returning Musk to trillionaire status",
+          "source": "CNBC Top News",
+          "link": "https://www.cnbc.com/2026/10/05/spacex-stock-climbs-highest-since-june-returning-musk-to-trillionaire.html"
+        },
+        {
+          "title": "Wall Street ends within sight of record close as traders brush off bond rout",
+          "source": "Investing.com",
+          "link": "https://www.investing.com/news/stock-market-news/us-stock-futures-tick-higher-as-soft-jobs-data-eases-fed-hike-bets-4930969"
+        },
+        {
+          "title": "Mattel faces growing shareholder pressure to consider a sale, WSJ reports",
+          "source": "Investing.com",
+          "link": "https://www.investing.com/news/stock-market-news/mattel-faces-growing-shareholder-pressure-to-consider-a-sale-wsj-reports-4932853"
+        },
+        {
+          "title": "Western Digital and Seagate shares bounce back as analysts downplay the Toshiba threat",
+          "source": "MarketWatch",
+          "link": "https://www.marketwatch.com/story/western-digital-and-seagate-shares-bounce-back-as-analysts-downplay-the-toshiba-threat-4979dbff?mod=mw_rss_topstories"
+        },
+        {
+          "title": "Microsoft\u2019s blazing stock comeback isn\u2019t even close to being over, analyst says",
+          "source": "MarketWatch",
+          "link": "https://www.marketwatch.com/story/microsofts-blazing-stock-comeback-isnt-even-close-to-being-over-analyst-says-265f7b6d?mod=mw_rss_topstories"
+        },
+        {
+          "title": "Lucid's Q3 deliveries fall 6.7% as EV maker cuts production to align with demand",
+          "source": "CNBC Top News",
+          "link": "https://www.cnbc.com/2026/10/05/lucid-group-lcid-q3-2026-deliveries-production.html"
+        },
+        {
+          "title": "Saudi Aramco\u2019s CEO may be too downbeat about the road to restocking global oil supplies",
+          "source": "MarketWatch",
+          "link": "https://www.marketwatch.com/story/saudi-aramcos-ceo-may-be-too-downbeat-about-the-road-to-restocking-global-oil-supplies-1fdbb70b?mod=mw_rss_topstories"
+        }
+      ],
+      "audio": "audio/2026-10-05.mp3",
+      "transcript": "transcripts/2026-10-05.txt",
+      "duration": 164,
+      "bytes": 987408,
+      "published": "2026-10-05T20:27:44.275726+00:00"
+    },
+    {
+      "date": "2026-10-02",
+      "title": "Weak Jobs Report, Yields Rise Anyway",
+      "teaser": "September payrolls badly missed, but bond yields climbed instead of falling \u2014 and Europe scrambled to release diesel stockpiles.",
+      "topics": [
+        "jobs report",
+        "Treasury yields",
+        "diesel crisis",
+        "Fed",
+        "labor market"
+      ],
+      "sources": [
+        {
+          "title": "Labor market faltered in September as jobs increased by just 29,000, unemployment rate rose to 4.2%",
+          "source": "CNBC Markets",
+          "link": "https://www.cnbc.com/2026/10/02/jobs-report-september-2026.html"
+        },
+        {
+          "title": "The September jobs report will be released Friday. Here's what to expect",
+          "source": "CNBC Markets",
+          "link": "https://www.cnbc.com/2026/10/01/the-september-jobs-report-will-be-released-friday-heres-what-to-expect.html"
+        },
+        {
+          "title": "Why bond investors quickly lost their enthusiasm for weak labor figures",
+          "source": "MarketWatch",
+          "link": "https://www.marketwatch.com/story/why-bond-investors-quickly-lost-their-enthusiasm-for-weak-labor-figures-7a9727da?mod=mw_rss_topstories"
+        },
+        {
+          "title": "10-year Treasury yield ticks higher despite weaker-than-expected jobs report",
+          "source": "CNBC Top News",
+          "link": "https://www.cnbc.com/2026/10/02/treasury-yields-bonds-nonfarm-payrolls.html"
+        },
+        {
+          "title": "Treasury yields reverse higher after an earlier retreat against payrolls data",
+          "source": "Seeking Alpha",
+          "link": "https://seekingalpha.com/news/4649817-treasury-yields-retreat-after-the-softer-september-payrolls-report?utm_source=feed_news_all&utm_medium=referral&feed_item_type=news"
+        },
+        {
+          "title": "G7 nations to release diesel stocks as wars in Europe and Middle East constrain fuel supplies",
+          "source": "CNBC Top News",
+          "link": "https://www.cnbc.com/2026/10/02/diesel-oil-trump-europe-export-ban.html"
+        },
+        {
+          "title": "Europe\u2019s leaders rush to release diesel from stockpiles as fuel-shock hangs over U.S. midterms",
+          "source": "MarketWatch",
+          "link": "https://www.marketwatch.com/story/europes-leaders-rush-to-release-diesel-from-stockpiles-as-fuel-shock-hangs-over-u-s-midterms-80bf0f38?mod=mw_rss_topstories"
+        },
+        {
+          "title": "G7 countries agree on release of diesel and oil stocks after US pressure",
+          "source": "Investing.com",
+          "link": "https://www.investing.com/news/stock-market-news/europe-discussing-plan-for-diesel-stock-releases-after-us-pressure-source-says-4929100"
+        },
+        {
+          "title": "\u2018Complete disruption of the economy is all but certain\u2019: Top jobs and home prices are at risk, a new report on AI says",
+          "source": "MarketWatch",
+          "link": "https://www.marketwatch.com/story/another-viral-ai-doomsday-report-claims-its-over-why-home-prices-could-take-a-hit-as-screen-based-jobs-disappear-4bed48bc?mod=mw_rss_topstories"
+        },
+        {
+          "title": "Treasury Sec. Bessent, IRS crack down on ETF strategy the wealthy are using to avoid capital gains taxes",
+          "source": "CNBC Top News",
+          "link": "https://www.cnbc.com/2026/10/02/treasury-irs-capital-gains-income-tax-section-351-warning.html"
+        }
+      ],
+      "audio": "audio/2026-10-02.mp3",
+      "transcript": "transcripts/2026-10-02.txt",
+      "duration": 147,
+      "bytes": 885456,
+      "published": "2026-10-02T17:43:36.714574+00:00"
+    },
+    {
+      "date": "2026-10-01",
+      "title": "Yields Spike, Mortgages Jump, Earnings Loom",
+      "teaser": "Treasury yields hit a 24-year high before pulling back, mortgage rates spiked, and Nike and Tesla reports are on deck.",
+      "topics": [
+        "Treasury yields",
+        "mortgage rates",
+        "Nike earnings",
+        "Tesla deliveries",
+        "Iran sanctions"
+      ],
+      "sources": [
+        {
+          "title": "10-year Treasury yield slides after hitting highest levels in 24 years",
+          "source": "CNBC Top News",
+          "link": "https://www.cnbc.com/2026/10/01/us-treasury-bond-yield.html"
+        },
+        {
+          "title": "30-year mortgage rate posts biggest jump in four years \u2014 to nearly 7.3%",
+          "source": "MarketWatch",
+          "link": "https://www.marketwatch.com/story/30-year-mortgage-rate-posts-biggest-jump-in-four-years-e288f596?mod=mw_rss_topstories"
+        },
+        {
+          "title": "U.S. manufacturers say inflation is bad and not getting any better",
+          "source": "MarketWatch",
+          "link": "https://www.marketwatch.com/story/u-s-manufacturers-say-inflation-is-bad-and-not-getting-any-better-8281edef?mod=mw_rss_topstories"
+        },
+        {
+          "title": "Nike is set to report earnings after the bell. Here's what to expect",
+          "source": "CNBC Top News",
+          "link": "https://www.cnbc.com/2026/10/01/nike-nke-q1-2027-earnings.html"
+        },
+        {
+          "title": "Tesla\u2019s delivery report is just around the corner. Expect a sales drop.",
+          "source": "MarketWatch",
+          "link": "https://www.marketwatch.com/story/teslas-delivery-report-is-just-around-the-corner-expect-a-sales-drop-45d5503b?mod=mw_rss_topstories"
+        },
+        {
+          "title": "Treasury sanctions operation targets Iran's auto, rail industries in latest economic attack",
+          "source": "CNBC Top News",
+          "link": "https://www.cnbc.com/2026/10/01/treasury-sanctions-iran-auto-rail.html"
+        },
+        {
+          "title": "Former LinkedIn chief Roslansky to leave Microsoft, following other exec departures",
+          "source": "CNBC Top News",
+          "link": "https://www.cnbc.com/2026/10/01/linkedin-chief-roslansky-microsoft-exit.html"
+        },
+        {
+          "title": "Nonfarm payrolls, unemployment rate and hourly earnings due Friday",
+          "source": "Investing.com",
+          "link": "https://www.investing.com/news/stock-market-news/nonfarm-payrolls-unemployment-rate-and-hourly-earnings-due-friday-93CH-4928058"
+        },
+        {
+          "title": "Trump Medicare drug pricing model may apply to only four companies after exemptions",
+          "source": "Investing.com",
+          "link": "https://www.investing.com/news/stock-market-news/trump-medicare-drug-pricing-model-may-apply-to-only-four-companies-after-exemptions-4928054"
+        },
+        {
+          "title": "This silent alarm in the bond market tells you which stocks to buy and which to avoid",
+          "source": "MarketWatch",
+          "link": "https://www.marketwatch.com/story/this-silent-alarm-in-the-bond-market-tells-you-which-stocks-to-buy-and-which-to-avoid-4568ac53?mod=mw_rss_topstories"
+        }
+      ],
+      "audio": "audio/2026-10-01.mp3",
+      "transcript": "transcripts/2026-10-01.txt",
+      "duration": 146,
+      "bytes": 877536,
+      "published": "2026-10-01T18:18:01.396512+00:00"
+    },
+    {
+      "date": "2026-09-30",
+      "title": "Data Deluge Cools Rate Hike Bets",
+      "teaser": "A wave of strong economic data pushed the S&P and Nasdaq higher as traders dialed back rate expectations.",
+      "topics": [
+        "Federal Reserve",
+        "economic data",
+        "tariffs",
+        "AI scrutiny",
+        "obesity drugs"
+      ],
+      "sources": [
+        {
+          "title": "S&P rises, Nasdaq gains 1% as traders pare Fed rate hike bets on U.S. data deluge",
+          "source": "Investing.com",
+          "link": "https://www.investing.com/news/stock-market-news/us-stock-futures-drift-higher-as-yields-pause-oil-prices-slide-4923936"
+        },
+        {
+          "title": "The U.S. economy is defying gravity. Here\u2019s all the good news.",
+          "source": "MarketWatch",
+          "link": "https://www.marketwatch.com/story/the-u-s-economy-is-defying-gravity-heres-all-the-good-news-8b58fc7b?mod=mw_rss_topstories"
+        },
+        {
+          "title": "Trump's latest global tariffs face trade court challenge",
+          "source": "CNBC Top News",
+          "link": "https://www.cnbc.com/2026/09/30/trump-tariffs-trade-lawsuit.html"
+        },
+        {
+          "title": "FTC is investigating OpenAI, Anthropic and other AI companies over product risks",
+          "source": "CNBC Top News",
+          "link": "https://www.cnbc.com/2026/09/30/ftc-ai-probe-openai-anthropic.html"
+        },
+        {
+          "title": "Eli Lilly says closely watched combo obesity regimen boosts weight loss in mid-stage trial",
+          "source": "CNBC Top News",
+          "link": "https://www.cnbc.com/2026/09/30/eli-lilly-obesity-drug-amylin-tirzepatide-weight-loss-trial.html"
+        },
+        {
+          "title": "Fed watchdog finds renovation failures, but no grounds for criminal referral",
+          "source": "CNBC Top News",
+          "link": "https://www.cnbc.com/2026/09/30/fed-inspector-general-report-powell-trump.html"
+        },
+        {
+          "title": "Gold is supposed to be a safe haven when inflation surges. So why isn\u2019t it working that way now?",
+          "source": "MarketWatch",
+          "link": "https://www.marketwatch.com/story/gold-is-supposed-to-be-a-safe-haven-when-inflation-surges-so-why-isnt-it-working-that-way-now-45cbb07b?mod=mw_rss_topstories"
+        },
+        {
+          "title": "These bond strategies can help you get a safe 5% return on your cash",
+          "source": "MarketWatch",
+          "link": "https://www.marketwatch.com/story/these-bond-strategies-can-help-you-get-a-safe-5-return-on-your-cash-5fa45ccd?mod=mw_rss_topstories"
+        },
+        {
+          "title": "Bill to limit stock trading in US Congress set to be blocked in Senate",
+          "source": "Investing.com",
+          "link": "https://www.investing.com/news/stock-market-news/bill-to-limit-stock-trading-in-us-congress-set-to-be-blocked-in-senate-4925633"
+        },
+        {
+          "title": "Senate Democrats sink 'toothless' stock trading ban, data center bill in last act before election recess",
+          "source": "CNBC Top News",
+          "link": "https://www.cnbc.com/2026/09/30/senate-stock-trading-ban-data-center-election.html"
+        }
+      ],
+      "audio": "audio/2026-09-30.mp3",
+      "transcript": "transcripts/2026-09-30.txt",
+      "duration": 151,
+      "bytes": 909216,
+      "published": "2026-09-30T17:52:36.607488+00:00"
+    },
+    {
+      "date": "2026-09-29",
+      "title": "Bond Rout Resumes, Consumer Confidence Tumbles",
+      "teaser": "Yields hit a two-decade high, stocks slide, and consumer confidence just posted its worst reading since 2014.",
+      "topics": [
+        "Treasury yields",
+        "consumer confidence",
+        "energy reserves",
+        "AI policy",
+        "market breadth"
+      ],
+      "sources": [
+        {
+          "title": "U.S. to release 40M more barrels from oil reserve as fuel prices surge",
+          "source": "Seeking Alpha",
+          "link": "https://seekingalpha.com/news/4648168-u-s-to-release-40m-more-barrels-from-oil-reserve-as-fuel-prices-surge?utm_source=feed_news_all&utm_medium=referral&feed_item_type=news"
+        },
+        {
+          "title": "U.S. stocks fall as bond rout resumes, 10-year yield hits over two-decade high",
+          "source": "Investing.com",
+          "link": "https://www.investing.com/news/stock-market-news/us-stock-futures-flat-after-soaring-yields-ai-jitters-dent-wall-st-4921473"
+        },
+        {
+          "title": "Horizon over which FOMC can achieve dual mandate could be communicated: St. Louis Fed's Musalem",
+          "source": "Seeking Alpha",
+          "link": "https://seekingalpha.com/news/4648153-horizon-over-which-fomc-can-achieve-dual-mandate-could-be-communicated-st-louis-feds-musalem?utm_source=feed_news_all&utm_medium=referral&feed_item_type=news"
+        },
+        {
+          "title": "Tech leaders arrive at White House for AI luncheon with Trump",
+          "source": "CNBC Top News",
+          "link": "https://www.cnbc.com/2026/09/29/tech-white-house-ai-lunch-trump.html"
+        },
+        {
+          "title": "Consumer optimism slides to lowest since 2014 as fears escalate over rising prices and jobs",
+          "source": "CNBC Top News",
+          "link": "https://www.cnbc.com/2026/09/29/consumer-optimism-slides-sharply-as-fears-escalate-over-rising-prices-and-jobs.html"
+        },
+        {
+          "title": "The hidden messages the bond market is sending about the AI boom and the stock market",
+          "source": "MarketWatch",
+          "link": "https://www.marketwatch.com/story/the-hidden-messages-the-bond-market-is-sending-about-the-ai-boom-and-the-stock-market-5c9495ba?mod=mw_rss_topstories"
+        },
+        {
+          "title": "You might be shocked by how many stocks are in a bear market right now",
+          "source": "MarketWatch",
+          "link": "https://www.marketwatch.com/story/you-might-be-shocked-by-how-many-stocks-are-in-a-bear-market-right-now-017c9cd8?mod=mw_rss_topstories"
+        },
+        {
+          "title": "House Speaker Johnson says he hopes AI guardrails are 'voluntary' amid Congress inaction",
+          "source": "CNBC Top News",
+          "link": "https://www.cnbc.com/2026/09/29/ai-safety-regulation-mike-johnson-congress.html"
+        }
+      ],
+      "audio": "audio/2026-09-29.mp3",
+      "transcript": "transcripts/2026-09-29.txt",
+      "duration": 152,
+      "bytes": 912096,
+      "published": "2026-09-29T17:57:08.118593+00:00"
+    },
+    {
+      "date": "2026-09-28",
+      "title": "AI Trade Wobbles as Boeing, MongoDB Slide",
+      "teaser": "OpenAI's training halt spooks the AI trade, Boeing gets grounded again, and bonds keep selling off.",
+      "topics": [
+        "AI trade",
+        "Boeing",
+        "Treasuries",
+        "US-China trade",
+        "Nvidia"
+      ],
+      "sources": [
+        {
+          "title": "U.S. stocks slip as OpenAI training halt weighs on AI trade, bonds extend rout",
+          "source": "Investing.com",
+          "link": "https://www.investing.com/news/stock-market-news/us-stock-futures-dip-as-markets-parse-iran-tensions-openai-training-halt-4919222"
+        },
+        {
+          "title": "Boeing slides 6% as FAA halts Max 10 cert, 31% of undelivered orders at risk",
+          "source": "Investing.com",
+          "link": "https://www.investing.com/news/stock-market-news/boeing-slides-6-as-faa-halts-max-10-cert-31-of-undelivered-orders-at-risk-4921010"
+        },
+        {
+          "title": "Boeing 737 Max 10 certification delayed by software issue",
+          "source": "Seeking Alpha",
+          "link": "https://seekingalpha.com/news/4647746-boeing-737-max-10-certification-delayed-by-software-issue?utm_source=feed_news_all&utm_medium=referral&feed_item_type=news"
+        },
+        {
+          "title": "MongoDB\u2019s stock is down nearly 20% as CEO decamps to Meta",
+          "source": "MarketWatch",
+          "link": "https://www.marketwatch.com/story/mongodbs-stock-is-down-more-than-20-as-ceo-decamps-to-meta-ad66a942?mod=mw_rss_topstories"
+        },
+        {
+          "title": "Nvidia share buyback plan gets $150 billion boost",
+          "source": "CNBC Top News",
+          "link": "https://www.cnbc.com/2026/09/28/nvidia-share-buyback-plan-gets-150-billion-boost.html"
+        },
+        {
+          "title": "OpenAI sparked Hugging Face bids with early investment offer ahead of Nvidia's $13 billion deal",
+          "source": "CNBC Top News",
+          "link": "https://www.cnbc.com/2026/09/28/openai-spark-hugging-face-bid-war-early-investment-bid-ahead-of-nvidia.html"
+        },
+        {
+          "title": "The U.S. and China agree to $60 billion in tariff cuts on products like dolls and fireworks. Rare earths remain a sticking point.",
+          "source": "MarketWatch",
+          "link": "https://www.marketwatch.com/story/the-u-s-and-china-agree-to-60-billion-in-tariff-cuts-on-products-like-dolls-and-fireworks-rare-earths-remain-a-sticking-point-e4667872?mod=mw_rss_topstories"
+        },
+        {
+          "title": "China posts weakest industrial profit growth this year, expanding 4.2% in August",
+          "source": "CNBC Markets",
+          "link": "https://www.cnbc.com/2026/09/28/china-posts-weakest-industrial-profit-growth-this-year-expanding-4point2percent-in-august-.html"
+        },
+        {
+          "title": "Anthropic launches cheaper AI model, its second release since CEO's call for a slowdown",
+          "source": "CNBC Top News",
+          "link": "https://www.cnbc.com/2026/09/28/anthropic-sonnet-5-5-launch.html"
+        },
+        {
+          "title": "Micron has a chance to set the record straight with its earnings report",
+          "source": "MarketWatch",
+          "link": "https://www.marketwatch.com/story/micron-has-a-chance-to-set-the-record-straight-with-its-earnings-report-a98fb935?mod=mw_rss_topstories"
+        }
+      ],
+      "audio": "audio/2026-09-28.mp3",
+      "transcript": "transcripts/2026-09-28.txt",
+      "duration": 144,
+      "bytes": 868320,
+      "published": "2026-09-28T19:30:20.204581+00:00"
+    },
+    {
+      "date": "2026-09-25",
+      "title": "Yields Spike, Oil Falls, Trump-Xi Summit Ends",
+      "teaser": "Treasury yields are surging under a hawkish Fed, but stocks are climbing anyway as oil slides and the Trump-Xi summit ends on a friendly note.",
+      "topics": [
+        "Treasury yields",
+        "Fed policy",
+        "Trump-Xi summit",
+        "oil prices",
+        "Tesla"
+      ],
+      "sources": [
+        {
+          "title": "U.S. stocks rise, head for weekly gains as oil falls, short-term bonds halt slide",
+          "source": "Investing.com",
+          "link": "https://www.investing.com/news/stock-market-news/us-stock-futures-drift-lower-as-soaring-yields-oil-prices-weigh-4916485"
+        },
+        {
+          "title": "Trump, Xi wrap up summit with tea and tour of US archives",
+          "source": "Investing.com",
+          "link": "https://www.investing.com/news/stock-market-news/trump-to-wrap-up-xi-summit-with-a-tour-of-us-archives-4916620"
+        },
+        {
+          "title": "Stocks climb as Hormuz talks turn technical and oil slides",
+          "source": "Seeking Alpha",
+          "link": "https://seekingalpha.com/news/4647260-stocks-climb-as-hormuz-talks-turn-technical-and-oil-slides?utm_source=feed_news_all&utm_medium=referral&feed_item_type=news"
+        },
+        {
+          "title": "Details on U.S.-China trade negotiations coming Monday, USTR Greer says",
+          "source": "CNBC Top News",
+          "link": "https://www.cnbc.com/2026/09/25/trump-xi-china-trade-greer.html"
+        },
+        {
+          "title": "Here's what happens to the economy when Treasury yields soar like they are now",
+          "source": "CNBC Markets",
+          "link": "https://www.cnbc.com/2026/09/23/what-happens-to-the-economy-when-treasury-yields-soar.html"
+        },
+        {
+          "title": "Iran offers to reopen Strait of Hormuz within 7 days and restart nuclear talks",
+          "source": "CNBC Top News",
+          "link": "https://www.cnbc.com/2026/09/25/us-iran-trump-hormuz-.html"
+        },
+        {
+          "title": "Surging Treasury yields pose a brand new problem for Kevin Warsh and the Fed",
+          "source": "CNBC Markets",
+          "link": "https://www.cnbc.com/2026/09/24/surging-treasury-yields-are-posing-a-brand-new-problem-for-kevin-warsh-and-the-fed.html"
+        },
+        {
+          "title": "Warsh's regime change at the Fed pushes ahead \u2013 and meets resistance",
+          "source": "CNBC Top News",
+          "link": "https://www.cnbc.com/2026/09/25/kevin-warsh-fed-interest-rates-balance-sheet.html"
+        },
+        {
+          "title": "Tesla\u2019s stock falls as launch of Semi truck fails to excite investors",
+          "source": "MarketWatch",
+          "link": "https://www.marketwatch.com/story/teslas-stock-falls-as-semi-launch-fails-to-excite-investors-5b216e59?mod=mw_rss_topstories"
+        },
+        {
+          "title": "8% mortgage rates are \u2018not an impossibility\u2019 as the 30-year fixed rate surges",
+          "source": "MarketWatch",
+          "link": "https://www.marketwatch.com/story/8-mortgage-rates-are-not-an-impossibility-as-the-30-year-fixed-rate-surges-aa202464?mod=mw_rss_topstories"
+        },
+        {
+          "title": "History shows financial calamities occur when rates rise rapidly like this: 'Something always breaks'",
+          "source": "CNBC Top News",
+          "link": "https://www.cnbc.com/2026/09/24/history-shows-financial-calamities-occur-when-rates-rise-rapidly-like-this-something-always-breaks.html"
+        }
+      ],
+      "audio": "audio/2026-09-25.mp3",
+      "transcript": "transcripts/2026-09-25.txt",
+      "duration": 154,
+      "bytes": 924912,
+      "published": "2026-09-25T16:57:55.002434+00:00"
+    },
+    {
+      "date": "2026-09-24",
+      "title": "Bond Yields Surge as Trump-Xi Summit Opens",
+      "teaser": "Thirty-year yields hit levels not seen since 2004 while Oracle stumbles and Trump sits down with Xi in Washington.",
+      "topics": [
+        "Treasury yields",
+        "Trump-Xi summit",
+        "Oracle",
+        "Fed policy",
+        "oil prices"
+      ],
+      "sources": [
+        {
+          "title": "30-year Treasury yield hits highest level since 2004 as bond market rout continues",
+          "source": "CNBC Top News",
+          "link": "https://www.cnbc.com/2026/09/24/us-treasury-yields-bonds-fed-inflation.html"
+        },
+        {
+          "title": "Analysis: Higher Treasury yields deliver a reality check on a hot, inflation-prone economy",
+          "source": "CNBC Top News",
+          "link": "https://www.cnbc.com/2026/09/24/treasury-yields-warsh-bessent-fed-national-debt-analysis.html"
+        },
+        {
+          "title": "Here's what happens to the economy when Treasury yields soar like they are now",
+          "source": "CNBC Markets",
+          "link": "https://www.cnbc.com/2026/09/23/what-happens-to-the-economy-when-treasury-yields-soar.html"
+        },
+        {
+          "title": "Philadelphia Fed's Anna Paulson says 'modest' rate moves likely ahead to tame inflation",
+          "source": "CNBC Top News",
+          "link": "https://www.cnbc.com/2026/09/24/philadelphia-feds-anna-paulson-says-modest-rate-moves-likely-ahead-to-tame-inflation.html"
+        },
+        {
+          "title": "Oracle sends 'force majeure' notice about data center project \u2014 stock sinks 4%",
+          "source": "CNBC Top News",
+          "link": "https://www.cnbc.com/2026/09/24/oracle-data-center-force-majeure.html"
+        },
+        {
+          "title": "Oracle\u2019s stock is falling as investors fear a data-center setback",
+          "source": "MarketWatch",
+          "link": "https://www.marketwatch.com/story/oracles-stock-is-falling-as-investors-fear-a-data-center-setback-d8105ef9?mod=mw_rss_topstories"
+        },
+        {
+          "title": "Oracle credit default swaps hit record high as AI debt worries mount",
+          "source": "Seeking Alpha",
+          "link": "https://seekingalpha.com/news/4646794-oracle-credit-default-swaps-hit-new-record-high-as-ai-debt-worries-mount?utm_source=feed_news_all&utm_medium=referral&feed_item_type=news"
+        },
+        {
+          "title": "Trump, Xi to talk Taiwan, AI, trade and Iran as DC summit kicks off",
+          "source": "CNBC Top News",
+          "link": "https://www.cnbc.com/2026/09/24/trump-xi-meeting-china-washington.html"
+        },
+        {
+          "title": "U.S. stocks pare losses after Washington and Tehran said to explore phased deal",
+          "source": "Investing.com",
+          "link": "https://www.investing.com/news/stock-market-news/us-stock-futures-dip-after-high-yields-batter-tech-trumpxi-summit-begins-4914303"
+        },
+        {
+          "title": "FTSE 100 today: Stocks fall as oil jumps above $108",
+          "source": "Investing.com",
+          "link": "https://www.investing.com/news/stock-market-news/ftse-100-today-stocks-flat-as-usiran-tension-us-treasury-yields-bite-4914529"
+        },
+        {
+          "title": "Big business warns Trump against diesel export ban in joint letter",
+          "source": "CNBC Top News",
+          "link": "https://www.cnbc.com/2026/09/24/chamber-commerce-business-roundtable-trump-diesel-export-ban-iran-war.html"
+        }
+      ],
+      "audio": "audio/2026-09-24.mp3",
+      "transcript": "transcripts/2026-09-24.txt",
+      "duration": 153,
+      "bytes": 918000,
+      "published": "2026-09-24T16:55:02.192730+00:00"
+    },
+    {
+      "date": "2026-09-23",
+      "title": "Yields Spike as Rate-Hike Fears Return",
+      "teaser": "Hot economic data sends the ten-year to a 19-year high and knocks stocks off record territory, while Iran tensions push oil higher.",
+      "topics": [
+        "Treasury yields",
+        "Fed policy",
+        "Iran tensions",
+        "McDonald's strategy",
+        "M&A activity"
+      ],
+      "sources": [
+        {
+          "title": "Bond yields surge as Wall Street fears more potential Federal Reserve rate hikes",
+          "source": "MarketWatch",
+          "link": "https://www.marketwatch.com/story/bond-yields-surge-as-wall-street-fears-more-potential-federal-reserve-rate-hikes-eabcd3da?mod=mw_rss_topstories"
+        },
+        {
+          "title": "10-year Treasury yield leaps to fresh 19-year high after hot economic readings",
+          "source": "CNBC Top News",
+          "link": "https://www.cnbc.com/2026/09/23/treasury-yields-oil-inflation-fed.html"
+        },
+        {
+          "title": "Oil up almost 2% as Iran's president vows to never surrender",
+          "source": "Yahoo Finance",
+          "link": "https://finance.yahoo.com/news/oil-falls-increased-gulf-supply-014402051.html"
+        },
+        {
+          "title": "Iran's president blames U.S., Israel for global instability in defiant UN speech",
+          "source": "CNBC Top News",
+          "link": "https://www.cnbc.com/2026/09/23/iran-united-nations-trump-israel.html"
+        },
+        {
+          "title": "FTSE 100 today: Stocks flat as Iran war tensions, UK inflation weigh",
+          "source": "Investing.com",
+          "link": "https://www.investing.com/news/stock-market-news/ftse-100-today-stocks-rise-as-usiran-diplomacy-eases-oil-fears-4912189"
+        },
+        {
+          "title": "McDonald's CEO expects high inflation, flat traffic are not going away for restaurant industry",
+          "source": "CNBC Top News",
+          "link": "https://www.cnbc.com/2026/09/23/mcdonalds-investor-day-ceo-chris-kempczinksi-inflation.html"
+        },
+        {
+          "title": "McDonald's will spend big on restaurant upgrades, training to drive growth",
+          "source": "CNBC Top News",
+          "link": "https://www.cnbc.com/2026/09/23/mcdonalds-investor-day-remodels-training-chicken-growth-plans.html"
+        },
+        {
+          "title": "Activist Toms Capital urges Devon Energy in letter to explore alternatives, including a sale",
+          "source": "CNBC Top News",
+          "link": "https://www.cnbc.com/2026/09/23/activist-toms-capital-urges-devon-energy-in-letter-to-explore-alternatives-including-a-sale.html"
+        },
+        {
+          "title": "Brookfield in talks to buy Actimize for $2B from NICE - Sky News",
+          "source": "Seeking Alpha",
+          "link": "https://seekingalpha.com/news/4646174-brookfield-in-talks-to-buy-actimize-for-2b-from-nice-sky-news?utm_source=feed_news_all&utm_medium=referral&feed_item_type=news"
+        },
+        {
+          "title": "Nearly 10% of borrowers opted for riskier mortgages last week, as rates soared over 7%",
+          "source": "CNBC Top News",
+          "link": "https://www.cnbc.com/2026/09/23/nearly-10percent-of-borrowers-opted-for-riskier-mortgages-last-week.html"
+        }
+      ],
+      "audio": "audio/2026-09-23.mp3",
+      "transcript": "transcripts/2026-09-23.txt",
+      "duration": 164,
+      "bytes": 989856,
+      "published": "2026-09-23T16:35:40.234927+00:00"
+    },
+    {
+      "date": "2026-09-22",
+      "title": "Iran Tensions Rattle Oil, Dow Slips",
+      "teaser": "Trump's UN warnings on Iran hit oil and the Dow, while Meta's new AI app and a wave of AI-chip optimism kept tech afloat.",
+      "topics": [
+        "Iran/oil",
+        "Trump at UN",
+        "AI momentum",
+        "Meta",
+        "Trade/Xi summit"
+      ],
+      "sources": [
+        {
+          "title": "Stock Market Today: Dow Skids As Trump Threatens Iran; Apple Nears Buy Point (Live Coverage)",
+          "source": "Yahoo Finance",
+          "link": "https://www.investors.com/market-trend/stock-market-today/dow-jones-sp500-nasdaq-us-iran-peace-hopes-oil-prices-treasury-yields/?src=A00220&yptr=yahoo"
+        },
+        {
+          "title": "Trump slams Iran and Cuba, defends AI growth and recounts record in UN speech",
+          "source": "CNBC Top News",
+          "link": "https://www.cnbc.com/2026/09/22/trump-un-speech-today.html"
+        },
+        {
+          "title": "Sullivan: Wall Street admits it doesn't know where oil is headed. There's one stock they do agree on",
+          "source": "CNBC Top News",
+          "link": "https://www.cnbc.com/2026/09/22/sullivan-wall-street-admits-it-doesnt-know-where-oil-is-headed-theres-one-stock-they-do-agree-on.html"
+        },
+        {
+          "title": "Iran reportedly says it can reopen Strait of Hormuz within 7 days if U.S. eases military pressure",
+          "source": "CNBC Top News",
+          "link": "https://www.cnbc.com/2026/09/22/us-iran-war-trump-hormuz.html"
+        },
+        {
+          "title": "Global diesel shortage from Iran, Ukraine wars to last into 2027",
+          "source": "Yahoo Finance",
+          "link": "https://finance.yahoo.com/energy/articles/global-diesel-shortage-iran-ukraine-181721706.html"
+        },
+        {
+          "title": "Could Meta\u2019s viral Muse app be the company\u2019s ChatGPT moment?",
+          "source": "MarketWatch",
+          "link": "https://www.marketwatch.com/story/could-metas-viral-muse-app-be-the-companys-chatgpt-moment-8e7075aa?mod=mw_rss_topstories"
+        },
+        {
+          "title": "Wall Street expects Meta\u2019s AI agent to shape into a new revenue engine",
+          "source": "Investing.com",
+          "link": "https://www.investing.com/news/stock-market-news/wall-street-expects-metas-ai-agent-to-shape-into-a-new-revenue-engine-4910768"
+        },
+        {
+          "title": "Microsoft Scores Positive Reviews On AI Momentum",
+          "source": "Yahoo Finance",
+          "link": "https://www.investors.com/news/technology/microsoft-stock-positive-reviews-ai-momentum/?src=A00220&yptr=yahoo"
+        },
+        {
+          "title": "Sandisk\u2019s stock is rising: Why one analyst says AI could help it reach new heights",
+          "source": "MarketWatch",
+          "link": "https://www.marketwatch.com/story/sandisks-stock-is-rising-why-one-analyst-says-ai-could-help-it-reach-new-heights-5541ded8?mod=mw_rss_topstories"
+        },
+        {
+          "title": "Trump, Xi seek trade stability and deals, but AI, tariffs and Iran loom large. What to watch",
+          "source": "CNBC Top News",
+          "link": "https://www.cnbc.com/2026/09/21/trump-xi-china-summit-trade-tariffs.html"
+        }
+      ],
+      "audio": "audio/2026-09-22.mp3",
+      "transcript": "transcripts/2026-09-22.txt",
+      "duration": 144,
+      "bytes": 868320,
+      "published": "2026-09-22T16:41:27.247261+00:00"
+    },
+    {
+      "date": "2026-09-21",
+      "title": "AMD Hits a Trillion, Meta Rides AI Wave",
+      "teaser": "Chipmakers and Meta lead a rally, Paramount clears a merger hurdle, and Japan's markets flip the script.",
+      "topics": [
+        "AMD",
+        "Meta AI",
+        "Paramount-Warner merger",
+        "Japan markets",
+        "AI policy"
+      ],
+      "sources": [
+        {
+          "title": "AMD hits $1 trillion market cap for the first time as stock rides 5-day rally",
+          "source": "CNBC Top News",
+          "link": "https://www.cnbc.com/2026/09/21/amd-stock-1-trillion-value.html"
+        },
+        {
+          "title": "AMD hits a major milestone as AI stocks blaze higher",
+          "source": "MarketWatch",
+          "link": "https://www.marketwatch.com/story/amd-hits-with-a-major-milestone-as-ai-stocks-blaze-higher-7bb366df?mod=mw_rss_topstories"
+        },
+        {
+          "title": "Meta\u2019s stock is enjoying its best month in 13 years thanks to the company\u2019s hot new AI assistant",
+          "source": "MarketWatch",
+          "link": "https://www.marketwatch.com/story/metas-stock-is-enjoying-its-best-month-in-more-than-two-years-thanks-to-the-companys-hot-new-ai-assistant-bf106291?mod=mw_rss_topstories"
+        },
+        {
+          "title": "Paramount and state AGs settle lawsuit, allowing Warner Bros. merger to proceed",
+          "source": "CNBC Top News",
+          "link": "https://www.cnbc.com/2026/09/21/paramount-reaches-settlement-over-warner-bros-merger.html"
+        },
+        {
+          "title": "Paramount\u00a0settles with US states in big step towards closing Warner Bros merger",
+          "source": "Investing.com",
+          "link": "https://www.investing.com/news/stock-market-news/paramountsettles-with-california-other-states-clearing-major-hurdle-for-warner-bros-merger-source-says-4909370"
+        },
+        {
+          "title": "Stock Market Today: Dow Up, Nasdaq Roars As Micron Tests Entry; Bessent Touts China Progress (Live Coverage)",
+          "source": "Yahoo Finance",
+          "link": "https://www.investors.com/market-trend/stock-market-today/dow-jones-sp500-nasdaq-oil-prices-treasury-yields-nvidia-stock-nvda-buy-point/?src=A00220&yptr=yahoo"
+        },
+        {
+          "title": "Stock market today: Nasdaq leads Dow, S&P 500 higher as chip stocks and bitcoin rally, oil prices fall",
+          "source": "Yahoo Finance",
+          "link": "https://finance.yahoo.com/markets/live/stock-market-today-monday-september-21-dow-sp-500-nasdaq-080214605.html"
+        },
+        {
+          "title": "Why Japan\u2019s markets flipped the usual script after central bank rate hike",
+          "source": "CNBC Markets",
+          "link": "https://www.cnbc.com/2026/09/18/japan-rate-hike-stocks-rise-bond-yields-yen-fall.html"
+        },
+        {
+          "title": "Trump says DOJ will rein in AI 'if we have to'",
+          "source": "CNBC Top News",
+          "link": "https://www.cnbc.com/2026/09/21/trump-ai-doj.html"
+        },
+        {
+          "title": "Trump admin won't give AI leaders a 'liability shield,' Bessent tells CNBC",
+          "source": "CNBC Top News",
+          "link": "https://www.cnbc.com/2026/09/21/treasury-bessent-cnbc-squawk-trump-bond-affordabilty.html"
+        },
+        {
+          "title": "This is the \u2018most underappreciated\u2019 driver for Microsoft\u2019s business, according to one analyst",
+          "source": "MarketWatch",
+          "link": "https://www.marketwatch.com/story/this-is-the-most-underappreciated-driver-for-microsoft-according-to-one-analyst-f9a5e4eb?mod=mw_rss_topstories"
+        }
+      ],
+      "audio": "audio/2026-09-21.mp3",
+      "transcript": "transcripts/2026-09-21.txt",
+      "duration": 162,
+      "bytes": 973440,
+      "published": "2026-09-21T18:06:24.541659+00:00"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+Good morning. The number everyone was waiting for landed hot. September CPI rose three point seven percent year over year, above the consensus call of three point six, driven largely by gasoline and energy prices tied to the Iran war. That's not a one-off either — diesel is at record levels, and MarketWatch is flagging more pain coming when producer price data hits. This matters because it puts the Fed in an uncomfortable spot weeks before its next decision: inflation running hot while bond yields are already climbing, which is about the worst combination for a central bank trying to look credible on both growth and prices.
+
+The market reaction showed up fastest in credit, not equities. CoreWeave shares fell fifteen percent as yields on its bonds blew out toward fifteen percent, with investors suddenly nervous about how much debt is funding the AI buildout. That's worth watching beyond just one name — it's a read on how fragile the financing behind this whole data center boom really is, especially with BlackRock's Larry Fink separately warning that a moratorium on data center construction could tip the economy into recession.
+
+On earnings, Morgan Stanley beat estimates on strong equity trading, a rare clean positive in a messy morning. Netflix went the other direction, cutting roughly a thousand jobs, about six percent of its workforce.
+
+Geopolitics added another thread: a container ship sank in the Strait of Hormuz as Iran escalates attacks on shipping, which is exactly the kind of headline that keeps oil — and therefore gas prices, and therefore CPI — stuck in an uncomfortable place.
+
+I don't have index, sector, or Treasury levels this morning — data feed's down — so I won't guess at numbers. But directionally, the story is simple: yields up, rate-sensitive and debt-heavy names under pressure, financials holding up better on trading strength.
+
+On the calendar, watch producer prices Thursday for more inflation confirmation, and keep an eye on Fed speakers parsing this CPI report before the next meeting — Kevin Warsh in particular has a real dilemma now, as Seeking Alpha pointed out. If you only read one thing today, read the CNBC inflation breakdown — it's a clean chart of exactly where the pressure is coming from, mostly energy, not broad-based yet.
+
+One more thing: Social Security's cost of living adjustment for twenty twenty-seven comes in at three point six percent, average checks up seventy five dollars a month — worth noting given the inflation print just outpaced that.
+
+I'll leave you with this, from Marcus Aurelius: "You have power over your mind, not outside events. Realize this, and you will find strength."

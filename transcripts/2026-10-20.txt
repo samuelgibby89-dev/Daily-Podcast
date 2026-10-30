@@ -1,0 +1,14 @@
+Good morning. Our index and rates feeds are down this morning, so no scoreboard today — we'll get back to numbers tomorrow. Plenty to talk about anyway.
+
+The big story is housing, and it's ugly. Pending home sales sank to the lowest level on record in September, with the thirty-year mortgage rate having crossed seven percent and buyers simply walking away. Separate data out yesterday showed the broader housing market in what CNBC fairly calls a deep freeze — sales, construction, and sentiment all missed. Builders are responding the only way they can: four in ten are now cutting prices on new homes, even as their own construction costs rise, and buyer traffic is down to a fourteen-year low. This isn't a blip. It's a market where the cost of money has simply priced out a big chunk of demand, and nothing in the data suggests that reverses soon.
+
+On the corporate side, Salesforce is buying Braze for five point six six billion dollars, sending Braze shares up fifty percent — but Salesforce's own stock fell, with analysts calling the premium "a bit odd." It's the latest sign that AI-era M&A is getting expensive, and investors are starting to push back on companies writing big checks for growth rather than building it. Worth watching: Netflix reports after the bell today, and the questions will be about the ad tier, engagement, and whether M&A chatter becomes real. Microsoft, meanwhile, walked away from a UK data center deal with Nscale over power delays — a reminder that AI buildout is still bottlenecked by boring things like electricity, not just chips.
+
+Overseas, France is deploying troops ahead of expected unrest this weekend, part of a wider wave of protests across Europe over living costs and housing — themes that should sound familiar given what we just covered at home.
+
+On the calendar: Netflix earnings tonight, more housing data trickling in this week, and strategists are increasingly focused on a key technical level on the S&P 500 that, if broken, could signal a deeper pullback — worth a read if you want the bear case laid out cleanly rather than just asserted.
+
+One more thing worth your time: the piece on annuities and whether the guarantee you think you bought is actually the guarantee you got. Good consumer-finance reading, not just market noise.
+
+I'll leave you with this, from Marcus Aurelius: "You have power over your mind, not outside events. Realize this, and you will find strength."
+</script>
