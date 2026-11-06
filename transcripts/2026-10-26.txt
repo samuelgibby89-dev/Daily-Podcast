@@ -1,0 +1,13 @@
+Good morning. Market data feeds are down this morning, so no scoreboard today — but there's plenty to chew on before the open.
+
+The big one: the Fed meets this week, and the expectation is a hold on rates. That's not a surprise, but it sets the tone for a week already loaded with earnings. What's more interesting is what's happening around the Fed decision. Meta is reportedly trying to raise ninety five billion dollars total through a mix of stock deals, with Nvidia, AMD, and Broadcom potentially buying in on a thirty five billion dollar piece of it. That's chipmakers financing the company that buys their chips, which tells you how circular — and how large — the AI capital cycle has become. Microsoft, meanwhile, just offered voluntary buyouts to sixty thousand employees, trying to fund its AI infrastructure build without letting headcount costs run away. Two different companies, same underlying tension: AI spending is enormous, and everyone's looking for ways to pay for it without just printing more shares or more costs forever.
+
+That tension is showing up in positioning, too. There's a real debate right now about whether the AI trade is fraying — an S&P 500 stripped of AI names has been keeping pace with the full index this year, which a few months ago would've sounded absurd. Worth watching whether that broadens out or snaps back.
+
+On single names, Intel and Bloom Energy were both named as movers this morning tied to the AI power story — data center electricity demand remains one of the few parts of this cycle everyone agrees is real, hold or no hold. Tesla's sitting at its highest level in more than three months. And Boeing reports this week; analysts are bracing for a small quarterly loss even with some recent program wins, so that's one to watch for signal on aerospace demand versus supply chain drag.
+
+Without yields or index levels to lean on, I'd point you instead at the piece on investors who've done just fine this year by avoiding AI concentration entirely. It's a useful gut check on how much of this market's story is really about seven or eight stocks versus everything else.
+
+On the calendar: building permits, durable goods orders, new home sales, and consumer confidence are all due tomorrow, and they'll matter more than usual heading into the Fed decision later this week.
+
+I'll leave you with this, from Marcus Aurelius: "You have power over your mind — not outside events. Realize this, and you will find strength."
