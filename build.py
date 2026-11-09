@@ -333,6 +333,13 @@ def main() -> int:
                         help="use a canned script and silent audio; no API calls")
     parser.add_argument("--date", help="episode date as YYYY-MM-DD (default: today)")
     parser.add_argument("--skip-audio", action="store_true")
+    parser.add_argument(
+        "--skip-if-published", action="store_true",
+        help="exit 0 without building if today's episode already exists. "
+             "GitHub's scheduled events fire hours late and unpredictably, so "
+             "the backstop cron can land long after the real trigger already "
+             "produced the morning brief. Without this it would overwrite a "
+             "9:45am episode with an 8pm one.")
     args = parser.parse_args()
 
     now = datetime.now(timezone.utc)
@@ -344,6 +351,15 @@ def main() -> int:
     (PUBLIC / "transcripts").mkdir(exist_ok=True)
 
     print(f"\n=== {SHOW_TITLE} — {date_label} ===\n")
+
+    if args.skip_if_published:
+        already = next((e for e in load_episodes() if e.get("date") == date_str), None)
+        if already:
+            built = (already.get("published") or "")[:16].replace("T", " ")
+            print(f"Today's episode already exists ({already['title']!r}, built "
+                  f"{built} UTC). Nothing to do.\n"
+                  "Pass force=true on a manual run to rebuild it.")
+            return 0
 
     if args.dry_run:
         episode = {
@@ -368,6 +384,17 @@ def main() -> int:
 
         if not headlines and not sources.has_quotes(snapshot):
             print("\nERROR: every source failed; refusing to build an empty episode.",
+                  file=sys.stderr)
+            return 1
+
+        # Three of the show's six segments are market data. A brief with none
+        # of it still sounds completely plausible -- that is exactly how the
+        # dead Stooq feed went unnoticed for weeks, until an episode said
+        # "data feed's down" out loud. Fail visibly instead of shipping it.
+        if not sources.has_quotes(snapshot):
+            print("\nERROR: no market data at all — every price source failed.\n"
+                  "Three segments depend on it, so this would ship a half-empty "
+                  "episode that still sounds fine. See the failures listed above.",
                   file=sys.stderr)
             return 1
 

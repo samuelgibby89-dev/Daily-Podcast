@@ -146,24 +146,71 @@ newsreader), `en-US-AvaMultilingualNeural`, `en-GB-RyanNeural`.
 
 ### The time
 
-The schedule lives at the top of `.github/workflows/daily-brief.yml`:
+**Read this before touching the schedule.**
 
-```yaml
-- cron: "7 12 * * 1-5"
-```
+The brief is built just after the US opening bell, so the scoreboard and
+sector segments describe live movement rather than yesterday's close.
 
-That's 12:07 UTC — 6:07am Denver in summer. **Cron has no daylight saving**,
-so it becomes 5:07am when the clocks change in November. Switch it to
-`"7 13 * * 1-5"` then if the hour bothers you. GitHub also runs scheduled jobs
-on a best-effort basis; a 5–20 minute delay at peak times is normal.
+GitHub's `schedule` events are queued at low priority on free runners, and on
+this repo they were firing **4.5 to 9.5 hours late, every single weekday**. A
+12:07 UTC cron produced episodes between 16:50 and 21:36 UTC across twelve
+consecutive builds. That is why the brief always looked a day stale in the
+morning: today's didn't exist yet, so the newest one was the previous
+weekday's. It was never a date bug.
+
+Manually dispatched runs are **not** subject to that queue — they start within
+seconds. So real timing comes from an external scheduler calling the dispatch
+API, and the cron in the workflow is only a backstop.
+
+**Setting up the trigger (one time, ~5 minutes):**
+
+1. Create a fine-grained personal access token at
+   github.com/settings/personal-access-tokens — repository access limited to
+   `Daily-Podcast`, and under Permissions set **Actions: Read and write**.
+   Give it a long expiry; the podcast stops when the token does.
+2. Sign up at cron-job.org (free) and create a job:
+   - URL: `https://api.github.com/repos/<you>/Daily-Podcast/actions/workflows/daily-brief.yml/dispatches`
+   - Method: **POST**
+   - Schedule: weekdays, 9:45am **America/New_York** (it handles DST; GitHub cron can't)
+   - Headers: `Authorization: Bearer <your token>`,
+     `Accept: application/vnd.github+json`
+   - Body: `{"ref":"main"}`
+3. Save, then hit "Run now" once. A run should appear in the Actions tab
+   within seconds.
+
+Any scheduler works — Cloudflare Workers cron, an always-on machine with
+`curl` — the only requirement is that it can POST with a header.
+
+**The backstop and double-builds.** The workflow still has
+`cron: "47 14 * * 1-5"`, which lands after the open year-round (09:47 ET in
+winter, 10:47 ET in summer). Whenever it eventually fires, `build.py` runs
+with `--skip-if-published` and exits immediately if today's episode already
+exists. Without that, a backstop run arriving at 8pm would replace your
+morning brief with an evening one. To deliberately rebuild, run the workflow
+by hand with **force** ticked.
 
 ### The sources
 
-`sources.py` has a `FEEDS` list at the top. Add or remove RSS URLs freely —
-each feed is independent and a dead one is skipped with a warning. `SYMBOLS`
-just below controls which indexes, yields, and commodities get quoted.
+`sources.py` has `FEEDS` at the top — RSS URLs, each independent, a dead one
+skipped with a warning. Below that are the instrument lists: `US_INDICES`,
+`FOREIGN_INDICES`, `SECTORS` (the eleven SPDR sector ETFs), `OTHER` and
+`TREASURY_TENORS`.
 
----
+Prices come from Yahoo's chart API, with Stooq as a fallback, and Treasury
+yields from the US Treasury's own daily curve CSV. No API keys.
+
+**Why two providers.** The original build used Stooq alone. Stooq answers
+HTTP 200 with a body like `Exceeded the daily hits limit`, so every quote
+parsed to `None`, all three market segments were silently skipped, and the
+episodes still sounded completely fine — for weeks. The 2026-11-06 brief
+eventually said "data feed's down, I can't give you the scoreboard today" out
+loud. Every failure is now logged with its provider, HTTP status and the first
+80 characters of the response body, the run prints `N of 29 instruments
+returned data`, and a build with zero market data **fails** rather than
+shipping a half-empty episode that sounds plausible.
+
+If you ever see that count drop, read the `!` lines in the build log — they
+name the instrument and what each provider actually said.
 
 ## Running it locally
 

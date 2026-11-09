@@ -1,16 +1,34 @@
 name: Daily Brief
 
 on:
+  # BACKSTOP ONLY -- do not rely on this for timing.
+  #
+  # GitHub's scheduled events are queued at low priority on free runners. On
+  # this repo they fired between 4.5 and 9.5 hours late, every single weekday,
+  # for at least twelve consecutive builds: a 12:07 UTC cron produced episodes
+  # between 16:50 and 21:36 UTC. That is why the brief was always a day stale
+  # by the time anyone listened in the morning.
+  #
+  # Real timing comes from an external scheduler calling the workflow_dispatch
+  # API below. Manually dispatched runs are NOT subject to the schedule queue
+  # and start within seconds. See "Timing" in the README.
+  #
+  # 14:47 UTC lands after the opening bell year-round, which plain UTC cron
+  # otherwise can't manage across DST:
+  #   winter (EST) -> 09:47 ET, 17 minutes after the open
+  #   summer (EDT) -> 10:47 ET, 77 minutes after the open
   schedule:
-    # 12:07 UTC = 6:07am Denver in summer (MDT), 5:07am in winter (MST).
-    # GitHub cron has no timezone and no DST, so the winter time shifts by an
-    # hour. If that bugs you, change to "7 13 * * 1-5" in November.
-    # Weekdays only -- markets are closed on weekends.
-    - cron: "7 12 * * 1-5"
-  workflow_dispatch:      # lets you run it by hand from the Actions tab
+    - cron: "47 14 * * 1-5"
+
+  workflow_dispatch:
+    inputs:
+      force:
+        description: "Rebuild even if today's episode already exists"
+        type: boolean
+        default: false
 
 permissions:
-  contents: write         # needed to push the built site to gh-pages
+  contents: write
 
 concurrency:
   group: daily-brief
@@ -26,9 +44,8 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Pull down the already-published site
-        # Brings the existing episodes into ./public so today's brief is added
-        # to the archive instead of replacing it. Fails harmlessly on day one,
-        # when the gh-pages branch does not exist yet.
+        # Brings existing episodes into ./public so today's brief joins the
+        # archive instead of replacing it. Fails harmlessly on the first run.
         uses: actions/checkout@v4
         continue-on-error: true
         with:
@@ -52,24 +69,34 @@ jobs:
           SHOW_TITLE:        ${{ vars.SHOW_TITLE        || 'The Morning Brief' }}
           SHOW_AUTHOR:       ${{ vars.SHOW_AUTHOR       || 'Samuel Gibby' }}
           RETAIN_EPISODES:   ${{ vars.RETAIN_EPISODES   || '30' }}
-        run: python build.py
+        # Skip unless this is a deliberate forced rebuild. A late backstop run
+        # would otherwise replace the morning's brief with an evening one.
+        run: |
+          if [ "${{ inputs.force }}" = "true" ]; then
+            python build.py
+          else
+            python build.py --skip-if-published
+          fi
 
       - name: Publish to GitHub Pages
         run: |
           set -euo pipefail
           cd public
+          if [ ! -f episodes.json ]; then
+            echo "Nothing built (already published today). Skipping publish."
+            exit 0
+          fi
           rm -rf .git
           git init -q -b gh-pages
           git config user.name  "morning-brief-bot"
           git config user.email "actions@github.com"
           git add -A
           git commit -q -m "Brief for $(date -u +%Y-%m-%d)"
-          # Force-push a single fresh commit. The site keeps the last N
-          # episodes; the repo never accumulates years of MP3 history.
+          # Force-push a single fresh commit: the site keeps the last N
+          # episodes and the repo never accumulates years of MP3 history.
           git push -q --force \
             "https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" \
             gh-pages
-          echo "Published to https://${GITHUB_REPOSITORY%%/*}.github.io/${GITHUB_REPOSITORY#*/}/"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
@@ -81,6 +108,7 @@ jobs:
           {
             echo "### Morning Brief"
             echo ""
+            echo "- Triggered by: \`${{ github.event_name }}\`"
             echo "- Site: https://${OWNER,,}.github.io/${NAME}/"
             echo "- Feed: https://${OWNER,,}.github.io/${NAME}/feed.xml"
           } >> "$GITHUB_STEP_SUMMARY"
