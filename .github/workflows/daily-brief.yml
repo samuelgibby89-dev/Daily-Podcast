@@ -58,6 +58,10 @@ jobs:
           python-version: "3.12"
           cache: pip
 
+      - name: Install ffmpeg
+        # The runner image no longer ships it.
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
+
       - name: Install dependencies
         run: pip install -r requirements.txt
 

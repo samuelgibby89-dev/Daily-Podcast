@@ -12,6 +12,7 @@ import time
 from datetime import datetime, timedelta, timezone
 
 import feedparser
+import pandas as pd
 import requests
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from urllib.parse import quote_plus
@@ -29,7 +30,10 @@ FEEDS = [
     ("CNBC Markets", "https://www.cnbc.com/id/20910258/device/rss/rss.html"),
     ("CNBC Top News", "https://www.cnbc.com/id/100003114/device/rss/rss.html"),
     ("MarketWatch", "https://feeds.content.dowjones.io/public/rss/mw_topstories"),
-    ("Yahoo Finance", "https://finance.yahoo.com/news/rssindex"),
+    # finance.yahoo.com/news/rssindex started 404ing; the per-symbol headline
+    # feed still works and carries broad market news.
+    ("Yahoo Finance",
+     "https://feeds.finance.yahoo.com/rss/2.0/headline?s=%5EGSPC&region=US&lang=en-US"),
     ("Federal Reserve", "https://www.federalreserve.gov/feeds/press_all.xml"),
     ("Investing.com", "https://www.investing.com/rss/news_25.rss"),
     ("Seeking Alpha", "https://seekingalpha.com/market_currents.xml"),
@@ -204,6 +208,54 @@ def _note_failure(label: str, detail: str) -> None:
     _failures.append(f"{label}: {detail}")
 
 
+def _yf_batch(symbols: list[str]) -> dict[str, tuple[float, float, str, bool]]:
+    """Every equity symbol in one batched call, via yfinance.
+
+    Yahoo blocks plain HTTP clients coming from cloud servers: a run from a
+    GitHub runner got HTTP 429 on all 26 symbols while the same code works
+    from a laptop. yfinance does the cookie/crumb/session dance that gets
+    through, and batching turns 26 requests into one, which is the other half
+    of not being rate-limited.
+
+    During market hours Yahoo's *daily* bar for today is the live price, so
+    the last two daily closes give exactly the intraday move vs. yesterday.
+    """
+    import yfinance as yf
+
+    frame = yf.download(
+        tickers=" ".join(symbols), period="5d", interval="1d",
+        group_by="ticker", auto_adjust=False, progress=False,
+        threads=False, repair=False,
+    )
+    if frame is None or frame.empty:
+        raise RuntimeError("yfinance returned an empty frame for the batch")
+
+    today = datetime.now(timezone.utc).strftime("%Y-%m-%d")
+    session_open = market_session()["is_open"]
+    out: dict[str, tuple[float, float, str, bool]] = {}
+
+    for symbol in symbols:
+        try:
+            if isinstance(frame.columns, pd.MultiIndex):
+                if symbol not in frame.columns.get_level_values(0):
+                    continue
+                closes = frame[symbol]["Close"]
+            else:
+                closes = frame["Close"]
+            closes = closes.dropna()
+            if len(closes) < 2:
+                continue
+            as_of = str(closes.index[-1])[:10]
+            out[symbol] = (float(closes.iloc[-1]), float(closes.iloc[-2]),
+                           as_of, session_open and as_of == today)
+        except Exception:  # noqa: BLE001 — one bad symbol must not sink the batch
+            continue
+
+    if not out:
+        raise RuntimeError("yfinance frame had no usable closes for any symbol")
+    return out
+
+
 def _yahoo_quote(symbol: str) -> tuple[float, float, str, bool]:
     """Current price vs. the prior close, from Yahoo's chart endpoint.
 
@@ -343,13 +395,51 @@ def fetch_market_snapshot() -> dict:
             for g, (syms, kind) in groups.items() for y, s, lab in syms]
 
     out: dict[str, list[dict]] = {g: [] for g in groups}
-    with ThreadPoolExecutor(max_workers=8) as pool:
-        futures = {pool.submit(_quote, y, s, lab, kind): g
-                   for g, y, s, lab, kind in jobs}
-        for fut in as_completed(futures):
-            quote = fut.result()
-            if quote:
-                out[futures[fut]].append(quote)
+    all_symbols = [y for _, y, _, _, _ in jobs]
+
+    # One batched yfinance call for everything, retried with backoff. A 429
+    # is usually a throttle rather than a ban, and it clears.
+    batch: dict[str, tuple] = {}
+    for attempt in range(3):
+        try:
+            batch = _yf_batch(all_symbols)
+            print(f"  + batch fetch returned {len(batch)} of {len(all_symbols)} symbols")
+            break
+        except Exception as exc:  # noqa: BLE001
+            wait = (attempt + 1) * 20
+            if attempt < 2:
+                print(f"  ! batch attempt {attempt + 1}/3 failed ({str(exc)[:90]}), "
+                      f"retrying in {wait}s")
+                time.sleep(wait)
+            else:
+                _note_failure("yfinance batch", str(exc)[:150])
+
+    session_open = market_session()["is_open"]
+    for group, yahoo_sym, stooq_sym, label, kind in jobs:
+        if yahoo_sym in batch:
+            last, prev, as_of, live = batch[yahoo_sym]
+            change = last - prev
+            out[group].append({
+                "symbol": yahoo_sym, "label": label, "kind": kind,
+                "provider": "yfinance", "live": live and session_open,
+                "last": round(last, 2), "change": round(change, 3),
+                "pct_change": round((change / prev * 100) if prev else 0.0, 2),
+                "as_of": as_of,
+            })
+
+    # Anything the batch missed gets one individual attempt, gently paced so
+    # we don't recreate the burst that triggered the rate limit.
+    missing = [(g, y, s, lab, kind) for g, y, s, lab, kind in jobs
+               if y not in batch]
+    if missing:
+        print(f"  … {len(missing)} symbols missing from the batch, retrying individually")
+        with ThreadPoolExecutor(max_workers=2) as pool:
+            futures = {pool.submit(_quote, y, s, lab, kind): g
+                       for g, y, s, lab, kind in missing}
+            for fut in as_completed(futures):
+                quote = fut.result()
+                if quote:
+                    out[futures[fut]].append(quote)
 
     out["rates"] = _treasury_curve()
     out["session"] = market_session()
