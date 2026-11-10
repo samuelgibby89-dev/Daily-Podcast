@@ -21,6 +21,7 @@ import sys
 from datetime import datetime, timezone
 from email.utils import format_datetime
 from pathlib import Path
+from zoneinfo import ZoneInfo
 from xml.sax.saxutils import escape
 
 import cover
@@ -372,7 +373,14 @@ def main() -> int:
     args = parser.parse_args()
 
     now = datetime.now(timezone.utc)
-    date_str = args.date or now.strftime("%Y-%m-%d")
+    # Date the episode by the US market day, not UTC. A forced run on a
+    # Monday evening in Denver is already Tuesday in UTC, so UTC dating
+    # labelled it as the next day's brief AND consumed that slot, which would
+    # have made the real Tuesday-morning run skip as "already published".
+    # The 7:45am run is unaffected either way; the evening case is the one
+    # that broke.
+    market_today = datetime.now(ZoneInfo("America/New_York")).strftime("%Y-%m-%d")
+    date_str = args.date or market_today
     date_label = datetime.strptime(date_str, "%Y-%m-%d").strftime("%A, %B %-d, %Y")
 
     PUBLIC.mkdir(parents=True, exist_ok=True)
