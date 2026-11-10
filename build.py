@@ -23,6 +23,7 @@ from email.utils import format_datetime
 from pathlib import Path
 from xml.sax.saxutils import escape
 
+import cover
 import sources
 import tts
 
@@ -130,8 +131,29 @@ EPISODE_TOOL = {
                     "bullets, no stage directions."
                 ),
             },
+            "cover_story": {
+                "type": "integer",
+                "description": (
+                    "The headline number whose article photo should be the "
+                    "episode's cover art. Pick the story the episode is most "
+                    "about, preferring one whose imagery would be recognisable "
+                    "and appropriate -- markets, companies, buildings, "
+                    "officials, products."
+                ),
+            },
+            "cover_is_sensitive": {
+                "type": "boolean",
+                "description": (
+                    "True if the cover story's photo is likely to show "
+                    "something graphic or distressing -- war, casualties, "
+                    "disaster, violence, protest clashes, human suffering. "
+                    "When true a neutral designed cover is used instead. Err "
+                    "towards true when unsure; a plain cover is always fine."
+                ),
+            },
         },
-        "required": ["title", "teaser", "topics", "sources", "script"],
+        "required": ["title", "teaser", "topics", "sources", "script",
+                     "cover_story", "cover_is_sensitive"],
     },
 }
 
@@ -170,11 +192,18 @@ def normalize_episode(data: dict) -> dict:
     topics = [str(t).strip() for t in as_list(data.get("topics"))]
     topics = [t for t in topics if 1 < len(t) <= 40][:5]
 
+    try:
+        cover_story = int(data.get("cover_story"))
+    except (TypeError, ValueError):
+        cover_story = cited[0] if cited else -1
+
     return {
         "title": (data.get("title") or "Market Brief").strip(),
         "teaser": (data.get("teaser") or "").strip(),
         "topics": topics,
         "cited": cited,
+        "cover_story": cover_story,
+        "cover_is_sensitive": bool(data.get("cover_is_sensitive")),
         "script": script,
     }
 
@@ -368,6 +397,8 @@ def main() -> int:
             "topics": ["testing"],
             "sources": [{"title": "Example headline", "source": "Test Feed",
                          "link": "https://example.com/story"}],
+            "cover": {"type": "generated", "url": f"covers/{date_str}.png",
+                      "credit": "", "link": "", "story": ""},
             "script": ("Good morning. This is a dry run of the build pipeline. "
                        "No news was fetched and no model was called. "
                        "If you are hearing this, the audio path works."),
@@ -416,6 +447,14 @@ def main() -> int:
         episode["sources"] = resolve_sources(episode.pop("cited", []), headlines)
         print(f"  + {len(episode['sources'])} sources cited")
 
+        print("\nChoosing cover art...")
+        episode["cover"] = cover.build_cover(episode, headlines, date_str,
+                                             PUBLIC, snapshot)
+
+    if args.dry_run:
+        cover.generate_cover(PUBLIC / f"covers/{date_str}.png",
+                             episode["title"], date_str, None)
+
     # --- audio -----------------------------------------------------------
     audio_rel = f"audio/{date_str}.mp3"
     audio_path = PUBLIC / audio_rel
@@ -447,6 +486,7 @@ def main() -> int:
         "teaser": episode["teaser"],
         "topics": episode["topics"],
         "sources": episode.get("sources", []),
+        "cover": episode.get("cover"),
         "audio": audio_rel,
         "transcript": transcript_rel,
         "duration": duration,
@@ -468,6 +508,28 @@ def main() -> int:
 
     write_feed(episodes)
     copy_web_assets()
+
+    # The browser needs the VAPID public key to subscribe. Publishing it as a
+    # small file keeps it out of the HTML, so rotating the key is a repo
+    # variable change rather than a code edit.
+    vapid_public = os.getenv("VAPID_PUBLIC_KEY", "").strip()
+    if vapid_public:
+        (PUBLIC / "push.json").write_text(
+            json.dumps({"vapidPublicKey": vapid_public}), encoding="utf-8")
+
+
+    # Hand the notifier the details, via GITHUB_OUTPUT when in Actions.
+    out_path = os.getenv("GITHUB_OUTPUT")
+    if out_path:
+        safe_title = episode["title"].replace("\n", " ")
+        safe_teaser = (episode.get("teaser") or "").replace("\n", " ")
+        image = ""
+        cov = episode.get("cover") or {}
+        if cov.get("type") == "photo":
+            image = cov.get("url", "")
+        with open(out_path, "a", encoding="utf-8") as fh:
+            fh.write(f"built=true\ndate={date_str}\ntitle={safe_title}\n"
+                     f"teaser={safe_teaser}\nimage={image}\n")
 
     mins, secs = divmod(duration, 60)
     print(f"\nDone. {date_str} — {mins}:{secs:02d}, "

@@ -66,6 +66,7 @@ jobs:
         run: pip install -r requirements.txt
 
       - name: Build today's episode
+        id: build
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           CLAUDE_MODEL:      ${{ vars.CLAUDE_MODEL      || 'claude-sonnet-5' }}
@@ -73,6 +74,7 @@ jobs:
           SHOW_TITLE:        ${{ vars.SHOW_TITLE        || 'The Morning Brief' }}
           SHOW_AUTHOR:       ${{ vars.SHOW_AUTHOR       || 'Samuel Gibby' }}
           RETAIN_EPISODES:   ${{ vars.RETAIN_EPISODES   || '30' }}
+          VAPID_PUBLIC_KEY:  ${{ vars.VAPID_PUBLIC_KEY }}
         # Skip unless this is a deliberate forced rebuild. A late backstop run
         # would otherwise replace the morning's brief with an evening one.
         run: |
@@ -103,6 +105,22 @@ jobs:
             gh-pages
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Send the morning notification
+        # After publishing, so the tap always lands on an episode that exists.
+        # Silently skipped until alerts are enabled and the subscription stored.
+        if: steps.build.outputs.built == 'true'
+        env:
+          VAPID_PUBLIC_KEY:  ${{ vars.VAPID_PUBLIC_KEY }}
+          VAPID_PRIVATE_KEY: ${{ secrets.VAPID_PRIVATE_KEY }}
+          PUSH_SUBSCRIPTION: ${{ secrets.PUSH_SUBSCRIPTION }}
+          VAPID_SUBJECT:     ${{ vars.VAPID_SUBJECT || 'mailto:noreply@example.com' }}
+        run: |
+          python notify.py \
+            --date "${{ steps.build.outputs.date }}" \
+            --title "${{ steps.build.outputs.title }}" \
+            --body "${{ steps.build.outputs.teaser }}" \
+            --image "${{ steps.build.outputs.image }}"
 
       - name: Summary
         if: always()

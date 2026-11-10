@@ -124,6 +124,59 @@ words, which lands near three minutes. If episodes start creeping long, make
 that section blunter rather than adding new rules elsewhere — the build logs
 the word count on every run, so you can see the drift.
 
+### Cover art
+
+Each episode gets a cover. Claude nominates which cited headline best
+represents the day and whether its imagery is likely to be graphic; if the
+story is clean, the build reads that article's Open Graph image and
+**hot-links** it — the photo stays on the publisher's CDN exactly as it does
+in a Slack or iMessage preview, so nothing copyrighted is copied into this
+repo.
+
+Everything else falls back to a designed cover drawn locally in `cover.py`:
+the day's S&P move as the hero number, coloured green or red, with a sector
+bar motif. It deliberately does **not** repeat the headline, because the page
+already shows the title and date right under the artwork.
+
+The fallback runs whenever anything is uncertain — story flagged as sensitive,
+no `og:image`, article unreachable, image not actually an image, outlet not on
+the allow-list in `ALLOWED_HOSTS`. The allow-list applies to the *article*
+host, not the image host: publishers serve art from separate CDNs
+(`image.cnbcfm.com`, `mw4.wsj.net`, `s.yimg.com`) and checking those rejected
+every real photo.
+
+### Morning notifications
+
+A push arrives each weekday when the brief is published; tapping it opens
+straight to that episode via `?episode=YYYY-MM-DD`.
+
+**iOS only delivers push to a web app installed on the home screen.** Open the
+site in Safari, Add to Home Screen, then open it from the icon — not from
+Safari — before enabling.
+
+One-time setup:
+
+1. Generate a key pair locally (needs `pip install py-vapid`):
+
+   ```
+   python -c "from py_vapid import Vapid01; v=Vapid01(); v.generate_keys(); print('public :', v.public_key_urlsafe_base64()); print('private:', v.private_key_urlsafe_base64())"
+   ```
+
+2. In the repo: add **`VAPID_PUBLIC_KEY`** as a *variable*
+   (Settings → Secrets and variables → Actions → Variables) and
+   **`VAPID_PRIVATE_KEY`** as a *secret*. Optionally set `VAPID_SUBJECT` to
+   `mailto:you@example.com`.
+3. Run the workflow once so it publishes `push.json` with the public key.
+4. Open the app from your home screen, tap the **bell**, allow notifications.
+   It shows a blob of JSON — copy it and save it as the secret
+   **`PUSH_SUBSCRIPTION`**.
+
+That's it. `notify.py` runs after each publish and skips silently whenever the
+subscription isn't set, so the build never fails over notifications.
+
+If alerts stop, the log will say `subscription expired` — browsers discard
+push subscriptions periodically. Tap the bell again and replace the secret.
+
 ### The player
 
 If you change anything in `web/`, bump `VERSION` at the top of `web/sw.js`

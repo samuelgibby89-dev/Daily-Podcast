@@ -24,7 +24,7 @@
 // Bump this whenever you change anything in web/. The old cache is dropped on
 // activate, so a version bump is what makes a UI change actually reach the
 // phone instead of sitting behind a cached index.html.
-const VERSION = 'brief-v5';
+const VERSION = 'brief-v6';
 const SHELL = ['./', './index.html', './manifest.webmanifest',
                './icons/icon-192.png', './icons/icon-512.png'];
 
@@ -86,5 +86,54 @@ self.addEventListener('fetch', (event) => {
       }).catch(() => hit);
       return hit || network;
     })
+  );
+});
+
+
+/* ---------------------------------------------------------------------------
+   Push notifications.
+
+   iOS only delivers these to a web app installed on the home screen, and only
+   after the user grants permission. The payload carries the episode date, so
+   tapping the notification opens that exact episode rather than whatever the
+   app last had loaded.
+--------------------------------------------------------------------------- */
+
+self.addEventListener('push', (event) => {
+  let payload = {};
+  try { payload = event.data ? event.data.json() : {}; } catch (e) { /* keep {} */ }
+
+  const title = payload.title || 'The Morning Brief';
+  const body = payload.body || 'Today\'s brief is ready.';
+  const date = payload.date || '';
+
+  event.waitUntil(self.registration.showNotification(title, {
+    body,
+    icon: payload.icon || './icons/icon-192.png',
+    badge: './icons/icon-192.png',
+    image: payload.image || undefined,
+    tag: 'daily-brief-' + date,     // a second push for the same day replaces it
+    renotify: false,
+    data: { url: date ? './?episode=' + date : './' },
+  }));
+});
+
+self.addEventListener('notificationclick', (event) => {
+  event.notification.close();
+  const target = (event.notification.data && event.notification.data.url) || './';
+  const full = new URL(target, self.location.href).href;
+
+  // Focus the app if it is already open rather than stacking another window.
+  event.waitUntil(
+    self.clients.matchAll({ type: 'window', includeUncontrolled: true })
+      .then((list) => {
+        for (const client of list) {
+          if (client.url.startsWith(self.location.origin) && 'focus' in client) {
+            if ('navigate' in client) client.navigate(full).catch(() => {});
+            return client.focus();
+          }
+        }
+        return self.clients.openWindow(full);
+      })
   );
 });
