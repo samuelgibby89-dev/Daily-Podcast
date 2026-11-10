@@ -14,9 +14,7 @@ Needs three things in the environment, all set once as repository secrets:
 
 Generate the key pair once, locally, with:
 
-    python -c "from py_vapid import Vapid01; v=Vapid01(); v.generate_keys(); \
-print('public :', v.public_key_urlsafe_base64()); \
-print('private:', v.private_key_urlsafe_base64())"
+    python genkeys.py
 
 A missing subscription is not an error: you simply haven't enabled alerts yet,
 and the build should not fail over it.

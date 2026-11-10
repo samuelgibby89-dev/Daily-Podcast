@@ -159,7 +159,7 @@ One-time setup:
 1. Generate a key pair locally (needs `pip install py-vapid`):
 
    ```
-   python -c "from py_vapid import Vapid01; v=Vapid01(); v.generate_keys(); print('public :', v.public_key_urlsafe_base64()); print('private:', v.private_key_urlsafe_base64())"
+   python genkeys.py
    ```
 
 2. In the repo: add **`VAPID_PUBLIC_KEY`** as a *variable*
