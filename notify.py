@@ -26,6 +26,7 @@ import argparse
 import json
 import os
 import sys
+from urllib.parse import urlparse
 
 
 def main() -> int:
@@ -40,6 +41,12 @@ def main() -> int:
     public_key = os.getenv("VAPID_PUBLIC_KEY", "").strip()
     private_key = os.getenv("VAPID_PRIVATE_KEY", "").strip()
     subject = os.getenv("VAPID_SUBJECT", "mailto:noreply@example.com").strip()
+
+    # Say what we have before doing anything. A silent skip is what made the
+    # first two mornings impossible to diagnose.
+    print(f"  · PUSH_SUBSCRIPTION: {'set (' + str(len(subscription)) + ' chars)' if subscription else 'NOT SET'}")
+    print(f"  · VAPID_PUBLIC_KEY : {'set' if public_key else 'NOT SET'}")
+    print(f"  · VAPID_PRIVATE_KEY: {'set' if private_key else 'NOT SET'}")
 
     if not subscription:
         print("  · no PUSH_SUBSCRIPTION set — skipping the notification")
@@ -69,6 +76,24 @@ def main() -> int:
         "image": args.image or None,
     })
 
+    # Which browser the subscription came from, which is usually the answer
+    # when a notification "doesn't arrive": a subscription made in desktop
+    # Chrome pushes to the desktop, not to the phone. iOS home-screen apps
+    # always land on web.push.apple.com.
+    for sub in subs:
+        host = urlparse((sub or {}).get("endpoint", "")).netloc or "?"
+        if "apple" in host:
+            where = "iOS / Safari home-screen app"
+        elif "google" in host or "fcm" in host:
+            where = "Chrome — note this is NOT an iPhone"
+        elif "mozilla" in host:
+            where = "Firefox"
+        elif "microsoft" in host or "windows" in host:
+            where = "Edge — note this is NOT an iPhone"
+        else:
+            where = "unrecognised"
+        print(f"  · subscription endpoint: {host}  ({where})")
+
     sent = 0
     for sub in subs:
         endpoint = (sub or {}).get("endpoint", "")
@@ -93,7 +118,10 @@ def main() -> int:
         except Exception as exc:  # noqa: BLE001
             print(f"  ! push failed: {str(exc)[:140]}")
 
-    print(f"  + notification sent to {sent} of {len(subs)} subscription(s)")
+    if sent:
+        print(f"  + notification sent to {sent} of {len(subs)} subscription(s)")
+    else:
+        print(f"  ! notification NOT delivered to any of {len(subs)} subscription(s)")
     return 0
 
 

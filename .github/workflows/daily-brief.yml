@@ -26,6 +26,10 @@ on:
         description: "Rebuild even if today's episode already exists"
         type: boolean
         default: false
+      notify_only:
+        description: "Send a test notification without building an episode"
+        type: boolean
+        default: false
 
 permissions:
   contents: write
@@ -44,6 +48,7 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Pull down the already-published site
+        if: inputs.notify_only != true
         # Brings existing episodes into ./public so today's brief joins the
         # archive instead of replacing it. Fails harmlessly on the first run.
         uses: actions/checkout@v4
@@ -59,6 +64,7 @@ jobs:
           cache: pip
 
       - name: Install ffmpeg
+        if: inputs.notify_only != true
         # The runner image no longer ships it.
         run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
 
@@ -66,6 +72,7 @@ jobs:
         run: pip install -r requirements.txt
 
       - name: Build today's episode
+        if: inputs.notify_only != true
         id: build
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
@@ -85,6 +92,7 @@ jobs:
           fi
 
       - name: Publish to GitHub Pages
+        if: inputs.notify_only != true
         run: |
           set -euo pipefail
           cd public
@@ -109,18 +117,33 @@ jobs:
       - name: Send the morning notification
         # After publishing, so the tap always lands on an episode that exists.
         # Silently skipped until alerts are enabled and the subscription stored.
-        if: steps.build.outputs.built == 'true'
+        if: steps.build.outputs.built == 'true' || inputs.notify_only == true
         env:
           VAPID_PUBLIC_KEY:  ${{ vars.VAPID_PUBLIC_KEY }}
           VAPID_PRIVATE_KEY: ${{ secrets.VAPID_PRIVATE_KEY }}
           PUSH_SUBSCRIPTION: ${{ secrets.PUSH_SUBSCRIPTION }}
           VAPID_SUBJECT:     ${{ vars.VAPID_SUBJECT || 'mailto:noreply@example.com' }}
+          # Passed as environment variables, NOT interpolated into the
+          # command line. These strings are model-written from news
+          # headlines: a title containing a quote breaks the argument, and
+          # one containing $(...) or backticks would be substituted by
+          # GitHub into the script and executed by the shell.
+          BRIEF_DATE:   ${{ steps.build.outputs.date }}
+          BRIEF_TITLE:  ${{ steps.build.outputs.title }}
+          BRIEF_TEASER: ${{ steps.build.outputs.teaser }}
+          BRIEF_IMAGE:  ${{ steps.build.outputs.image }}
         run: |
-          python notify.py \
-            --date "${{ steps.build.outputs.date }}" \
-            --title "${{ steps.build.outputs.title }}" \
-            --body "${{ steps.build.outputs.teaser }}" \
-            --image "${{ steps.build.outputs.image }}"
+          if [ "${{ inputs.notify_only }}" = "true" ]; then
+            python notify.py --date "$(date -u +%Y-%m-%d)" \
+              --title "Test notification" \
+              --body "If you can see this, push notifications are working."
+          else
+            python notify.py \
+              --date "$BRIEF_DATE" \
+              --title "$BRIEF_TITLE" \
+              --body "$BRIEF_TEASER" \
+              --image "$BRIEF_IMAGE"
+          fi
 
       - name: Summary
         if: always()
