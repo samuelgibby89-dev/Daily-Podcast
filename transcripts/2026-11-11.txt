@@ -1,0 +1,13 @@
+Good morning. The headline number from yesterday: consumer prices rose point four percent in October, hotter than expected, and that's a real complication for the Fed's rate path. Treasuries felt it immediately, and we'll get to that. Meanwhile the AI trade got a jolt of confidence: CoreWeave posted its best day since April 2025, up more than twenty four percent, after a strong quarter that calmed the jitters around whether these neoclouds can actually pay for all the data-center capacity they're buying. That lifted Bloom Energy too. Nvidia shares rebounded even as scrutiny over CEO Jensen Huang's personal conduct and a China chip controversy continues to swirl in the background.
+
+So despite the inflation print, stocks had a strong session. The S&P 500 closed up one point three percent, the Nasdaq led with a one point six percent gain, the Dow added half a percent, and the Russell 2000 was up point nine percent. Overseas, the real story was Korea — the KOSPI surged four point four percent. Japan's Nikkei also had a big day, up nearly three percent, and Germany's DAX gained one point two percent.
+
+Technology was by far the best sector, up three point two percent, riding that CoreWeave-driven relief in AI infrastructure names. Energy followed, up nearly two percent, tracking a firmer crude price. Industrials added one point three percent. On the other end, consumer discretionary actually slipped slightly, and real estate and health care were flat — unsurprising given where yields went.
+
+And that's the tension in today's numbers. The two year yield jumped seventeen basis points to four point seven three percent, the ten year rose ten basis points to four point nine eight, and the thirty year climbed nine basis points to five point three five. The curve stayed positively sloped at twenty five basis points. That's the bond market pricing in a Fed that has less room to cut than hoped, right after a hotter CPI report. Equities shrugged it off for now, but it's worth watching whether that divergence holds.
+
+One story worth a full read: the piece on Nvidia's financing web and whether the company has become too big to fail for the broader AI ecosystem — it's a good explainer on just how concentrated the risk has gotten. Also keep an eye on Anthropic, where bankers are reportedly discussing an IPO valuation as high as one and a half trillion dollars.
+
+Gold slipped about one percent, Bitcoin edged higher, and the VIX dropped ten percent to just above seventeen — a sign of easing nerves even with yields moving sharply.
+
+I'll leave you with this, from Theodore Roosevelt: "Nothing in the world is worth having or worth doing unless it means effort, pain, difficulty."

@@ -1,0 +1,3133 @@
+{
+  "show": "The Morning Brief",
+  "description": "A daily brief you build yourself: markets, tech, sport, business, the world, science and health.",
+  "schema": 2,
+  "maxSelection": 4,
+  "menu": [
+    {
+      "slug": "markets",
+      "label": "Markets",
+      "blurb": "What moved overnight, why, and what to watch",
+      "icon": "chart"
+    },
+    {
+      "slug": "ai-tech",
+      "label": "AI & Tech",
+      "blurb": "Models, chips, platforms, and who's shipping",
+      "icon": "chip"
+    },
+    {
+      "slug": "sports",
+      "label": "Sports",
+      "blurb": "Last night's results and today's stakes",
+      "icon": "ball"
+    },
+    {
+      "slug": "business",
+      "label": "Business",
+      "blurb": "Earnings, deals, and how companies are really doing",
+      "icon": "briefcase"
+    },
+    {
+      "slug": "world",
+      "label": "World",
+      "blurb": "Geopolitics and what's happening globally",
+      "icon": "globe"
+    },
+    {
+      "slug": "science-health",
+      "label": "Science & Health",
+      "blurb": "Research that holds up, and what it means for you",
+      "icon": "flask"
+    }
+  ],
+  "updated": "2026-11-13T16:45:56.056237+00:00",
+  "episodes": [
+    {
+      "date": "2026-11-13",
+      "published": "2026-11-13T16:45:56.056237+00:00",
+      "segments": {
+        "science-health": {
+          "slug": "science-health",
+          "label": "Science & Health",
+          "title": "Vaccines may guard against hidden immune damage",
+          "teaser": "A mouse study finds viral infections leave lasting immune scars that prior vaccination completely prevented, plus H5N1 spreads to Oregon cattle.",
+          "tags": [
+            "immunology",
+            "vaccines",
+            "bird flu",
+            "brain implants",
+            "GLP-1"
+          ],
+          "weight": 0.4,
+          "cover": {
+            "type": "photo",
+            "url": "https://www.sciencedaily.com/images/1920/future-virus-vaccine-technology.webp",
+            "credit": "Science Daily",
+            "link": "https://www.sciencedaily.com/releases/2026/11/261112025531.htm",
+            "story": "Scientists discover a hidden danger of viral infections that vaccines may prevent"
+          },
+          "sources": [
+            {
+              "title": "Scientists discover a hidden danger of viral infections that vaccines may prevent",
+              "source": "Science Daily",
+              "link": "https://www.sciencedaily.com/releases/2026/11/261112025531.htm"
+            },
+            {
+              "title": "Oregon logs its first H5N1 case in cows; farmers' union says human avian flu cases underreported in Washington",
+              "source": "Phys.org",
+              "link": "https://phys.org/news/2026-11-oregon-h5n1-case-cows-farmers.html"
+            },
+            {
+              "title": "Brain implant startup pauses trials",
+              "source": "STAT News",
+              "link": "https://www.statnews.com/2026/11/13/health-news-brain-implant-startup-pauses-trials/?utm_campaign=rss"
+            },
+            {
+              "title": "Can a microdose of Ozempic help you live longer?",
+              "source": "Scientific American",
+              "link": "https://www.scientificamerican.com/article/can-a-microdose-of-ozempic-help-you-live-longer/"
+            },
+            {
+              "title": "STAT+: HHS plans funding for research into\u00a0ibogaine for PTSD",
+              "source": "STAT News",
+              "link": "https://www.statnews.com/2026/11/13/biotech-news-hhs-funding-for-research-into-ibogaine-for-ptsd/?utm_campaign=rss"
+            },
+            {
+              "title": "Fed up with the healthcare industry, this red state capped insulin prices for patients",
+              "source": "NPR Health",
+              "link": "https://www.npr.org/2026/11/13/nx-s1-6032717/diabetes-insurance-insulin-price"
+            }
+          ],
+          "short": {
+            "audio": "audio/2026-11-13/science-health-short.mp3",
+            "duration": 47,
+            "bytes": 189740,
+            "transcript": "transcripts/2026-11-13/science-health-short.txt"
+          },
+          "long": {
+            "audio": "audio/2026-11-13/science-health-long.mp3",
+            "duration": 160,
+            "bytes": 643052,
+            "transcript": "transcripts/2026-11-13/science-health-long.txt"
+          }
+        },
+        "sports": {
+          "slug": "sports",
+          "label": "Sports",
+          "title": "Lamar Jackson Injury Rocks Ravens' Season",
+          "teaser": "Lamar Jackson is out for weeks with a thumb injury, and Pochettino's emotional exit to Manchester United shakes up US soccer.",
+          "tags": [
+            "NFL",
+            "Lamar Jackson",
+            "Pochettino",
+            "Packers-Vikings",
+            "injuries"
+          ],
+          "weight": 0.45,
+          "cover": {
+            "type": "photo",
+            "url": "https://e0.365dm.com/26/09/1600x900/skysports-lamar-jackson-colts_7350721.jpg?20260913185129",
+            "credit": "Sky Sports",
+            "link": "https://www.skysports.com/nfl/news/12040/13611953/nfl-baltimore-ravens-quarterback-lamar-jackson-to-miss-up-to-10-weeks-with-broken-and-dislocated-thumb",
+            "story": "Ravens quarterback Jackson to miss up to 10 weeks with thumb injury"
+          },
+          "sources": [
+            {
+              "title": "Jaguars' trade deadline acquisitions Jessie Bates III and Jordan Davis won't play in Week 10 vs. Titans",
+              "source": "CBS Sports",
+              "link": "https://www.cbssports.com/nfl/news/jaguars-liam-coen-acquisitions-jessie-bates-iii-jordan-davis-wont-play-week-10-trade-deadline-titans/"
+            },
+            {
+              "title": "Detroit Lions Release Final Injury Report vs. Patriots",
+              "source": "Yahoo Sports",
+              "link": "https://sports.yahoo.com/articles/detroit-lions-release-final-injury-163918013.html"
+            },
+            {
+              "title": "Why Patriots\u2019 Milton Williams Is Fining Teammates $1,000",
+              "source": "Yahoo Sports",
+              "link": "https://sports.yahoo.com/articles/why-patriots-milton-williams-fining-163757292.html"
+            },
+            {
+              "title": "Packers vs. Vikings: 5 things to watch and a prediction for Week 10",
+              "source": "Yahoo Sports",
+              "link": "https://sports.yahoo.com/articles/packers-vs-vikings-5-things-163602278.html"
+            },
+            {
+              "title": "Aaron Glenn expects Garrett Wilson to clear concussion protocol, play vs. Bills",
+              "source": "Yahoo Sports",
+              "link": "https://sports.yahoo.com/articles/aaron-glenn-expects-garrett-wilson-163433242.html"
+            },
+            {
+              "title": "Top Week 10 battle to watch: Packers' surging offensive trio vs. No. 1 Vikings defense",
+              "source": "CBS Sports",
+              "link": "https://www.cbssports.com/nfl/news/top-week-10-battle-to-watch-packers-jordan-love-vikings-defense/"
+            },
+            {
+              "title": "Ravens quarterback Jackson to miss up to 10 weeks with thumb injury",
+              "source": "Sky Sports",
+              "link": "https://www.skysports.com/nfl/news/12040/13611953/nfl-baltimore-ravens-quarterback-lamar-jackson-to-miss-up-to-10-weeks-with-broken-and-dislocated-thumb"
+            },
+            {
+              "title": "Tearful Pochettino on 'difficult' decision to leave USA for Man Utd",
+              "source": "BBC Sport",
+              "link": "https://www.bbc.co.uk/sport/football/articles/cmd61qne8352o?at_medium=RSS&at_campaign=rss"
+            },
+            {
+              "title": "Tearful Pochettino admits he 'couldn't say no to Man Utd'",
+              "source": "Sky Sports",
+              "link": "https://www.skysports.com/football/news/12040/13611887/mauricio-pochettino-new-man-utd-head-coach-in-tears-as-he-labels-leaving-usmnt-toughest-decision-of-career"
+            },
+            {
+              "title": "Fernandes rejects second Man Utd contract offer",
+              "source": "BBC Sport",
+              "link": "https://www.bbc.co.uk/sport/football/articles/cm782d4pz9jyo?at_medium=RSS&at_campaign=rss"
+            }
+          ],
+          "short": {
+            "audio": "audio/2026-11-13/sports-short.mp3",
+            "duration": 58,
+            "bytes": 233324,
+            "transcript": "transcripts/2026-11-13/sports-short.txt"
+          },
+          "long": {
+            "audio": "audio/2026-11-13/sports-long.mp3",
+            "duration": 128,
+            "bytes": 512876,
+            "transcript": "transcripts/2026-11-13/sports-long.txt"
+          }
+        },
+        "ai-tech": {
+          "slug": "ai-tech",
+          "label": "AI & Tech",
+          "title": "Nvidia in turmoil as Huang exits amid scandal",
+          "teaser": "Jensen Huang's resignation triggers congressional probes and succession doubts, while Microsoft claws back from a two-day outage.",
+          "tags": [
+            "Nvidia",
+            "Jensen Huang",
+            "Microsoft outage",
+            "ChatGPT",
+            "chip policy"
+          ],
+          "weight": 0.75,
+          "cover": {
+            "type": "photo",
+            "url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/VRG_VST_111326_Site.jpg?quality=90&strip=all&crop=0%2C10.732984293194%2C100%2C78.534031413613&w=1200",
+            "credit": "The Verge",
+            "link": "https://www.theverge.com/podcast/1032866/jensen-huang-nvidia-china-trump-vergecast",
+            "story": "What&#8217;s really at stake in the Jensen Huang saga"
+          },
+          "sources": [
+            {
+              "title": "Microsoft&#8217;s massive Outlook outage continues",
+              "source": "The Verge",
+              "link": "https://www.theverge.com/tech/1032862/microsoft-outlook-down-outage"
+            },
+            {
+              "title": "The unfolding Jensen Huang scandal: a timeline",
+              "source": "TechCrunch",
+              "link": "https://techcrunch.com/2026/11/13/nvidia-ceo-jensen-huangs-affair-with-alleged-chinese-spy-a-timeline/"
+            },
+            {
+              "title": "What&#8217;s really at stake in the Jensen Huang saga",
+              "source": "The Verge",
+              "link": "https://www.theverge.com/podcast/1032866/jensen-huang-nvidia-china-trump-vergecast"
+            },
+            {
+              "title": "Microsoft\u2019s latest email outage turned into a full blown global cloud crisis",
+              "source": "TechCrunch",
+              "link": "https://techcrunch.com/2026/11/13/microsoft-latest-email-outage-turned-into-a-full-blown-global-cloud-crisis/"
+            },
+            {
+              "title": "Israel\u2019s VCs see opportunity for challengers in Nvidia\u2019s turmoil",
+              "source": "TechCrunch",
+              "link": "https://techcrunch.com/2026/11/13/israels-vcs-see-opportunity-for-challengers-in-nvidias-turmoil/"
+            },
+            {
+              "title": "Jensen Huang didn\u2019t show confidence in his successor, report says",
+              "source": "TechCrunch",
+              "link": "https://techcrunch.com/2026/11/13/jensen-huang-didnt-show-confidence-in-his-successor-report-says/"
+            },
+            {
+              "title": "Democrats launch Nvidia investigation, write scathing letter on Huang\u2019s \u2018scheme\u2019 with Trump",
+              "source": "TechCrunch",
+              "link": "https://techcrunch.com/2026/11/12/democrats-launch-nvidia-investigation-write-scathing-letter-on-huangs-scheme-with-trump/"
+            },
+            {
+              "title": "Nvidia privately confirmed it could track chips to fight smuggling, even as industry publicly questioned feasibility",
+              "source": "MIT Technology Review",
+              "link": "https://www.technologyreview.com/2026/11/12/1148483/nvidia-chip-tracking/"
+            },
+            {
+              "title": "ChatGPT\u2019s new Wallet lets AI agents shop and check out for you",
+              "source": "TechCrunch",
+              "link": "https://techcrunch.com/2026/11/13/chatgpts-new-wallet-lets-ai-agents-shop-and-check-out-for-you/"
+            },
+            {
+              "title": "Windows 0-day dropped by disgruntled researcher hands hackers System rights",
+              "source": "Ars Technica",
+              "link": "https://arstechnica.com/security/2026/11/windows-0-day-dropped-by-disgruntled-researcher-hands-hackers-system-rights/"
+            }
+          ],
+          "short": {
+            "audio": "audio/2026-11-13/ai-tech-short.mp3",
+            "duration": 51,
+            "bytes": 206828,
+            "transcript": "transcripts/2026-11-13/ai-tech-short.txt"
+          },
+          "long": {
+            "audio": "audio/2026-11-13/ai-tech-long.mp3",
+            "duration": 167,
+            "bytes": 670508,
+            "transcript": "transcripts/2026-11-13/ai-tech-long.txt"
+          }
+        },
+        "business": {
+          "slug": "business",
+          "label": "Business",
+          "title": "Nvidia Leaderless as Congress Circles the Scandal",
+          "teaser": "Nvidia is leaderless and Congress is circling, while Lutnick and Bessent trade blame over China chip exports.",
+          "tags": [
+            "Nvidia",
+            "Jensen Huang",
+            "corporate governance",
+            "luxury retail",
+            "Microsoft outage"
+          ],
+          "weight": 0.65,
+          "cover": {
+            "type": "photo",
+            "url": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/f66c/live/4f0358a0-def1-11f1-bb80-c5cef03337ce.jpg",
+            "credit": "BBC Business",
+            "link": "https://www.bbc.co.uk/news/articles/cmq5vd1wdgz6o?at_medium=RSS&at_campaign=rss",
+            "story": "Ex-Nvidia CEO Jensen Huang summoned to testify before Congress about affair with alleged Chinese spy"
+          },
+          "sources": [
+            {
+              "title": "Bessent blames Lutnick's Commerce Department for failing to block Megaspeed",
+              "source": "BBC Business",
+              "link": "https://www.bbc.co.uk/news/articles/cqvg2d1eg7zro?at_medium=RSS&at_campaign=rss"
+            },
+            {
+              "title": "Nvidia Needs Three CEOs in One",
+              "source": "WSJ Business",
+              "link": "https://www.wsj.com/cio-journal/nvidia-needs-three-ceos-in-one-59038b0c?mod=pls_whats_news_us_business_f"
+            },
+            {
+              "title": "Jensen Huang Ousted: Timeline Of The Nvidia Scandal",
+              "source": "Forbes Business",
+              "link": "https://www.forbes.com/sites/alisondurkee/2026/11/13/jensen-huang-ousted-timeline-of-the-nvidia-scandal/"
+            },
+            {
+              "title": "Lutnick Will Testify Before Congress Amid Allegations He Resisted Megaspeed Crackdown",
+              "source": "Forbes Business",
+              "link": "https://www.forbes.com/sites/saradorn/2026/11/13/lutnick-will-testify-before-congress-amid-allegations-he-resisted-megaspeed-crackdown/"
+            },
+            {
+              "title": "Nvidia CFO Colette Kress takes over as interim CEO\u2014but the succession question remains",
+              "source": "Fortune",
+              "link": "https://fortune.com/2026/11/13/nvidia-cfo-colette-kress-takes-over-as-interim-ceobut-the-succession-question-remains/"
+            },
+            {
+              "title": "The Morning Risk Report: Huang\u2019s Departure From Nvidia Unlikely to Mollify Congress, Plaintiffs\u2019 Lawyers",
+              "source": "WSJ Business",
+              "link": "https://www.wsj.com/risk-compliance-journal/the-morning-risk-report-huangs-departure-from-nvidia-unlikely-to-mollify-congress-plaintiffs-lawyers-baf11ad1?mod=pls_whats_news_us_business_f"
+            },
+            {
+              "title": "How a sex scandal at Nvidia is putting pressure on the White House",
+              "source": "BBC Business",
+              "link": "https://www.bbc.co.uk/news/articles/c67429m3vem3o?at_medium=RSS&at_campaign=rss"
+            },
+            {
+              "title": "Richemont Shares Drop After Cartier-Parent\u2019s Sales Growth Loses Some Shine",
+              "source": "WSJ Business",
+              "link": "https://www.wsj.com/business/retail/cartier-parent-richemont-post-sales-rise-despite-uncertain-market-backdrop-2e5ad747?mod=pls_whats_news_us_business_f"
+            },
+            {
+              "title": "Jensen Huang Called Her \u2018a Deer in the Headlights.\u2019 Now She Runs Nvidia.",
+              "source": "WSJ Business",
+              "link": "https://www.wsj.com/articles/jensen-huang-called-her-a-deer-in-the-headlights-now-she-runs-nvidia-d7f063dd?mod=pls_whats_news_us_business_f"
+            },
+            {
+              "title": "CVS Breakup Won\u2019t Satisfy Washington. It Could Still Work for Wall Street.",
+              "source": "WSJ Business",
+              "link": "https://www.wsj.com/health/healthcare/cvs-breakup-wont-satisfy-washington-it-could-still-work-for-wall-street-1b5004e3?mod=pls_whats_news_us_business_f"
+            },
+            {
+              "title": "Jane Street more than doubled its Nvidia stake last quarter, filings reveal",
+              "source": "Fortune",
+              "link": "https://fortune.com/2026/11/12/tk-8/"
+            },
+            {
+              "title": "Ex-Nvidia CEO Jensen Huang summoned to testify before Congress about affair with alleged Chinese spy",
+              "source": "BBC Business",
+              "link": "https://www.bbc.co.uk/news/articles/cmq5vd1wdgz6o?at_medium=RSS&at_campaign=rss"
+            }
+          ],
+          "short": {
+            "audio": "audio/2026-11-13/business-short.mp3",
+            "duration": 49,
+            "bytes": 197708,
+            "transcript": "transcripts/2026-11-13/business-short.txt"
+          },
+          "long": {
+            "audio": "audio/2026-11-13/business-long.mp3",
+            "duration": 150,
+            "bytes": 603020,
+            "transcript": "transcripts/2026-11-13/business-long.txt"
+          }
+        },
+        "world": {
+          "slug": "world",
+          "label": "World",
+          "title": "Drone barrage hits as peace talks race ahead",
+          "teaser": "Ukraine launches a massive drone attack even as US envoys shuttle between Putin and Zelensky on peace terms.",
+          "tags": [
+            "Ukraine",
+            "Russia",
+            "Iran",
+            "Haiti",
+            "Sudan"
+          ],
+          "weight": 0.55,
+          "cover": {
+            "type": "generated",
+            "url": "covers/2026-11-13-world.png",
+            "credit": "",
+            "link": "",
+            "story": ""
+          },
+          "sources": [
+            {
+              "title": "Russia strikes targets across Ukraine as Kyiv launches nearly 1,200 drones",
+              "source": "France 24",
+              "link": "https://www.france24.com/en/video/20261113-russian-airstrikes-continue-ukraine-launches-nearly-1-200-drones"
+            },
+            {
+              "title": "Europe seeks seat at Ukraine peace talks but lacks unified voice",
+              "source": "Al Jazeera",
+              "link": "https://www.aljazeera.com/news/2026/11/13/europe-seeks-seat-at-ukraine-peace-talks-but-lacks-unified-voice?traffic_source=rss"
+            },
+            {
+              "title": "Zelensky welcomes US bringing Europe into Russia-Ukraine peace talks",
+              "source": "BBC World",
+              "link": "https://www.bbc.co.uk/news/articles/ckn80j9jv3jxo?at_medium=RSS&at_campaign=rss"
+            },
+            {
+              "title": "U.S. envoys meet with Putin in the Kremlin after Ukraine talks in Abu Dhabi",
+              "source": "NPR World",
+              "link": "https://www.npr.org/2026/11/12/nx-s1-6038809/us-envoys-meet-putin-russia-ukraine-war-talks"
+            },
+            {
+              "title": "Beijing faces its Russia dilemma amid talk of Xi-Trump-Putin summit",
+              "source": "Deutsche Welle",
+              "link": "https://www.dw.com/en/beijing-faces-its-russia-dilemma-amid-talk-of-xi-trump-putin-summit/a-79942427?maca=en-rss-en-world-4025-rdf"
+            },
+            {
+              "title": "Iran targeted US radar system in Bahrain",
+              "source": "Deutsche Welle",
+              "link": "https://www.dw.com/en/iran-targeted-us-radar-system-in-bahrain/a-79942640?maca=en-rss-en-world-4025-rdf"
+            },
+            {
+              "title": "UN watchdog 'increasingly concerned' over uninspected Iran nuclear site",
+              "source": "BBC World",
+              "link": "https://www.bbc.co.uk/news/articles/cm75261e3pdko?at_medium=RSS&at_campaign=rss"
+            },
+            {
+              "title": "Can Netanyahu launch a strike on Iran before he leaves?",
+              "source": "Al Jazeera",
+              "link": "https://www.aljazeera.com/news/2026/11/13/can-netanyahu-launch-a-strike-on-iran-before-he-leaves?traffic_source=rss"
+            },
+            {
+              "title": "Haitian forces recapture national stadium after two years of gang control",
+              "source": "France 24",
+              "link": "https://www.france24.com/en/video/20261113-haitian-forces-recapture-national-stadium-after-two-years-of-gang-control"
+            },
+            {
+              "title": "'Devastated wasteland': Haitian security forces regain control of stadium from gangs",
+              "source": "France 24",
+              "link": "https://www.france24.com/en/video/20261113-devastated-wasteland-haitian-security-forces-regain-control-of-stadium-from-gangs"
+            },
+            {
+              "title": "Why does El Salvador's Bukele have troops in Haiti?",
+              "source": "Deutsche Welle",
+              "link": "https://www.dw.com/en/why-does-el-salvador-s-bukele-have-troops-in-haiti/a-79940771?maca=en-rss-en-world-4025-rdf"
+            },
+            {
+              "title": "UN refugee chief Barham Salih slams 'shameful' war in Sudan, urges 'political solution'",
+              "source": "France 24",
+              "link": "https://www.france24.com/en/tv-shows/t%C3%AAte-%C3%A0-t%C3%AAte/20261113-un-refugee-chief-barham-salih-slams-shameful-war-in-sudan-urges-political-solution"
+            }
+          ],
+          "short": {
+            "audio": "audio/2026-11-13/world-short.mp3",
+            "duration": 63,
+            "bytes": 252236,
+            "transcript": "transcripts/2026-11-13/world-short.txt"
+          },
+          "long": {
+            "audio": "audio/2026-11-13/world-long.mp3",
+            "duration": 191,
+            "bytes": 765836,
+            "transcript": "transcripts/2026-11-13/world-long.txt"
+          }
+        },
+        "markets": {
+          "slug": "markets",
+          "label": "Markets",
+          "title": "Nvidia Crisis and Hot Inflation Slam Markets",
+          "teaser": "Nvidia's leadership crisis and hot inflation data are dragging tech and bonds lower together.",
+          "tags": [
+            "Nvidia",
+            "Jensen Huang",
+            "inflation",
+            "Treasury yields",
+            "tech selloff"
+          ],
+          "weight": 0.75,
+          "cover": {
+            "type": "photo",
+            "url": "https://image.cnbcfm.com/api/v1/image/108551006-1794578299601-siteJensenPowellAlice.png?v=1794578400&w=1920&h=1080",
+            "credit": "CNBC Top News",
+            "link": "https://www.cnbc.com/2026/11/13/jensen-huang-scandal-casts-doubt-on-nvidias-ai-dominance-how-we-got-here.html",
+            "story": "Jensen Huang scandal casts doubt on Nvidia\u2019s AI dominance \u2014 how we got here"
+          },
+          "sources": [
+            {
+              "title": "Nvidia\u2019s stock is on a losing streak not seen in 14 years. What comes next?",
+              "source": "MarketWatch",
+              "link": "https://www.marketwatch.com/story/nvidias-stock-is-on-a-losing-streak-not-seen-in-14-years-what-comes-next-a07e801e?mod=mw_rss_topstories"
+            },
+            {
+              "title": "Colette Kress, the CFO who challenged Huang\u2019s bets, is Nvidia\u2019s interim CEO",
+              "source": "Investing.com",
+              "link": "https://www.investing.com/news/stock-market-news/colette-kress-the-cfo-who-challenged-huangs-bets-is-nvidias-interim-ceo-5023936"
+            },
+            {
+              "title": "Nvidia-led tech selloff drags Wall Street lower despite inflation relief",
+              "source": "Investing.com",
+              "link": "https://www.investing.com/news/stock-market-news/us-stock-futures-rise-after-nvidia-ceo-exit-spooks-wall-st-5023780"
+            },
+            {
+              "title": "Bessent blames Lutnick\u2019s Commerce as he slams Nvidia chip \u2018leakage\u2019 to China",
+              "source": "CNBC Markets",
+              "link": "https://www.cnbc.com/2026/11/13/us-inflation-outlook-federal-reserve-rate-hike.html"
+            },
+            {
+              "title": "Wholesale prices rose 0.3% in October, putting annual rate at 6.5%, the highest in nearly four years",
+              "source": "CNBC Markets",
+              "link": "https://www.cnbc.com/2026/11/13/ppi-inflation-report-october-2026.html"
+            },
+            {
+              "title": "What's ahead for AI financing after Nvidia CEO Jensen Huang departs",
+              "source": "CNBC Top News",
+              "link": "https://www.cnbc.com/2026/11/13/nvidia-jensen-huang-resignation-ai-financing.html"
+            },
+            {
+              "title": "Apple, Alphabet and Uber survived major founder transitions. Nvidia will be a harder test",
+              "source": "CNBC Top News",
+              "link": "https://www.cnbc.com/2026/11/13/nvidia-jensen-huang-founder-ceo-transition.html"
+            },
+            {
+              "title": "Chicago Fed's Goolsbee says central bank 'has definitely got work to do' on inflation",
+              "source": "CNBC Top News",
+              "link": "https://www.cnbc.com/2026/11/13/chicago-feds-goolsbee-says-central-bank-has-definitely-got-work-to-do-on-inflation.html"
+            },
+            {
+              "title": "Jensen Huang scandal casts doubt on Nvidia\u2019s AI dominance \u2014 how we got here",
+              "source": "CNBC Top News",
+              "link": "https://www.cnbc.com/2026/11/13/jensen-huang-scandal-casts-doubt-on-nvidias-ai-dominance-how-we-got-here.html"
+            },
+            {
+              "title": "Analysis: Nvidia\u2019s leadership crisis tests the chipmaker\u2019s role as the \u2018central bank of AI\u2019",
+              "source": "CNBC Markets",
+              "link": "https://www.cnbc.com/2026/11/11/nvidia-jensen-huang-ai-financial-system-risk.html"
+            }
+          ],
+          "short": {
+            "audio": "audio/2026-11-13/markets-short.mp3",
+            "duration": 55,
+            "bytes": 223244,
+            "transcript": "transcripts/2026-11-13/markets-short.txt"
+          },
+          "long": {
+            "audio": "audio/2026-11-13/markets-long.mp3",
+            "duration": 172,
+            "bytes": 690956,
+            "transcript": "transcripts/2026-11-13/markets-long.txt"
+          }
+        }
+      },
+      "title": "Nvidia Crisis and Hot Inflation Slam Markets",
+      "teaser": "Nvidia's leadership crisis and hot inflation data are dragging tech and bonds lower together.",
+      "topics": [
+        "Nvidia",
+        "Jensen Huang",
+        "inflation",
+        "Treasury yields",
+        "tech selloff"
+      ],
+      "sources": [
+        {
+          "title": "Nvidia\u2019s stock is on a losing streak not seen in 14 years. What comes next?",
+          "source": "MarketWatch",
+          "link": "https://www.marketwatch.com/story/nvidias-stock-is-on-a-losing-streak-not-seen-in-14-years-what-comes-next-a07e801e?mod=mw_rss_topstories"
+        },
+        {
+          "title": "Colette Kress, the CFO who challenged Huang\u2019s bets, is Nvidia\u2019s interim CEO",
+          "source": "Investing.com",
+          "link": "https://www.investing.com/news/stock-market-news/colette-kress-the-cfo-who-challenged-huangs-bets-is-nvidias-interim-ceo-5023936"
+        },
+        {
+          "title": "Nvidia-led tech selloff drags Wall Street lower despite inflation relief",
+          "source": "Investing.com",
+          "link": "https://www.investing.com/news/stock-market-news/us-stock-futures-rise-after-nvidia-ceo-exit-spooks-wall-st-5023780"
+        },
+        {
+          "title": "Bessent blames Lutnick\u2019s Commerce as he slams Nvidia chip \u2018leakage\u2019 to China",
+          "source": "CNBC Markets",
+          "link": "https://www.cnbc.com/2026/11/13/us-inflation-outlook-federal-reserve-rate-hike.html"
+        },
+        {
+          "title": "Wholesale prices rose 0.3% in October, putting annual rate at 6.5%, the highest in nearly four years",
+          "source": "CNBC Markets",
+          "link": "https://www.cnbc.com/2026/11/13/ppi-inflation-report-october-2026.html"
+        },
+        {
+          "title": "What's ahead for AI financing after Nvidia CEO Jensen Huang departs",
+          "source": "CNBC Top News",
+          "link": "https://www.cnbc.com/2026/11/13/nvidia-jensen-huang-resignation-ai-financing.html"
+        },
+        {
+          "title": "Apple, Alphabet and Uber survived major founder transitions. Nvidia will be a harder test",
+          "source": "CNBC Top News",
+          "link": "https://www.cnbc.com/2026/11/13/nvidia-jensen-huang-founder-ceo-transition.html"
+        },
+        {
+          "title": "Chicago Fed's Goolsbee says central bank 'has definitely got work to do' on inflation",
+          "source": "CNBC Top News",
+          "link": "https://www.cnbc.com/2026/11/13/chicago-feds-goolsbee-says-central-bank-has-definitely-got-work-to-do-on-inflation.html"
+        },
+        {
+          "title": "Jensen Huang scandal casts doubt on Nvidia\u2019s AI dominance \u2014 how we got here",
+          "source": "CNBC Top News",
+          "link": "https://www.cnbc.com/2026/11/13/jensen-huang-scandal-casts-doubt-on-nvidias-ai-dominance-how-we-got-here.html"
+        },
+        {
+          "title": "Analysis: Nvidia\u2019s leadership crisis tests the chipmaker\u2019s role as the \u2018central bank of AI\u2019",
+          "source": "CNBC Markets",
+          "link": "https://www.cnbc.com/2026/11/11/nvidia-jensen-huang-ai-financial-system-risk.html"
+        }
+      ],
+      "cover": {
+        "type": "photo",
+        "url": "https://image.cnbcfm.com/api/v1/image/108551006-1794578299601-siteJensenPowellAlice.png?v=1794578400&w=1920&h=1080",
+        "credit": "CNBC Top News",
+        "link": "https://www.cnbc.com/2026/11/13/jensen-huang-scandal-casts-doubt-on-nvidias-ai-dominance-how-we-got-here.html",
+        "story": "Jensen Huang scandal casts doubt on Nvidia\u2019s AI dominance \u2014 how we got here"
+      },
+      "audio": "audio/2026-11-13/markets-long.mp3",
+      "transcript": "transcripts/2026-11-13/markets-long.txt",
+      "duration": 172,
+      "bytes": 690956
+    },
+    {
+      "date": "2026-11-12",
+      "published": "2026-11-13T01:52:57.752075+00:00",
+      "segments": {
+        "sports": {
+          "slug": "sports",
+          "label": "Sports",
+          "title": "MVPs crowned, Kane makes history, Pochettino to United",
+          "teaser": "Pete Crow-Armstrong and Yordan Alvarez sweep the MLB MVP awards as Harry Kane sets an England record at Wembley.",
+          "tags": [
+            "MLB",
+            "England football",
+            "Manchester United",
+            "MVP awards",
+            "Nations League"
+          ],
+          "weight": 0.55,
+          "cover": {
+            "type": "photo",
+            "url": "https://e0.365dm.com/26/11/1600x900/skysports-football-harry-kane_7405434.jpg?20261112213640",
+            "credit": "Sky Sports",
+            "link": "https://www.skysports.com/football/england-vs-croatia/report/554088",
+            "story": "Kane the hero on historic night as England book Nations League QF spot"
+          },
+          "sources": [
+            {
+              "title": "Cubs superstar Pete Crow-Armstrong wins National League MVP unanimously, beating Shohei Ohtani",
+              "source": "CBS Sports",
+              "link": "https://www.cbssports.com/mlb/news/mlb-2026-national-league-mvp-pete-crow-armstrong-cubs/"
+            },
+            {
+              "title": "Now with an MVP, Pete Crow-Armstrong is on the path for an all-time great career. Where could he stack up?",
+              "source": "CBS Sports",
+              "link": "https://www.cbssports.com/mlb/news/pete-crow-armstrong-mvp-2026-historical-comparisons/"
+            },
+            {
+              "title": "Astros slugger Yordan Alvarez named unanimous American League MVP after nearly winning 2026 Triple Crown",
+              "source": "CBS Sports",
+              "link": "https://www.cbssports.com/mlb/news/mlb-2026-american-league-mvp-yordan-alvarez-astros/"
+            },
+            {
+              "title": "Kane the hero on historic night as England book Nations League QF spot",
+              "source": "Sky Sports",
+              "link": "https://www.skysports.com/football/england-vs-croatia/report/554088"
+            },
+            {
+              "title": "Kane makes history with record 126th England cap",
+              "source": "Sky Sports",
+              "link": "https://www.skysports.com/football/news/12040/13611419/harry-kane-england-captain-breaks-three-lions-appearance-record-by-winning-126th-senior-cap-vs-croatia-at-wembley"
+            },
+            {
+              "title": "Pochettino agrees two-and-a-half-year deal to become Man Utd boss",
+              "source": "Sky Sports",
+              "link": "https://www.skysports.com/football/news/12040/13611745/mauricio-pochettino-manchester-united-agree-two-and-a-half-year-deal-with-usa-manager-to-replace-michael-carrick"
+            },
+            {
+              "title": "How Pochettino came on Man Utd's radar - and what Carrick was told when",
+              "source": "BBC Sport",
+              "link": "https://www.bbc.co.uk/sport/football/articles/cqdr1jlr1707o?at_medium=RSS&at_campaign=rss"
+            },
+            {
+              "title": "Gritty Arsenal show different side in Barcelona draw",
+              "source": "BBC Sport",
+              "link": "https://www.bbc.co.uk/sport/football/articles/cqe85vym242jo?at_medium=RSS&at_campaign=rss"
+            },
+            {
+              "title": "Pegula saves match point to beat Noskova & reach WTA Finals last four",
+              "source": "BBC Sport",
+              "link": "https://www.bbc.co.uk/sport/tennis/articles/c57429mgdkjdo?at_medium=RSS&at_campaign=rss"
+            },
+            {
+              "title": "Patrick Mahomes fully takes part in practice",
+              "source": "Yahoo Sports",
+              "link": "https://sports.yahoo.com/articles/patrick-mahomes-fully-takes-part-014210949.html"
+            },
+            {
+              "title": "Reeling Oregon Ducks remain positive, committed to the grind",
+              "source": "Yahoo Sports",
+              "link": "https://sports.yahoo.com/articles/reeling-oregon-ducks-remain-positive-002027043.html"
+            },
+            {
+              "title": "Oregon QB Dante Moore ruled out for rest of 2026 season",
+              "source": "Yahoo Sports",
+              "link": "https://sports.yahoo.com/articles/oregon-qb-dante-moore-ruled-024226600.html"
+            }
+          ],
+          "short": {
+            "audio": "audio/2026-11-12/sports-short.mp3",
+            "duration": 43,
+            "bytes": 173228,
+            "transcript": "transcripts/2026-11-12/sports-short.txt"
+          },
+          "long": {
+            "audio": "audio/2026-11-12/sports-long.mp3",
+            "duration": 138,
+            "bytes": 555692,
+            "transcript": "transcripts/2026-11-12/sports-long.txt"
+          }
+        },
+        "world": {
+          "slug": "world",
+          "label": "World",
+          "title": "Ukraine talks widen as Europe secures a seat",
+          "teaser": "Europe joins the next round of Russia-Ukraine talks as Witkoff and Kushner shuttle between Moscow and Dublin.",
+          "tags": [
+            "Ukraine",
+            "Russia",
+            "diplomacy",
+            "Nvidia",
+            "Gaza"
+          ],
+          "weight": 0.6,
+          "cover": {
+            "type": "generated",
+            "url": "covers/2026-11-12-world.png",
+            "credit": "",
+            "link": "",
+            "story": ""
+          },
+          "sources": [
+            {
+              "title": "Live: Zelensky and Kushner confirm that Europe will join next round of Russia-Ukraine talks",
+              "source": "France 24",
+              "link": "https://www.france24.com/en/europe/20261113-live-zelensky-and-kushner-confirm-that-europe-will-join-next-round-of-russia-ukraine-talks"
+            },
+            {
+              "title": "US envoys meet Zelensky in Dublin after talks with Putin in Moscow",
+              "source": "BBC World",
+              "link": "https://www.bbc.co.uk/news/articles/cwrkgmymk55zo?at_medium=RSS&at_campaign=rss"
+            },
+            {
+              "title": "U.S. envoys meet with Putin in the Kremlin after Ukraine talks in Abu Dhabi",
+              "source": "NPR World",
+              "link": "https://www.npr.org/2026/11/12/nx-s1-6038809/us-envoys-meet-putin-russia-ukraine-war-talks"
+            },
+            {
+              "title": "What have the talks with Russia and the US in Abu Dhabi achieved for Ukraine?",
+              "source": "Deutsche Welle",
+              "link": "https://www.dw.com/en/what-have-the-talks-with-russia-and-the-us-in-abu-dhabi-achieved-for-ukraine/a-79930613?maca=en-rss-en-world-4025-rdf"
+            },
+            {
+              "title": "EU leaders tussle over who to send to Ukraine, Russia peace talks",
+              "source": "Deutsche Welle",
+              "link": "https://www.dw.com/en/eu-leaders-tussle-over-who-to-send-to-ukraine-russia-peace-talks/a-79935468?maca=en-rss-en-world-4025-rdf"
+            },
+            {
+              "title": "Russian warship hit by Ukrainian drone in Gulf of Finland",
+              "source": "BBC World",
+              "link": "https://www.bbc.co.uk/news/articles/cmn0d33zz34zo?at_medium=RSS&at_campaign=rss"
+            },
+            {
+              "title": "U.S. officials set to meet with Putin, Zelenskyy following Abu Dhabi peace talks",
+              "source": "NPR World",
+              "link": "https://www.npr.org/2026/11/12/nx-s1-6037558/u-s-officials-set-to-meet-with-putin-zelenskyy-following-abu-dhabi-peace-talks"
+            },
+            {
+              "title": "Scandal-hit Nvidia CEO Jensen Huang quits, plunging AI chipmaking giant into turmoil",
+              "source": "BBC World",
+              "link": "https://www.bbc.co.uk/news/articles/cmq5vd1wdgz6o?at_medium=RSS&at_campaign=rss"
+            },
+            {
+              "title": "Jensen Huang resigns as Nvidia CEO after mounting scandals",
+              "source": "France 24",
+              "link": "https://www.france24.com/en/tv-shows/business/20261112-jensen-huang-resigns-as-nvidia-ceo-after-mounting-scandals"
+            },
+            {
+              "title": "Jensen Huang: Spy row, second affair leaves Nvidia without its rockstar CEO",
+              "source": "Deutsche Welle",
+              "link": "https://www.dw.com/en/jensen-huang-spy-row-second-affair-leaves-nvidia-without-its-rockstar-ceo/a-79926972?maca=en-rss-en-world-4025-rdf"
+            },
+            {
+              "title": "Yemen\u2019s Houthis renew strikes on Saudi Arabia as UNSC extends sanctions",
+              "source": "Al Jazeera",
+              "link": "https://www.aljazeera.com/news/2026/11/12/yemens-houthis-renew-strikes-on-saudi-arabia-as-unsc-extends-sanctions?traffic_source=rss"
+            },
+            {
+              "title": "Aid groups call on Israel to allow shelters in Gaza amid a humanitarian emergency",
+              "source": "NPR World",
+              "link": "https://www.npr.org/2026/11/12/nx-s1-6035686/aid-groups-call-on-israel-to-allow-shelters-in-gaza-amid-a-humanitarian-emergency"
+            }
+          ],
+          "short": {
+            "audio": "audio/2026-11-12/world-short.mp3",
+            "duration": 53,
+            "bytes": 212780,
+            "transcript": "transcripts/2026-11-12/world-short.txt"
+          },
+          "long": {
+            "audio": "audio/2026-11-12/world-long.mp3",
+            "duration": 154,
+            "bytes": 617516,
+            "transcript": "transcripts/2026-11-12/world-long.txt"
+          }
+        },
+        "markets": {
+          "slug": "markets",
+          "label": "Markets",
+          "title": "Brief",
+          "teaser": "",
+          "tags": [
+            "Nvidia",
+            "Jensen Huang",
+            "Treasury yields",
+            "tech sector",
+            "Fed"
+          ],
+          "weight": 0.75,
+          "cover": {
+            "type": "generated",
+            "url": "covers/2026-11-12-markets.png",
+            "credit": "",
+            "link": "",
+            "story": ""
+          },
+          "sources": [
+            {
+              "title": "Equities close lower as Nvidia drop outweighs energy gains",
+              "source": "Investing.com",
+              "link": "https://www.investing.com/news/stock-market-news/nasdaq-futures-fall-as-nvidia-turmoil-rattles-ai-stocks-5020761"
+            },
+            {
+              "title": "Nvidia CEO Jensen Huang resigns in blow to AI boom he helped foster",
+              "source": "Investing.com",
+              "link": "https://www.investing.com/news/stock-market-news/nvidia-ceo-jensen-huang-to-step-down-in-big-blow-to-ai-boom-5021980"
+            },
+            {
+              "title": "Trump had urged Jensen Huang to fight for his job, New York Times reports",
+              "source": "Investing.com",
+              "link": "https://www.investing.com/news/stock-market-news/trump-had-urged-jensen-huang-to-fight-for-his-job-new-york-times-reports-5023829"
+            },
+            {
+              "title": "Alice Huang tied to Nvidia\u2019s biggest Chinese competitor",
+              "source": "CNBC Top News",
+              "link": "https://www.cnbc.com/2026/11/12/alice-huang-jensen-huang-nvidia-huawei.html"
+            },
+            {
+              "title": "US Justice Department has not concluded Alice Huang was Chinese spy, Blanche says",
+              "source": "Investing.com",
+              "link": "https://www.investing.com/news/stock-market-news/us-justice-department-has-not-concluded-alice-huang-was-chinese-spy-blanche-says-5023178"
+            },
+            {
+              "title": "US Senate Banking Committee chair calls on Jensen Huang, Lutnick to testify",
+              "source": "Investing.com",
+              "link": "https://www.investing.com/news/stock-market-news/us-senate-banking-committee-chair-calls-on-jensen-huang-lutnick-to-testify-5023793"
+            },
+            {
+              "title": "Cerebras surges 17% after beating on quarterly revenue and announcing Microsoft deal",
+              "source": "CNBC Top News",
+              "link": "https://www.cnbc.com/2026/11/12/cerebras-systems-cbrs-q3-earnings-report-2026.html"
+            },
+            {
+              "title": "Why is Samsung Electronics stock rallying today?",
+              "source": "Investing.com",
+              "link": "https://www.investing.com/news/stock-market-news/why-is-samsung-electronics-stock-rallying-today-93CH-5023832"
+            },
+            {
+              "title": "The S&P 500 is shrugging off Nvidia\u2019s selloff this week. Here\u2019s what\u2019s keeping the rest of the market afloat.",
+              "source": "MarketWatch",
+              "link": "https://www.marketwatch.com/story/the-s-p-500-is-shrugging-off-nvidias-selloff-heres-whats-keeping-the-rest-of-the-market-afloat-7cdf2f05?mod=mw_rss_topstories"
+            },
+            {
+              "title": "Bond yields just saw their biggest surge since 2022 as expectations grow for more Fed rate hikes",
+              "source": "MarketWatch",
+              "link": "https://www.marketwatch.com/story/bond-yields-just-saw-their-biggest-surge-since-2022-as-expectations-grow-for-more-fed-rate-hikes-d0a4f195?mod=mw_rss_topstories"
+            },
+            {
+              "title": "Analysis: Nvidia\u2019s leadership crisis tests the chipmaker\u2019s role as the \u2018central bank of AI\u2019",
+              "source": "CNBC Markets",
+              "link": "https://www.cnbc.com/2026/11/11/nvidia-jensen-huang-ai-financial-system-risk.html"
+            }
+          ],
+          "short": {
+            "audio": "audio/2026-11-12/markets-short.mp3",
+            "duration": 50,
+            "bytes": 202988,
+            "transcript": "transcripts/2026-11-12/markets-short.txt"
+          },
+          "long": {
+            "audio": "audio/2026-11-12/markets-long.mp3",
+            "duration": 180,
+            "bytes": 720236,
+            "transcript": "transcripts/2026-11-12/markets-long.txt"
+          }
+        },
+        "science-health": {
+          "slug": "science-health",
+          "label": "Science & Health",
+          "title": "Prostate screening reversal and a CRISPR milestone",
+          "teaser": "The American Cancer Society reverses course on PSA testing, an in-body CRISPR therapy nears FDA approval, and a microdosed Ozempic longevity claim gets a reality check.",
+          "tags": [
+            "prostate cancer",
+            "CRISPR",
+            "GLP-1",
+            "RSV vaccines",
+            "basal ganglia"
+          ],
+          "weight": 0.55,
+          "cover": {
+            "type": "photo",
+            "url": "https://media.nature.com/lw1200/magazine-assets/d41586-026-03705-9/d41586-026-03705-9_53970020.jpg",
+            "credit": "Nature",
+            "link": "https://www.nature.com/articles/d41586-026-03705-9",
+            "story": "Novel CRISPR therapy is poised to gain first FDA approval to alter genes inside the body"
+          },
+          "sources": [
+            {
+              "title": "Experts update prostate cancer screening guidelines for men",
+              "source": "STAT News",
+              "link": "https://www.statnews.com/2026/11/12/health-news-experts-update-prostate-cancer-screening-guidelines-for-men/?utm_campaign=rss"
+            },
+            {
+              "title": "American Cancer Society revises guidelines, urges routine PSA screening for prostate cancer",
+              "source": "STAT News",
+              "link": "https://www.statnews.com/2026/11/12/prostate-cancer-screening-guidelines-updated-acs/?utm_campaign=rss"
+            },
+            {
+              "title": "Novel CRISPR therapy is poised to gain first FDA approval to alter genes inside the body",
+              "source": "Nature",
+              "link": "https://www.nature.com/articles/d41586-026-03705-9"
+            },
+            {
+              "title": "RSV vaccines slash infections: data show jabs\u2019 staggering success against dangerous virus",
+              "source": "Nature",
+              "link": "https://www.nature.com/articles/d41586-026-03573-3"
+            },
+            {
+              "title": "Massive atlas of brain region linked to a host of diseases is the most detailed yet",
+              "source": "Nature",
+              "link": "https://www.nature.com/articles/d41586-026-03565-3"
+            },
+            {
+              "title": "STAT+: Scientists debut map of basal ganglia, a key brain region involved in an array of diseases",
+              "source": "STAT News",
+              "link": "https://www.statnews.com/2026/11/12/brain-map-basal-ganglia-offers-treatment-clues-parkinsons-schizophrenia/?utm_campaign=rss"
+            },
+            {
+              "title": "Record-breaking Ebola outbreak: phone data reconstruct first weeks of spread",
+              "source": "Nature",
+              "link": "https://www.nature.com/articles/d41586-026-03666-z"
+            },
+            {
+              "title": "Can a microdose of Ozempic help you live longer?",
+              "source": "Scientific American",
+              "link": "https://www.scientificamerican.com/article/can-a-microdose-of-ozempic-help-you-live-longer/"
+            }
+          ],
+          "short": {
+            "audio": "audio/2026-11-12/science-health-short.mp3",
+            "duration": 42,
+            "bytes": 170828,
+            "transcript": "transcripts/2026-11-12/science-health-short.txt"
+          },
+          "long": {
+            "audio": "audio/2026-11-12/science-health-long.mp3",
+            "duration": 146,
+            "bytes": 585740,
+            "transcript": "transcripts/2026-11-12/science-health-long.txt"
+          }
+        },
+        "ai-tech": {
+          "slug": "ai-tech",
+          "label": "AI & Tech",
+          "title": "Nvidia's CEO Is Out, Chaos Follows",
+          "teaser": "Jensen Huang resigned amid an affair scandal, and Washington, Wall Street, and Nvidia's own staff are scrambling to react.",
+          "tags": [
+            "Nvidia",
+            "Jensen Huang",
+            "Gemini",
+            "Outlook outage",
+            "AI chips"
+          ],
+          "weight": 0.75,
+          "cover": {
+            "type": "photo",
+            "url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/08/STKP210_JENSEN_HUANG_D.jpg?quality=90&strip=all&crop=0%2C10.732984293194%2C100%2C78.534031413613&w=1200",
+            "credit": "The Verge",
+            "link": "https://www.theverge.com/tech/1032434/nvidia-jensen-huang-resignation-reactions",
+            "story": "\u2018It\u2019s a mistake\u2019: reactions from tech leaders on Jensen Huang\u2019s resignation"
+          },
+          "sources": [
+            {
+              "title": "\u2018Bring Back THE Boss\u2019: Nvidia Employees Petition for Jensen Huang\u2019s Return",
+              "source": "Wired",
+              "link": "https://www.wired.com/story/nvidia-employees-petition-for-jensen-huangs-return/"
+            },
+            {
+              "title": "Donald Trump really wants Tim Cook to run Nvidia",
+              "source": "The Verge",
+              "link": "https://www.theverge.com/tech/1032774/president-donald-trump-tim-cook-nvidia-jensen-huang"
+            },
+            {
+              "title": "Democrats launch Nvidia investigation, write scathing letter on Huang\u2019s \u2018scheme\u2019 with Trump",
+              "source": "TechCrunch",
+              "link": "https://techcrunch.com/2026/11/12/democrats-launch-nvidia-investigation-write-scathing-letter-on-huangs-scheme-with-trump/"
+            },
+            {
+              "title": "Silicon Valley Is Still Defending Jensen Huang",
+              "source": "Wired",
+              "link": "https://www.wired.com/story/silicon-valley-is-still-defending-jensen-huang/"
+            },
+            {
+              "title": "Jensen Huang Is Out. Will Nvidia\u2019s Rivals Cash In?",
+              "source": "Wired",
+              "link": "https://www.wired.com/story/uncanny-valley-podcast-jensen-huang-is-out-will-nvidias-rivals-cash-in/"
+            },
+            {
+              "title": "\u2018It\u2019s a mistake\u2019: reactions from tech leaders on Jensen Huang\u2019s resignation",
+              "source": "The Verge",
+              "link": "https://www.theverge.com/tech/1032434/nvidia-jensen-huang-resignation-reactions"
+            },
+            {
+              "title": "The unfolding Jensen Huang scandal: a timeline",
+              "source": "TechCrunch",
+              "link": "https://techcrunch.com/2026/11/12/nvidia-ceo-jensen-huangs-affair-with-alleged-chinese-spy-a-timeline/"
+            },
+            {
+              "title": "Jensen Huang was having a third affair, Reuters reports",
+              "source": "TechCrunch",
+              "link": "https://techcrunch.com/2026/11/12/jensen-huang-was-having-a-third-affair-reuters-reports/"
+            },
+            {
+              "title": "Nvidia privately confirmed it could track chips to fight smuggling, even as industry publicly questioned feasibility",
+              "source": "MIT Technology Review",
+              "link": "https://www.technologyreview.com/2026/11/12/1148483/nvidia-chip-tracking/"
+            },
+            {
+              "title": "Google\u2019s new Gemini model is better at understanding complicated questions",
+              "source": "The Verge",
+              "link": "https://www.theverge.com/ai-artificial-intelligence/1032505/google-search-ai-mode-gemini-4-hydrogen"
+            },
+            {
+              "title": "Google\u2019s latest Search upgrade promises better answers to your most complicated questions",
+              "source": "TechCrunch",
+              "link": "https://techcrunch.com/2026/11/12/googles-latest-search-upgrade-promises-better-answers-to-your-most-complicated-questions/"
+            },
+            {
+              "title": "Microsoft Outlook is still down",
+              "source": "The Verge",
+              "link": "https://www.theverge.com/tech/1032226/microsoft-outlook-is-down"
+            }
+          ],
+          "short": {
+            "audio": "audio/2026-11-12/ai-tech-short.mp3",
+            "duration": 48,
+            "bytes": 194924,
+            "transcript": "transcripts/2026-11-12/ai-tech-short.txt"
+          },
+          "long": {
+            "audio": "audio/2026-11-12/ai-tech-long.mp3",
+            "duration": 155,
+            "bytes": 623852,
+            "transcript": "transcripts/2026-11-12/ai-tech-long.txt"
+          }
+        },
+        "business": {
+          "slug": "business",
+          "label": "Business",
+          "title": "Nvidia's CEO Is Out, and the Scramble Begins",
+          "teaser": "Jensen Huang has resigned amid an affairs scandal, and Wall Street is already asking who can hold the AI trade together.",
+          "tags": [
+            "Nvidia",
+            "Jensen Huang",
+            "AI",
+            "UK economy",
+            "Metro Bank"
+          ],
+          "weight": 0.75,
+          "cover": {
+            "type": "generated",
+            "url": "covers/2026-11-12-business.png",
+            "credit": "",
+            "link": "",
+            "story": ""
+          },
+          "sources": [
+            {
+              "title": "Scandal-hit Nvidia CEO Jensen Huang quits, plunging AI chipmaking giant into turmoil",
+              "source": "BBC Business",
+              "link": "https://www.bbc.co.uk/news/articles/cmq5vd1wdgz6o?at_medium=RSS&at_campaign=rss"
+            },
+            {
+              "title": "Nvidia\u2019s next CEO: The outside contenders to succeed Jensen Huang",
+              "source": "Fortune",
+              "link": "https://fortune.com/2026/11/12/nvidia-next-ceo-the-outside-contenders-to-succeed-jensen-huang/"
+            },
+            {
+              "title": "Nvidia Starts Search for Next CEO",
+              "source": "WSJ Business",
+              "link": "https://www.wsj.com/business/nvidia-starts-search-for-next-ceo-4fe0a873?mod=pls_whats_news_us_business_f"
+            },
+            {
+              "title": "Nvidia\u2019s new chairman Harvey Jones is a \u2018charming elder statesman\u2019 set to lead the search for the next CEO. But did he enable the current crisis?",
+              "source": "Fortune",
+              "link": "https://fortune.com/2026/11/12/nvidia-new-board-chair-harvey-jones-likely-to-lead-ceo-search/"
+            },
+            {
+              "title": "Jensen Huang\u2019s Net Worth Is Down 12% This Week As Affairs Scandal Hits Nvidia Stock",
+              "source": "Forbes Business",
+              "link": "https://www.forbes.com/sites/fionariley/2026/11/12/jensen-huangs-net-worth-is-down-12-this-week-as-affairs-scandal-hits-nvidia-stock/"
+            },
+            {
+              "title": "\u2018That Nvidia guarantee is not worth what it was worth a week ago\u2019: What Jensen Huang\u2019s exit means for neoclouds",
+              "source": "Fortune",
+              "link": "https://fortune.com/2026/11/12/nvidia-neoclouds-jensen-huang-resignation/"
+            },
+            {
+              "title": "Allegations Of Third Jensen Huang Affair Ramp Up Divorce Speculation\u2014Billionaire\u2019s Wife Could Get Half His $140 BillIon Fortune",
+              "source": "Forbes Business",
+              "link": "https://www.forbes.com/sites/alisondurkee/2026/11/12/allegations-of-third-jensen-huang-affair-ramp-up-divorce-speculation-billionaires-wife-could-get-half-his-140-billion-fortune/"
+            },
+            {
+              "title": "Before Megaspeed, there was Supermicro: The other Nvidia partner tied to China chip smuggling\u2014and to Jensen Huang",
+              "source": "Fortune",
+              "link": "https://fortune.com/2026/11/12/jensen-huang-affair-megaspeed-supermicro-nvidia-smuggling-doj/"
+            },
+            {
+              "title": "After Jensen Huang is Howard Lutnick the prime target of national security inquiry?",
+              "source": "Fortune",
+              "link": "https://fortune.com/2026/11/12/jensen-huang-howard-lutnick-national-security-commerce-department/"
+            },
+            {
+              "title": "Jensen Huang Has Been Ousted as Nvidia CEO",
+              "source": "WSJ Business",
+              "link": "https://www.wsj.com/business/nvidia-is-preparing-to-oust-nvidia-ceo-jensen-huang-30f421ad?mod=pls_whats_news_us_business_f"
+            },
+            {
+              "title": "Who Is Colette Kress? Meet Nvidia\u2019s New Interim CEO",
+              "source": "WSJ Business",
+              "link": "https://www.wsj.com/tech/colette-kress-nvidia-interim-ceo-ff26ef3a?mod=pls_whats_news_us_business_f"
+            },
+            {
+              "title": "UK economy grows at fastest rate for more than two years",
+              "source": "BBC Business",
+              "link": "https://www.bbc.co.uk/news/articles/ck3rgd429zd5o?at_medium=RSS&at_campaign=rss"
+            }
+          ],
+          "short": {
+            "audio": "audio/2026-11-12/business-short.mp3",
+            "duration": 52,
+            "bytes": 211628,
+            "transcript": "transcripts/2026-11-12/business-short.txt"
+          },
+          "long": {
+            "audio": "audio/2026-11-12/business-long.mp3",
+            "duration": 200,
+            "bytes": 803948,
+            "transcript": "transcripts/2026-11-12/business-long.txt"
+          }
+        }
+      }
+    },
+    {
+      "date": "2026-11-11",
+      "title": "Tech Roars Back as Yields Jump on Inflation",
+      "teaser": "CoreWeave's blowout quarter powered a tech-led rally even as hot inflation data sent yields sharply higher.",
+      "topics": [
+        "equities rally",
+        "inflation data",
+        "Treasury yields",
+        "AI trade",
+        "Nvidia"
+      ],
+      "sources": [
+        {
+          "title": "Bloom Energy\u2019s stock is rallying as data-center jitters subside",
+          "source": "MarketWatch",
+          "link": "https://www.marketwatch.com/story/bloom-energys-stock-is-soaring-as-data-center-jitters-subside-5fda5689?mod=mw_rss_topstories"
+        },
+        {
+          "title": "CoreWeave soars more than 24% for best day since April 2025 after strong Q3 report",
+          "source": "CNBC Top News",
+          "link": "https://www.cnbc.com/2026/11/11/coreweave-crwv-outlook-earnings-ai.html"
+        },
+        {
+          "title": "Nvidia shares rebound as Jensen Huang faces scrutiny ahead of earnings",
+          "source": "CNBC Top News",
+          "link": "https://www.cnbc.com/2026/11/11/nvidia-stock-jensen-huang-affair-china.html"
+        },
+        {
+          "title": "Analysis: Is Nvidia too big to fail?\u00a0Its AI financing web raises the stakes",
+          "source": "CNBC Markets",
+          "link": "https://www.cnbc.com/2026/11/11/nvidia-jensen-huang-ai-financial-system-risk.html"
+        },
+        {
+          "title": "Sandisk\u2019s stock is soaring, and these three trends could send it even higher",
+          "source": "MarketWatch",
+          "link": "https://www.marketwatch.com/story/sandisks-stock-is-soaring-and-these-three-trends-could-send-it-even-higher-b0d7d5ec?mod=mw_rss_topstories"
+        },
+        {
+          "title": "Consumer prices rose 0.4% in October, more than expected, complicating Fed's inflation fight",
+          "source": "CNBC Markets",
+          "link": "https://www.cnbc.com/2026/11/10/cpi-inflation-report-october-2026.html"
+        },
+        {
+          "title": "Consumers are showing signs of strain even as they keep spending, CNBC/NRF Retail Monitor shows",
+          "source": "CNBC Markets",
+          "link": "https://www.cnbc.com/2026/11/11/october-retail-sales-cnbc-nrf-2026.html"
+        },
+        {
+          "title": "Anthropic Bankers Mull Raising IPO Valuation To Min. $1.5T - FT",
+          "source": "Investing.com",
+          "link": "https://www.investing.com/news/stock-market-news/anthropic-bankers-mull-raising-ipo-valuation-to-min-15t--ft-432SI-5019795"
+        },
+        {
+          "title": "Bessent moved to military base amid 'growing threats' from Iran",
+          "source": "CNBC Top News",
+          "link": "https://www.cnbc.com/2026/11/11/us-iran-war-trump-hormuz-bessent-threats.html"
+        }
+      ],
+      "cover": {
+        "type": "photo",
+        "url": "https://image.cnbcfm.com/api/v1/image/108223839-1762804083127-gettyimages-2206665095-COREWEAVE_IPO.jpeg?v=1776970332&w=1920&h=1080",
+        "credit": "CNBC Top News",
+        "link": "https://www.cnbc.com/2026/11/11/coreweave-crwv-outlook-earnings-ai.html",
+        "story": "CoreWeave soars more than 24% for best day since April 2025 after strong Q3 report"
+      },
+      "audio": "audio/2026-11-11.mp3",
+      "transcript": "transcripts/2026-11-11.txt",
+      "duration": 167,
+      "bytes": 668972,
+      "published": "2026-11-11T21:20:46.045784+00:00"
+    },
+    {
+      "date": "2026-11-10",
+      "title": "Hot CPI and Nvidia's Jensen Huang Scandal",
+      "teaser": "A hotter inflation print sends yields higher while Nvidia's board investigates CEO Jensen Huang over an alleged affair with a Chinese spy.",
+      "topics": [
+        "CPI inflation",
+        "Nvidia governance",
+        "Treasury yields",
+        "tech selloff",
+        "travel stocks"
+      ],
+      "sources": [
+        {
+          "title": "Consumer prices rose 0.4% in October, more than expected, complicating Fed's inflation fight",
+          "source": "CNBC Markets",
+          "link": "https://www.cnbc.com/2026/11/10/cpi-inflation-report-october-2026.html"
+        },
+        {
+          "title": "Here's the inflation breakdown for October 2026 \u2014 in one chart",
+          "source": "CNBC Top News",
+          "link": "https://www.cnbc.com/2026/11/10/october-2026-cpi-inflation-breakdown.html"
+        },
+        {
+          "title": "10-year Treasury yield races back to 5% as inflation data, Waller comments drive rate hike expectations",
+          "source": "CNBC Top News",
+          "link": "https://www.cnbc.com/2026/11/10/us-bonds-treasurys-yields.html"
+        },
+        {
+          "title": "Nvidia hires law firm Wachtell Lipton to lead Jensen Huang affair probe",
+          "source": "CNBC Top News",
+          "link": "https://www.cnbc.com/2026/11/10/nvidia-wachtell-lipton-huang-affair.html"
+        },
+        {
+          "title": "Even Wall Street\u2019s lone Nvidia bear says forcing out CEO Jensen Huang \u2018would be a mistake for everyone\u2019",
+          "source": "MarketWatch",
+          "link": "https://www.marketwatch.com/story/wall-streets-only-nvidia-bear-says-forcing-out-ceo-jensen-huang-would-be-a-mistake-for-everyone-78043738?mod=mw_rss_topstories"
+        },
+        {
+          "title": "Jensen Huang's affair with alleged Chinese spy further complicates Nvidia\u2019s China problem",
+          "source": "CNBC Top News",
+          "link": "https://www.cnbc.com/2026/11/10/jensen-huang-nvidia-china-ties.html"
+        },
+        {
+          "title": "Nvidia hires law firm Wachtell Lipton and former US prosecutor to investigate CEO probe",
+          "source": "Seeking Alpha",
+          "link": "https://seekingalpha.com/news/4670049-nvidia-hires-law-firm-wachtell-lipton-and-former-us-prosecutor-to-investigate-ceo-probe?utm_source=feed_news_all&utm_medium=referral&feed_item_type=news"
+        },
+        {
+          "title": "Expedia, Booking and Airbnb fall as OpenAI reportedly buys AI travel platform",
+          "source": "Investing.com",
+          "link": "https://www.investing.com/news/stock-market-news/expedia-booking-and-airbnb-fall-as-openai-reportedly-buys-ai-travel-platform-5016603"
+        },
+        {
+          "title": "Why is Booking stock sliding today?",
+          "source": "Investing.com",
+          "link": "https://www.investing.com/news/stock-market-news/why-is-booking-stock-sliding-today-93CH-5016620"
+        },
+        {
+          "title": "Credit card debt climbs to a record $1.29 trillion, New York Fed research finds",
+          "source": "CNBC Top News",
+          "link": "https://www.cnbc.com/2026/11/10/credit-card-debt-record.html"
+        }
+      ],
+      "cover": {
+        "type": "photo",
+        "url": "https://image.cnbcfm.com/api/v1/image/108546365-1794257665106-108546365-17942336732026-10-19t181225z_1947160221_rc2h6oa4b07j_rtrmadp_0_germany-politics-merz-nvidia.jpeg?v=1794257684&w=1920&h=1080",
+        "credit": "CNBC Top News",
+        "link": "https://www.cnbc.com/2026/11/10/nvidia-wachtell-lipton-huang-affair.html",
+        "story": "Nvidia hires law firm Wachtell Lipton to lead Jensen Huang affair probe"
+      },
+      "audio": "audio/2026-11-10.mp3",
+      "transcript": "transcripts/2026-11-10.txt",
+      "duration": 158,
+      "bytes": 635468,
+      "published": "2026-11-10T19:39:51.726752+00:00"
+    },
+    {
+      "date": "2026-11-09",
+      "title": "Stocks Rip Back After the Nvidia Scare",
+      "teaser": "A furious rebound rally sent US stocks surging, even as the Nvidia espionage scandal keeps rattling the chip sector.",
+      "topics": [
+        "Nvidia scandal",
+        "market rally",
+        "CPI preview",
+        "Asia markets",
+        "Treasury yields"
+      ],
+      "sources": [
+        {
+          "title": "Nvidia, CEO Huang sued over disclosures related to suspected Chinese spy",
+          "source": "Investing.com",
+          "link": "https://www.investing.com/news/stock-market-news/nvidia-ceo-huang-sued-over-disclosures-related-to-suspected-chinese-spy-5013619"
+        },
+        {
+          "title": "Trump says Nvidia CEO told him he did not know the woman linked to him was a spy",
+          "source": "Investing.com",
+          "link": "https://www.investing.com/news/stock-market-news/trump-says-nvidia-ceo-told-him-he-did-not-know-the-woman-linked-to-him-was-a-spy-5013538"
+        },
+        {
+          "title": "Trump\u2019s close ties to Nvidia\u2019s Huang scrutinized after foreign intelligence concerns",
+          "source": "Investing.com",
+          "link": "https://www.investing.com/news/stock-market-news/trumps-close-ties-to-nvidias-huang-scrutinized-after-foreign-intelligence-concerns-5012979"
+        },
+        {
+          "title": "As Nvidia\u2019s stock falls, here\u2019s what Wall Street has to say about the Jensen Huang scandal",
+          "source": "MarketWatch",
+          "link": "https://www.marketwatch.com/story/how-wall-street-is-reacting-to-the-news-of-nvidias-jensen-huang-investigation-into-spy-claims-d8c839ab?mod=mw_rss_topstories"
+        },
+        {
+          "title": "Dow sees its third 1,000-point swing in four days. Why the volatility isn\u2019t over yet.",
+          "source": "MarketWatch",
+          "link": "https://www.marketwatch.com/story/dow-sees-its-third-1-000-point-swing-in-four-days-why-volatility-isnt-over-yet-5380567b?mod=mw_rss_topstories"
+        },
+        {
+          "title": "Are AMD and Broadcom the real winners of the Nvidia spy scandal?",
+          "source": "MarketWatch",
+          "link": "https://www.marketwatch.com/story/are-amd-and-broadcom-the-real-winners-of-the-nvidia-spy-scandal-d2343072?mod=mw_rss_topstories"
+        },
+        {
+          "title": "Nvidia's CEO turmoil gives newly empowered Democrats fresh ammunition in pursuit of oversight",
+          "source": "CNBC Top News",
+          "link": "https://www.cnbc.com/2026/11/09/nvidia-jensen-huang-affair-congress-scrutiny.html"
+        },
+        {
+          "title": "CNBC's The China Connection newsletter: Wall Street dips in again. What needs to go right",
+          "source": "CNBC Top News",
+          "link": "https://www.cnbc.com/2026/11/09/cnbcs-the-china-connection-newsletter-wall-street-dips-in-again.html"
+        },
+        {
+          "title": "3 unexpected reasons the October jobs report was so strong",
+          "source": "CNBC Markets",
+          "link": "https://www.cnbc.com/2026/11/09/october-jobs-report-hiring-by-sector.html"
+        },
+        {
+          "title": "The stock-market rally keeps spreading beyond Big Tech. October inflation data could put it to the test.",
+          "source": "MarketWatch",
+          "link": "https://www.marketwatch.com/story/the-stock-market-rally-keeps-spreading-beyond-big-tech-october-inflation-data-could-put-it-to-the-test-c1b87dcd?mod=mw_rss_topstories"
+        },
+        {
+          "title": "A key report for where inflation stood in October comes out Tuesday. Here's what to expect",
+          "source": "CNBC Markets",
+          "link": "https://www.cnbc.com/2026/11/09/october-cpi-report-2026-inflation.html"
+        }
+      ],
+      "cover": {
+        "type": "generated",
+        "url": "covers/2026-11-09.png",
+        "credit": "",
+        "link": "",
+        "story": ""
+      },
+      "audio": "audio/2026-11-09.mp3",
+      "transcript": "transcripts/2026-11-09.txt",
+      "duration": 169,
+      "bytes": 678668,
+      "published": "2026-11-10T00:43:03.251125+00:00"
+    },
+    {
+      "date": "2026-11-06",
+      "title": "AI Debt Stress and a Hot Jobs Report",
+      "teaser": "Jobs blow past expectations, Daly warns on inflation, and cracks show in the AI financing chain.",
+      "topics": [
+        "jobs report",
+        "Federal Reserve",
+        "AI buildout",
+        "earnings",
+        "politics"
+      ],
+      "sources": [
+        {
+          "title": "U.S. economy added 165,000 jobs in October, way more than expected; unemployment rate slips to 4.1%",
+          "source": "CNBC Markets",
+          "link": "https://www.cnbc.com/2026/11/06/jobs-report-october-2026.html"
+        },
+        {
+          "title": "Americans are on a 'treadmill of high inflation' and more rate hikes are likely, Fed's Daly says",
+          "source": "CNBC Top News",
+          "link": "https://www.cnbc.com/2026/11/06/fed-daly-interest-rates-inflation.html"
+        },
+        {
+          "title": "Democratic sweep gives markets a reason to rethink path of interest rates",
+          "source": "CNBC Top News",
+          "link": "https://www.cnbc.com/2026/11/06/oil-prices-interest-rates-midterms.html"
+        },
+        {
+          "title": "The AI \u2018credit card\u2019 is getting costlier as CoreWeave bond yield tops 16%",
+          "source": "CNBC Top News",
+          "link": "https://www.cnbc.com/2026/11/06/coreweave-bond-yield-tops-16percent-as-ai-credit-stress-rises.html"
+        },
+        {
+          "title": "Microsoft plans to use fewer neoclouds as AI buildout shows signs of strain",
+          "source": "CNBC Top News",
+          "link": "https://www.cnbc.com/2026/11/06/microsoft-moves-to-consolidate-its-relationships-with-neoclouds-in-ai.html"
+        },
+        {
+          "title": "Microsoft is winding down Oracle deal to rent AI cloud capacity, Bloomberg News reports",
+          "source": "Investing.com",
+          "link": "https://www.investing.com/news/stock-market-news/microsoft-is-winding-down-oracle-deal-to-rent-ai-cloud-capacity-bloomberg-news-reports-5008946"
+        },
+        {
+          "title": "Nvidia, AMD and other chip stocks rebound \u2014 but is relief from the \u2018violent\u2019 selloff only temporary?",
+          "source": "MarketWatch",
+          "link": "https://www.marketwatch.com/story/nvidia-amd-and-other-chip-stocks-rebound-is-the-violent-ai-selloff-over-8f7df533?mod=mw_rss_topstories"
+        },
+        {
+          "title": "DraftKings\u2019 expensive bet on prediction markets is crushing its stock",
+          "source": "MarketWatch",
+          "link": "https://www.marketwatch.com/story/draftkings-expensive-bet-on-prediction-markets-is-crushing-its-stock-277bee0d?mod=mw_rss_topstories"
+        },
+        {
+          "title": "Trump says Stephen Miller to replace Susie Wiles as White House chief of staff",
+          "source": "CNBC Top News",
+          "link": "https://www.cnbc.com/2026/11/06/trump-stephen-miller-wiles-chief-of-staff.html"
+        },
+        {
+          "title": "Data center double-down: Hassett says blue wave won't stop AI build-out",
+          "source": "CNBC Top News",
+          "link": "https://www.cnbc.com/2026/11/06/data-centers-ai-elections-hassett.html"
+        }
+      ],
+      "audio": "audio/2026-11-06.mp3",
+      "transcript": "transcripts/2026-11-06.txt",
+      "duration": 148,
+      "bytes": 892656,
+      "published": "2026-11-06T19:10:06.957828+00:00"
+    },
+    {
+      "date": "2026-11-05",
+      "title": "Midterm Shockwaves Hit Tech and Elon Stocks",
+      "teaser": "A Democratic midterm rout sends chip stocks tumbling, Musk's companies lose $450 billion in two days, and the VIX has its worst spike since April.",
+      "topics": [
+        "midterm elections",
+        "AI stocks selloff",
+        "Tesla and SpaceX",
+        "volatility",
+        "Bank of England"
+      ],
+      "sources": [
+        {
+          "title": "The \u2018Musk selloff\u2019 deepens as Tesla and SpaceX combine for $450 billion two-day wipeout",
+          "source": "MarketWatch",
+          "link": "https://www.marketwatch.com/story/the-musk-selloff-deepens-as-tesla-and-spacex-combine-for-450-billion-two-day-wipeout-d300ab4f?mod=mw_rss_topstories"
+        },
+        {
+          "title": "SpaceX, Tesla extend losses as midterm results cloud data center, merger outlook",
+          "source": "Investing.com",
+          "link": "https://www.investing.com/news/stock-market-news/spacex-tesla-extend-losses-as-midterm-results-cloud-data-center-merger-outlook-5005412"
+        },
+        {
+          "title": "Musk has little to show for his record spending on Republican campaigns in US midterms",
+          "source": "Investing.com",
+          "link": "https://www.investing.com/news/stock-market-news/musk-has-little-to-show-for-his-record-spending-on-republican-campaigns-in-us-midterms-5003186"
+        },
+        {
+          "title": "Wall Street's fear gauge surges the most since April. Why traders think it should be even higher",
+          "source": "CNBC Top News",
+          "link": "https://www.cnbc.com/2026/11/05/wall-streets-fear-gauge-surges-the-most-since-april-why-traders-think-it-should-be-even-higher.html"
+        },
+        {
+          "title": "Gathering AI storm clouds doom tech stocks to darkest day in a year",
+          "source": "Investing.com",
+          "link": "https://www.investing.com/news/stock-market-news/ai-datacenter-stocks-slip-as-democratic-sweep-clouds-expansion-plans-5003196"
+        },
+        {
+          "title": "As Nvidia\u2019s stock heads for a bear market, bargain hunters see a golden buying opportunity",
+          "source": "MarketWatch",
+          "link": "https://www.marketwatch.com/story/as-nvidias-stock-heads-for-a-bear-market-bargain-hunters-see-a-golden-buying-opportunity-1a5917e6?mod=mw_rss_topstories"
+        },
+        {
+          "title": "Micron, Sandisk and other AI stocks are falling hard: \u2018Investors don\u2019t like uncertainty\u2019",
+          "source": "MarketWatch",
+          "link": "https://www.marketwatch.com/story/micron-sandisk-and-other-ai-stocks-are-falling-hard-investors-dont-like-uncertainty-94d2a3b9?mod=mw_rss_topstories"
+        },
+        {
+          "title": "Bloom Energy\u2019s stock is one of the S&P 500\u2019s biggest losers amid fears of data-center delays",
+          "source": "MarketWatch",
+          "link": "https://www.marketwatch.com/story/bloom-energys-stock-is-one-of-the-s-p-500s-biggest-losers-amid-fears-of-data-center-delays-a44c96bb?mod=mw_rss_topstories"
+        },
+        {
+          "title": "Qualcomm slides 9% after earnings, leading postelection chip stock sell-off",
+          "source": "CNBC Top News",
+          "link": "https://www.cnbc.com/2026/11/05/qualcomm-earnings-chip-stocks-election.html"
+        },
+        {
+          "title": "How the midterms could fuel the K-shaped AI trade",
+          "source": "CNBC Top News",
+          "link": "https://www.cnbc.com/2026/11/05/ai-data-centers-midterms-capacity.html"
+        },
+        {
+          "title": "Bank of England hikes interest rate for the first time since Iran war, warns inflation will near 5%",
+          "source": "CNBC Markets",
+          "link": "https://www.cnbc.com/2026/11/05/interest-rates-inflation-uk.html"
+        }
+      ],
+      "audio": "audio/2026-11-05.mp3",
+      "transcript": "transcripts/2026-11-05.txt",
+      "duration": 164,
+      "bytes": 985680,
+      "published": "2026-11-05T19:46:01.217148+00:00"
+    },
+    {
+      "date": "2026-11-04",
+      "title": "Democratic Midterm Sweep Reshuffles Markets",
+      "teaser": "Democrats take Congress, data center backlash goes mainstream, and defense and tech names take the hit.",
+      "topics": [
+        "midterm elections",
+        "sector rotation",
+        "defense stocks",
+        "healthcare",
+        "Fed outlook"
+      ],
+      "sources": [
+        {
+          "title": "Trump says he won't replace Hegseth, floats possible Senate run",
+          "source": "Seeking Alpha",
+          "link": "https://seekingalpha.com/news/4665393-trump-says-he-wont-replace-hegseth-floats-possible-senate-run?utm_source=feed_news_all&utm_medium=referral&feed_item_type=news"
+        },
+        {
+          "title": "Defense firms fall as Democratic victory stokes fears of tighter Pentagon budget",
+          "source": "Investing.com",
+          "link": "https://www.investing.com/news/stock-market-news/defense-firms-fall-as-democratic-victory-stokes-fears-of-tighter-pentagon-budget-5000702"
+        },
+        {
+          "title": "Analysis-Trump\u2019s midterm drubbing demonstrates the power of data center opponents",
+          "source": "Investing.com",
+          "link": "https://www.investing.com/news/stock-market-news/analysistrumps-midterm-drubbing-demonstrates-the-power-of-datacentre-opponents-4998061"
+        },
+        {
+          "title": "4 market-moving issues investors should watch now that the midterms are over",
+          "source": "MarketWatch",
+          "link": "https://www.marketwatch.com/story/4-market-moving-issues-investors-should-watch-now-that-the-midterms-are-over-9a77b3de?mod=mw_rss_topstories"
+        },
+        {
+          "title": "Democrats map out an agenda to address affordability and corruption after midterm sweep",
+          "source": "CNBC Top News",
+          "link": "https://www.cnbc.com/2026/11/04/congressional-democrats-affordability-oversight.html"
+        },
+        {
+          "title": "Voters rebuff data centers in every ballot measure except one during the 2026 midterms",
+          "source": "CNBC Top News",
+          "link": "https://www.cnbc.com/2026/11/04/data-center-ballot-measures-2026-midterm.html"
+        },
+        {
+          "title": "These stocks have soared the most today after the Democrats trounced Trump",
+          "source": "MarketWatch",
+          "link": "https://www.marketwatch.com/story/these-stocks-have-soared-the-most-today-after-the-democrats-trounced-trump-9d785314?mod=mw_rss_topstories"
+        },
+        {
+          "title": "Hospital stocks rally while drugmakers brace for scrutiny. Here\u2019s what the Democratic wave means for healthcare.",
+          "source": "MarketWatch",
+          "link": "https://www.marketwatch.com/story/hospital-stocks-rally-while-drugmakers-brace-for-scrutiny-heres-what-the-democratic-wave-means-for-healthcare-625b79f3?mod=mw_rss_topstories"
+        },
+        {
+          "title": "Private companies added 86,000 jobs in October, slightly higher than expected, ADP says",
+          "source": "CNBC Markets",
+          "link": "https://www.cnbc.com/2026/11/04/private-companies-added-86000-jobs-in-october-slightly-higher-than-expected-adp-says.html"
+        },
+        {
+          "title": "Euro zone inflation hits 4% for first time in three years as interest rate hike looms",
+          "source": "CNBC Markets",
+          "link": "https://www.cnbc.com/2026/11/04/euro-zone-cpi-inflation-october-ecb-rate-hike.html"
+        },
+        {
+          "title": "Job openings posted big September gain in positive sign for labor market ahead of payrolls report",
+          "source": "CNBC Markets",
+          "link": "https://www.cnbc.com/2026/11/03/job-openings-posted-big-september-gain-in-positive-sign-for-labor-market-ahead-of-payrolls-report.html"
+        }
+      ],
+      "audio": "audio/2026-11-04.mp3",
+      "transcript": "transcripts/2026-11-04.txt",
+      "duration": 165,
+      "bytes": 992160,
+      "published": "2026-11-04T19:37:11.331447+00:00"
+    },
+    {
+      "date": "2026-11-03",
+      "title": "Jobs Data Surprises as Midterms Loom",
+      "teaser": "Job openings jump to a four-month high ahead of midterm elections and a flood of earnings guidance.",
+      "topics": [
+        "labor market",
+        "midterm elections",
+        "earnings",
+        "oil prices",
+        "Meta debt sale"
+      ],
+      "sources": [
+        {
+          "title": "Job openings posted big September gain in positive sign for labor market ahead of payrolls report",
+          "source": "CNBC Markets",
+          "link": "https://www.cnbc.com/2026/11/03/job-openings-posted-big-september-gain-in-positive-sign-for-labor-market-ahead-of-payrolls-report.html"
+        },
+        {
+          "title": "Sullivan: What the 2026 midterms could mean for energy investors",
+          "source": "CNBC Top News",
+          "link": "https://www.cnbc.com/2026/11/03/2026-midterms-energy-investors.html"
+        },
+        {
+          "title": "What the 2026 midterm elections could mean for Trump's final two years",
+          "source": "CNBC Top News",
+          "link": "https://www.cnbc.com/2026/11/03/midterm-elections-congress-trump-democrats-republicans.html"
+        },
+        {
+          "title": "Once election results are in, here\u2019s what investors should focus on next",
+          "source": "MarketWatch",
+          "link": "https://www.marketwatch.com/story/once-election-results-are-in-heres-what-investors-should-focus-on-next-75c5ac5d?mod=mw_rss_topstories"
+        },
+        {
+          "title": "Disney plans several thousand layoffs, asks some managers to cut costs by up to 20%",
+          "source": "CNBC Top News",
+          "link": "https://www.cnbc.com/2026/11/03/disney-layoffs-cost-cuts.html"
+        },
+        {
+          "title": "Meta seeks to raise up to $25 billion in debt sale as AI spending jumps",
+          "source": "CNBC Top News",
+          "link": "https://www.cnbc.com/2026/11/03/meta-bond-sale-ai-funding.html"
+        },
+        {
+          "title": "Crude oil prices fall for second day as market hopes for diplomatic resolution to Iran war",
+          "source": "CNBC Top News",
+          "link": "https://www.cnbc.com/2026/11/03/oil-prices-climb-after-us-reportedly-strikes-irans-qeshm-island.html"
+        },
+        {
+          "title": "Bill Ackman warns of 'casino' stock market as speculative trading grows",
+          "source": "CNBC Top News",
+          "link": "https://www.cnbc.com/2026/11/03/bill-ackman-casino-stock-market.html"
+        },
+        {
+          "title": "Energy Transfer outlines 2027 growth CapEx of ~$7B while raising 2026 adjusted EBITDA guidance to $19.7B-$19.9B",
+          "source": "Seeking Alpha",
+          "link": "https://seekingalpha.com/news/4663946-energy-transfer-outlines-2027-growth-capex-of-7b-while-raising-2026-adjusted-ebitda-guidance?utm_source=feed_news_all&utm_medium=referral&feed_item_type=news"
+        },
+        {
+          "title": "U.S. jobs market perks up, but it\u2019s still not a great time to get hired",
+          "source": "MarketWatch",
+          "link": "https://www.marketwatch.com/story/u-s-jobs-market-perks-up-but-its-still-not-a-great-time-to-get-hired-bc39f44f?mod=mw_rss_topstories"
+        }
+      ],
+      "audio": "audio/2026-11-03.mp3",
+      "transcript": "transcripts/2026-11-03.txt",
+      "duration": 147,
+      "bytes": 884592,
+      "published": "2026-11-03T19:20:51.519965+00:00"
+    },
+    {
+      "date": "2026-11-02",
+      "title": "Palantir Soars, Oil Tumbles, Apple Looms",
+      "teaser": "Palantir's commercial boom, a historic oil plunge on Iran diplomacy, and Apple earnings due after the bell.",
+      "topics": [
+        "Palantir earnings",
+        "oil prices",
+        "Apple earnings",
+        "midterm elections",
+        "chip stocks"
+      ],
+      "sources": [
+        {
+          "title": "Palantir reports booming U.S. commercial revenue growth, topping government for first time",
+          "source": "CNBC Top News",
+          "link": "https://www.cnbc.com/2026/11/02/palantir-pltr-earnings-q3-2026.html"
+        },
+        {
+          "title": "Palantir tops third-quarter revenue estimates on strong AI software demand",
+          "source": "Investing.com",
+          "link": "https://www.investing.com/news/stock-market-news/palantir-tops-thirdquarter-revenue-estimates-on-strong-ai-software-demand-4992744"
+        },
+        {
+          "title": "Palantir earnings reveal a major AI turning point",
+          "source": "MarketWatch",
+          "link": "https://www.marketwatch.com/story/palantir-earnings-reveal-a-major-ai-turning-point-db766110?mod=mw_rss_topstories"
+        },
+        {
+          "title": "Crude oil prices sell off more than 7% on Iran peace talk hopes ahead of U.S. midterms",
+          "source": "CNBC Top News",
+          "link": "https://www.cnbc.com/2026/11/02/oil-prices-fall-as-iran-us-pursue-diplomacy.html"
+        },
+        {
+          "title": "How soon gas prices could go down now that oil is tumbling",
+          "source": "MarketWatch",
+          "link": "https://www.marketwatch.com/story/how-soon-gas-prices-could-go-down-now-that-oil-is-tumbling-a1140dc2?mod=mw_rss_topstories"
+        },
+        {
+          "title": "S&P 500 ends down; Apple dips ahead of quarterly report",
+          "source": "Investing.com",
+          "link": "https://www.investing.com/news/stock-market-news/wall-street-futures-rise-as-ai-stocks-catch-their-breath-midterms-in-focus-4990733"
+        },
+        {
+          "title": "Apple reports after the bell. Options traders expect a big move",
+          "source": "CNBC Top News",
+          "link": "https://www.cnbc.com/2026/11/02/apple-reports-after-the-bell-options-traders-expect-a-big-move.html"
+        },
+        {
+          "title": "Chip stocks are suffering from a \u2018crisis of confidence\u2019 \u2014 but things aren\u2019t as gloomy as they seem",
+          "source": "MarketWatch",
+          "link": "https://www.marketwatch.com/story/chip-stocks-are-suffering-from-a-crisis-of-confidence-but-things-arent-as-gloomy-as-they-seem-6ed14ea9?mod=mw_rss_topstories"
+        },
+        {
+          "title": "Intel foundry push faces critical test after stock's 45% plunge in October",
+          "source": "CNBC Top News",
+          "link": "https://www.cnbc.com/2026/11/02/intel-foundry-faces-critical-test-after-stocks-45percent-plunge-in-october.html"
+        },
+        {
+          "title": "It may take weeks to tally the midterm election results. Here\u2019s why Wall Street isn\u2019t worried.",
+          "source": "MarketWatch",
+          "link": "https://www.marketwatch.com/story/it-may-take-weeks-to-tally-the-midterm-election-results-heres-why-wall-street-isnt-worried-ed9313fd?mod=mw_rss_topstories"
+        },
+        {
+          "title": "Stock market after midterm elections: What S&P 500 history shows",
+          "source": "CNBC Top News",
+          "link": "https://www.cnbc.com/2026/11/02/stock-market-after-midterm-elections-sp-500-history.html"
+        }
+      ],
+      "audio": "audio/2026-11-02.mp3",
+      "transcript": "transcripts/2026-11-02.txt",
+      "duration": 154,
+      "bytes": 926928,
+      "published": "2026-11-02T21:36:43.228552+00:00"
+    },
+    {
+      "date": "2026-10-30",
+      "title": "Chip Rout, Fed Hawks, and Refiner Records",
+      "teaser": "Intel's historic crash drags chips lower while Fed officials float hiking again and Exxon, Chevron post record profits.",
+      "topics": [
+        "Federal Reserve",
+        "semiconductors",
+        "energy",
+        "earnings",
+        "inflation"
+      ],
+      "sources": [
+        {
+          "title": "Fed officials are already saying they\u2019ll need to get back to hiking rates",
+          "source": "CNBC Top News",
+          "link": "https://www.cnbc.com/2026/10/30/musalem-fed-monetary-policy-tightening.html"
+        },
+        {
+          "title": "Skipping a rate hike doesn't change monetary policy destination: FOMC's Logan",
+          "source": "Seeking Alpha",
+          "link": "https://seekingalpha.com/news/4661590-skipping-a-rate-hike-doesnt-change-monetary-policy-destination-fomcs-logan?utm_source=feed_news_all&utm_medium=referral&feed_item_type=news"
+        },
+        {
+          "title": "Intel on course for worst day ever, triggers global chip rout",
+          "source": "Investing.com",
+          "link": "https://www.investing.com/news/stock-market-news/intel-warning-sparks-chip-rout-as-pc-weakness-clouds-turnaround-4987123"
+        },
+        {
+          "title": "After Intel\u2019s historic stock drop, analysts say there\u2019s no reason to buy the dip",
+          "source": "MarketWatch",
+          "link": "https://www.marketwatch.com/story/after-intels-historic-stock-drop-analysts-say-theres-no-reason-to-buy-the-dip-068446af?mod=mw_rss_topstories"
+        },
+        {
+          "title": "Why is Arm stock tumbling today?",
+          "source": "Investing.com",
+          "link": "https://www.investing.com/news/stock-market-news/why-is-arm-stock-tumbling-today-93CH-4988444"
+        },
+        {
+          "title": "Why is Qualcomm stock tumbling today?",
+          "source": "Investing.com",
+          "link": "https://www.investing.com/news/stock-market-news/why-is-qualcomm-stock-tumbling-today-93CH-4988443"
+        },
+        {
+          "title": "Exxon, Chevron profits beat forecasts, refining margins surge during wars",
+          "source": "Investing.com",
+          "link": "https://www.investing.com/news/stock-market-news/exxon-chevron-earnings-propelled-by-wardriven-refining-surge-4986750"
+        },
+        {
+          "title": "Chevron and Exxon hit all-time highs as refining profits soar in reaction to Iran and Ukraine wars",
+          "source": "CNBC Top News",
+          "link": "https://www.cnbc.com/2026/10/30/chevron-exxon-cvx-xom-earnings-q3-2026.html"
+        },
+        {
+          "title": "Tankers defy sharp escalation of Iranian attacks to keep crude oil flowing through Strait of Hormuz",
+          "source": "CNBC Top News",
+          "link": "https://www.cnbc.com/2026/10/30/tanker-attack-strait-hormuz-iran-war-oil.html"
+        },
+        {
+          "title": "Third-quarter U.S. GDP increases a better-than-expected 3.4% as September inflation accelerates",
+          "source": "CNBC Markets",
+          "link": "https://www.cnbc.com/2026/10/29/pce-inflation-report-september-2026-.html"
+        },
+        {
+          "title": "Analysis: Kevin Warsh is keeping Wall Street guessing. It may be his most powerful tool",
+          "source": "CNBC Markets",
+          "link": "https://www.cnbc.com/2026/10/29/kevin-warsh-fed-october-rate-decision-december-hike.html"
+        }
+      ],
+      "audio": "audio/2026-10-30.mp3",
+      "transcript": "transcripts/2026-10-30.txt",
+      "duration": 156,
+      "bytes": 938448,
+      "published": "2026-10-30T17:54:14.157253+00:00"
+    },
+    {
+      "date": "2026-10-29",
+      "title": "Hot GDP, Hawkish Fed, Alphabet Stumbles",
+      "teaser": "Growth ran hot, inflation didn't cool, and a new Fed chairman is keeping everyone guessing on rates.",
+      "topics": [
+        "Federal Reserve",
+        "GDP and inflation",
+        "Alphabet earnings",
+        "ECB",
+        "Treasury yields"
+      ],
+      "sources": [
+        {
+          "title": "Third-quarter U.S. GDP increases a better-than-expected 3.4% as September inflation accelerates",
+          "source": "CNBC Markets",
+          "link": "https://www.cnbc.com/2026/10/29/pce-inflation-report-september-2026-.html"
+        },
+        {
+          "title": "Analysis: Kevin Warsh is keeping Wall Street guessing. It may be his most powerful tool",
+          "source": "CNBC Markets",
+          "link": "https://www.cnbc.com/2026/10/29/kevin-warsh-fed-october-rate-decision-december-hike.html"
+        },
+        {
+          "title": "Here are five key takeaways from the Fed rate decision and Warsh news conference",
+          "source": "CNBC Markets",
+          "link": "https://www.cnbc.com/2026/10/28/fed-rate-decision-warsh-takeaways.html"
+        },
+        {
+          "title": "Bessent says 'not necessarily' a mistake if the Fed hikes again",
+          "source": "CNBC Markets",
+          "link": "https://www.cnbc.com/2026/10/28/scott-bessent-interview.html"
+        },
+        {
+          "title": "Alphabet earnings miss reflects first real sign that AI is taking a bite out of search",
+          "source": "CNBC Top News",
+          "link": "https://www.cnbc.com/2026/10/29/alphabet-google-search-ai-earnings.html"
+        },
+        {
+          "title": "Steve Eisman gets more conservative with portfolio as AI trade nears 'tipping point'",
+          "source": "CNBC Top News",
+          "link": "https://www.cnbc.com/2026/10/29/steve-eisman-gets-more-conservative-with-portfolio-as-ai-trade-nears-tipping-point.html"
+        },
+        {
+          "title": "All the reasons Marvell investors are \u2018freaking out\u2019 as Lumentum deal rumors swirl",
+          "source": "MarketWatch",
+          "link": "https://www.marketwatch.com/story/marvell-is-reportedly-close-to-buying-lumentum-analysts-say-they-see-logic-in-a-potential-deal-d7539c59?mod=mw_rss_topstories"
+        },
+        {
+          "title": "European Central Bank keeps key interest rate on hold at 2.5%",
+          "source": "CNBC Markets",
+          "link": "https://www.cnbc.com/2026/10/29/european-central-bank-interest-rates.html"
+        },
+        {
+          "title": "The politics of President Lagarde's European Central Bank early exit  \u2014 and who could replace her",
+          "source": "CNBC Markets",
+          "link": "https://www.cnbc.com/2026/10/29/lagarde-ecb-stand-down.html"
+        },
+        {
+          "title": "Cheniere boosts forecast as Middle East gas disruptions buoy demand for US LNG",
+          "source": "Investing.com",
+          "link": "https://www.investing.com/news/stock-market-news/cheniere-reports-rise-in-thirdquarter-net-income-4982412"
+        }
+      ],
+      "audio": "audio/2026-10-29.mp3",
+      "transcript": "transcripts/2026-10-29.txt",
+      "duration": 169,
+      "bytes": 1017936,
+      "published": "2026-10-29T18:18:34.468918+00:00"
+    },
+    {
+      "date": "2026-10-28",
+      "title": "Fed Holds, Dissents Grow, Big Tech Looms",
+      "teaser": "The Fed paused but two voters wanted a hike, and Microsoft earnings plus Wendy's buyout news set up a busy stretch.",
+      "topics": [
+        "Federal Reserve",
+        "Big Tech earnings",
+        "M&A",
+        "Treasuries"
+      ],
+      "sources": [
+        {
+          "title": "Fed holds rates steady despite concerns over inflation",
+          "source": "CNBC Top News",
+          "link": "https://www.cnbc.com/2026/10/28/fed-interest-rate-decision-october-2026.html"
+        },
+        {
+          "title": "Federal Reserve issues FOMC statement",
+          "source": "Federal Reserve",
+          "link": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261028a.htm"
+        },
+        {
+          "title": "Vertiv earnings just sent an upbeat signal about AI ahead of Big Tech results",
+          "source": "MarketWatch",
+          "link": "https://www.marketwatch.com/story/vertiv-earnings-just-sent-an-upbeat-signal-about-ai-ahead-of-big-tech-results-5714a105?mod=mw_rss_topstories"
+        },
+        {
+          "title": "Microsoft earnings will land after the close",
+          "source": "CNBC Top News",
+          "link": "https://www.cnbc.com/2026/10/28/microsoft-msft-q1-earnings-report-2027.html"
+        },
+        {
+          "title": "Wendy's shares jump 15% as Nelson Peltz's Trian offers $1.4 billion to buy burger chain",
+          "source": "CNBC Top News",
+          "link": "https://www.cnbc.com/2026/10/28/nelson-peltz-trian-wendys-1point4-billion.html"
+        },
+        {
+          "title": "Wendy\u2019s buyout offer suggests the burger chain\u2019s overhaul could be very expensive",
+          "source": "MarketWatch",
+          "link": "https://www.marketwatch.com/story/wendys-buyout-offer-suggests-the-burger-chains-overhaul-could-be-very-expensive-ff2c92bb?mod=mw_rss_topstories"
+        },
+        {
+          "title": "The UK cuts energy bills, taxes banks and boosts defense in high-stakes budget",
+          "source": "CNBC Markets",
+          "link": "https://www.cnbc.com/2026/10/28/uk-autumn-budget-cost-living-defense-ai.html"
+        },
+        {
+          "title": "GDP, core PCE, and jobless claims among economic data due Thursday",
+          "source": "Investing.com",
+          "link": "https://www.investing.com/news/stock-market-news/gdp-core-pce-and-jobless-claims-among-economic-data-due-thursday-93CH-4980405"
+        },
+        {
+          "title": "The 'Magnificent Seven' is no more. Time to pick winners and losers as group's correlation breaks down",
+          "source": "CNBC Top News",
+          "link": "https://www.cnbc.com/2026/10/28/magnificent-seven-stocks-correlation-breakdown.html"
+        }
+      ],
+      "audio": "audio/2026-10-28.mp3",
+      "transcript": "transcripts/2026-10-28.txt",
+      "duration": 146,
+      "bytes": 880848,
+      "published": "2026-10-28T18:12:59.097034+00:00"
+    },
+    {
+      "date": "2026-10-27",
+      "title": "Fed Week Begins, Boeing and AI Financing Wobble",
+      "teaser": "The Fed meets with a hold all but assured, Boeing craters on a production delay, and bond investors start souring on AI debt.",
+      "topics": [
+        "Federal Reserve",
+        "Boeing",
+        "AI financing",
+        "Anthropic IPO",
+        "Treasury yields"
+      ],
+      "sources": [
+        {
+          "title": "Fed expected to hold rates steady, but Warsh may point way to more hikes",
+          "source": "CNBC Top News",
+          "link": "https://www.cnbc.com/2026/10/27/federal-reserve-rates-kevin-warsh.html"
+        },
+        {
+          "title": "Fed rate hikes are coming, but not this week: CNBC survey",
+          "source": "CNBC Markets",
+          "link": "https://www.cnbc.com/2026/10/27/federal-reserve-rate-hike-timing-expectations.html"
+        },
+        {
+          "title": "Boeing stock sinks 9% as company says it won't significantly ramp up 737 Max production until late 2027",
+          "source": "CNBC Top News",
+          "link": "https://www.cnbc.com/2026/10/27/-boeing-ba-q3-2026-earnings.html"
+        },
+        {
+          "title": "Boeing targets $10B free cash flow in 2029 as 737 rate 52 shifts to 2H 2027",
+          "source": "Seeking Alpha",
+          "link": "https://seekingalpha.com/news/4658173-boeing-targets-10b-free-cash-flow-in-2029-as-737-rate-52-shifts-to-2h-2027?utm_source=feed_news_all&utm_medium=referral&feed_item_type=news"
+        },
+        {
+          "title": "JetBlue has been losing money for years. It just charted a path to profitability.",
+          "source": "MarketWatch",
+          "link": "https://www.marketwatch.com/story/jetblue-has-been-losing-money-for-years-it-just-charted-a-path-to-profitability-03be75c8?mod=mw_rss_topstories"
+        },
+        {
+          "title": "Anthropic's IPO could be 'speculative fiction' or a 'generational moment' \u2014 investors are split",
+          "source": "CNBC Top News",
+          "link": "https://www.cnbc.com/2026/10/27/-anthropic-ipo-investors-growth-losses-s-1.html"
+        },
+        {
+          "title": "When will Anthropic go public? Here\u2019s what to know about the IPO timeline.",
+          "source": "MarketWatch",
+          "link": "https://www.marketwatch.com/story/when-will-anthropic-go-public-heres-what-to-know-about-the-ipo-timeline-431eca78?mod=mw_rss_topstories"
+        },
+        {
+          "title": "Bond investors are starting to say \u2018anything but tech.\u2019 What that means for the AI boom.",
+          "source": "MarketWatch",
+          "link": "https://www.marketwatch.com/story/ai-debt-trouble-could-help-feds-warsh-get-his-way-with-fewer-rate-hikes-b3dc4525?mod=mw_rss_topstories"
+        },
+        {
+          "title": "Analysis: Why a $2 trillion deficit and 5% Treasury yields are becoming America's biggest economic challenge",
+          "source": "CNBC Markets",
+          "link": "https://www.cnbc.com/2026/10/15/treasury-yields-deficit-national-debt-ai.html"
+        },
+        {
+          "title": "Nvidia, AMD to invest $4 billion in Meta as tech giants deepen AI partnership",
+          "source": "CNBC Top News",
+          "link": "https://www.cnbc.com/2026/10/27/nvidia-invest-meta.html"
+        }
+      ],
+      "audio": "audio/2026-10-27.mp3",
+      "transcript": "transcripts/2026-10-27.txt",
+      "duration": 167,
+      "bytes": 1004256,
+      "published": "2026-10-27T17:48:51.343281+00:00"
+    },
+    {
+      "date": "2026-10-26",
+      "title": "Fed Week Begins, AI Capital Shuffle Accelerates",
+      "teaser": "No market data this morning, but the Fed meeting, Meta's $95 billion raise, and Microsoft's buyout offer tell the real story.",
+      "topics": [
+        "Federal Reserve",
+        "AI capex",
+        "Meta",
+        "Microsoft",
+        "earnings week"
+      ],
+      "sources": [
+        {
+          "title": "Nvidia, AMD and Broadcom could buy Meta shares as part of $35 billion stock offering",
+          "source": "MarketWatch",
+          "link": "https://www.marketwatch.com/story/nvidia-amd-and-broadcom-could-buy-meta-shares-as-part-of-35-billion-stock-offering-d816fec2?mod=mw_rss_topstories"
+        },
+        {
+          "title": "Microsoft offers voluntary buyouts to 60,000 employees as AI leads to efficiency push",
+          "source": "CNBC Top News",
+          "link": "https://www.cnbc.com/2026/10/26/microsoft-msft-voluntary-buyouts.html"
+        },
+        {
+          "title": "Federal Reserve is likely to hold interest rates steady in October. Here's what that means for consumers",
+          "source": "CNBC Top News",
+          "link": "https://www.cnbc.com/2026/10/26/fed-decision-expectations-october-meeting.html"
+        },
+        {
+          "title": "Investors are doing just as well this year by shunning AI. How to invest if the tech trade keeps fizzling",
+          "source": "CNBC Top News",
+          "link": "https://www.cnbc.com/2026/10/26/sp-500-ex-ai-index-tech-selloff.html"
+        },
+        {
+          "title": "These energy stocks are poised to profit from an imminent AI power crunch",
+          "source": "MarketWatch",
+          "link": "https://www.marketwatch.com/story/these-energy-stocks-are-poised-to-profit-from-an-imminent-ai-power-crunch-00c1a50d?mod=mw_rss_topstories"
+        },
+        {
+          "title": "Why is Bloom Energy stock surging today?",
+          "source": "Investing.com",
+          "link": "https://www.investing.com/news/stock-market-news/why-is-bloom-energy-stock-surging-today-93CH-4973404"
+        },
+        {
+          "title": "Why is Intel stock rallying today?",
+          "source": "Investing.com",
+          "link": "https://www.investing.com/news/stock-market-news/why-is-intel-stock-rallying-today-93CH-4973403"
+        },
+        {
+          "title": "Tesla surges to its highest level in more than three months",
+          "source": "Seeking Alpha",
+          "link": "https://seekingalpha.com/news/4657452-tesla-surges-to-its-highest-level-in-more-than-three-months?utm_source=feed_news_all&utm_medium=referral&feed_item_type=news"
+        },
+        {
+          "title": "Boeing forecast to post small quarterly loss\u00a0despite recent wins, analysts say",
+          "source": "Investing.com",
+          "link": "https://www.investing.com/news/stock-market-news/boeing-forecast-to-post-small-quarterly-lossdespite-recent-wins-analysts-say-4973392"
+        },
+        {
+          "title": "Building permits, durable goods orders, new home sales and consumer confidence due Tuesday",
+          "source": "Investing.com",
+          "link": "https://www.investing.com/news/stock-market-news/building-permits-durable-goods-orders-new-home-sales-and-consumer-confidence-due-tuesday-93CH-4973395"
+        }
+      ],
+      "audio": "audio/2026-10-26.mp3",
+      "transcript": "transcripts/2026-10-26.txt",
+      "duration": 145,
+      "bytes": 874224,
+      "published": "2026-10-26T18:33:46.053665+00:00"
+    },
+    {
+      "date": "2026-10-23",
+      "title": "No Market Data, Plenty of Moving Parts",
+      "teaser": "Market feeds went dark this morning, but earnings, Fed chatter, and a brewing security scramble still shaped the day.",
+      "topics": [
+        "Fed policy",
+        "earnings",
+        "cybersecurity",
+        "labor market",
+        "AI infrastructure"
+      ],
+      "sources": [
+        {
+          "title": "AI's 'Black October':\u00a0Critical PHP flaws set off global security scramble",
+          "source": "CNBC Top News",
+          "link": "https://www.cnbc.com/2026/10/23/php-vulnerabilities-ai-cybersecurity.html"
+        },
+        {
+          "title": "Fed seen holding rates next week before likely December hike, Pantheon says",
+          "source": "Seeking Alpha",
+          "link": "https://seekingalpha.com/news/4656676-fed-seen-holding-rates-next-week-before-likely-december-hike-pantheon-says?utm_source=feed_news_all&utm_medium=referral&feed_item_type=news"
+        },
+        {
+          "title": "Why is Palo Alto Networks stock surging today?",
+          "source": "Investing.com",
+          "link": "https://www.investing.com/news/stock-market-news/why-is-palo-alto-networks-stock-surging-today-93CH-4970133"
+        },
+        {
+          "title": "Why is Check Point Software stock rallying today?",
+          "source": "Investing.com",
+          "link": "https://www.investing.com/news/stock-market-news/why-is-check-point-software-stock-rallying-today-93CH-4970130"
+        },
+        {
+          "title": "TikTok U.S. hunts for multiple gigawatts of computing capacity, sources tell CNBC",
+          "source": "CNBC Top News",
+          "link": "https://www.cnbc.com/2026/10/23/tiktok-us-compute-capacity.html"
+        },
+        {
+          "title": "American Express is cutting 5% of its workforce to 'prepare for AI'",
+          "source": "CNBC Top News",
+          "link": "https://www.cnbc.com/2026/10/23/american-express-job-cuts.html"
+        },
+        {
+          "title": "This hot AI-fueled stock has been in a rut. It just beat earnings expectations by 36%.",
+          "source": "MarketWatch",
+          "link": "https://www.marketwatch.com/story/this-hot-ai-fueled-stock-has-been-in-a-rut-it-just-beat-earnings-expectations-by-36-4a4188cb?mod=mw_rss_topstories"
+        },
+        {
+          "title": "Surging economy gets off to a good start in the fourth quarter \u2014 but there\u2019s one big problem",
+          "source": "MarketWatch",
+          "link": "https://www.marketwatch.com/story/surging-economy-gets-off-to-a-good-start-in-the-fourth-quarter-but-theres-one-big-problem-5657f399?mod=mw_rss_topstories"
+        },
+        {
+          "title": "Jobless claims near the lowest since the 1960s as low-fire trend continues",
+          "source": "CNBC Markets",
+          "link": "https://www.cnbc.com/2026/10/22/jobless-claims-record-low-weekly.html"
+        },
+        {
+          "title": "Trump's approval rating on economy hits all-time low as midterm looms: CNBC survey",
+          "source": "CNBC Markets",
+          "link": "https://www.cnbc.com/2026/10/22/trump-economic-approval-rating-midterms-poll.html"
+        }
+      ],
+      "audio": "audio/2026-10-23.mp3",
+      "transcript": "transcripts/2026-10-23.txt",
+      "duration": 160,
+      "bytes": 961200,
+      "published": "2026-10-23T16:50:02.757338+00:00"
+    },
+    {
+      "date": "2026-10-22",
+      "title": "AI Doubts Hit Meta, Chips as Yields Sink",
+      "teaser": "Meta's cash burn and weak chip forecasts spook markets while bond yields sink on AI jitters and Iran risk lifts oil.",
+      "topics": [
+        "AI spending",
+        "Meta",
+        "chip stocks",
+        "Treasury yields",
+        "oil/Iran"
+      ],
+      "sources": [
+        {
+          "title": "Jobless claims near the lowest since the 1960s as low-fire trend continues",
+          "source": "CNBC Markets",
+          "link": "https://www.cnbc.com/2026/10/22/jobless-claims-record-low-weekly.html"
+        },
+        {
+          "title": "\u2018AI is on trial\u2019: Bond yields sink below 5% as investors look for safety",
+          "source": "MarketWatch",
+          "link": "https://www.marketwatch.com/story/ai-is-on-trial-bond-yields-sink-below-5-as-investors-look-for-safety-dbc86ee9?mod=mw_rss_topstories"
+        },
+        {
+          "title": "Meta stock sinks 6% as AI spend pushes free cash flow negative",
+          "source": "CNBC Top News",
+          "link": "https://www.cnbc.com/2026/10/22/meta-stock-q3-earnings-free-cash-flow.html"
+        },
+        {
+          "title": "Two big reasons Micron and other chip stocks are falling on Thursday",
+          "source": "MarketWatch",
+          "link": "https://www.marketwatch.com/story/two-big-reasons-micron-and-other-chip-stocks-are-falling-on-thursday-312f1fb2?mod=mw_rss_topstories"
+        },
+        {
+          "title": "Mortgage rates decline for first time in about two months as Treasury yields fall",
+          "source": "Seeking Alpha",
+          "link": "https://seekingalpha.com/news/4656053-mortgage-rates-decline-for-first-time-in-about-two-months-as-treasury-yields-fall?utm_source=feed_news_all&utm_medium=referral&feed_item_type=news"
+        },
+        {
+          "title": "Under-the-radar stocks to play the next leg of the energy trade with oil prices jumping again",
+          "source": "CNBC Top News",
+          "link": "https://www.cnbc.com/2026/10/22/under-the-radar-stocks-to-play-the-next-leg-of-the-energy-trade-with-oil-prices-jumping-again.html"
+        },
+        {
+          "title": "FTSE 100 today: Stocks fall as miners drag, Iran threat lifts oil",
+          "source": "Investing.com",
+          "link": "https://www.investing.com/news/stock-market-news/ftse-100-today-stocks-fall-as-gulf-war-lifts-oil-miners-slide-on-weaker-metals-4964847"
+        },
+        {
+          "title": "European stocks drop as French yields, mixed tech earnings weigh",
+          "source": "Investing.com",
+          "link": "https://www.investing.com/news/stock-market-news/european-stocks-buckle-as-french-yields-cross-5-barrier-4964797"
+        },
+        {
+          "title": "Trump's approval rating on economy hits all-time low as midterm looms: CNBC survey",
+          "source": "CNBC Markets",
+          "link": "https://www.cnbc.com/2026/10/22/trump-economic-approval-rating-midterms-poll.html"
+        }
+      ],
+      "audio": "audio/2026-10-22.mp3",
+      "transcript": "transcripts/2026-10-22.txt",
+      "duration": 155,
+      "bytes": 931824,
+      "published": "2026-10-22T16:57:42.662704+00:00"
+    },
+    {
+      "date": "2026-10-21",
+      "title": "SpaceX Pops, Tesla's Up Next, Housing Wobbles",
+      "teaser": "SpaceX jumps on earnings and merger chatter, UK inflation runs hot, and US housing keeps flashing warning signs.",
+      "topics": [
+        "SpaceX",
+        "Tesla",
+        "UK inflation",
+        "housing",
+        "AI bubble debate"
+      ],
+      "sources": [
+        {
+          "title": "SpaceX earnings analysis: questions answered and next catalysts",
+          "source": "Investing.com",
+          "link": "https://www.investing.com/news/stock-market-news/spacex-earnings-analysis-questions-answered-and-next-catalysts-93CH-4963699"
+        },
+        {
+          "title": "SpaceX stock jumps 10% after earnings beat and Musk hints at Tesla tie-up",
+          "source": "CNBC Top News",
+          "link": "https://www.cnbc.com/2026/10/21/spacex-spcx-stock-musk-merger-tesla.html"
+        },
+        {
+          "title": "Tesla earnings loom after Musk calls SpaceX merger a 'good idea'",
+          "source": "CNBC Top News",
+          "link": "https://www.cnbc.com/2026/10/21/tesla-tsla-q3-2026-earnings-report.html"
+        },
+        {
+          "title": "Elon Musk promised a SpaceX share to every kid in America \u2014 don\u2019t hold your breath",
+          "source": "MarketWatch",
+          "link": "https://www.marketwatch.com/story/elon-musk-promised-a-spacex-share-to-every-kid-in-america-dont-hold-your-breath-d6572cdf?mod=mw_rss_topstories"
+        },
+        {
+          "title": "UK\u2019s FTSE 100 ticks higher on energy boost; hot inflation report limits gains",
+          "source": "Investing.com",
+          "link": "https://www.investing.com/news/stock-market-news/uks-ftse-100-pauses-as-hot-inflation-report-outweighs-energy-boost-4962387"
+        },
+        {
+          "title": "UK inflation jumps to 3.5% \u2014 cementing rate hike expectations",
+          "source": "CNBC Markets",
+          "link": "https://www.cnbc.com/2026/10/21/inflation-uk-cpi-interest-rates.html"
+        },
+        {
+          "title": "Housing is flashing warning signs just as the Fed weighs more interest rate hikes",
+          "source": "CNBC Markets",
+          "link": "https://www.cnbc.com/2026/10/20/housing-mortgage-rates-real-estate-federal-reserve.html"
+        },
+        {
+          "title": "Mortgage rates drop for the first time in 2 months, but demand still falls further",
+          "source": "CNBC Top News",
+          "link": "https://www.cnbc.com/2026/10/21/mortgage-rates-drop-for-the-first-time-in-2-months-but-demand-falls.html"
+        },
+        {
+          "title": "EBay to lay off 9% of workforce in its second round of job cuts this year",
+          "source": "CNBC Top News",
+          "link": "https://www.cnbc.com/2026/10/21/ebay-layoffs-workforce-cuts.html"
+        },
+        {
+          "title": "Polymarket traders see a 10% chance the AI bubble bursts before New Year\u2019s Day",
+          "source": "MarketWatch",
+          "link": "https://www.marketwatch.com/story/polymarket-traders-see-a-10-chance-the-ai-bubble-bursts-before-new-years-day-ad33258b?mod=mw_rss_topstories"
+        },
+        {
+          "title": "AI stocks are probably in a bubble \u2014 but might be worth holding on to, says Citadel\u2019s Ken Griffin",
+          "source": "MarketWatch",
+          "link": "https://www.marketwatch.com/story/ai-stocks-are-probably-in-a-bubble-but-might-be-worth-holding-onto-says-citadels-ken-griffin-87f535ce?mod=mw_rss_topstories"
+        }
+      ],
+      "audio": "audio/2026-10-21.mp3",
+      "transcript": "transcripts/2026-10-21.txt",
+      "duration": 160,
+      "bytes": 962208,
+      "published": "2026-10-21T16:58:42.950802+00:00"
+    },
+    {
+      "date": "2026-10-20",
+      "title": "Housing Freezes, Salesforce Pays Up for AI",
+      "teaser": "No market data this morning, but housing just hit a 25-year low and Salesforce's AI shopping spree has investors nervous.",
+      "topics": [
+        "housing market",
+        "M&A",
+        "AI spending",
+        "earnings",
+        "Europe unrest"
+      ],
+      "sources": [
+        {
+          "title": "Builders slash prices on new homes as buyer traffic drops to 14-year low",
+          "source": "MarketWatch",
+          "link": "https://www.marketwatch.com/story/builders-slash-prices-on-new-homes-as-buyer-traffic-drops-to-14-year-low-3dd8caea?mod=mw_rss_topstories"
+        },
+        {
+          "title": "Salesforce\u2019s stock falls as investors chafe at the cost of latest AI purchase",
+          "source": "MarketWatch",
+          "link": "https://www.marketwatch.com/story/salesforce-gets-a-chilly-investor-response-to-a-6-billion-deal-at-a-58-premium-57bd260b?mod=mw_rss_topstories"
+        },
+        {
+          "title": "Pending home sales sink to 25-year low as buyers flee high mortgage rates",
+          "source": "MarketWatch",
+          "link": "https://www.marketwatch.com/story/pending-home-sales-sink-to-25-year-low-as-buyers-flee-high-mortgage-rates-d02c6b30?mod=mw_rss_topstories"
+        },
+        {
+          "title": "September data shows housing market in a deep freeze",
+          "source": "CNBC Top News",
+          "link": "https://www.cnbc.com/2026/10/20/september-data-shows-housing-market-in-a-deep-freeze.html"
+        },
+        {
+          "title": "Salesforce announces $5.66 billion deal for Braze, sending BRZE stock soaring 50%",
+          "source": "CNBC Top News",
+          "link": "https://www.cnbc.com/2026/10/20/salesforce-braze-acquisition-deal.html"
+        },
+        {
+          "title": "Here's what to expect when Netflix reports earnings after the bell",
+          "source": "CNBC Top News",
+          "link": "https://www.cnbc.com/2026/10/20/netflix-nflx-earnings-q3-2026.html"
+        },
+        {
+          "title": "France to deploy military as it braces for fresh unrest this weekend",
+          "source": "CNBC Top News",
+          "link": "https://www.cnbc.com/2026/10/20/france-protests-curfews-macron-gulf-trip.html"
+        },
+        {
+          "title": "Investors look to earnings to reset the bull market. The key level to watch on the S&P 500",
+          "source": "CNBC Top News",
+          "link": "https://www.cnbc.com/2026/10/20/santoli-key-sp-500-level-to-watch.html"
+        },
+        {
+          "title": "Microsoft pulls out of UK Nscale data centre deal over power delay",
+          "source": "Investing.com",
+          "link": "https://www.investing.com/news/stock-market-news/microsoft-pulls-out-of-uk-nscale-data-centre-deal-over-power-delay-4960690"
+        }
+      ],
+      "audio": "audio/2026-10-20.mp3",
+      "transcript": "transcripts/2026-10-20.txt",
+      "duration": 146,
+      "bytes": 876528,
+      "published": "2026-10-20T16:40:20.845680+00:00"
+    },
+    {
+      "date": "2026-10-19",
+      "title": "France's Unrest Hits Markets; Chips Rebound",
+      "teaser": "Paris riots spill into bonds and the euro, chip stocks bounce back, and Saudi Arabia postpones its big investor show.",
+      "topics": [
+        "France unrest",
+        "chip stocks",
+        "Saudi Arabia",
+        "Fed watch",
+        "AI trade"
+      ],
+      "sources": [
+        {
+          "title": "France imposes curfews in parts of Paris, other cities after weekend of riots",
+          "source": "Investing.com",
+          "link": "https://www.investing.com/news/stock-market-news/as-france-reels-from-violence-macron-points-to-security-failings-4956666"
+        },
+        {
+          "title": "French unrest compounds debt crisis fears. Paris-listed stocks, bonds and the euro fall",
+          "source": "CNBC Top News",
+          "link": "https://www.cnbc.com/2026/10/19/france-protests-bond-yields-markets.html"
+        },
+        {
+          "title": "Saudi Arabia postpones big investor conference to 2027 as Iran-backed Houthis escalate attacks on kingdom",
+          "source": "CNBC Top News",
+          "link": "https://www.cnbc.com/2026/10/19/saudi-arabia-postpones-fii-investor-conference-to-2027.html"
+        },
+        {
+          "title": "Micron and other chip stocks spring back to life after bruising selloff",
+          "source": "MarketWatch",
+          "link": "https://www.marketwatch.com/story/micron-and-other-chip-stocks-spring-back-to-life-after-bruising-selloff-16486541?mod=mw_rss_topstories"
+        },
+        {
+          "title": "Why a former Intel skeptic is giving up his negative call on the stock after four years",
+          "source": "MarketWatch",
+          "link": "https://www.marketwatch.com/story/why-a-former-intel-skeptic-is-giving-up-his-negative-call-on-the-stock-after-four-years-47c2fab6?mod=mw_rss_topstories"
+        },
+        {
+          "title": "DeepSeek teams up with Huawei to challenge Nvidia",
+          "source": "Investing.com",
+          "link": "https://www.investing.com/news/stock-market-news/deepseek-teams-up-with-huawei-to-challenge-nvidia-4958123"
+        },
+        {
+          "title": "One of this year\u2019s most important relationships in global financial markets is falling apart",
+          "source": "MarketWatch",
+          "link": "https://www.marketwatch.com/story/one-of-this-years-most-important-relationships-in-global-financial-markets-is-falling-apart-2cf58121?mod=mw_rss_topstories"
+        },
+        {
+          "title": "Anthropic is AI trade's last big hope for a major IPO this year",
+          "source": "CNBC Top News",
+          "link": "https://www.cnbc.com/2026/10/19/anthropic-ipo-ai-trade.html"
+        },
+        {
+          "title": "Building permits, pending home sales among economic data due Tuesday",
+          "source": "Investing.com",
+          "link": "https://www.investing.com/news/stock-market-news/building-permits-pending-home-sales-among-economic-data-due-tuesday-93CH-4958118"
+        }
+      ],
+      "audio": "audio/2026-10-19.mp3",
+      "transcript": "transcripts/2026-10-19.txt",
+      "duration": 149,
+      "bytes": 896112,
+      "published": "2026-10-19T18:36:02.027863+00:00"
+    },
+    {
+      "date": "2026-10-16",
+      "title": "Hot PPI, AI Selloff, Fed In Question",
+      "teaser": "Wholesale inflation surprised to the upside, the AI trade keeps unwinding, and suddenly the Fed's \"obvious\" pause isn't so obvious.",
+      "topics": [
+        "Fed policy",
+        "inflation",
+        "AI stocks selloff",
+        "Treasury yields",
+        "midterms"
+      ],
+      "sources": [
+        {
+          "title": "Nasdaq falls over 1% as AI trade extends decline, set for worst week since June",
+          "source": "Investing.com",
+          "link": "https://www.investing.com/news/stock-market-news/nasdaq-futures-edge-lower-as-ai-spending-fed-rate-concerns-weigh-4952930"
+        },
+        {
+          "title": "Here's how the CoreWeave sell-off is affecting OpenAI vs. Anthropic valuations",
+          "source": "CNBC Top News",
+          "link": "https://www.cnbc.com/2026/10/16/coreweave-openai-anthropic-perps.html"
+        },
+        {
+          "title": "Wholesale prices jumped 6.3% annually in September, biggest gain since 2022",
+          "source": "CNBC Markets",
+          "link": "https://www.cnbc.com/2026/10/15/september-producer-price-index-retail-sales-data.html"
+        },
+        {
+          "title": "Economists: Hot PPI shows Fed's work is not done",
+          "source": "CNBC Markets",
+          "link": "https://www.cnbc.com/2026/10/15/pce-ppi-september-fed-reserve-rate-hike.html"
+        },
+        {
+          "title": "U.S. Treasury dismisses IMF debt warning and 'messy' forecasting",
+          "source": "CNBC Markets",
+          "link": "https://www.cnbc.com/2026/10/15/zervos-imf-us-debt-warning.html"
+        },
+        {
+          "title": "Analysis: Why a $2 trillion deficit and 5% Treasury yields are becoming America's biggest economic challenge",
+          "source": "CNBC Markets",
+          "link": "https://www.cnbc.com/2026/10/15/treasury-yields-deficit-national-debt-ai.html"
+        },
+        {
+          "title": "Analysis: Everyone expects the Fed to hold rates in October. Kevin Warsh could surprise us all",
+          "source": "CNBC Markets",
+          "link": "https://www.cnbc.com/2026/10/16/kevin-warsh-fed-october-rate-hike-interest-rates-markets.html"
+        },
+        {
+          "title": "A stock-market \u2018sell\u2019 signal has been silenced \u2014 but these Bank of America strategists say it\u2019s too early to buy",
+          "source": "MarketWatch",
+          "link": "https://www.marketwatch.com/story/a-stock-market-sell-signal-has-been-silenced-but-these-bank-of-america-strategists-say-its-too-early-to-buy-8cdf98c8?mod=mw_rss_topstories"
+        },
+        {
+          "title": "Many of 2026\u2019s hottest stocks have seen dramatic comedowns this week",
+          "source": "MarketWatch",
+          "link": "https://www.marketwatch.com/story/many-of-2026s-hottest-stocks-have-seen-dramatic-comedowns-this-week-e5ae5d06?mod=mw_rss_topstories"
+        },
+        {
+          "title": "Elon Musk cash infusion helps GOP Senate super PAC raise record $273 million",
+          "source": "CNBC Top News",
+          "link": "https://www.cnbc.com/2026/10/15/elon-musk-senate-leadership-fund-fundraising.html"
+        }
+      ],
+      "audio": "audio/2026-10-16.mp3",
+      "transcript": "transcripts/2026-10-16.txt",
+      "duration": 156,
+      "bytes": 941760,
+      "published": "2026-10-16T16:25:18.139280+00:00"
+    },
+    {
+      "date": "2026-10-15",
+      "title": "Hot PPI Deepens Tech Rout, Lifts Yields",
+      "teaser": "Wholesale prices spike, AI stocks keep sliding, and ten-year yields above five percent are becoming the story everyone's watching.",
+      "topics": [
+        "inflation",
+        "AI selloff",
+        "Treasury yields",
+        "Fed policy",
+        "tech sector"
+      ],
+      "sources": [
+        {
+          "title": "Nvidia, AMD, Dell sell-off in global tech rout on AI funding worries",
+          "source": "CNBC Top News",
+          "link": "https://www.cnbc.com/2026/10/15/sk-hynix-samsung-softbank-stocks-asia-tech-rout-ai-funding-worries.html"
+        },
+        {
+          "title": "Wholesale prices jumped 6.3% annually in September, biggest gain since 2022",
+          "source": "CNBC Markets",
+          "link": "https://www.cnbc.com/2026/10/15/september-producer-price-index-retail-sales-data.html"
+        },
+        {
+          "title": "Economists: Hot PPI shows Fed's work is not done",
+          "source": "CNBC Markets",
+          "link": "https://www.cnbc.com/2026/10/15/pce-ppi-september-fed-reserve-rate-hike.html"
+        },
+        {
+          "title": "Investors are dumping AI stocks as \u2018tech wreck\u2019 worsens. Here\u2019s where they\u2019re turning now.",
+          "source": "MarketWatch",
+          "link": "https://www.marketwatch.com/story/traders-pile-into-bonds-and-defensive-stocks-as-the-tech-wreck-picks-up-steam-48c04374?mod=mw_rss_topstories"
+        },
+        {
+          "title": "Micron, Nvidia and other chip stocks face renewed pressure as AI fears swell",
+          "source": "MarketWatch",
+          "link": "https://www.marketwatch.com/story/micron-nvidia-and-other-chip-stocks-face-renewed-pressure-as-ai-fears-swell-4e0dc989?mod=mw_rss_topstories"
+        },
+        {
+          "title": "U.S. Treasury dismisses IMF debt warning and 'messy' forecasting",
+          "source": "CNBC Markets",
+          "link": "https://www.cnbc.com/2026/10/15/zervos-imf-us-debt-warning.html"
+        },
+        {
+          "title": "Analysis: Why a $2 trillion deficit and 5% Treasury yields are becoming America's biggest economic challenge",
+          "source": "CNBC Markets",
+          "link": "https://www.cnbc.com/2026/10/15/treasury-yields-deficit-national-debt-ai.html"
+        },
+        {
+          "title": "CoreWeave investors are feeling spooked, as the company\u2019s stock and bonds see fresh pressure",
+          "source": "MarketWatch",
+          "link": "https://www.marketwatch.com/story/coreweave-investors-are-feeling-spooked-as-the-companys-stock-and-bonds-see-fresh-pressure-ba39a931?mod=mw_rss_topstories"
+        },
+        {
+          "title": "TSMC chip capacity is \u2018fierce\u2019 battleground for AI customers, amid record quarter",
+          "source": "CNBC Top News",
+          "link": "https://www.cnbc.com/2026/10/15/nvidia-apple-broadcom-in-fierce-battle-to-make-chips-at-tsmc.html"
+        },
+        {
+          "title": "Consumer prices rose 3.7% annually in September as gas prices skyrocket",
+          "source": "CNBC Markets",
+          "link": "https://www.cnbc.com/2026/10/14/cpi-inflation-report-september-2026.html"
+        }
+      ],
+      "audio": "audio/2026-10-15.mp3",
+      "transcript": "transcripts/2026-10-15.txt",
+      "duration": 160,
+      "bytes": 964368,
+      "published": "2026-10-15T16:42:52.643536+00:00"
+    },
+    {
+      "date": "2026-10-14",
+      "title": "Hot CPI Print Rattles Rates and AI Names",
+      "teaser": "September inflation came in hotter than expected, bond yields jumped, and CoreWeave got caught in the crossfire.",
+      "topics": [
+        "inflation",
+        "Federal Reserve",
+        "bond yields",
+        "AI financing",
+        "earnings"
+      ],
+      "sources": [
+        {
+          "title": "Consumer prices rose 3.7% annually in September as gas prices skyrocket",
+          "source": "CNBC Markets",
+          "link": "https://www.cnbc.com/2026/10/14/cpi-inflation-report-september-2026.html"
+        },
+        {
+          "title": "Here's the inflation breakdown for September 2026 \u2014 in one chart",
+          "source": "CNBC Top News",
+          "link": "https://www.cnbc.com/2026/10/14/cpi-inflation-breakdown-september-2026.html"
+        },
+        {
+          "title": "3 things that are driving inflation higher",
+          "source": "MarketWatch",
+          "link": "https://www.marketwatch.com/story/3-things-that-are-driving-inflation-higher-26bda9a9?mod=mw_rss_topstories"
+        },
+        {
+          "title": "Rising bond yields and higher inflation leave the Fed trapped in a rate-hike dilemma",
+          "source": "MarketWatch",
+          "link": "https://www.marketwatch.com/story/rising-bond-yields-and-higher-inflation-leave-the-fed-trapped-in-a-rate-hike-dilemma-d34ba326?mod=mw_rss_topstories"
+        },
+        {
+          "title": "CoreWeave shares tumble as bond yields near 15% on concern about AI borrowing binge",
+          "source": "CNBC Top News",
+          "link": "https://www.cnbc.com/2026/10/14/coreweave-stock-bond-yields-ai-debt.html"
+        },
+        {
+          "title": "September CPI data creates dilemma for Warsh weeks before October decision",
+          "source": "Seeking Alpha",
+          "link": "https://seekingalpha.com/news/4653049-september-cpi-data-creates-dilemma-for-warsh-weeks-before-october-decision?utm_source=feed_news_all&utm_medium=referral&feed_item_type=news"
+        },
+        {
+          "title": "Morgan Stanley beats quarterly profit estimates on equity trading strength",
+          "source": "Investing.com",
+          "link": "https://www.investing.com/news/stock-market-news/morgan-stanley-profit-rises-on-equity-trading-strength-4948872"
+        },
+        {
+          "title": "Netflix to lay off roughly 1,000 employees, or 6% of workforce",
+          "source": "CNBC Top News",
+          "link": "https://www.cnbc.com/2026/10/14/netflix-layoffs.html"
+        },
+        {
+          "title": "Social Security Administration announces 3.6% cost-of-living adjustment for 2027",
+          "source": "CNBC Top News",
+          "link": "https://www.cnbc.com/2026/10/14/social-security-cola-2027.html"
+        },
+        {
+          "title": "Container ship sinks in Strait of Hormuz as Iran steps up attacks",
+          "source": "CNBC Top News",
+          "link": "https://www.cnbc.com/2026/10/14/container-ship-sinks-strait-hormuz-as-iran-war-attacks.html"
+        }
+      ],
+      "audio": "audio/2026-10-14.mp3",
+      "transcript": "transcripts/2026-10-14.txt",
+      "duration": 160,
+      "bytes": 961632,
+      "published": "2026-10-14T16:56:14.306433+00:00"
+    },
+    {
+      "date": "2026-10-13",
+      "title": "Flat Market, Big Legal and Policy Tremors",
+      "teaser": "Bank earnings roll in, a jury hands Qualcomm a win over Arm, and the IMF flags disorderly bond risk ahead of tomorrow's inflation print.",
+      "topics": [
+        "bank earnings",
+        "Qualcomm-Arm ruling",
+        "inflation data",
+        "IMF warnings",
+        "geopolitics"
+      ],
+      "sources": [
+        {
+          "title": "S&P 500 flat as chipmakers fall and bank earnings roll in",
+          "source": "Investing.com",
+          "link": "https://www.investing.com/news/stock-market-news/sp-500-futures-muted-as-investors-await-big-bank-earnings-chip-weakness-weighs-4946052"
+        },
+        {
+          "title": "Delaware jury awards Qualcomm $2 in damages, finds Arm breached license agreement",
+          "source": "Investing.com",
+          "link": "https://www.investing.com/news/stock-market-news/qualcomm-says-jury-found-arm-breached-license-agreement-4947346"
+        },
+        {
+          "title": "Qualcomm, Arm weigh in after jury finds Arm breached license agreement",
+          "source": "Seeking Alpha",
+          "link": "https://seekingalpha.com/news/4652607-qualcomm-gratified-after-jury-finds-arm-breached-license-agreement?utm_source=feed_news_all&utm_medium=referral&feed_item_type=news"
+        },
+        {
+          "title": "Airport attacks put aviation in crosshairs of geopolitical conflicts",
+          "source": "CNBC Top News",
+          "link": "https://www.cnbc.com/2026/10/13/riyadh-airport-attacks-aviation.html"
+        },
+        {
+          "title": "The latest inflation data is expected to show price increases are accelerating",
+          "source": "CNBC Markets",
+          "link": "https://www.cnbc.com/2026/10/13/september-consumer-price-index-inflation.html"
+        },
+        {
+          "title": "Paul Tudor Jones says 2027 could be a really challenging year for the stock market",
+          "source": "CNBC Top News",
+          "link": "https://www.cnbc.com/2026/10/13/paul-tudor-jones-2027-really-challenging-year.html"
+        },
+        {
+          "title": "IMF warns bond yields could see a 'disorderly' spike as debt, inflation risks worsen",
+          "source": "CNBC Markets",
+          "link": "https://www.cnbc.com/2026/10/13/treasury-yields-imf-debt-inflation-.html"
+        },
+        {
+          "title": "IMF sees milder global slowdown as AI boom offsets war hit \u2014 warns resilience is nearing limits",
+          "source": "CNBC Markets",
+          "link": "https://www.cnbc.com/2026/10/12/imf-world-bank-annual-meetings-october-bangkok-asia-.html"
+        },
+        {
+          "title": "More Republicans come out against Trump's diesel deal with Putin",
+          "source": "CNBC Top News",
+          "link": "https://www.cnbc.com/2026/10/13/trump-russia-diesel-republicans.html"
+        }
+      ],
+      "audio": "audio/2026-10-13.mp3",
+      "transcript": "transcripts/2026-10-13.txt",
+      "duration": 158,
+      "bytes": 948384,
+      "published": "2026-10-13T19:07:46.284440+00:00"
+    },
+    {
+      "date": "2026-10-12",
+      "title": "Nasdaq Slips as Optical Stocks Get Hit",
+      "teaser": "AI spending jitters hammer optical and semiconductor names even as Microsoft hits a four trillion dollar milestone.",
+      "topics": [
+        "AI spending",
+        "tech selloff",
+        "oil markets",
+        "Fed policy",
+        "earnings season"
+      ],
+      "sources": [
+        {
+          "title": "Why Ciena, Lumentum and other optical stocks were among the market\u2019s biggest losers on Monday",
+          "source": "MarketWatch",
+          "link": "https://www.marketwatch.com/story/why-ciena-lumentum-and-other-optical-stocks-were-among-the-markets-biggest-losers-on-monday-b3e53f6a?mod=mw_rss_topstories"
+        },
+        {
+          "title": "Nasdaq falls ahead of earnings, economic data while oil rallies",
+          "source": "Investing.com",
+          "link": "https://www.investing.com/news/stock-market-news/us-stock-futures-muted-as-oil-stays-above-100-ahead-of-earnings-4943768"
+        },
+        {
+          "title": "Microsoft hits a big milestone that solidifies its revival",
+          "source": "MarketWatch",
+          "link": "https://www.marketwatch.com/story/microsoft-is-nearing-a-big-milestone-that-solidifies-its-revival-580d1ba8?mod=mw_rss_topstories"
+        },
+        {
+          "title": "Meta is back on the AI leaderboard with its new family of Wonder models",
+          "source": "MarketWatch",
+          "link": "https://www.marketwatch.com/story/meta-is-back-on-the-ai-leaderboard-with-its-new-family-of-wonder-models-a704b6cc?mod=mw_rss_topstories"
+        },
+        {
+          "title": "Trump\u2019s \u2018energy ceasefire\u2019 collides with real-world problems of dwindling fuel supplies",
+          "source": "MarketWatch",
+          "link": "https://www.marketwatch.com/story/trumps-energy-ceasefire-collides-with-real-world-problems-of-dwindling-fuel-supplies-8ba3993b?mod=mw_rss_topstories"
+        },
+        {
+          "title": "Trump defends Russia diesel deal after bipartisan pushback: 'I made the right choice'",
+          "source": "CNBC Top News",
+          "link": "https://www.cnbc.com/2026/10/12/trump-russia-diesel-putin.html"
+        },
+        {
+          "title": "Higher rates could be needed to avoid 'inflationary mindset' taking hold, says Fed's Hammack",
+          "source": "CNBC Top News",
+          "link": "https://www.cnbc.com/2026/10/12/beth-hammack-fed-inflation-policy.html"
+        },
+        {
+          "title": "Earnings beats are now the norm. What the stock market needs to keep rallying",
+          "source": "CNBC Top News",
+          "link": "https://www.cnbc.com/2026/10/07/here-comes-third-quarter-earnings-season-booming-profits-could-propel-the-sp-500-to-new-heights.html"
+        },
+        {
+          "title": "Nobel prize in economics awarded to Robert E. Hall and Michael Woodford",
+          "source": "CNBC Markets",
+          "link": "https://www.cnbc.com/2026/10/12/nobel-economics-prize-winner-woodford-hall.html"
+        }
+      ],
+      "audio": "audio/2026-10-12.mp3",
+      "transcript": "transcripts/2026-10-12.txt",
+      "duration": 190,
+      "bytes": 1523712,
+      "published": "2026-10-12T21:08:59.700233+00:00"
+    },
+    {
+      "date": "2026-10-09",
+      "title": "Telecoms Slide as SpaceX Enters the Fray",
+      "teaser": "SpaceX rattles telecom stocks, Delta warns on fuel costs, and the fight over Fed governor Lisa Cook escalates.",
+      "topics": [
+        "telecoms",
+        "Fed independence",
+        "airlines",
+        "fuel prices",
+        "AI chips"
+      ],
+      "sources": [
+        {
+          "title": "US, European telecom stocks slide as SpaceX spectrum deal rattles sector",
+          "source": "Investing.com",
+          "link": "https://www.investing.com/news/stock-market-news/us-european-telecom-stocks-slide-as-spacex-spectrum-deal-rattles-sector-4940422"
+        },
+        {
+          "title": "Verizon stock heads for worst day since 2002 as SpaceX U.S. network plans whack telcos",
+          "source": "CNBC Top News",
+          "link": "https://www.cnbc.com/2026/10/09/verizon-att-tmobile-stocks-spacex-network.html"
+        },
+        {
+          "title": "Delta warns of more airline capacity restraint as fuel shock hits profits",
+          "source": "Investing.com",
+          "link": "https://www.investing.com/news/stock-market-news/delta-air-lines-cuts-profit-outlook-as-fuel-costs-outpace-fare-gains-4940704"
+        },
+        {
+          "title": "Delta Air Lines cuts 2026 forecast on fuel surge, but CEO says demand is still strong",
+          "source": "CNBC Top News",
+          "link": "https://www.cnbc.com/2026/10/09/delta-air-lines-dal-q3-2026-earnings.html"
+        },
+        {
+          "title": "Trump appoints committee to investigate statements by the Fed's Lisa Cook",
+          "source": "CNBC Top News",
+          "link": "https://www.cnbc.com/2026/10/09/fed-lisa-cook-trump.html"
+        },
+        {
+          "title": "Trump ramps up battle to fire Fed\u2019s Lisa Cook. Her lawyers say there\u2019s no basis to remove her.",
+          "source": "MarketWatch",
+          "link": "https://www.marketwatch.com/story/trump-ramps-up-battle-to-fire-feds-lisa-cook-her-lawyers-say-theres-no-basis-to-remove-her-3a62c5cd?mod=mw_rss_topstories"
+        },
+        {
+          "title": "AI chip stocks wobble even as investors get clarity on a key OpenAI issue",
+          "source": "MarketWatch",
+          "link": "https://www.marketwatch.com/story/nvidia-and-micron-shares-bounce-as-investors-get-clarity-on-a-key-openai-matter-ba76ed20?mod=mw_rss_topstories"
+        },
+        {
+          "title": "Hurricane Isaias disrupts U.S. oil production in Gulf of Mexico, threatens refineries",
+          "source": "CNBC Top News",
+          "link": "https://www.cnbc.com/2026/10/09/hurricane-isaias-gulf-mexico-oil-refinery.html"
+        },
+        {
+          "title": "Inflation on many everyday items was entirely due to tariffs, NY Fed says",
+          "source": "CNBC Markets",
+          "link": "https://www.cnbc.com/2026/10/08/inflation-tariffs-trump-fed-consumer-goods.html"
+        },
+        {
+          "title": "Americans' debt problems are flashing a warning not seen since the Great Recession",
+          "source": "CNBC Markets",
+          "link": "https://www.cnbc.com/2026/10/09/american-debt-delinquency.html"
+        }
+      ],
+      "audio": "audio/2026-10-09.mp3",
+      "transcript": "transcripts/2026-10-09.txt",
+      "duration": 157,
+      "bytes": 947952,
+      "published": "2026-10-09T18:13:37.858910+00:00"
+    },
+    {
+      "date": "2026-10-08",
+      "title": "Oil Jumps, AI Stocks Sink, Yields Ease",
+      "teaser": "Iran tensions and a hurricane push oil higher while OpenAI's revenue numbers rattle the AI trade.",
+      "topics": [
+        "Iran tensions",
+        "oil prices",
+        "AI stocks",
+        "Treasury yields",
+        "Fed minutes"
+      ],
+      "sources": [
+        {
+          "title": "Wall Street slips as geopolitical tensions push oil prices higher",
+          "source": "Seeking Alpha",
+          "link": "https://seekingalpha.com/news/4651383-wall-street-slips-as-geopolitical-tensions-push-oil-prices-higher?utm_source=feed_news_all&utm_medium=referral&feed_item_type=news"
+        },
+        {
+          "title": "Nvidia, Oracle, CoreWeave and other AI stocks sink on OpenAI revenue report",
+          "source": "CNBC Top News",
+          "link": "https://www.cnbc.com/2026/10/08/open-ai-revenue-nvidia-oracle-coreweave.html"
+        },
+        {
+          "title": "Trump says U.S. will not attack Iran before midterm election",
+          "source": "CNBC Top News",
+          "link": "https://www.cnbc.com/2026/10/08/iran-war-trump-midterm-election.html"
+        },
+        {
+          "title": "Treasury sanctions 17 tankers linked to Iran's 'shadow fleet' in economic pressure campaign",
+          "source": "CNBC Top News",
+          "link": "https://www.cnbc.com/2026/10/08/iran-treasury-sanctions-shadow-fleet.html"
+        },
+        {
+          "title": "Oil prices jump as Iran steps up tanker attacks, hurricane threatens U.S. Gulf production",
+          "source": "CNBC Top News",
+          "link": "https://www.cnbc.com/2026/10/08/oil-prices-today-brent-wti-hormuz.html"
+        },
+        {
+          "title": "Bond yields fell, as the Treasury market passed a crucial test of investor confidence",
+          "source": "MarketWatch",
+          "link": "https://www.marketwatch.com/story/the-treasury-market-is-facing-a-crucial-vote-of-investor-confidence-31fa8d41?mod=mw_rss_topstories"
+        },
+        {
+          "title": "Treasury yields are lower after reaching multiyear highs, traders weigh latest bond auction",
+          "source": "CNBC Top News",
+          "link": "https://www.cnbc.com/2026/10/08/us-treasury-yields-30-year-bond-auction.html"
+        },
+        {
+          "title": "Minutes of the Federal Open Market Committee, September 15-16, 2026",
+          "source": "Federal Reserve",
+          "link": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261007a.htm"
+        },
+        {
+          "title": "Inflation fears on the rise as one-year outlook in Fed survey hits highest level since May 2023",
+          "source": "CNBC Markets",
+          "link": "https://www.cnbc.com/2026/10/07/inflation-fears-on-the-rise-as-one-year-outlook-in-fed-survey-hits-highest-since-may-2023.html"
+        },
+        {
+          "title": "Inflation on many everyday items was entirely due to tariffs, NY Fed says",
+          "source": "CNBC Markets",
+          "link": "https://www.cnbc.com/2026/10/08/inflation-tariffs-trump-fed-consumer-goods.html"
+        },
+        {
+          "title": "US freezes Microsoft, Adobe, Infosys green-card applications over alleged fraud",
+          "source": "Investing.com",
+          "link": "https://www.investing.com/news/stock-market-news/us-suspending-permanent-residency-program-formicrosoft-vance-says-4939365"
+        },
+        {
+          "title": "U.S. suspends Microsoft, Adobe from green card labor program in foreign worker crackdown",
+          "source": "CNBC Top News",
+          "link": "https://www.cnbc.com/2026/10/08/microsoft-adobe-green-card-labor-suspension.html"
+        }
+      ],
+      "audio": "audio/2026-10-08.mp3",
+      "transcript": "transcripts/2026-10-08.txt",
+      "duration": 154,
+      "bytes": 925344,
+      "published": "2026-10-08T18:42:59.956514+00:00"
+    },
+    {
+      "date": "2026-10-07",
+      "title": "Fed Minutes Point to More Hikes Ahead",
+      "teaser": "Fed minutes show officials eyeing another hike as inflation fears creep higher, while oil tankers and diesel prices expose fresh strain.",
+      "topics": [
+        "Fed policy",
+        "Treasury yields",
+        "oil and energy",
+        "earnings season",
+        "inflation expectations"
+      ],
+      "sources": [
+        {
+          "title": "Fed officials see another hike coming, but no sign as to when, minutes show",
+          "source": "CNBC Top News",
+          "link": "https://www.cnbc.com/2026/10/07/fed-officials-see-another-hike-coming-but-no-sign-as-to-when-minutes-show.html"
+        },
+        {
+          "title": "Fed\u2019s minutes show no appetite for a series of interest-rate hikes",
+          "source": "MarketWatch",
+          "link": "https://www.marketwatch.com/story/fed-minutes-show-no-appetite-for-a-series-of-interest-rate-hikes-8b1c6436?mod=mw_rss_topstories"
+        },
+        {
+          "title": "Inflation fears on the rise as one-year outlook in Fed survey hits highest level since May 2023",
+          "source": "CNBC Markets",
+          "link": "https://www.cnbc.com/2026/10/07/inflation-fears-on-the-rise-as-one-year-outlook-in-fed-survey-hits-highest-since-may-2023.html"
+        },
+        {
+          "title": "10-year Treasury yield ease from 24-year high after solid bond auction eases demand fears",
+          "source": "CNBC Top News",
+          "link": "https://www.cnbc.com/2026/10/07/treasury-yields-auction-fomc-minutes.html"
+        },
+        {
+          "title": "Supertanker chartered from Gulf Coast to China for $76 million, 10 times higher than pre-war level",
+          "source": "CNBC Top News",
+          "link": "https://www.cnbc.com/2026/10/07/supertanker-from-us-to-china-chartered-for-76-million-source.html"
+        },
+        {
+          "title": "Trump\u2019s diesel order exposes White House limits to counter surging fuel prices",
+          "source": "CNBC Top News",
+          "link": "https://www.cnbc.com/2026/10/07/trump-red-dye-offroad-diesel-price-iran-ukraine-war-midterm.html"
+        },
+        {
+          "title": "Here comes third-quarter earnings season. Booming profits could propel the S&P 500 to new heights",
+          "source": "CNBC Top News",
+          "link": "https://www.cnbc.com/2026/10/07/here-comes-third-quarter-earnings-season-booming-profits-could-propel-the-sp-500-to-new-heights.html"
+        },
+        {
+          "title": "Trade deficit hits $105.6 billion, widest since just before Trump tariffs enacted last year",
+          "source": "CNBC Markets",
+          "link": "https://www.cnbc.com/2026/10/06/trade-deficit-hits-105point6-billion-widest-since-just-before-trump-tariffs-enacted-last-year.html"
+        },
+        {
+          "title": "India\u2019s central bank hikes rates for the first time since 2023 as inflation risks build",
+          "source": "CNBC Markets",
+          "link": "https://www.cnbc.com/2026/10/07/india-rbi-interest-rates-inflation.html"
+        }
+      ],
+      "audio": "audio/2026-10-07.mp3",
+      "transcript": "transcripts/2026-10-07.txt",
+      "duration": 129,
+      "bytes": 776160,
+      "published": "2026-10-07T18:44:43.583734+00:00"
+    },
+    {
+      "date": "2026-10-06",
+      "title": "No Market Data, Plenty of Fed and Trade Noise",
+      "teaser": "Market data's dark this morning, but the trade deficit, Fed bank oversight overhaul, and Hormuz tanker risk are all worth your attention.",
+      "topics": [
+        "Trade deficit",
+        "Federal Reserve",
+        "Oil and Hormuz risk",
+        "AI stocks",
+        "France unrest"
+      ],
+      "sources": [
+        {
+          "title": "Trade deficit hits $105.6 billion, widest since just before Trump tariffs enacted last year",
+          "source": "CNBC Markets",
+          "link": "https://www.cnbc.com/2026/10/06/trade-deficit-hits-105point6-billion-widest-since-just-before-trump-tariffs-enacted-last-year.html"
+        },
+        {
+          "title": "Federal Reserve to restructure US bank supervision model",
+          "source": "Investing.com",
+          "link": "https://www.investing.com/news/stock-market-news/federal-reserve-to-restructure-us-bank-supervision-model-4935044"
+        },
+        {
+          "title": "Rebounding oil exports through Strait of Hormuz are vulnerable to stepped-up Iranian tanker attacks",
+          "source": "CNBC Top News",
+          "link": "https://www.cnbc.com/2026/10/06/crude-oil-tanker-strait-hormuz-iran-attack.html"
+        },
+        {
+          "title": "Northeast Democrats urge Trump administration action as heating oil costs surge",
+          "source": "Investing.com",
+          "link": "https://www.investing.com/news/stock-market-news/northeast-democrats-urge-trump-administration-action-as-heating-oil-costs-surge-4935029"
+        },
+        {
+          "title": "FOMC minutes, crude oil inventories among economic data due Wednesday",
+          "source": "Investing.com",
+          "link": "https://www.investing.com/news/stock-market-news/fomc-minutes-crude-oil-inventories-among-economic-data-due-wednesday-93CH-4935056"
+        },
+        {
+          "title": "Salesforce shares sit at the epicenter of AI confusion. Here's how to trade it",
+          "source": "CNBC Top News",
+          "link": "https://www.cnbc.com/2026/10/06/salesforce-shares-sit-at-the-epicenter-of-ai-confusion-heres-how-to-trade-it.html"
+        },
+        {
+          "title": "These 5 chip stocks are cheaper than the S&P 500 \u2014\u00a0and offer faster growth",
+          "source": "MarketWatch",
+          "link": "https://www.marketwatch.com/story/these-5-chip-stocks-are-cheaper-than-the-s-p-500-and-offer-faster-growth-f8ab4386?mod=mw_rss_topstories"
+        },
+        {
+          "title": "Student riots engulf France as far-right presidential frontrunner Le Pen vows fiscal turnaround",
+          "source": "CNBC Top News",
+          "link": "https://www.cnbc.com/2026/10/06/france-student-protests-budget.html"
+        },
+        {
+          "title": "World Bank warns of AI concentration risks as it lifts East Asia and Pacific growth outlook to 4.5%",
+          "source": "CNBC Markets",
+          "link": "https://www.cnbc.com/2026/10/06/world-bank-east-asia-growth-inflation-ai-exports-.html"
+        }
+      ],
+      "audio": "audio/2026-10-06.mp3",
+      "transcript": "transcripts/2026-10-06.txt",
+      "duration": 148,
+      "bytes": 893952,
+      "published": "2026-10-06T18:11:14.111978+00:00"
+    },
+    {
+      "date": "2026-10-05",
+      "title": "Stocks Shrug Off Bond Rout Near Records",
+      "teaser": "Wall Street brushes off a brutal bond market while M&A chatter and AI bets drive the real action underneath.",
+      "topics": [
+        "bond market",
+        "M&A",
+        "AI stocks",
+        "earnings",
+        "Fed watch"
+      ],
+      "sources": [
+        {
+          "title": "Option Care Health surges 22% on report of $5 billion takeover by McKesson, CD&R",
+          "source": "Investing.com",
+          "link": "https://www.investing.com/news/stock-market-news/option-care-health-surges-22-on-report-of-5-billion-takeover-by-mckesson-cdr-4932841"
+        },
+        {
+          "title": "TSX ekes out gain as weak services data tempers investor sentiment",
+          "source": "Investing.com",
+          "link": "https://www.investing.com/news/stock-market-news/tsx-futures-point-higher-as-bets-on-october-fed-rate-hike-fade-4932035"
+        },
+        {
+          "title": "Investors see big opportunity in ferocious 2026 bond-market rout",
+          "source": "MarketWatch",
+          "link": "https://www.marketwatch.com/story/investors-see-big-opportunity-in-ferocious-2026-bond-market-rout-e5cc94f3?mod=mw_rss_topstories"
+        },
+        {
+          "title": "SpaceX stock climbs to highest since June, returning Musk to trillionaire status",
+          "source": "CNBC Top News",
+          "link": "https://www.cnbc.com/2026/10/05/spacex-stock-climbs-highest-since-june-returning-musk-to-trillionaire.html"
+        },
+        {
+          "title": "Wall Street ends within sight of record close as traders brush off bond rout",
+          "source": "Investing.com",
+          "link": "https://www.investing.com/news/stock-market-news/us-stock-futures-tick-higher-as-soft-jobs-data-eases-fed-hike-bets-4930969"
+        },
+        {
+          "title": "Mattel faces growing shareholder pressure to consider a sale, WSJ reports",
+          "source": "Investing.com",
+          "link": "https://www.investing.com/news/stock-market-news/mattel-faces-growing-shareholder-pressure-to-consider-a-sale-wsj-reports-4932853"
+        },
+        {
+          "title": "Western Digital and Seagate shares bounce back as analysts downplay the Toshiba threat",
+          "source": "MarketWatch",
+          "link": "https://www.marketwatch.com/story/western-digital-and-seagate-shares-bounce-back-as-analysts-downplay-the-toshiba-threat-4979dbff?mod=mw_rss_topstories"
+        },
+        {
+          "title": "Microsoft\u2019s blazing stock comeback isn\u2019t even close to being over, analyst says",
+          "source": "MarketWatch",
+          "link": "https://www.marketwatch.com/story/microsofts-blazing-stock-comeback-isnt-even-close-to-being-over-analyst-says-265f7b6d?mod=mw_rss_topstories"
+        },
+        {
+          "title": "Lucid's Q3 deliveries fall 6.7% as EV maker cuts production to align with demand",
+          "source": "CNBC Top News",
+          "link": "https://www.cnbc.com/2026/10/05/lucid-group-lcid-q3-2026-deliveries-production.html"
+        },
+        {
+          "title": "Saudi Aramco\u2019s CEO may be too downbeat about the road to restocking global oil supplies",
+          "source": "MarketWatch",
+          "link": "https://www.marketwatch.com/story/saudi-aramcos-ceo-may-be-too-downbeat-about-the-road-to-restocking-global-oil-supplies-1fdbb70b?mod=mw_rss_topstories"
+        }
+      ],
+      "audio": "audio/2026-10-05.mp3",
+      "transcript": "transcripts/2026-10-05.txt",
+      "duration": 164,
+      "bytes": 987408,
+      "published": "2026-10-05T20:27:44.275726+00:00"
+    }
+  ]
+}

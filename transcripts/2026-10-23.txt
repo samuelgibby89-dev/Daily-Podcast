@@ -1,0 +1,13 @@
+Good morning. Quick note up front: the usual index, sector, and bond numbers didn't come through this morning, so this one's leaning on the news flow instead of the scoreboard.
+
+The biggest thing hanging over markets is a scramble, not a selloff. Critical flaws in PHP, the language that still quietly runs a huge chunk of the web, leaked publicly overnight, and governments and businesses are racing to patch before anyone exploits them at scale. That's likely why Check Point and Palo Alto Networks are both getting bid up today — security demand doesn't wait for a board meeting. Meanwhile Pantheon's house view on the Fed is that it holds next week and saves a cut, or in their words a hike, for December, which tells you the committee still isn't fully unified on direction even this late in the cycle. And jobless claims near the lowest since the sixties confirm what we keep seeing: companies aren't firing, even if they've stopped hiring aggressively.
+
+On earnings, American Express beat but is cutting five percent of its workforce specifically to make room for AI investment — a $336 million charge to get there. That's a theme worth watching: profitable companies restructuring not because business is bad, but because they think the cost structure needs to look different in two years. Bloom Energy beat estimates by 36% on earnings and 15% on revenue and the stock still didn't get the pop you'd expect — a reminder that in this market, "beat and already priced in" is a real category, especially for anything riding the data-center buildout. Speaking of which, TikTok's US operation is reportedly hunting for multiple gigawatts of computing capacity, which tells you the AI infrastructure land grab still has new entrants showing up.
+
+Away from earnings, there's a genuine economic tension forming. One report has the fourth quarter starting strong, but flags rising prices as the catch — consumers doing fine until they're not. That lines up with the CNBC poll showing eight in ten Americans now call the economy fair or poor, with Trump's approval on the economy at an all-time low heading into the midterms. Strong labor data and strong growth numbers aren't translating into how people feel, and that gap is going to keep showing up in both politics and retail spending data.
+
+If you only click one thing today, make it the piece on the PHP vulnerabilities — this is the kind of infrastructure story that doesn't trend for long but actually matters for a long time.
+
+No fixed income or sector detail today given the data gap, so that's the brief. Back tomorrow with the full board.
+
+I'll leave you with this: "The way to get started is to quit talking and begin doing." Walt Disney.

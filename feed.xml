@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+     xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"
+     xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>The Morning Brief</title>
+    <link>https://toothfairysandbox-prog.github.io/Daily-Podcast/</link>
+    <description>A daily brief you build yourself: markets, tech, sport, business, the world, science and health.</description>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 13 Nov 2026 16:55:52 +0000</lastBuildDate>
+    <atom:link href="https://toothfairysandbox-prog.github.io/Daily-Podcast/feed.xml" rel="self" type="application/rss+xml"/>
+    <itunes:author>Samuel Gibby</itunes:author>
+    <itunes:summary>A daily brief you build yourself: markets, tech, sport, business, the world, science and health.</itunes:summary>
+    <itunes:explicit>false</itunes:explicit>
+    <itunes:category text="Business"><itunes:category text="Investing"/></itunes:category>
+    <itunes:image href="https://toothfairysandbox-prog.github.io/Daily-Podcast/icons/icon-512.png"/>
+    <item>
+      <title>Nvidia Crisis and Hot Inflation Slam Markets</title>
+      <description>Nvidia's leadership crisis and hot inflation data are dragging tech and bonds lower together.</description>
+      <pubDate>Fri, 13 Nov 2026 16:45:56 +0000</pubDate>
+      <guid isPermaLink="false">2026-11-13</guid>
+      <enclosure url="https://toothfairysandbox-prog.github.io/Daily-Podcast/audio/2026-11-13/markets-long.mp3" length="690956" type="audio/mpeg"/>
+      <itunes:duration>172</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+    <item>
+      <title>Brief</title>
+      <description></description>
+      <pubDate>Fri, 13 Nov 2026 01:52:57 +0000</pubDate>
+      <guid isPermaLink="false">2026-11-12</guid>
+      <enclosure url="https://toothfairysandbox-prog.github.io/Daily-Podcast/audio/2026-11-12/markets-long.mp3" length="720236" type="audio/mpeg"/>
+      <itunes:duration>180</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+  </channel>
+</rss>
