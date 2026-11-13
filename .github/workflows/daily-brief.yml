@@ -30,6 +30,14 @@ on:
         description: "Send a test notification without building an episode"
         type: boolean
         default: false
+      check_feeds:
+        description: "Only check feed health, build nothing"
+        type: boolean
+        default: false
+      only_topics:
+        description: "Build just these topic slugs, comma-separated (blank = all)"
+        type: string
+        default: ""
 
 permissions:
   contents: write
@@ -41,14 +49,17 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
-    timeout-minutes: 20
+    # Six topics at two lengths is twelve speech passes and six model calls.
+    # They run in parallel and land in roughly four minutes, but the ceiling
+    # has to leave room for a slow morning.
+    timeout-minutes: 30
 
     steps:
       - name: Check out the code
         uses: actions/checkout@v4
 
       - name: Pull down the already-published site
-        if: inputs.notify_only != true
+        if: inputs.notify_only != true && inputs.check_feeds != true
         # Brings existing episodes into ./public so today's brief joins the
         # archive instead of replacing it. Fails harmlessly on the first run.
         uses: actions/checkout@v4
@@ -64,16 +75,30 @@ jobs:
           cache: pip
 
       - name: Install ffmpeg
-        if: inputs.notify_only != true
+        if: inputs.notify_only != true && inputs.check_feeds != true
         # The runner image no longer ships it.
         run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
 
       - name: Install dependencies
         run: pip install -r requirements.txt
 
-      - name: Build today's episode
-        if: inputs.notify_only != true
+      # Fetches every feed in topics.py and reports what came back. This is
+      # the only place the feeds can actually be reached -- a sandbox or a
+      # laptop behind a proxy proves nothing about them. Run it whenever a
+      # topic starts getting skipped.
+      - name: Check feed health
+        if: inputs.check_feeds == true
+        timeout-minutes: 6
+        run: python build.py --check-feeds
+
+      - name: Build today's brief
+        if: inputs.notify_only != true && inputs.check_feeds != true
         id: build
+        # Bounded so a hung fetch fails here, named, instead of silently
+        # eating the job's whole budget. Run #80 sat for 20m 23s and died on
+        # the job timeout with nothing to show. Raised from 12 for the
+        # six-topic build.
+        timeout-minutes: 18
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           CLAUDE_MODEL:      ${{ vars.CLAUDE_MODEL      || 'claude-sonnet-5' }}
@@ -82,17 +107,26 @@ jobs:
           SHOW_AUTHOR:       ${{ vars.SHOW_AUTHOR       || 'Samuel Gibby' }}
           RETAIN_EPISODES:   ${{ vars.RETAIN_EPISODES   || '30' }}
           VAPID_PUBLIC_KEY:  ${{ vars.VAPID_PUBLIC_KEY }}
+          # Passed as an environment variable, never interpolated into the
+          # command line: it is free text from a dispatch form, and
+          # "${{ inputs.only_topics }}" inside a run block is a shell
+          # injection waiting to happen.
+          ONLY_TOPICS:       ${{ inputs.only_topics }}
         # Skip unless this is a deliberate forced rebuild. A late backstop run
         # would otherwise replace the morning's brief with an evening one.
         run: |
+          ARGS=""
+          if [ -n "${ONLY_TOPICS:-}" ]; then
+            ARGS="--topics ${ONLY_TOPICS}"
+          fi
           if [ "${{ inputs.force }}" = "true" ]; then
-            python build.py
+            python build.py $ARGS
           else
-            python build.py --skip-if-published
+            python build.py --skip-if-published $ARGS
           fi
 
       - name: Publish to GitHub Pages
-        if: inputs.notify_only != true
+        if: inputs.notify_only != true && inputs.check_feeds != true
         run: |
           set -euo pipefail
           cd public

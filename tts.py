@@ -61,7 +61,9 @@ async def _edge_tts(text: str, out_path: Path, voice: str, rate: str) -> None:
     import edge_tts
 
     communicate = edge_tts.Communicate(text, voice, rate=rate)
-    await communicate.save(str(out_path))
+    # A stalled websocket mid-stream is not an error and never returns, so
+    # bound it explicitly rather than letting the job hang.
+    await asyncio.wait_for(communicate.save(str(out_path)), timeout=240)
 
 
 def _gtts(text: str, out_path: Path) -> None:

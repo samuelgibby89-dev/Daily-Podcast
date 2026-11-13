@@ -51,23 +51,62 @@ def _entry_time(entry) -> datetime | None:
     return None
 
 
-def fetch_headlines(per_feed: int = 8, max_age_hours: int = 30) -> list[dict]:
-    """Pull recent headlines from every feed. Returns newest-first."""
+def _fetch_one_feed(name: str, url: str) -> tuple[str, list, str]:
+    """Fetch and parse a single feed. Never raises; reports its own failure."""
+    try:
+        resp = requests.get(url, headers={"User-Agent": UA}, timeout=20)
+        resp.raise_for_status()
+        parsed = feedparser.parse(resp.content)
+        return name, list(parsed.entries), ""
+    except Exception as exc:  # noqa: BLE001
+        return name, [], f"{exc.__class__.__name__}: {exc}"
+
+
+def fetch_all_feeds(feed_list: list[tuple[str, str]]) -> dict[str, tuple[list, str]]:
+    """Fetch every feed in parallel. Returns {name: (entries, error)}.
+
+    The show has six topics with roughly forty feeds between them, and
+    serially that is a minute of the build's budget spent waiting on sockets.
+    """
+    workers = min(12, max(1, len(feed_list)))
+    fetched: dict[str, tuple[list, str]] = {}
+    with ThreadPoolExecutor(max_workers=workers) as pool:
+        futures = [pool.submit(_fetch_one_feed, name, url) for name, url in feed_list]
+        for fut in as_completed(futures):
+            name, entries, err = fut.result()
+            fetched[name] = (entries, err)
+    return fetched
+
+
+def merge_entries(
+    feed_list: list[tuple[str, str]],
+    fetched: dict[str, tuple[list, str]],
+    per_feed: int = 8,
+    max_age_hours: int = 30,
+    quiet: bool = False,
+    report_failures: bool = True,
+) -> list[dict]:
+    """Turn fetched feed entries into a de-duplicated headline list.
+
+    Merged in declared feed order, so de-duplication is deterministic:
+    whichever feed is listed first in the topic keeps the story, and the same
+    inputs always produce the same brief.
+    """
     cutoff = datetime.now(timezone.utc) - timedelta(hours=max_age_hours)
     items: list[dict] = []
     seen_titles: set[str] = set()
 
-    for name, url in FEEDS:
-        try:
-            resp = requests.get(url, headers={"User-Agent": UA}, timeout=20)
-            resp.raise_for_status()
-            parsed = feedparser.parse(resp.content)
-        except Exception as exc:  # noqa: BLE001
-            print(f"  ! feed failed: {name} ({exc.__class__.__name__}: {exc})")
+    for name, _url in feed_list:
+        entries, err = fetched.get(name, ([], "not fetched"))
+        if err:
+            # Always worth saying during a real build, even in quiet mode:
+            # a feed dying silently is this project's most expensive bug.
+            if report_failures:
+                print(f"  ! feed failed: {name} ({err})")
             continue
 
         added = 0
-        for entry in parsed.entries:
+        for entry in entries:
             if added >= per_feed:
                 break
             title = (getattr(entry, "title", "") or "").strip()
@@ -101,10 +140,23 @@ def fetch_headlines(per_feed: int = 8, max_age_hours: int = 30) -> list[dict]:
             )
             added += 1
 
-        print(f"  + {name}: {added} headlines")
+        if not quiet:
+            print(f"  + {name}: {added} headlines")
 
     items.sort(key=lambda i: i["published"] or "", reverse=True)
     return items
+
+
+def fetch_headlines(
+    feeds: list[tuple[str, str]] | None = None,
+    per_feed: int = 8,
+    max_age_hours: int = 30,
+    quiet: bool = False,
+) -> list[dict]:
+    """Pull recent headlines from a set of feeds. Returns newest-first."""
+    feed_list = FEEDS if feeds is None else feeds
+    return merge_entries(feed_list, fetch_all_feeds(feed_list),
+                         per_feed, max_age_hours, quiet)
 
 
 # --------------------------------------------------------------------------
@@ -226,6 +278,10 @@ def _yf_batch(symbols: list[str]) -> dict[str, tuple[float, float, str, bool]]:
         tickers=" ".join(symbols), period="5d", interval="1d",
         group_by="ticker", auto_adjust=False, progress=False,
         threads=False, repair=False,
+        # Without this the call can block indefinitely. A hung fetch is not
+        # an exception, so the retry loop below never sees it -- the job just
+        # sits there until the runner's own timeout kills it.
+        timeout=25,
     )
     if frame is None or frame.empty:
         raise RuntimeError("yfinance returned an empty frame for the batch")
@@ -476,6 +532,27 @@ def has_quotes(snapshot: dict) -> bool:
 
 def _fmt_level(q: dict) -> str:
     return f"{q['label']}: {q['last']:,.2f} ({q['pct_change']:+.2f}%)"
+
+
+def format_headlines(headlines: list[dict], header: str = "") -> str:
+    """Numbered headline block for topics that carry no market data.
+
+    Same numbering contract as format_context below: the model cites indices
+    into this list, and resolve_sources maps them back to links.
+    """
+    lines: list[str] = []
+    if header:
+        lines.append(header)
+        lines.append("")
+    lines.append(
+        f"HEADLINES ({len(headlines)} from the last ~30 hours, newest first). "
+        "Each is numbered -- cite the numbers you actually used:")
+    for i, h in enumerate(headlines):
+        stamp = (h["published"] or "")[:16].replace("T", " ")
+        lines.append(f"[{i}] ({h['source']} {stamp}) {h['title']}")
+        if h["summary"]:
+            lines.append(f"     {h['summary']}")
+    return "\n".join(lines)
 
 
 def format_context(headlines: list[dict], snapshot: dict) -> str:

@@ -1,35 +1,82 @@
 # The Morning Brief
 
-A private daily market podcast that builds itself. Every weekday morning,
-GitHub pulls the overnight headlines and market data, has Claude write a
-seven-minute script, turns it into audio, and publishes it to a web app you
-open on your phone.
+A daily podcast that builds itself, and that each listener builds for
+themselves. Every weekday morning GitHub pulls the overnight news and market
+data, has Claude write six topic segments, turns them into audio, and
+publishes a web app you open on your phone.
+
+You pick your topics once. The app stitches them into one continuous
+briefing, never longer than three minutes.
 
 **Cost: $0 for hosting.** The only spend is Claude API tokens — roughly
-2–4 cents a day.
+10–20 cents a day for all six topics.
 
 ---
 
 ## How it works
 
 ```
-GitHub Actions (weekdays, 6:07am MT)
+GitHub Actions (weekdays, dispatched ~7:45am MT)
   │
-  ├─ sources.py   RSS headlines + Stooq market data      (free, no keys)
-  ├─ build.py     Claude writes the script               (your API key)
-  ├─ tts.py       edge-tts turns it into an MP3          (free, no key)
+  ├─ topics.py    the topic menu: feeds, running orders, cover policy
+  ├─ sources.py   RSS headlines (parallel) + Yahoo market data   (free)
+  ├─ build.py     one Claude call per topic → short + long cut   (API key)
+  ├─ tts.py       12 parallel speech passes → MP3s               (free)
   └─ publishes ./public → the gh-pages branch
                             │
                             └─ GitHub Pages serves it at
-                               https://<you>.github.io/market-brief/
+                               https://<you>.github.io/Daily-Podcast/
 ```
 
-Nothing runs on your computer. There is no server, no database, no Flask
-process to keep alive. The published site is plain static files.
+Nothing runs on your computer. There is no server and no database. The
+published site is plain static files.
 
 The `gh-pages` branch is force-pushed as a single fresh commit each morning,
 so the repo never accumulates years of MP3 history. The site keeps the last
-30 episodes; older ones are deleted.
+30 days; older ones are deleted.
+
+---
+
+## Topics
+
+Six on the menu: **Markets, AI & Tech, Sports, Business, World** (geopolitics
+and global affairs) and **Science & Health**.
+
+Every topic is generated every weekday at two lengths:
+
+| cut | length | when it plays |
+|-----|--------|---------------|
+| short | ~45 s | the listener picked several topics; these get stitched |
+| long  | ~3 min | the listener picked this topic **on its own** |
+
+So four topics is about three minutes, and one topic is also about three
+minutes — of that one thing. Breadth costs depth, deliberately. The cap is
+four.
+
+Both cuts come from a single model call per topic, so six topics cost six
+calls rather than twelve.
+
+### Adding or removing a topic
+
+Edit `topics.py`. One `Topic` entry is the whole configuration surface:
+its feeds, its running order at each length, its accent colour, and whether
+it may use a publisher photo as cover art. Nothing else needs touching —
+not `build.py`, not the player, not the workflow.
+
+`world` ships with `allow_photo_cover=False` on purpose: its lead art is the
+most likely of any topic to be a casualty or a conflict scene, and that is
+not a bet worth taking on someone's morning. It always gets a designed cover.
+
+### When a topic goes quiet
+
+A topic needs `MIN_HEADLINES` usable headlines or it is skipped for the day
+and simply doesn't appear in the app. Each topic lists more feeds than it
+needs so one dead feed is absorbed silently.
+
+To find out which feed died, run the workflow with **check_feeds** ticked.
+That fetches every feed and prints what came back. Do it on the runner —
+a laptop behind a corporate proxy, or any sandbox, will report every feed
+dead and tell you nothing.
 
 ---
 
@@ -318,10 +365,12 @@ number handed to Claude comes from Stooq's daily close — which means the
 ## Files
 
 ```
-build.py                        orchestrates one episode, start to finish
-sources.py                      RSS + market data (edit FEEDS / SYMBOLS here)
+topics.py                       the topic menu ← add or remove topics here
+build.py                        orchestrates one day, all topics, both lengths
+sources.py                      RSS fetching + market data
+cover.py                        news photo or designed cover, per topic
 tts.py                          text → MP3, with fallbacks
-brief_prompt.md                 the show's voice and structure ← edit this one
+segment_prompt.md               the show's voice ← edit this one
 web/                            the phone app (HTML, service worker, icons)
 .github/workflows/daily-brief.yml   the schedule and the deploy
 public/                         build output; published to gh-pages, gitignored
