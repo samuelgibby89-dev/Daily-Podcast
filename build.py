@@ -827,6 +827,35 @@ def main() -> int:
         "segments": published_segments,
     }
 
+    # Backwards compatibility for a home-screen app still running the old
+    # single-episode shell.
+    #
+    # index.html is cached cache-first, so an installed app serves the old
+    # shell until its service worker updates -- at least one launch, often
+    # two. In that window the old client reads episodes.json looking for
+    # `title`, `teaser`, `audio` and `duration` at the top level of each day.
+    # Without them it renders an empty title and sets audio.src to the string
+    # "undefined", which is a broken player, on a phone, with no way for the
+    # listener to tell what went wrong.
+    #
+    # Mirroring the leading segment's long cut up here costs nothing and makes
+    # the upgrade invisible: the old shell plays a perfectly good three-minute
+    # brief until it refreshes itself into the new one.
+    lead_seg = max(published_segments.values(),
+                   key=lambda s: (s.get("weight", 0), s.get("slug", "")))
+    legacy = lead_seg.get("long") or lead_seg.get("short") or {}
+    episode.update({
+        "title": lead_seg["title"],
+        "teaser": lead_seg["teaser"],
+        "topics": lead_seg.get("tags", []),
+        "sources": lead_seg.get("sources", []),
+        "cover": lead_seg.get("cover"),
+        "audio": legacy.get("audio"),
+        "transcript": legacy.get("transcript"),
+        "duration": legacy.get("duration", 0),
+        "bytes": legacy.get("bytes", 0),
+    })
+
     episodes = [e for e in load_episodes() if e.get("date") != date_str]
     episodes.append(episode)
 
